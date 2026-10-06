@@ -1,0 +1,68 @@
+{
+  "id": "should-advice",
+  "type": "grammar",
+  "level": "B1",
+  "title": "Should for advice",
+  "title_es": "Dar consejos con should",
+  "description": "Cómo dar consejos y recomendaciones.",
+  "sources": {
+    "cuaderno": "Apuntes de clase (cuaderno)"
+  },
+  "sections": [
+    {
+      "id": "should",
+      "title": "should / shouldn't",
+      "title_es": "Deberías / no deberías",
+      "use": "Para dar **consejos** o decir lo que es buena idea. Es igual para todas las personas (no lleva *-s*) y va seguido del infinitivo **sin** *to*.",
+      "forms": [
+        {
+          "label": "Afirmativa",
+          "pattern": "sujeto + should + infinitivo",
+          "example": "You should cut down on fats."
+        },
+        {
+          "label": "Negativa",
+          "pattern": "sujeto + shouldn't + infinitivo",
+          "example": "Teenagers shouldn't drink energy drinks."
+        },
+        {
+          "label": "Pregunta",
+          "pattern": "Should + sujeto + infinitivo?",
+          "example": "Should I cut out sugar?"
+        }
+      ],
+      "keywords": [
+        "should",
+        "shouldn't",
+        "I think you should…"
+      ],
+      "examples": [
+        {
+          "en": "You should cut down on fats.",
+          "es": "Deberías tomar menos grasas."
+        },
+        {
+          "en": "You should cut out alcohol.",
+          "es": "Deberías dejar el alcohol."
+        },
+        {
+          "en": "Teenagers should cut down on energy drinks.",
+          "es": "Los adolescentes deberían tomar menos bebidas energéticas."
+        }
+      ],
+      "mistakes": [
+        {
+          "wrong": "You should to eat more fruit.",
+          "right": "You should eat more fruit.",
+          "why": "Después de *should* nunca va *to*."
+        },
+        {
+          "wrong": "She shoulds eat more fruit.",
+          "right": "She should eat more fruit.",
+          "why": "*should* no cambia con *he / she / it*."
+        }
+      ],
+      "source": "cuaderno"
+    }
+  ]
+}

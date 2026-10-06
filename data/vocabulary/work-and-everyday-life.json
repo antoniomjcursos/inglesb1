@@ -1,0 +1,180 @@
+{
+  "id": "work-and-everyday-life",
+  "type": "vocabulary",
+  "level": "B1",
+  "title": "Work and everyday life",
+  "title_es": "Trabajo y vida diaria",
+  "description": "Estudios, trabajo, objetos de la oficina y de casa.",
+  "sources": {
+    "cuaderno": "Apuntes de clase (cuaderno)"
+  },
+  "sections": [
+    {
+      "id": "work",
+      "title": "Studies and work",
+      "title_es": "Estudios y trabajo",
+      "items": [
+        {
+          "en": "career",
+          "ipa": "kəˈrɪə",
+          "pron": "kaRÍA",
+          "es": "carrera profesional, trayectoria",
+          "icon": "briefcase",
+          "note": "*career* = tu vida laboral; *degree* = la carrera universitaria.",
+          "example": "He has an excellent football career.",
+          "example_es": "Tiene una carrera futbolística excelente.",
+          "source": "cuaderno"
+        },
+        {
+          "en": "degree",
+          "ipa": "dɪˈɡriː",
+          "pron": "diGRÍI",
+          "es": "título universitario, carrera",
+          "icon": "graduation-cap",
+          "example": "I have a degree in English literature.",
+          "example_es": "Soy licenciado en literatura inglesa.",
+          "source": "cuaderno"
+        },
+        {
+          "en": "achieve",
+          "ipa": "əˈtʃiːv",
+          "pron": "aCHÍIV",
+          "es": "lograr, conseguir",
+          "icon": "bullseye",
+          "note": "= *get* (un objetivo).",
+          "source": "cuaderno"
+        },
+        {
+          "en": "own",
+          "ipa": "əʊn",
+          "pron": "óun",
+          "es": "tener, poseer; propio",
+          "icon": "key",
+          "note": "*my own car* = mi propio coche.",
+          "example": "I own a small business.",
+          "example_es": "Tengo un pequeño negocio.",
+          "source": "cuaderno"
+        },
+        {
+          "en": "run a business",
+          "ipa": "ˌrʌn ə ˈbɪz.nɪs",
+          "pron": "ran a BÍZZnis",
+          "es": "dirigir un negocio",
+          "icon": "office-building",
+          "note": "*business* tiene dos sílabas: «BÍZZ-nis».",
+          "source": "cuaderno"
+        },
+        {
+          "en": "tackle a problem",
+          "ipa": "ˌtæk.əl ə ˈprɒb.ləm",
+          "pron": "TÁkel a PRÓblam",
+          "es": "abordar un problema",
+          "icon": "wrench",
+          "example": "Her inventions tackle a huge problem.",
+          "example_es": "Sus inventos abordan un problema enorme.",
+          "source": "cuaderno"
+        },
+        {
+          "en": "assessment",
+          "ipa": "əˈses.mənt",
+          "pron": "aSÉSmant",
+          "es": "evaluación",
+          "icon": "memo",
+          "source": "cuaderno"
+        }
+      ]
+    },
+    {
+      "id": "life",
+      "title": "Everyday life",
+      "title_es": "Vida diaria",
+      "items": [
+        {
+          "en": "marriage",
+          "ipa": "ˈmær.ɪdʒ",
+          "pron": "MÁrich",
+          "es": "matrimonio",
+          "icon": "ring",
+          "note": "*marriage* = matrimonio; *wedding* = boda.",
+          "source": "cuaderno"
+        },
+        {
+          "en": "household chores",
+          "ipa": "ˈhaʊs.həʊld ˌtʃɔːz",
+          "pron": "JÁUSjould choozz",
+          "es": "tareas domésticas",
+          "icon": "broom",
+          "note": "También *housework*. Se dice *do the chores*.",
+          "source": "cuaderno"
+        },
+        {
+          "en": "bill",
+          "ipa": "bɪl",
+          "pron": "bil",
+          "es": "factura; cuenta",
+          "icon": "receipt",
+          "note": "*Can we have the bill?* = ¿Nos trae la cuenta? En EE. UU. *bill* también es un billete (en UK, *note*).",
+          "source": "cuaderno"
+        },
+        {
+          "en": "introduce",
+          "ipa": "ˌɪn.trəˈdjuːs",
+          "pron": "intraDIÚUS",
+          "es": "presentar (a alguien)",
+          "icon": "handshake",
+          "note": "Falso amigo: «introducir» (meter) es *put in* o *insert*.",
+          "source": "cuaderno"
+        }
+      ]
+    },
+    {
+      "id": "objects",
+      "title": "Objects",
+      "title_es": "Objetos",
+      "items": [
+        {
+          "en": "tie",
+          "ipa": "taɪ",
+          "pron": "tái",
+          "es": "corbata",
+          "icon": "necktie",
+          "note": "Suena igual que *Thai* (tailandés).",
+          "source": "cuaderno"
+        },
+        {
+          "en": "printer",
+          "ipa": "ˈprɪn.tə",
+          "pron": "PRÍNta",
+          "es": "impresora",
+          "icon": "printer",
+          "source": "cuaderno"
+        },
+        {
+          "en": "vending machine",
+          "ipa": "ˈven.dɪŋ məˌʃiːn",
+          "pron": "VÉNding mashiin",
+          "es": "máquina expendedora",
+          "icon": "x-vending",
+          "source": "cuaderno"
+        },
+        {
+          "en": "safe",
+          "ipa": "seɪf",
+          "pron": "séif",
+          "es": "caja fuerte; seguro",
+          "icon": "x-safe",
+          "note": "Como adjetivo, *safe* = seguro.",
+          "source": "cuaderno"
+        },
+        {
+          "en": "lock / unlock",
+          "ipa": "lɒk / ʌnˈlɒk",
+          "pron": "lok / anLÓK",
+          "es": "cerrar con llave / abrir",
+          "icon": "locked",
+          "source": "cuaderno"
+        }
+      ]
+    }
+  ]
+}

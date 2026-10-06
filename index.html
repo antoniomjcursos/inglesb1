@@ -1,0 +1,57 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Cuaderno de inglés B1</title>
+<meta name="description" content="Vocabulario y gramática de inglés B1 con pronunciación AFI, pronunciación a la española, traducción y audio.">
+<link rel="icon" href="icons/red-apple.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,600;12..96,800&family=Atkinson+Hyperlegible:ital,wght@0,400;0,700;1,400&family=Charis+SIL:wght@400;700&display=swap">
+<link rel="stylesheet" href="assets/app.css">
+</head>
+<body>
+<!--APP-->
+<div class="wrap">
+  <header class="top">
+    <p class="eyebrow">Inglés · Nivel B1</p>
+    <h1 id="unit-title">Cuaderno de inglés</h1>
+    <p class="lede" id="unit-desc"></p>
+  </header>
+
+  <nav class="units" id="units" aria-label="Temas"></nav>
+
+  <details class="key" id="key">
+    <summary>Cómo leer la pronunciación</summary>
+    <div class="key-grid">
+      <div><b>/ˈ/</b> en el AFI: la sílaba que sigue lleva el acento. <b>/ː/</b>: vocal larga. <b>/ə/</b>: vocal débil, casi muda.</div>
+      <div>En la versión española, la <b>negrita</b> es la sílaba fuerte. Las vocales dobles (<b>ii</b>, <b>uu</b>, <b>aa</b>, <b>oo</b>) se alargan.</div>
+      <div><b>zz</b> = una «s» que zumba, como una abeja (<i>peas</i>, <i>cheese</i>). <b>z</b> = nuestra «z» de «zapato» (<i>healthy</i>).</div>
+      <div><b>y</b> = la «y» fuerte de «¡yo!» (<i>ginger</i>). <b>zh</b> = la «ll» argentina de «yo» (<i>aubergine</i>).</div>
+      <div><b>j</b> = una «h» aspirada suave, nunca la «j» fuerte (<i>honey</i>). <b>sh</b> = «chsss», pidiendo silencio.</div>
+    </div>
+  </details>
+
+  <div class="bar" id="bar">
+    <div class="tools">
+      <input id="q" type="search" placeholder="Buscar en todos los temas, en inglés o en español…" autocomplete="off">
+      <select id="src" class="ctl" aria-label="Origen de las palabras" hidden></select>
+      <label class="ctl" id="quiz-wrap"><input id="quiz" type="checkbox"> Modo repaso</label>
+    </div>
+    <nav class="cats" id="cats" aria-label="Secciones"></nav>
+  </div>
+
+  <div class="notice" id="notice" role="status" hidden></div>
+  <main id="list"></main>
+  <p class="empty" id="empty" hidden>No hay ninguna palabra que coincida.</p>
+
+  <footer>
+    <p>Ilustraciones: <a href="https://github.com/microsoft/fluentui-emoji">Fluent Emoji</a> © Microsoft Corporation (licencia MIT) y dibujos propios. El audio usa la voz inglesa de tu dispositivo.</p>
+  </footer>
+</div>
+<div class="toast" id="toast" role="status" hidden></div>
+<!--/APP-->
+<script src="assets/app.js"></script>
+</body>
+</html>

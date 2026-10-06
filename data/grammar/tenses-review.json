@@ -1,0 +1,224 @@
+{
+  "id": "tenses-review",
+  "type": "grammar",
+  "level": "B1",
+  "title": "Tenses review",
+  "title_es": "Repaso de tiempos verbales",
+  "description": "Present perfect simple y continuous, going to y past simple.",
+  "sources": {
+    "cuaderno": "Apuntes de clase (cuaderno)"
+  },
+  "sections": [
+    {
+      "id": "present-perfect-simple",
+      "title": "Present perfect simple",
+      "title_es": "Pretérito perfecto: experiencias",
+      "use": "Para hablar de **experiencias** en tu vida sin decir cuándo ocurrieron. En preguntas se usa mucho *ever* (alguna vez) y en respuestas *never* (nunca).",
+      "forms": [
+        {
+          "label": "Afirmativa",
+          "pattern": "sujeto + have / has + participio",
+          "example": "I have eaten tripe."
+        },
+        {
+          "label": "Negativa",
+          "pattern": "sujeto + haven't / hasn't + participio",
+          "example": "I have never eaten tripe."
+        },
+        {
+          "label": "Pregunta",
+          "pattern": "Have / Has + sujeto + participio?",
+          "example": "Have you ever eaten tripe?"
+        }
+      ],
+      "keywords": [
+        "ever",
+        "never",
+        "already",
+        "yet",
+        "just"
+      ],
+      "examples": [
+        {
+          "en": "Have you ever eaten tripe?",
+          "es": "¿Has comido callos alguna vez?"
+        },
+        {
+          "en": "No, I have never eaten tripe.",
+          "es": "No, nunca he comido callos."
+        },
+        {
+          "en": "She has been to London twice.",
+          "es": "Ha estado en Londres dos veces."
+        }
+      ],
+      "mistakes": [
+        {
+          "wrong": "I have eaten tripe yesterday.",
+          "right": "I ate tripe yesterday.",
+          "why": "Si dices **cuándo** (*yesterday, last week, in 2020*), usa el past simple."
+        }
+      ],
+      "source": "cuaderno"
+    },
+    {
+      "id": "present-perfect-continuous",
+      "title": "Present perfect continuous",
+      "title_es": "Llevar tiempo haciendo algo",
+      "use": "Para acciones que **empezaron en el pasado y siguen ahora**. Equivale a «llevar… haciendo». Se pregunta con *How long…?* y se responde con *for* (periodo) o *since* (desde un momento).",
+      "forms": [
+        {
+          "label": "Afirmativa",
+          "pattern": "sujeto + have / has been + verbo-ing",
+          "example": "I have been working here for 9 years."
+        },
+        {
+          "label": "Pregunta",
+          "pattern": "How long + have / has + sujeto + been + verbo-ing?",
+          "example": "How long have you been working at the EOI?"
+        }
+      ],
+      "keywords": [
+        "How long…?",
+        "for",
+        "since"
+      ],
+      "examples": [
+        {
+          "en": "How long have you been working at the EOI?",
+          "es": "¿Cuánto tiempo llevas trabajando en la EOI?"
+        },
+        {
+          "en": "I have been working at the EOI for 9 years.",
+          "es": "Llevo 9 años trabajando en la EOI."
+        },
+        {
+          "en": "She's been learning English since September.",
+          "es": "Está aprendiendo inglés desde septiembre."
+        }
+      ],
+      "mistakes": [
+        {
+          "wrong": "I am working here for 9 years.",
+          "right": "I have been working here for 9 years.",
+          "why": "Para «llevar X tiempo haciendo algo» no se usa el presente."
+        },
+        {
+          "wrong": "I've been living here since 3 years.",
+          "right": "I've been living here for 3 years.",
+          "why": "*for* + periodo (3 years); *since* + punto de inicio (2021, Monday)."
+        }
+      ],
+      "source": "cuaderno"
+    },
+    {
+      "id": "going-to",
+      "title": "Going to",
+      "title_es": "Planes futuros",
+      "use": "Para **planes e intenciones** que ya has decidido, y para predicciones cuando ves que algo va a pasar.",
+      "forms": [
+        {
+          "label": "Afirmativa",
+          "pattern": "sujeto + am / is / are + going to + infinitivo",
+          "example": "I'm going to cook tonight."
+        },
+        {
+          "label": "Negativa",
+          "pattern": "sujeto + 'm not / isn't / aren't + going to + infinitivo",
+          "example": "I'm not going to eat dessert."
+        },
+        {
+          "label": "Pregunta",
+          "pattern": "Am / Is / Are + sujeto + going to + infinitivo?",
+          "example": "Are you going to eat dessert?"
+        }
+      ],
+      "keywords": [
+        "tonight",
+        "tomorrow",
+        "next week",
+        "this summer"
+      ],
+      "examples": [
+        {
+          "en": "Are you going to eat dessert?",
+          "es": "¿Vas a tomar postre?"
+        },
+        {
+          "en": "No, I'm not going to eat dessert.",
+          "es": "No, no voy a tomar postre."
+        },
+        {
+          "en": "Look at those clouds! It's going to rain.",
+          "es": "¡Mira esas nubes! Va a llover."
+        }
+      ],
+      "mistakes": [
+        {
+          "wrong": "I going to cook pasta.",
+          "right": "I'm going to cook pasta.",
+          "why": "No olvides el verbo *be* (*am / is / are*)."
+        }
+      ],
+      "source": "cuaderno"
+    },
+    {
+      "id": "past-simple",
+      "title": "Past simple",
+      "title_es": "Pasado simple",
+      "use": "Para acciones **terminadas en un momento concreto** del pasado: *yesterday*, *last week*, *in 2019*, *five years ago*.",
+      "forms": [
+        {
+          "label": "Afirmativa",
+          "pattern": "sujeto + verbo en pasado (-ed o irregular)",
+          "example": "I met him 5 years ago."
+        },
+        {
+          "label": "Negativa",
+          "pattern": "sujeto + didn't + infinitivo",
+          "example": "I didn't meet him at work."
+        },
+        {
+          "label": "Pregunta",
+          "pattern": "(Wh-) + did + sujeto + infinitivo?",
+          "example": "When did you meet him?"
+        },
+        {
+          "label": "Verbo be",
+          "pattern": "was / were",
+          "example": "Where were you yesterday?"
+        }
+      ],
+      "keywords": [
+        "yesterday",
+        "last…",
+        "… ago",
+        "in 2019",
+        "When…?"
+      ],
+      "examples": [
+        {
+          "en": "Where were you yesterday? — I was at home.",
+          "es": "¿Dónde estuviste ayer? — Estuve en casa."
+        },
+        {
+          "en": "When did you meet him? — I met him 5 years ago.",
+          "es": "¿Cuándo lo conociste? — Lo conocí hace 5 años."
+        }
+      ],
+      "mistakes": [
+        {
+          "wrong": "When did you met him?",
+          "right": "When did you meet him?",
+          "why": "Después de *did* el verbo va en infinitivo."
+        },
+        {
+          "wrong": "I met him ago 5 years.",
+          "right": "I met him 5 years ago.",
+          "why": "*ago* va detrás del periodo de tiempo."
+        }
+      ],
+      "source": "cuaderno"
+    }
+  ]
+}

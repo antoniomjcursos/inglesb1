@@ -1,0 +1,29 @@
+{
+  "id": "nombre-del-tema",
+  "type": "grammar",
+  "level": "B1",
+  "title": "Grammar point",
+  "title_es": "Punto de gramática",
+  "description": "Una frase que explique qué contiene.",
+  "sources": { "cuaderno": "Apuntes de clase (cuaderno)" },
+  "sections": [
+    {
+      "id": "primera-seccion",
+      "title": "Present simple",
+      "title_es": "Presente simple",
+      "use": "Cuándo se usa. Puedes usar **negrita** y *cursiva*.",
+      "forms": [
+        { "label": "Afirmativa", "pattern": "sujeto + verbo (+s con he/she/it)", "example": "She works here." },
+        { "label": "Pregunta", "pattern": "Do / Does + sujeto + infinitivo?", "example": "Does she work here?" }
+      ],
+      "keywords": ["always", "usually", "never"],
+      "examples": [
+        { "en": "I usually cook at home.", "es": "Normalmente cocino en casa." }
+      ],
+      "mistakes": [
+        { "wrong": "She work here.", "right": "She works here.", "why": "Con *he / she / it* el verbo lleva **-s**." }
+      ],
+      "source": "cuaderno"
+    }
+  ]
+}

@@ -1,0 +1,13 @@
+{
+  "title": "Cuaderno de inglés B1",
+  "units": [
+    "vocabulary/food-and-cooking.json",
+    "vocabulary/flavours-and-drinks.json",
+    "vocabulary/diets.json",
+    "vocabulary/useful-expressions.json",
+    "vocabulary/people-and-feelings.json",
+    "vocabulary/work-and-everyday-life.json",
+    "grammar/tenses-review.json",
+    "grammar/should-advice.json"
+  ]
+}
