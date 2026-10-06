@@ -1,0 +1,129 @@
+{
+  "id": "should-advice",
+  "type": "grammar",
+  "level": "B1",
+  "title": "Should for advice",
+  "title_es": "Dar consejos con should",
+  "icon": "light-bulb",
+  "description": "Cómo dar consejos y recomendaciones.",
+  "sections": [
+    {
+      "id": "should",
+      "title": "should / shouldn't",
+      "title_es": "Deberías / no deberías",
+      "use": "Para dar **consejos** o decir lo que es buena idea. Es igual para todas las personas (no lleva *-s*) y va seguido del infinitivo **sin** *to*.",
+      "forms": [
+        {
+          "label": "Afirmativa",
+          "pattern": "sujeto + should + infinitivo",
+          "example": "You should cut down on fats."
+        },
+        {
+          "label": "Negativa",
+          "pattern": "sujeto + shouldn't + infinitivo",
+          "example": "Teenagers shouldn't drink energy drinks."
+        },
+        {
+          "label": "Pregunta",
+          "pattern": "Should + sujeto + infinitivo?",
+          "example": "Should I cut out sugar?"
+        }
+      ],
+      "keywords": [
+        "should",
+        "shouldn't",
+        "I think you should…"
+      ],
+      "examples": [
+        {
+          "en": "You should cut down on fats.",
+          "es": "Deberías tomar menos grasas."
+        },
+        {
+          "en": "You should cut out alcohol.",
+          "es": "Deberías dejar el alcohol."
+        },
+        {
+          "en": "Teenagers should cut down on energy drinks.",
+          "es": "Los adolescentes deberían tomar menos bebidas energéticas."
+        }
+      ],
+      "mistakes": [
+        {
+          "wrong": "You should to eat more fruit.",
+          "right": "You should eat more fruit.",
+          "why": "Después de *should* nunca va *to*."
+        },
+        {
+          "wrong": "She shoulds eat more fruit.",
+          "right": "She should eat more fruit.",
+          "why": "*should* no cambia con *he / she / it*."
+        }
+      ],
+      "tables": [
+        {
+          "title": "Consejo y obligación en B1",
+          "head": [
+            "Forma",
+            "Significado",
+            "Ejemplo"
+          ],
+          "rows": [
+            [
+              "should / shouldn't",
+              "consejo: es buena idea (no)",
+              "You **should** drink more water."
+            ],
+            [
+              "ought to",
+              "igual que *should*, más formal",
+              "You **ought to** see a doctor."
+            ],
+            [
+              "must",
+              "obligación fuerte (lo dice quien habla)",
+              "I **must** call my mum tonight."
+            ],
+            [
+              "have to",
+              "obligación externa (normas)",
+              "Waiters **have to** wear a uniform."
+            ],
+            [
+              "mustn't",
+              "prohibido",
+              "You **mustn't** smoke in the restaurant."
+            ],
+            [
+              "don't have to",
+              "no es necesario",
+              "You **don't have to** tip in Spain, but you can."
+            ]
+          ]
+        }
+      ],
+      "exceptions": [
+        "**mustn't** ≠ **don't have to**: *You mustn't eat it* = está prohibido; *You don't have to eat it* = no hace falta.",
+        "Para pedir consejo: *What **should** I do?* / ***Should** I cut out sugar?*"
+      ],
+      "practice": [
+        {
+          "q": "You look tired. You ___ go to bed earlier.",
+          "a": "should"
+        },
+        {
+          "q": "You ___ eat so much junk food.",
+          "a": "shouldn't"
+        },
+        {
+          "q": "In my country you ___ pay for tap water. It's free.",
+          "a": "don't have to"
+        },
+        {
+          "q": "You ___ drive after drinking wine.",
+          "a": "mustn't"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,83 @@
+{
+  "id": "nombre-del-tema",
+  "type": "grammar",
+  "level": "B1",
+  "title": "Grammar point",
+  "title_es": "Punto de gramática",
+  "icon": "light-bulb",
+  "description": "Una frase que explique qué contiene.",
+  "sections": [
+    {
+      "id": "primera-seccion",
+      "title": "Present simple",
+      "title_es": "Presente simple",
+      "use": "Cuándo se usa. Puedes usar **negrita** y *cursiva*.",
+      "forms": [
+        {
+          "label": "Afirmativa",
+          "pattern": "sujeto + verbo (+s con he/she/it)",
+          "example": "She works here."
+        },
+        {
+          "label": "Pregunta",
+          "pattern": "Do / Does + sujeto + infinitivo?",
+          "example": "Does she work here?"
+        }
+      ],
+      "tables": [
+        {
+          "title": "Tabla de ejemplo",
+          "head": [
+            "Persona",
+            "Afirmativa",
+            "Negativa"
+          ],
+          "rows": [
+            [
+              "I / you",
+              "**work**",
+              "**don't work**"
+            ],
+            [
+              "he / she",
+              "**works**",
+              "**doesn't work**"
+            ]
+          ],
+          "note": "Nota opcional debajo de la tabla."
+        }
+      ],
+      "keywords": [
+        "always",
+        "usually",
+        "never"
+      ],
+      "examples": [
+        {
+          "en": "I usually cook at home.",
+          "es": "Normalmente cocino en casa."
+        }
+      ],
+      "exceptions": [
+        "Una excepción a la regla."
+      ],
+      "tips": [
+        "Un truco para recordarlo."
+      ],
+      "mistakes": [
+        {
+          "wrong": "She work here.",
+          "right": "She works here.",
+          "why": "Con *he / she / it* el verbo lleva **-s**."
+        }
+      ],
+      "practice": [
+        {
+          "q": "She ___ (work) here.",
+          "a": "works",
+          "why": "he / she / it + -s"
+        }
+      ]
+    }
+  ]
+}

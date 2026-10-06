@@ -1,0 +1,103 @@
+{
+  "id": "useful-expressions",
+  "type": "vocabulary",
+  "level": "B1",
+  "title": "Useful expressions",
+  "title_es": "Expresiones útiles",
+  "icon": "speech-balloon",
+  "description": "Modismos y frases hechas que salen en clase.",
+  "sections": [
+    {
+      "id": "idioms",
+      "title": "Food idioms",
+      "title_es": "Modismos con comida",
+      "items": [
+        {
+          "en": "It's a piece of cake.",
+          "ipa": "ɪts ə ˌpiːs əv ˈkeɪk",
+          "pron": "its a piis av KÉIK",
+          "es": "Es pan comido, es facilísimo.",
+          "icon": "shortcake"
+        },
+        {
+          "en": "easy peasy",
+          "ipa": "ˌiː.zi ˈpiː.zi",
+          "pron": "iizzi PÍIzzi",
+          "es": "chupado, facilísimo",
+          "icon": "ok-hand",
+          "note": "Muy informal."
+        },
+        {
+          "en": "go bananas",
+          "ipa": "ˌɡəʊ bəˈnɑː.nəz",
+          "pron": "gou baNÁAnazz",
+          "es": "volverse loco, ponerse como loco",
+          "icon": "banana",
+          "example": "My dad went bananas when he saw the bill.",
+          "example_es": "Mi padre se puso como loco al ver la cuenta."
+        }
+      ]
+    },
+    {
+      "id": "everyday",
+      "title": "Everyday phrases",
+      "title_es": "Frases del día a día",
+      "items": [
+        {
+          "en": "It's up to you.",
+          "ipa": "ɪts ˌʌp tə ˈjuː",
+          "pron": "its ap ta YÚU",
+          "es": "Como tú quieras, tú decides.",
+          "icon": "person-shrugging"
+        },
+        {
+          "en": "I don't mind.",
+          "ipa": "aɪ ˌdəʊnt ˈmaɪnd",
+          "pron": "ai dount MÁIND",
+          "es": "No me importa, me da igual.",
+          "icon": "open-hands"
+        },
+        {
+          "en": "I can't stand…",
+          "ipa": "aɪ ˌkɑːnt ˈstænd",
+          "pron": "ai kaant STAND",
+          "es": "No soporto…",
+          "icon": "face-with-rolling-eyes",
+          "note": "Va seguido de un nombre o de *-ing*.",
+          "example": "I really can't stand cooking.",
+          "example_es": "No soporto cocinar."
+        },
+        {
+          "en": "So far so good.",
+          "ipa": "ˌsəʊ ˈfɑː ˌsəʊ ˈɡʊd",
+          "pron": "sou faa sou GUD",
+          "es": "Por ahora, bien.",
+          "icon": "check-mark-button"
+        },
+        {
+          "en": "Nice to meet you. — You too.",
+          "ipa": "ˌnaɪs tə ˈmiːt juː — ˈjuː tuː",
+          "pron": "nais ta MÍIT yu — YU tuu",
+          "es": "Encantado/a. — Igualmente.",
+          "icon": "handshake"
+        },
+        {
+          "en": "I'm 19 (years old).",
+          "ipa": "aɪm ˌnaɪnˈtiːn",
+          "pron": "aim nainTÍIN",
+          "es": "Tengo 19 años.",
+          "icon": "birthday-cake",
+          "note": "¡Nunca *I have 19 years*! La edad va con *be*."
+        },
+        {
+          "en": "seven out of ten",
+          "ipa": "ˌsev.ən ˌaʊt əv ˈten",
+          "pron": "sevan aut av TEN",
+          "es": "siete de cada diez",
+          "icon": "keycap-10",
+          "note": "*nine out of ten people* = nueve de cada diez personas."
+        }
+      ]
+    }
+  ]
+}

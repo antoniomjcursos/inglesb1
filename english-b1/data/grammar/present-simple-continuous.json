@@ -1,0 +1,1112 @@
+{
+  "id": "present-simple-continuous",
+  "type": "grammar",
+  "level": "B1",
+  "title": "Present simple and continuous",
+  "title_es": "Presente simple y continuo",
+  "icon": "alarm-clock",
+  "description": "Hábitos frente a lo que pasa ahora, verbos de estado, adverbios y cómo afectan al tiempo verbal.",
+  "sections": [
+    {
+      "id": "present-simple",
+      "title": "Present simple",
+      "title_es": "Presente simple: hábitos y verdades",
+      "use": "Para **hábitos y rutinas** (lo que haces normalmente), cosas que son **siempre verdad** y **gustos y opiniones**. Suele ir con adverbios de frecuencia (*always, usually, never*) o con expresiones como *every day* u *once a week*.",
+      "forms": [
+        {
+          "label": "Afirmativa",
+          "pattern": "sujeto + verbo (he / she / it + -s)",
+          "example": "She works in a restaurant."
+        },
+        {
+          "label": "Negativa",
+          "pattern": "sujeto + don't / doesn't + infinitivo",
+          "example": "We don't eat meat."
+        },
+        {
+          "label": "Pregunta",
+          "pattern": "(palabra interrogativa) + do / does + sujeto + infinitivo?",
+          "example": "Where do you usually have lunch?"
+        },
+        {
+          "label": "Resp. corta",
+          "pattern": "Yes, I do. / No, she doesn't.",
+          "example": "Does he cook? — Yes, he does."
+        }
+      ],
+      "tables": [
+        {
+          "title": "Conjugación completa del verbo *eat*",
+          "head": [
+            "Persona",
+            "Afirmativa",
+            "Negativa",
+            "Pregunta"
+          ],
+          "rows": [
+            [
+              "I / you / we / they",
+              "I **eat**",
+              "I **don't eat**",
+              "**Do** you **eat**…?"
+            ],
+            [
+              "he / she / it",
+              "she **eats**",
+              "she **doesn't eat**",
+              "**Does** she **eat**…?"
+            ]
+          ],
+          "note": "*don't* = *do not*; *doesn't* = *does not*. Con *doesn't* y *does* el verbo va **sin -s**."
+        },
+        {
+          "title": "Ortografía de la 3.ª persona (he / she / it)",
+          "head": [
+            "El verbo termina en…",
+            "Regla",
+            "Ejemplos"
+          ],
+          "rows": [
+            [
+              "casi todos",
+              "+ **-s**",
+              "cook → cook**s**, eat → eat**s**, like → like**s**"
+            ],
+            [
+              "-s, -ss, -sh, -ch, -x, -o",
+              "+ **-es**",
+              "watch → watch**es**, wash → wash**es**, go → go**es**, do → do**es**"
+            ],
+            [
+              "consonante + -y",
+              "-y → **-ies**",
+              "study → stud**ies**, fry → fr**ies**, try → tr**ies**"
+            ],
+            [
+              "vocal + -y",
+              "+ **-s**",
+              "play → play**s**, buy → buy**s**, enjoy → enjoy**s**"
+            ],
+            [
+              "*have*",
+              "irregular",
+              "have → **has**"
+            ]
+          ]
+        },
+        {
+          "title": "Adverbios de frecuencia (de más a menos)",
+          "head": [
+            "Adverbio",
+            "Español",
+            "Frecuencia",
+            "Ejemplo"
+          ],
+          "rows": [
+            [
+              "always",
+              "siempre",
+              "100 %",
+              "I **always** have toast for breakfast."
+            ],
+            [
+              "usually / normally",
+              "normalmente",
+              "90 %",
+              "We **usually** eat at two."
+            ],
+            [
+              "often",
+              "a menudo",
+              "70 %",
+              "She **often** cooks fish."
+            ],
+            [
+              "sometimes",
+              "a veces",
+              "50 %",
+              "I **sometimes** order a takeaway."
+            ],
+            [
+              "occasionally",
+              "de vez en cuando",
+              "20 %",
+              "He **occasionally** eats meat."
+            ],
+            [
+              "rarely / hardly ever",
+              "casi nunca",
+              "5 %",
+              "I **hardly ever** drink coffee."
+            ],
+            [
+              "never",
+              "nunca",
+              "0 %",
+              "I **never** eat fried food."
+            ]
+          ]
+        },
+        {
+          "title": "Expresiones de frecuencia (van al final)",
+          "head": [
+            "Expresión",
+            "Español",
+            "Ejemplo"
+          ],
+          "rows": [
+            [
+              "every day / week / Sunday",
+              "todos los días / semanas / domingos",
+              "I go to the gym **every day**."
+            ],
+            [
+              "once a week",
+              "una vez a la semana",
+              "We eat out **once a week**."
+            ],
+            [
+              "twice a month",
+              "dos veces al mes",
+              "She calls her mum **twice a month**."
+            ],
+            [
+              "three times a day",
+              "tres veces al día",
+              "Brush your teeth **three times a day**."
+            ],
+            [
+              "on Mondays / at weekends",
+              "los lunes / los fines de semana",
+              "They have a big lunch **at weekends**."
+            ],
+            [
+              "seven out of ten (days)",
+              "siete de cada diez",
+              "I cook **seven out of ten** days."
+            ]
+          ]
+        }
+      ],
+      "keywords": [
+        "always",
+        "usually",
+        "often",
+        "sometimes",
+        "hardly ever",
+        "never",
+        "every day",
+        "once a week",
+        "How often…?"
+      ],
+      "examples": [
+        {
+          "en": "I usually have cereal for breakfast.",
+          "es": "Normalmente desayuno cereales."
+        },
+        {
+          "en": "My brother doesn't drink coffee.",
+          "es": "Mi hermano no toma café."
+        },
+        {
+          "en": "Does the supermarket open on Sundays? — Yes, it does.",
+          "es": "¿Abre el supermercado los domingos? — Sí."
+        },
+        {
+          "en": "Water boils at 100 degrees.",
+          "es": "El agua hierve a 100 grados.",
+          "note": "Algo que siempre es verdad."
+        },
+        {
+          "en": "How often do you eat seafood? — About once a week.",
+          "es": "¿Cada cuánto comes marisco? — Una vez a la semana más o menos."
+        }
+      ],
+      "exceptions": [
+        "Los adverbios de frecuencia van **antes del verbo principal** (*I **always** eat soup*), pero **después de *be*** (*I'm **always** late*).",
+        "Con auxiliares y modales van **entre el auxiliar y el verbo**: *I **don't usually** cook*, *She **can never** find her keys*, *I **have never** eaten tripe*.",
+        "*Sometimes*, *usually* y *occasionally* también pueden ir **al principio o al final**: ***Sometimes** I skip breakfast* / *I skip breakfast **sometimes***. *Always* y *never* no.",
+        "*Never* y *hardly ever* ya son negativos: ***I never eat** meat* (nunca *I don't never eat*).",
+        "En preguntas el adverbio va **detrás del sujeto**: *Do you **often** eat out?*",
+        "*have*, *do* y *go* son irregulares en 3.ª persona: **has**, **does** /dʌz/, **goes**."
+      ],
+      "tips": [
+        "**Orden de las preguntas: ASI / QuASI.** **A**uxiliar + **S**ujeto + **I**nfinitivo (*Do you like fish?*). Con palabra interrogativa: **Qu**estion word + **A**uxiliar + **S**ujeto + **I**nfinitivo (*What time does the restaurant open?*).",
+        "En las respuestas cortas se repite el auxiliar, no el verbo: *Do you cook? — Yes, I do.*",
+        "Si la pregunta es por el **sujeto** no hay *do / does*: *Who cooks in your house?* (no *Who does cook*)."
+      ],
+      "mistakes": [
+        {
+          "wrong": "She eat fish every Friday.",
+          "right": "She eats fish every Friday.",
+          "why": "Con *he / she / it* el verbo lleva **-s**."
+        },
+        {
+          "wrong": "He doesn't eats meat.",
+          "right": "He doesn't eat meat.",
+          "why": "Después de *doesn't* el verbo va en infinitivo, sin *-s*."
+        },
+        {
+          "wrong": "Do she like spicy food?",
+          "right": "Does she like spicy food?",
+          "why": "Con *he / she / it* la pregunta va con *does*."
+        },
+        {
+          "wrong": "I eat always at home.",
+          "right": "I always eat at home.",
+          "why": "El adverbio de frecuencia va antes del verbo principal."
+        },
+        {
+          "wrong": "I am never eat breakfast.",
+          "right": "I never eat breakfast.",
+          "why": "No mezcles *be* con otro verbo en presente simple."
+        }
+      ],
+      "practice": [
+        {
+          "q": "My sister ___ (not eat) red meat.",
+          "a": "doesn't eat"
+        },
+        {
+          "q": "___ your parents ___ (cook) every day?",
+          "a": "Do … cook"
+        },
+        {
+          "q": "He ___ (watch) cooking programmes every evening.",
+          "a": "watches",
+          "why": "-ch → -es"
+        },
+        {
+          "q": "She ___ (study) at the EOI twice a week.",
+          "a": "studies",
+          "why": "consonante + y → -ies"
+        },
+        {
+          "q": "I / always / late / am",
+          "a": "I am always late.",
+          "why": "Después de *be*."
+        },
+        {
+          "q": "we / eat out / once a month / usually",
+          "a": "We usually eat out once a month."
+        }
+      ]
+    },
+    {
+      "id": "present-continuous",
+      "title": "Present continuous",
+      "title_es": "Presente continuo: ahora y temporal",
+      "use": "Para acciones que **están pasando ahora**, situaciones **temporales** (estos días, esta semana), cosas que **están cambiando** y **planes ya organizados** para el futuro (*future arrangements*).",
+      "forms": [
+        {
+          "label": "Afirmativa",
+          "pattern": "sujeto + am / is / are + verbo-ing",
+          "example": "She's playing football now."
+        },
+        {
+          "label": "Negativa",
+          "pattern": "sujeto + 'm not / isn't / aren't + verbo-ing",
+          "example": "She isn't playing football today."
+        },
+        {
+          "label": "Pregunta",
+          "pattern": "(palabra interrogativa) + am / is / are + sujeto + verbo-ing?",
+          "example": "What are you cooking?"
+        },
+        {
+          "label": "Resp. corta",
+          "pattern": "Yes, I am. / No, she isn't.",
+          "example": "Are they coming? — No, they aren't."
+        }
+      ],
+      "tables": [
+        {
+          "title": "Conjugación completa del verbo *cook*",
+          "head": [
+            "Persona",
+            "Afirmativa",
+            "Negativa",
+            "Pregunta"
+          ],
+          "rows": [
+            [
+              "I",
+              "I'**m cooking**",
+              "I'**m not cooking**",
+              "**Am** I **cooking**…?"
+            ],
+            [
+              "he / she / it",
+              "she'**s cooking**",
+              "she **isn't cooking**",
+              "**Is** she **cooking**…?"
+            ],
+            [
+              "you / we / they",
+              "we'**re cooking**",
+              "we **aren't cooking**",
+              "**Are** you **cooking**…?"
+            ]
+          ]
+        },
+        {
+          "title": "Ortografía de la forma -ing",
+          "head": [
+            "El verbo…",
+            "Regla",
+            "Ejemplos"
+          ],
+          "rows": [
+            [
+              "casi todos",
+              "+ **-ing**",
+              "cook → cook**ing**, eat → eat**ing**, drink → drink**ing**"
+            ],
+            [
+              "termina en -e",
+              "quita la -e",
+              "make → mak**ing**, have → hav**ing**, bake → bak**ing**"
+            ],
+            [
+              "consonante + vocal + consonante (sílaba fuerte al final)",
+              "dobla la consonante",
+              "get → ge**tt**ing, stop → sto**pp**ing, chop → cho**pp**ing, begin → begi**nn**ing"
+            ],
+            [
+              "termina en -ie",
+              "-ie → **-ying**",
+              "lie → l**ying**, die → d**ying**"
+            ],
+            [
+              "termina en -w, -x, -y",
+              "no dobla",
+              "fix → fix**ing**, play → play**ing**, snow → snow**ing**"
+            ]
+          ],
+          "note": "Ojo: *visit → visiting*, *open → opening*: no se dobla porque la sílaba fuerte no es la última."
+        },
+        {
+          "title": "Los cuatro usos",
+          "head": [
+            "Uso",
+            "Ejemplo",
+            "Español"
+          ],
+          "rows": [
+            [
+              "Ahora mismo",
+              "The phone's **ringing**. Can you answer it?",
+              "Está sonando el teléfono."
+            ],
+            [
+              "Temporal",
+              "I'**m eating** a lot of salads these days.",
+              "Estos días como mucha ensalada."
+            ],
+            [
+              "Cambios",
+              "Food prices **are going up** very fast.",
+              "Los precios suben muy rápido."
+            ],
+            [
+              "Planes organizados",
+              "She'**s having** a beer with friends after class.",
+              "Ha quedado para tomar una cerveza después de clase."
+            ]
+          ]
+        }
+      ],
+      "keywords": [
+        "now",
+        "right now",
+        "at the moment",
+        "today",
+        "this week",
+        "these days",
+        "nowadays",
+        "tonight"
+      ],
+      "examples": [
+        {
+          "en": "What are you cooking? It smells delicious.",
+          "es": "¿Qué estás cocinando? Huele de maravilla."
+        },
+        {
+          "en": "I'm not eating meat at the moment. I'm trying a vegetarian diet.",
+          "es": "Ahora mismo no como carne. Estoy probando una dieta vegetariana."
+        },
+        {
+          "en": "Are you taking any vitamins at the moment?",
+          "es": "¿Estás tomando vitaminas ahora?"
+        },
+        {
+          "en": "We're having dinner at a new restaurant on Friday.",
+          "es": "El viernes cenamos en un restaurante nuevo.",
+          "note": "Plan ya organizado."
+        }
+      ],
+      "exceptions": [
+        "Los **verbos de estado** (*like, know, need, want…*) **no** se usan en continuo aunque hablemos de ahora: *I **need** a coffee now* (no *I'm needing*). Ver la sección siguiente.",
+        "*always* + presente continuo no es un hábito normal: sirve para **quejarse** de algo que molesta: *He's **always leaving** dirty plates in the sink!*",
+        "Para un plan futuro hace falta que **ya esté organizado** (hora, sitio, con quién): *I'm meeting Ana at 8.* Para una simple intención usa *going to*.",
+        "Los horarios fijos (trenes, clases, películas) van en **presente simple** aunque sean futuro: *The train **leaves** at 6.*"
+      ],
+      "tips": [
+        "Truco para doblar la consonante: **C-V-C** (consonante, vocal, consonante) en verbos de **1 sílaba** o de **2 sílabas con la fuerte al final**: *stop → stopping*, *prefer → preferring*.",
+        "En inglés hablado casi siempre se contrae: *I'm, she's, we're, isn't, aren't*."
+      ],
+      "mistakes": [
+        {
+          "wrong": "I cooking dinner now.",
+          "right": "I'm cooking dinner now.",
+          "why": "No olvides *am / is / are*."
+        },
+        {
+          "wrong": "Look! It rains.",
+          "right": "Look! It's raining.",
+          "why": "Está pasando ahora mismo."
+        },
+        {
+          "wrong": "What do you do now? — I'm busy.",
+          "right": "What are you doing now?",
+          "why": "Preguntas por este momento."
+        },
+        {
+          "wrong": "I'm writting an email.",
+          "right": "I'm writing an email.",
+          "why": "*write* termina en -e: se quita y no se dobla."
+        }
+      ],
+      "practice": [
+        {
+          "q": "Shh! The baby ___ (sleep).",
+          "a": "is sleeping"
+        },
+        {
+          "q": "I ___ (not drink) coffee this week because I can't sleep.",
+          "a": "'m not drinking"
+        },
+        {
+          "q": "What ___ you ___ (make)? It looks great!",
+          "a": "are … making",
+          "why": "make → making"
+        },
+        {
+          "q": "They ___ (get) married next June.",
+          "a": "are getting",
+          "why": "Plan organizado; get → getting"
+        },
+        {
+          "q": "He ___ (stop) the car.",
+          "a": "is stopping",
+          "why": "C-V-C: dobla la *p*"
+        }
+      ]
+    },
+    {
+      "id": "state-verbs",
+      "title": "Action and non-action verbs",
+      "title_es": "Verbos de acción y de estado",
+      "use": "Los **verbos de acción** (*cook, make, eat, play*) pueden ir en presente simple o continuo. Los **verbos de estado** (*non-action* o *state verbs*) describen sentimientos, opiniones, conocimientos, posesión o sentidos, y **normalmente no van en continuo**, aunque hablemos de ahora mismo.",
+      "tables": [
+        {
+          "title": "Verbos de estado más usados en B1",
+          "head": [
+            "Tipo",
+            "Verbos",
+            "Ejemplo"
+          ],
+          "rows": [
+            [
+              "Gustos y deseos",
+              "like, love, hate, prefer, want, need, wish",
+              "I **need** my keys now. (no *I'm needing*)"
+            ],
+            [
+              "Pensar y saber",
+              "know, believe, think (opinar), understand, remember, forget, mean, realize, recognize, suppose, imagine",
+              "I **don't believe** you cooked this yourself."
+            ],
+            [
+              "Opinión y acuerdo",
+              "agree, disagree, depend, matter, seem, appear",
+              "The bill **seems** very expensive."
+            ],
+            [
+              "Posesión",
+              "have (tener), own, belong, contain, include",
+              "This notebook **belongs** to me."
+            ],
+            [
+              "Sentidos",
+              "see, hear, smell, taste, sound, look (parecer), feel",
+              "This cake **tastes** wonderful."
+            ],
+            [
+              "Ser y medir",
+              "be, cost, weigh, fit",
+              "This dish **costs** 12 euros."
+            ]
+          ]
+        },
+        {
+          "title": "Excepciones: verbos con dos significados",
+          "head": [
+            "Verbo",
+            "Estado → simple",
+            "Acción → continuo"
+          ],
+          "rows": [
+            [
+              "have",
+              "I **have** a cat. (poseer)",
+              "I'**m having** lunch. (comer, tomar)"
+            ],
+            [
+              "think",
+              "I **think** this music's great. (opinar)",
+              "What **are** you **thinking** about? (pensar en)"
+            ],
+            [
+              "taste",
+              "The soup **tastes** salty. (saber a)",
+              "The chef **is tasting** the soup. (probar)"
+            ],
+            [
+              "smell",
+              "It **smells** delicious. (oler a)",
+              "Why **are** you **smelling** the milk? (olfatear)"
+            ],
+            [
+              "see",
+              "I **see** what you mean. (entender)",
+              "I'**m seeing** the doctor tomorrow. (quedar con)"
+            ],
+            [
+              "look",
+              "You **look** tired. (parecer)",
+              "What **are** you **looking** for? (buscar, mirar)"
+            ],
+            [
+              "be",
+              "He **is** silly. (cómo es)",
+              "He'**s being** silly today. (cómo se comporta ahora)"
+            ],
+            [
+              "feel",
+              "I **feel** that it's a mistake. (opinar)",
+              "How **are** you **feeling**? (encontrarse) — las dos formas valen"
+            ]
+          ]
+        }
+      ],
+      "examples": [
+        {
+          "en": "A: What are you looking for? B: My car keys. I need them now!",
+          "es": "A: ¿Qué buscas? B: Las llaves del coche. ¡Las necesito ya!",
+          "note": "*look for* es acción; *need* es estado."
+        },
+        {
+          "en": "I think the diet in my country is getting worse.",
+          "es": "Creo que la dieta en mi país está empeorando.",
+          "note": "*think* (opinar) en simple; *get worse* (cambio) en continuo."
+        },
+        {
+          "en": "Do we need to go shopping today?",
+          "es": "¿Tenemos que ir a comprar hoy?"
+        },
+        {
+          "en": "I used to hate olives, but now I love them.",
+          "es": "Antes odiaba las aceitunas, pero ahora me encantan."
+        }
+      ],
+      "exceptions": [
+        "*I'm loving it* (publicidad) o *I'm liking this* se oyen en inglés coloquial para dar énfasis, pero en el examen usa siempre **I love it**.",
+        "*want* y *need* van en simple incluso con *now* o *right now*: *Do you **want** anything to eat right now?*",
+        "Con *feel* (encontrarse) valen las dos: *I **feel** tired* = *I'**m feeling** tired*.",
+        "*depend*: *It **depends*** (no *It's depending*). Muy útil para dar opiniones."
+      ],
+      "tips": [
+        "Pregúntate: ¿es algo que **haces** (acción física, se puede ver) o algo que **sientes, sabes, opinas o tienes**? Lo primero puede ir en continuo; lo segundo, en simple.",
+        "Los verbos de los sentidos con adjetivo van en simple: *It **smells** good*, *You **look** great*, *It **sounds** interesting*."
+      ],
+      "mistakes": [
+        {
+          "wrong": "I'm not believing you.",
+          "right": "I don't believe you.",
+          "why": "*believe* es un verbo de estado."
+        },
+        {
+          "wrong": "Are you knowing how to cook fish?",
+          "right": "Do you know how to cook fish?",
+          "why": "*know* no va en continuo."
+        },
+        {
+          "wrong": "This soup is tasting delicious.",
+          "right": "This soup tastes delicious.",
+          "why": "*taste* = saber a (estado)."
+        },
+        {
+          "wrong": "I'm having two brothers.",
+          "right": "I have two brothers.",
+          "why": "*have* = tener (posesión) va en simple."
+        },
+        {
+          "wrong": "It's depending on the price.",
+          "right": "It depends on the price.",
+          "why": "*depend* es un verbo de estado."
+        }
+      ],
+      "practice": [
+        {
+          "q": "I ___ (not understand) this recipe.",
+          "a": "don't understand"
+        },
+        {
+          "q": "Can I call you later? I ___ (have) dinner right now.",
+          "a": "'m having",
+          "why": "*have* = comer: acción"
+        },
+        {
+          "q": "This milk ___ (smell) bad. Throw it away!",
+          "a": "smells",
+          "why": "*smell* + adjetivo: estado"
+        },
+        {
+          "q": "What ___ you ___ (think) about? You look worried.",
+          "a": "are … thinking",
+          "why": "*think about* = pensar en: acción"
+        },
+        {
+          "q": "I ___ (think) the restaurant is too expensive.",
+          "a": "think",
+          "why": "*think* = opinar: estado"
+        },
+        {
+          "q": "Kate ___ (not want) to have dinner now. She isn't hungry.",
+          "a": "doesn't want"
+        }
+      ]
+    },
+    {
+      "id": "adverbs-and-tenses",
+      "title": "Adverbs, state verbs and tenses",
+      "title_es": "Adverbios, verbos de estado y tiempos",
+      "use": "**Cómo decidir en dos pasos:** el **adverbio** te da la pista (hábito → simple; ahora o temporal → continuo), pero el **verbo** pesa más: si es un verbo de estado, va en presente simple aunque el adverbio pida continuo. **En resumen:** mira primero el verbo. Si es de estado, simple casi siempre. Si es de acción, decide el adverbio.",
+      "tables": [
+        {
+          "title": "Paso 1 · El adverbio te da la pista",
+          "head": [
+            "Si la frase lleva…",
+            "Normalmente usas…",
+            "Ejemplo"
+          ],
+          "rows": [
+            [
+              "always, usually, often, sometimes, never, every day, once a week",
+              "presente simple",
+              "I **usually cook** at home."
+            ],
+            [
+              "now, right now, at the moment, today, these days",
+              "presente continuo",
+              "I'**m cooking** right now."
+            ]
+          ]
+        },
+        {
+          "title": "Paso 2 · El verbo de estado puede cambiarlo",
+          "head": [
+            "Adverbio de «ahora» + verbo de acción",
+            "Adverbio de «ahora» + verbo de estado"
+          ],
+          "rows": [
+            [
+              "I'**m drinking** a coffee **now**.",
+              "I **want** a coffee **now**. (no *I'm wanting*)"
+            ],
+            [
+              "She'**s cooking** **at the moment**.",
+              "She **doesn't understand** the recipe **at the moment**."
+            ],
+            [
+              "We'**re eating** less meat **these days**.",
+              "We **don't have** much time **these days**."
+            ]
+          ],
+          "note": "Verbos de estado: *want, need, like, love, hate, prefer, know, understand, believe, remember, have* (tener), *seem, cost*…"
+        },
+        {
+          "title": "Paso 3 · Excepciones",
+          "head": [
+            "Caso",
+            "Ejemplo"
+          ],
+          "rows": [
+            [
+              "Verbos con dos significados: si se usan como **acción**, vuelven al continuo",
+              "I **have** a car. (tener) / I'**m having** lunch now. (comer)"
+            ],
+            [
+              "*always* + continuo no es hábito, es **queja**",
+              "He **always cooks**. (hábito) / He'**s always eating** my biscuits! (me molesta)"
+            ],
+            [
+              "Hábito con *these days*: con adverbio de frecuencia, simple",
+              "I **hardly ever cook** these days."
+            ]
+          ]
+        },
+        {
+          "title": "Qué tiempo suele pedir cada adverbio",
+          "head": [
+            "Adverbio o expresión",
+            "Tiempo",
+            "Ejemplo"
+          ],
+          "rows": [
+            [
+              "always, usually, often, sometimes, hardly ever, never",
+              "presente simple (hábito)",
+              "I **usually cook** at home."
+            ],
+            [
+              "every day, once a week, on Mondays",
+              "presente simple",
+              "We **eat out** once a week."
+            ],
+            [
+              "now, right now, at the moment",
+              "presente continuo",
+              "I'**m cooking** right now."
+            ],
+            [
+              "today, this week, these days, nowadays",
+              "presente continuo (temporal)",
+              "I'**m eating** less meat these days."
+            ],
+            [
+              "still",
+              "los dos",
+              "I **still live** with my parents. / I'**m still waiting**."
+            ],
+            [
+              "always (para quejarse)",
+              "presente continuo",
+              "You'**re always eating** my biscuits!"
+            ]
+          ],
+          "note": "Es una tendencia, no una regla fija: el verbo puede cambiarlo (ver el Paso 2)."
+        },
+        {
+          "title": "Dónde va el adverbio",
+          "head": [
+            "Estructura",
+            "Posición",
+            "Ejemplo"
+          ],
+          "rows": [
+            [
+              "Presente simple, verbo normal",
+              "**antes** del verbo",
+              "She **often** eats fish."
+            ],
+            [
+              "Presente simple de *be*",
+              "**después** de *be*",
+              "I'm **never** late."
+            ],
+            [
+              "Negativa en simple",
+              "entre *don't / doesn't* y el verbo",
+              "I don't **usually** drink coffee."
+            ],
+            [
+              "Pregunta en simple",
+              "después del sujeto",
+              "Do you **often** eat out?"
+            ],
+            [
+              "Presente continuo",
+              "después de *am / is / are*",
+              "I'm **still** waiting. She's **always** complaining."
+            ],
+            [
+              "Pregunta en continuo",
+              "después del sujeto",
+              "Are you **still** living in the same flat?"
+            ],
+            [
+              "*still* en negativa",
+              "**antes** del auxiliar negativo",
+              "I **still** don't understand. She **still** isn't ready."
+            ]
+          ],
+          "note": "Regla de bolsillo: *be* y los auxiliares van **delante** del adverbio; los demás verbos, **detrás**. La gran excepción es *still* en negativa."
+        },
+        {
+          "title": "Verbos de estado con «ahora»: siempre en simple",
+          "head": [
+            "Con…",
+            "✗ Incorrecto",
+            "✓ Correcto"
+          ],
+          "rows": [
+            [
+              "now",
+              "I'm wanting a coffee now.",
+              "I **want** a coffee now."
+            ],
+            [
+              "at the moment",
+              "We're needing more milk at the moment.",
+              "We **need** more milk at the moment."
+            ],
+            [
+              "right now",
+              "I'm not understanding it right now.",
+              "I **don't understand** it right now."
+            ],
+            [
+              "now",
+              "I'm knowing the answer now.",
+              "Now I **know** the answer."
+            ],
+            [
+              "these days",
+              "She's liking her new job these days.",
+              "She **likes** her new job these days."
+            ],
+            [
+              "at the moment",
+              "I'm not having much time at the moment.",
+              "I **don't have** much time at the moment."
+            ]
+          ],
+          "note": "Excepción: si el verbo se usa con significado de **acción** (*have* = comer, *think* = pensar en, *taste* = probar), sí va en continuo: *I'm having lunch right now.*"
+        }
+      ],
+      "keywords": [
+        "now",
+        "at the moment",
+        "these days",
+        "still",
+        "always",
+        "usually",
+        "never"
+      ],
+      "examples": [
+        {
+          "en": "I usually drink tea, but I'm drinking coffee today because I'm tired.",
+          "es": "Normalmente tomo té, pero hoy estoy tomando café porque estoy cansado.",
+          "note": "Hábito (simple) frente a hoy (continuo)."
+        },
+        {
+          "en": "I don't understand this recipe right now. Can you help me?",
+          "es": "Ahora mismo no entiendo esta receta. ¿Me ayudas?",
+          "note": "*understand* es de estado: simple aunque diga *right now*."
+        },
+        {
+          "en": "She's always complaining about the food!",
+          "es": "¡Siempre se está quejando de la comida!",
+          "note": "*always* + continuo = queja."
+        },
+        {
+          "en": "Are you still living in the same flat?",
+          "es": "¿Sigues viviendo en el mismo piso?"
+        },
+        {
+          "en": "We hardly ever eat out these days.",
+          "es": "Estos días casi nunca comemos fuera.",
+          "note": "Con un adverbio de frecuencia, *these days* también admite simple."
+        }
+      ],
+      "exceptions": [
+        "*still* va **antes** del auxiliar en las negativas (*I **still** don't know*), pero **después** de *be* y **antes** del verbo en las afirmativas (*I'm **still** here*, *I **still** love it*).",
+        "*always* + simple es un hábito neutro (*She **always loses** at cards*); *always* + continuo expresa queja o sorpresa (*She's **always losing** her keys!*).",
+        "*now* no obliga a usar continuo: *Now I **understand**!* (verbo de estado) o *I **live** in Granada now* (situación nueva y estable).",
+        "Con un adverbio de frecuencia, *these days* o *nowadays* pueden ir con simple: *I **hardly ever cook** these days.*"
+      ],
+      "tips": [
+        "Primero mira el **verbo** (¿estado o acción?) y después el **adverbio** (¿hábito o ahora?). Si el verbo es de estado, casi siempre va en presente simple."
+      ],
+      "mistakes": [
+        {
+          "wrong": "I'm wanting a coffee now.",
+          "right": "I want a coffee now.",
+          "why": "*want* es de estado, aunque diga *now*."
+        },
+        {
+          "wrong": "I'm still not understanding.",
+          "right": "I still don't understand.",
+          "why": "*understand* es de estado y *still* va antes del auxiliar negativo."
+        },
+        {
+          "wrong": "She always is complaining.",
+          "right": "She's always complaining.",
+          "why": "El adverbio va después de *be*."
+        },
+        {
+          "wrong": "I don't understand still.",
+          "right": "I still don't understand.",
+          "why": "*still* no va al final en las negativas."
+        },
+        {
+          "wrong": "Do you eat often out?",
+          "right": "Do you often eat out?",
+          "why": "El adverbio va antes del verbo principal."
+        }
+      ],
+      "practice": [
+        {
+          "q": "I ___ (still / wait) for my food. It's been 40 minutes!",
+          "a": "'m still waiting"
+        },
+        {
+          "q": "We ___ (need) more bread right now.",
+          "a": "need",
+          "why": "*need* es de estado."
+        },
+        {
+          "q": "He ___ (always / leave) the kitchen in a mess!",
+          "a": "'s always leaving",
+          "why": "Queja."
+        },
+        {
+          "q": "I ___ (still / not understand) the menu.",
+          "a": "still don't understand"
+        },
+        {
+          "q": "She ___ (never / be) hungry in the morning.",
+          "a": "is never"
+        },
+        {
+          "q": "___ you ___ (often / cook) at the weekend?",
+          "a": "Do … often cook"
+        },
+        {
+          "q": "I ___ (have) a shower right now. Can I call you back?",
+          "a": "'m having",
+          "why": "*have* = acción."
+        },
+        {
+          "q": "These days I ___ (not / have) much time to cook.",
+          "a": "don't have",
+          "why": "*have* = tener (estado)."
+        }
+      ]
+    },
+    {
+      "id": "simple-or-continuous",
+      "title": "Simple or continuous?",
+      "title_es": "¿Simple o continuo? Resumen y preguntas",
+      "use": "Resumen para decidir rápido, y modelos de preguntas: **On a typical day** (costumbres → simple) y **At the moment / Nowadays** (ahora → continuo, salvo verbos de estado).",
+      "tables": [
+        {
+          "title": "Comparación rápida",
+          "head": [
+            "",
+            "Present simple",
+            "Present continuous"
+          ],
+          "rows": [
+            [
+              "¿Qué expresa?",
+              "hábitos, rutinas, verdades, gustos",
+              "ahora, temporal, cambios, planes"
+            ],
+            [
+              "Marcadores",
+              "always, usually, every day, once a week",
+              "now, at the moment, today, these days"
+            ],
+            [
+              "Ejemplo",
+              "I **work** in an office.",
+              "I'**m working** from home this week."
+            ],
+            [
+              "Verbos de estado",
+              "✓ *I know, I want, I like*",
+              "✗ (salvo excepciones)"
+            ]
+          ]
+        },
+        {
+          "title": "Preguntas para practicar con un compañero",
+          "head": [
+            "On a typical day (simple)",
+            "At the moment / Nowadays (continuo)"
+          ],
+          "rows": [
+            [
+              "What do you usually have for breakfast?",
+              "Are you taking any vitamins at the moment?"
+            ],
+            [
+              "How many glasses of water do you drink a day?",
+              "Are you trying to cut down on anything?"
+            ],
+            [
+              "Where do you normally have lunch?",
+              "Is the diet in your country getting better or worse?"
+            ],
+            [
+              "Do you ever cook? What do you make?",
+              "Do you need to buy any food today? (*need* = estado)"
+            ],
+            [
+              "Do you prefer eating at home or eating out?",
+              "Do you want anything to eat right now? (*want* = estado)"
+            ]
+          ]
+        }
+      ],
+      "examples": [
+        {
+          "en": "What do you usually have for breakfast? — I usually have toast and coffee.",
+          "es": "¿Qué sueles desayunar? — Normalmente tostadas y café."
+        },
+        {
+          "en": "Are you trying to cut down on anything at the moment? — Yes, I'm cutting down on sugar.",
+          "es": "¿Estás intentando reducir algo ahora? — Sí, estoy tomando menos azúcar."
+        },
+        {
+          "en": "I normally work in an office, but I'm working from home this week.",
+          "es": "Normalmente trabajo en una oficina, pero esta semana trabajo desde casa."
+        }
+      ],
+      "practice": [
+        {
+          "q": "Come on, let's order. The waiter ___ (come).",
+          "a": "is coming"
+        },
+        {
+          "q": "We ___ (order) takeaway pizzas once a week.",
+          "a": "order"
+        },
+        {
+          "q": "How often ___ you ___ (have) seafood?",
+          "a": "do … have"
+        },
+        {
+          "q": "I ___ (not usually / cook) red meat.",
+          "a": "don't usually cook",
+          "why": "El adverbio va entre el auxiliar y el verbo."
+        },
+        {
+          "q": "You look sad. What ___ you ___ (think) about?",
+          "a": "are … thinking"
+        },
+        {
+          "q": "The head chef is ill, so he ___ (not work) today.",
+          "a": "isn't working",
+          "why": "Temporal: hoy."
+        }
+      ],
+      "tips": [
+        "**Regla de dos pasos:** primero mira el verbo (si es de estado → simple); si es de acción, decide el adverbio (hábito → simple; ahora o temporal → continuo)."
+      ]
+    }
+  ]
+}

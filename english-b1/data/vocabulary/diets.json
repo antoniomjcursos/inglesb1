@@ -1,0 +1,94 @@
+{
+  "id": "diets",
+  "type": "vocabulary",
+  "level": "B1",
+  "title": "Diets",
+  "title_es": "Dietas",
+  "icon": "leafy-green",
+  "description": "Tipos de dieta y palabras para hablar de lo que comemos.",
+  "sections": [
+    {
+      "id": "diets",
+      "title": "Types of diet",
+      "title_es": "Tipos de dieta",
+      "items": [
+        {
+          "en": "vegetarian",
+          "ipa": "ˌvedʒ.əˈteə.ri.ən",
+          "pron": "veyaTÉArian",
+          "es": "vegetariano/a",
+          "icon": "leafy-green",
+          "note": "No come carne ni pescado."
+        },
+        {
+          "en": "vegan",
+          "ipa": "ˈviː.ɡən",
+          "pron": "VÍIgan",
+          "es": "vegano/a",
+          "icon": "seedling",
+          "note": "No come nada de origen animal: ni huevos ni lácteos (*dairy*).",
+          "example": "She's vegan, so she doesn't eat eggs or dairy.",
+          "example_es": "Es vegana, así que no come huevos ni lácteos."
+        },
+        {
+          "en": "pescatarian",
+          "ipa": "ˌpes.kəˈteə.ri.ən",
+          "pron": "peskaTÉArian",
+          "es": "pescetariano/a",
+          "icon": "fish",
+          "note": "No come carne, pero sí pescado."
+        },
+        {
+          "en": "flexitarian",
+          "ipa": "ˌflek.sɪˈteə.ri.ən",
+          "pron": "fleksiTÉArian",
+          "es": "flexitariano/a",
+          "icon": "green-salad",
+          "note": "Dieta basada en plantas que a veces (*occasionally*) incluye carne."
+        },
+        {
+          "en": "ovo-lacto vegetarian",
+          "ipa": "ˌəʊ.vəʊˈlæk.təʊ ˌvedʒ.əˈteə.ri.ən",
+          "pron": "ouvou-LÁKtou veyaTÉArian",
+          "es": "ovolactovegetariano/a",
+          "icon": "egg",
+          "note": "Sin carne ni pescado, pero sí huevos y lácteos."
+        },
+        {
+          "en": "plant-based",
+          "ipa": "ˌplɑːntˈbeɪst",
+          "pron": "plaant-BÉIST",
+          "es": "vegetal, basado en plantas",
+          "icon": "potted-plant",
+          "note": "*a plant-based diet*."
+        },
+        {
+          "en": "dairy",
+          "ipa": "ˈdeə.ri",
+          "pron": "DÉAri",
+          "es": "lácteos",
+          "icon": "glass-of-milk",
+          "note": "*dairy products*. No lo confundas con *diary* /ˈdaɪə.ri/ «DÁIari» (diario).",
+          "example": "I've cut out all dairy products.",
+          "example_es": "He dejado todos los lácteos."
+        },
+        {
+          "en": "poultry",
+          "ipa": "ˈpəʊl.tri",
+          "pron": "PÓULtri",
+          "es": "aves de corral",
+          "icon": "chicken",
+          "note": "Pollo, pavo, pato…"
+        },
+        {
+          "en": "lactose",
+          "ipa": "ˈlæk.təʊs",
+          "pron": "LÁKtous",
+          "es": "lactosa",
+          "icon": "baby-bottle",
+          "note": "*lactose intolerant* = intolerante a la lactosa."
+        }
+      ]
+    }
+  ]
+}

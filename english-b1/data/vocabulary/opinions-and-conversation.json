@@ -1,0 +1,209 @@
+{
+  "id": "opinions-and-conversation",
+  "type": "vocabulary",
+  "level": "B1",
+  "title": "Opinions and conversation",
+  "title_es": "Opiniones y conversación",
+  "icon": "speaking-head",
+  "description": "Pedir y dar opiniones, estar de acuerdo o no, y salir de momentos incómodos al hablar.",
+  "sections": [
+    {
+      "id": "asking",
+      "title": "Asking for opinions",
+      "title_es": "Pedir opinión",
+      "items": [
+        {
+          "en": "What do you think?",
+          "ipa": "ˌwɒt də juː ˈθɪŋk",
+          "pron": "uot da yu ZINK",
+          "es": "¿Qué opinas?",
+          "icon": "thinking-face"
+        },
+        {
+          "en": "What's your opinion?",
+          "ipa": "ˌwɒts jər əˈpɪn.jən",
+          "pron": "uots yor aPÍnian",
+          "es": "¿Cuál es tu opinión?",
+          "icon": "speech-balloon"
+        },
+        {
+          "en": "What do you reckon?",
+          "ipa": "ˌwɒt də juː ˈrek.ən",
+          "pron": "uot da yu RÉkan",
+          "es": "¿Tú qué crees?",
+          "icon": "face-with-monocle",
+          "note": "Muy coloquial, típico de Reino Unido."
+        },
+        {
+          "en": "What's your take on…?",
+          "ipa": "ˌwɒts jər ˈteɪk ɒn",
+          "pron": "uots yor TÉIK on",
+          "es": "¿Cuál es tu punto de vista sobre…?",
+          "icon": "person-tipping-hand"
+        },
+        {
+          "en": "Do you agree (with me)?",
+          "ipa": "duː juː əˈɡriː",
+          "pron": "du yu aGRÍI",
+          "es": "¿Estás de acuerdo (conmigo)?",
+          "icon": "handshake",
+          "note": "Respuestas cortas: *Yes, I do.* / *No, I don't.*"
+        }
+      ]
+    },
+    {
+      "id": "giving",
+      "title": "Giving opinions",
+      "title_es": "Dar tu opinión",
+      "items": [
+        {
+          "en": "In my opinion, …",
+          "ipa": "ɪn maɪ əˈpɪn.jən",
+          "pron": "in mai aPÍnian",
+          "es": "En mi opinión, …",
+          "icon": "speaking-head"
+        },
+        {
+          "en": "I think / I don't think …",
+          "ipa": "aɪ ˈθɪŋk",
+          "pron": "ai ZINK",
+          "es": "Creo que / No creo que …",
+          "icon": "light-bulb",
+          "note": "Se dice *I don't think it's good*, no *I think it isn't good*."
+        },
+        {
+          "en": "As far as I'm concerned, …",
+          "ipa": "əz ˌfɑːr əz aɪm kənˈsɜːnd",
+          "pron": "az faar az aim kanSÉRND",
+          "es": "Por lo que a mí respecta, …",
+          "icon": "person-raising-hand"
+        },
+        {
+          "en": "It depends.",
+          "ipa": "ɪt dɪˈpendz",
+          "pron": "it diPÉNDZZ",
+          "es": "Depende.",
+          "icon": "balance-scale",
+          "note": "*It depends on the price* = depende del precio. ¡Nunca *It's depending*!"
+        }
+      ]
+    },
+    {
+      "id": "agreeing",
+      "title": "Agreeing and disagreeing",
+      "title_es": "Estar o no de acuerdo",
+      "items": [
+        {
+          "en": "Absolutely!",
+          "ipa": "ˌæb.səˈluːt.li",
+          "pron": "absaLÚUTli",
+          "es": "¡Totalmente! ¡Por supuesto!",
+          "icon": "check-mark-button"
+        },
+        {
+          "en": "I fully agree with you.",
+          "ipa": "aɪ ˌfʊl.i əˈɡriː wɪð juː",
+          "pron": "ai fúli aGRÍI uid yu",
+          "es": "Estoy totalmente de acuerdo contigo.",
+          "icon": "people-hugging",
+          "note": "¡Ojo! *agree* es un verbo: *I agree*, nunca *I am agree*."
+        },
+        {
+          "en": "We're on the same page.",
+          "ipa": "wɪər ɒn ðə ˌseɪm ˈpeɪdʒ",
+          "pron": "uía on da seim PÉICH",
+          "es": "Pensamos lo mismo.",
+          "icon": "open-book"
+        },
+        {
+          "en": "I'm not sure about that.",
+          "ipa": "aɪm ˌnɒt ˈʃɔːr əˌbaʊt ðæt",
+          "pron": "aim not SHOOR abaut dat",
+          "es": "No lo tengo tan claro.",
+          "icon": "face-with-raised-eyebrow",
+          "note": "Forma educada de no estar de acuerdo."
+        },
+        {
+          "en": "I don't really agree with you.",
+          "ipa": "aɪ ˌdəʊnt ˈrɪə.li əˈɡriː",
+          "pron": "ai dount RÍali aGRÍI",
+          "es": "No estoy muy de acuerdo contigo.",
+          "icon": "person-gesturing-no",
+          "note": "Más suave que *I disagree*."
+        },
+        {
+          "en": "I disagree with you.",
+          "ipa": "aɪ ˌdɪs.əˈɡriː wɪð juː",
+          "pron": "ai disaGRÍI uid yu",
+          "es": "No estoy de acuerdo contigo.",
+          "icon": "thumbs-down"
+        }
+      ]
+    },
+    {
+      "id": "awkward",
+      "title": "Awkward moments",
+      "title_es": "Momentos incómodos",
+      "items": [
+        {
+          "en": "Hold on.",
+          "ipa": "ˌhəʊld ˈɒn",
+          "pron": "jould ON",
+          "es": "Espera, un momento.",
+          "icon": "raised-hand",
+          "note": "Para pedir que alguien pare de hablar un momento."
+        },
+        {
+          "en": "Hold your horses!",
+          "ipa": "ˌhəʊld jə ˈhɔː.sɪz",
+          "pron": "jould ya JÓOsizz",
+          "es": "¡Para el carro!",
+          "icon": "horse"
+        },
+        {
+          "en": "Ah, you mean…",
+          "ipa": "ɑː juː ˈmiːn",
+          "pron": "aa yu MÍIN",
+          "es": "Ah, quieres decir…",
+          "icon": "face-with-open-mouth",
+          "note": "Para comprobar que has entendido."
+        },
+        {
+          "en": "Sorry, let me rephrase that.",
+          "ipa": "ˌsɒr.i let miː ˌriːˈfreɪz ðæt",
+          "pron": "SÓri let mi riFRÉIZZ dat",
+          "es": "Perdona, déjame decirlo de otra forma.",
+          "icon": "counterclockwise-arrows-button"
+        },
+        {
+          "en": "Let me think.",
+          "ipa": "let miː ˈθɪŋk",
+          "pron": "let mi ZINK",
+          "es": "Déjame pensar.",
+          "icon": "hourglass-not-done"
+        },
+        {
+          "en": "My mind has gone blank.",
+          "ipa": "maɪ ˈmaɪnd həz ɡɒn ˈblæŋk",
+          "pron": "mai maind jaz gon BLANK",
+          "es": "Me he quedado en blanco.",
+          "icon": "face-in-clouds"
+        },
+        {
+          "en": "I've dried up.",
+          "ipa": "aɪv ˌdraɪd ˈʌp",
+          "pron": "aiv draid AP",
+          "es": "Me he quedado sin palabras.",
+          "icon": "face-exhaling"
+        },
+        {
+          "en": "Let's move on.",
+          "ipa": "lets ˌmuːv ˈɒn",
+          "pron": "lets muuv ON",
+          "es": "Sigamos; cambiemos de tema.",
+          "icon": "next-track-button"
+        }
+      ]
+    }
+  ]
+}

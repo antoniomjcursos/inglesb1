@@ -1,0 +1,428 @@
+{
+  "id": "flavours-and-drinks",
+  "type": "vocabulary",
+  "level": "B1",
+  "title": "Flavours, drinks and the kitchen",
+  "title_es": "Sabores, bebidas y cocina",
+  "icon": "drooling-face",
+  "description": "Cómo describir el sabor, más alimentos, bebidas y verbos de cocina.",
+  "sections": [
+    {
+      "id": "flavours",
+      "title": "Describing flavour",
+      "title_es": "Sabores",
+      "items": [
+        {
+          "en": "sweet",
+          "ipa": "swiːt",
+          "pron": "suíit",
+          "es": "dulce",
+          "icon": "lollipop",
+          "note": "*sweets* = caramelos, golosinas."
+        },
+        {
+          "en": "sour",
+          "ipa": "ˈsaʊ.ə",
+          "pron": "SÁUa",
+          "es": "agrio, ácido",
+          "icon": "lemon"
+        },
+        {
+          "en": "savoury",
+          "ipa": "ˈseɪ.vər.i",
+          "pron": "SÉIvari",
+          "es": "salado (lo contrario de dulce)",
+          "icon": "pretzel",
+          "note": "Para comida que no es dulce: *savoury snacks*. EE. UU.: *savory*."
+        },
+        {
+          "en": "salty",
+          "ipa": "ˈsɔːl.ti",
+          "pron": "SÓLti",
+          "es": "salado (con mucha sal)",
+          "icon": "salt",
+          "example": "This soup is too salty.",
+          "example_es": "Esta sopa está demasiado salada."
+        },
+        {
+          "en": "bitter",
+          "ipa": "ˈbɪt.ə",
+          "pron": "BÍta",
+          "es": "amargo",
+          "icon": "hot-beverage",
+          "example": "Black coffee is bitter.",
+          "example_es": "El café solo es amargo."
+        },
+        {
+          "en": "hot",
+          "ipa": "hɒt",
+          "pron": "jot",
+          "es": "caliente; picante",
+          "icon": "thermometer",
+          "note": "*hot* es caliente o picante; *spicy* solo es picante: *hot wings*, *spicy peppers*."
+        },
+        {
+          "en": "tasty",
+          "ipa": "ˈteɪ.sti",
+          "pron": "TÉIsti",
+          "es": "sabroso, rico",
+          "icon": "drooling-face"
+        },
+        {
+          "en": "plain",
+          "ipa": "pleɪn",
+          "pron": "pléin",
+          "es": "natural, sin nada añadido",
+          "icon": "x-yoghurt",
+          "note": "*plain / natural yoghurt* = yogur natural."
+        },
+        {
+          "en": "smoked",
+          "ipa": "sməʊkt",
+          "pron": "smóukt",
+          "es": "ahumado",
+          "icon": "fog",
+          "note": "*smoked salmon* = salmón ahumado."
+        },
+        {
+          "en": "rotten",
+          "ipa": "ˈrɒt.ən",
+          "pron": "RÓten",
+          "es": "podrido",
+          "icon": "face-vomiting",
+          "note": "Lo contrario de *fresh*."
+        },
+        {
+          "en": "expired",
+          "ipa": "ɪkˈspaɪəd",
+          "pron": "ikSPÁIad",
+          "es": "caducado",
+          "icon": "spiral-calendar",
+          "note": "Pasado de fecha. *go bad* = estropearse, ponerse malo."
+        },
+        {
+          "en": "home-made",
+          "ipa": "ˌhəʊmˈmeɪd",
+          "pron": "joum-MÉID",
+          "es": "casero",
+          "icon": "house",
+          "note": "*home-made food* = comida casera."
+        },
+        {
+          "en": "junk food",
+          "ipa": "ˈdʒʌŋk ˌfuːd",
+          "pron": "YÁNK fuud",
+          "es": "comida basura",
+          "icon": "hot-dog"
+        },
+        {
+          "en": "fast food",
+          "ipa": "ˌfɑːst ˈfuːd",
+          "pron": "faast FÚUD",
+          "es": "comida rápida",
+          "icon": "pizza"
+        }
+      ]
+    },
+    {
+      "id": "more-food",
+      "title": "More food",
+      "title_es": "Más alimentos",
+      "items": [
+        {
+          "en": "ham",
+          "ipa": "hæm",
+          "pron": "jam",
+          "es": "jamón",
+          "icon": "pig-face"
+        },
+        {
+          "en": "cod",
+          "ipa": "kɒd",
+          "pron": "kod",
+          "es": "bacalao",
+          "icon": "x-cod"
+        },
+        {
+          "en": "sardine",
+          "ipa": "sɑːˈdiːn",
+          "pron": "saaDÍIN",
+          "es": "sardina",
+          "icon": "x-sardine"
+        },
+        {
+          "en": "seafood",
+          "ipa": "ˈsiː.fuːd",
+          "pron": "SÍIfuud",
+          "es": "marisco",
+          "icon": "spiral-shell"
+        },
+        {
+          "en": "chicken wings",
+          "ipa": "ˈtʃɪk.ɪn ˌwɪŋz",
+          "pron": "CHÍkin uingzz",
+          "es": "alitas de pollo",
+          "icon": "poultry-leg"
+        },
+        {
+          "en": "tripe",
+          "ipa": "traɪp",
+          "pron": "tráip",
+          "es": "callos",
+          "example": "Have you ever eaten tripe?",
+          "example_es": "¿Has comido callos alguna vez?"
+        },
+        {
+          "en": "spices",
+          "ipa": "ˈspaɪ.sɪz",
+          "pron": "SPÁIsizz",
+          "es": "especias",
+          "icon": "herb"
+        },
+        {
+          "en": "peppers",
+          "ipa": "ˈpep.əz",
+          "pron": "PÉpazz",
+          "es": "pimientos",
+          "icon": "bell-pepper",
+          "note": "*pepper* (sin «s») también es la pimienta."
+        },
+        {
+          "en": "yoghurt",
+          "ipa": "ˈjɒɡ.ət",
+          "pron": "YÓgat",
+          "es": "yogur",
+          "icon": "x-yoghurt",
+          "note": "EE. UU.: /ˈjoʊ.ɡɚt/ «YÓUgurt»."
+        },
+        {
+          "en": "ice cream",
+          "ipa": "ˌaɪs ˈkriːm",
+          "pron": "ais KRÍIM",
+          "es": "helado",
+          "icon": "ice-cream"
+        },
+        {
+          "en": "chocolate bar",
+          "ipa": "ˈtʃɒk.lət ˌbɑː",
+          "pron": "CHÓKlat baa",
+          "es": "barrita de chocolate",
+          "icon": "chocolate-bar",
+          "note": "*chocolate* tiene solo dos sílabas: «CHÓK-lat»."
+        },
+        {
+          "en": "dessert",
+          "ipa": "dɪˈzɜːt",
+          "pron": "diZZÉET",
+          "es": "postre",
+          "icon": "custard",
+          "note": "¡Ojo! *desert* /ˈdez.ət/ «DÉzzat» = desierto.",
+          "example": "Are you going to eat dessert?",
+          "example_es": "¿Vas a tomar postre?"
+        },
+        {
+          "en": "dish",
+          "ipa": "dɪʃ",
+          "pron": "dish",
+          "es": "plato (de comida)",
+          "icon": "curry-rice",
+          "example": "It's a dish of fried fish.",
+          "example_es": "Es un plato de pescado frito."
+        },
+        {
+          "en": "snack",
+          "ipa": "snæk",
+          "pron": "snak",
+          "es": "tentempié, algo para picar",
+          "icon": "popcorn"
+        },
+        {
+          "en": "ice cubes",
+          "ipa": "ˈaɪs ˌkjuːbz",
+          "pron": "ÁIS kiuubzz",
+          "es": "cubitos de hielo",
+          "icon": "ice"
+        }
+      ]
+    },
+    {
+      "id": "drinks",
+      "title": "Drinks",
+      "title_es": "Bebidas",
+      "items": [
+        {
+          "en": "sparkling water",
+          "ipa": "ˈspɑː.klɪŋ ˌwɔː.tə",
+          "pron": "SPÁAkling uoota",
+          "es": "agua con gas",
+          "icon": "bubbles",
+          "note": "También *fizzy water*."
+        },
+        {
+          "en": "still water",
+          "ipa": "ˈstɪl ˌwɔː.tə",
+          "pron": "STIL uoota",
+          "es": "agua sin gas",
+          "icon": "potable-water"
+        },
+        {
+          "en": "tap water",
+          "ipa": "ˈtæp ˌwɔː.tə",
+          "pron": "TAP uoota",
+          "es": "agua del grifo",
+          "icon": "droplet"
+        },
+        {
+          "en": "orange juice",
+          "ipa": "ˈɒr.ɪndʒ ˌdʒuːs",
+          "pron": "Órinch yuus",
+          "es": "zumo de naranja",
+          "icon": "beverage-box"
+        },
+        {
+          "en": "soft drink",
+          "ipa": "ˈsɒft ˌdrɪŋk",
+          "pron": "SOFT drink",
+          "es": "refresco",
+          "icon": "cup-with-straw",
+          "note": "En EE. UU. se dice mucho *soda* /ˈsəʊ.də/ «SÓUda»."
+        },
+        {
+          "en": "coke",
+          "ipa": "kəʊk",
+          "pron": "kóuk",
+          "es": "cola (refresco)",
+          "icon": "x-can"
+        },
+        {
+          "en": "tin / can",
+          "ipa": "tɪn / kæn",
+          "pron": "tin / kan",
+          "es": "lata",
+          "icon": "canned-food",
+          "note": "*a tin / a can of coke* = una lata de cola. *tinned* = *canned* = enlatado."
+        },
+        {
+          "en": "energy drink",
+          "ipa": "ˈen.ə.dʒi ˌdrɪŋk",
+          "pron": "Énayi drink",
+          "es": "bebida energética",
+          "icon": "high-voltage",
+          "example": "Teenagers should cut down on energy drinks.",
+          "example_es": "Los adolescentes deberían tomar menos bebidas energéticas."
+        },
+        {
+          "en": "wine",
+          "ipa": "waɪn",
+          "pron": "uáin",
+          "es": "vino",
+          "icon": "wine-glass",
+          "note": "*red / white wine* = vino tinto / blanco."
+        },
+        {
+          "en": "beer",
+          "ipa": "bɪə",
+          "pron": "bía",
+          "es": "cerveza",
+          "icon": "beer-mug"
+        }
+      ]
+    },
+    {
+      "id": "kitchen-verbs",
+      "title": "In the kitchen",
+      "title_es": "En la cocina",
+      "items": [
+        {
+          "en": "taste",
+          "ipa": "teɪst",
+          "pron": "téist",
+          "es": "probar; saber (a)",
+          "icon": "tongue",
+          "note": "También es el sabor (nombre).",
+          "example": "It tastes nice.",
+          "example_es": "Sabe bien."
+        },
+        {
+          "en": "heat (up)",
+          "ipa": "hiːt",
+          "pron": "jíit",
+          "es": "calentar",
+          "icon": "fire",
+          "example": "Heat up the soup.",
+          "example_es": "Calienta la sopa."
+        },
+        {
+          "en": "chill",
+          "ipa": "tʃɪl",
+          "pron": "chil",
+          "es": "enfriar",
+          "icon": "snowflake"
+        },
+        {
+          "en": "go bad",
+          "ipa": "ɡəʊ ˈbæd",
+          "pron": "gou BAD",
+          "es": "estropearse, ponerse malo",
+          "icon": "hourglass-done",
+          "example": "The milk has gone bad.",
+          "example_es": "La leche se ha puesto mala."
+        },
+        {
+          "en": "cook",
+          "ipa": "kʊk",
+          "pron": "kuk",
+          "es": "cocinar; cocinero/a",
+          "icon": "cook",
+          "note": "Un *cook* es cualquiera que cocina; un *chef* es el profesional. ¡*cooker* es la cocina (el aparato), no el cocinero!"
+        },
+        {
+          "en": "chef",
+          "ipa": "ʃef",
+          "pron": "shef",
+          "es": "chef, jefe de cocina",
+          "icon": "woman-cook"
+        },
+        {
+          "en": "make dinner",
+          "ipa": "ˌmeɪk ˈdɪn.ə",
+          "pron": "meik DÍna",
+          "es": "preparar la cena",
+          "icon": "fork-and-knife-with-plate",
+          "note": "También *make breakfast*, *make lunch*, *make a snack*."
+        },
+        {
+          "en": "set the table",
+          "ipa": "ˌset ðə ˈteɪ.bəl",
+          "pron": "set da TÉIbel",
+          "es": "poner la mesa",
+          "icon": "fork-and-knife",
+          "note": "La «th» de *the* es una «d» muy suave, como en «nada»."
+        },
+        {
+          "en": "recipe",
+          "ipa": "ˈres.ɪ.pi",
+          "pron": "RÉsipi",
+          "es": "receta",
+          "icon": "page-facing-up",
+          "note": "Tiene tres sílabas: «RÉ-si-pi»."
+        },
+        {
+          "en": "apron",
+          "ipa": "ˈeɪ.prən",
+          "pron": "ÉIpran",
+          "es": "delantal",
+          "icon": "x-apron"
+        },
+        {
+          "en": "oven",
+          "ipa": "ˈʌv.ən",
+          "pron": "Áven",
+          "es": "horno",
+          "icon": "x-oven",
+          "note": "En el horno: *roast* para carne y pescado; *bake* para pan, verduras y pasteles (*pies*)."
+        }
+      ]
+    }
+  ]
+}
