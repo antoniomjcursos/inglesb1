@@ -4,10 +4,8 @@
   "level": "B1",
   "title": "Useful expressions",
   "title_es": "Expresiones útiles",
+  "icon": "speech-balloon",
   "description": "Modismos y frases hechas que salen en clase.",
-  "sources": {
-    "cuaderno": "Apuntes de clase (cuaderno)"
-  },
   "sections": [
     {
       "id": "idioms",
@@ -19,17 +17,15 @@
           "ipa": "ɪts ə ˌpiːs əv ˈkeɪk",
           "pron": "its a piis av KÉIK",
           "es": "Es pan comido, es facilísimo.",
-          "icon": "shortcake",
-          "source": "cuaderno"
+          "icon": "shortcake"
         },
         {
           "en": "easy peasy",
           "ipa": "ˌiː.zi ˈpiː.zi",
           "pron": "iizzi PÍIzzi",
           "es": "chupado, facilísimo",
-          "icon": "thumbs-up",
-          "note": "Muy informal.",
-          "source": "cuaderno"
+          "icon": "ok-hand",
+          "note": "Muy informal."
         },
         {
           "en": "go bananas",
@@ -38,8 +34,7 @@
           "es": "volverse loco, ponerse como loco",
           "icon": "banana",
           "example": "My dad went bananas when he saw the bill.",
-          "example_es": "Mi padre se puso como loco al ver la cuenta.",
-          "source": "cuaderno"
+          "example_es": "Mi padre se puso como loco al ver la cuenta."
         }
       ]
     },
@@ -53,16 +48,14 @@
           "ipa": "ɪts ˌʌp tə ˈjuː",
           "pron": "its ap ta YÚU",
           "es": "Como tú quieras, tú decides.",
-          "icon": "person-shrugging",
-          "source": "cuaderno"
+          "icon": "person-shrugging"
         },
         {
           "en": "I don't mind.",
           "ipa": "aɪ ˌdəʊnt ˈmaɪnd",
           "pron": "ai dount MÁIND",
           "es": "No me importa, me da igual.",
-          "icon": "open-hands",
-          "source": "cuaderno"
+          "icon": "open-hands"
         },
         {
           "en": "I can't stand…",
@@ -72,32 +65,21 @@
           "icon": "face-with-rolling-eyes",
           "note": "Va seguido de un nombre o de *-ing*.",
           "example": "I really can't stand cooking.",
-          "example_es": "No soporto cocinar.",
-          "source": "cuaderno"
-        },
-        {
-          "en": "Hold on.",
-          "ipa": "ˌhəʊld ˈɒn",
-          "pron": "jould ON",
-          "es": "Espera, un momento.",
-          "icon": "raised-hand",
-          "source": "cuaderno"
+          "example_es": "No soporto cocinar."
         },
         {
           "en": "So far so good.",
           "ipa": "ˌsəʊ ˈfɑː ˌsəʊ ˈɡʊd",
           "pron": "sou faa sou GUD",
           "es": "Por ahora, bien.",
-          "icon": "thumbs-up",
-          "source": "cuaderno"
+          "icon": "check-mark-button"
         },
         {
           "en": "Nice to meet you. — You too.",
           "ipa": "ˌnaɪs tə ˈmiːt juː — ˈjuː tuː",
           "pron": "nais ta MÍIT yu — YU tuu",
           "es": "Encantado/a. — Igualmente.",
-          "icon": "handshake",
-          "source": "cuaderno"
+          "icon": "handshake"
         },
         {
           "en": "I'm 19 (years old).",
@@ -105,8 +87,15 @@
           "pron": "aim nainTÍIN",
           "es": "Tengo 19 años.",
           "icon": "birthday-cake",
-          "note": "¡Nunca *I have 19 years*! La edad va con *be*.",
-          "source": "cuaderno"
+          "note": "¡Nunca *I have 19 years*! La edad va con *be*."
+        },
+        {
+          "en": "seven out of ten",
+          "ipa": "ˌsev.ən ˌaʊt əv ˈten",
+          "pron": "sevan aut av TEN",
+          "es": "siete de cada diez",
+          "icon": "keycap-10",
+          "note": "*nine out of ten people* = nueve de cada diez personas."
         }
       ]
     }

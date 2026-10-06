@@ -4,10 +4,8 @@
   "level": "B1",
   "title": "Tenses review",
   "title_es": "Repaso de tiempos verbales",
+  "icon": "hourglass-not-done",
   "description": "Present perfect simple y continuous, going to y past simple.",
-  "sources": {
-    "cuaderno": "Apuntes de clase (cuaderno)"
-  },
   "sections": [
     {
       "id": "present-perfect-simple",
@@ -59,7 +57,308 @@
           "why": "Si dices **cuándo** (*yesterday, last week, in 2020*), usa el past simple."
         }
       ],
-      "source": "cuaderno"
+      "tables": [
+        {
+          "title": "Participios irregulares más usados en B1",
+          "head": [
+            "Infinitivo",
+            "Pasado",
+            "Participio",
+            "Español"
+          ],
+          "rows": [
+            [
+              "be",
+              "was / were",
+              "been",
+              "ser, estar"
+            ],
+            [
+              "have",
+              "had",
+              "had",
+              "tener, tomar"
+            ],
+            [
+              "do",
+              "did",
+              "done",
+              "hacer"
+            ],
+            [
+              "make",
+              "made",
+              "made",
+              "hacer, preparar"
+            ],
+            [
+              "eat",
+              "ate",
+              "eaten",
+              "comer"
+            ],
+            [
+              "drink",
+              "drank",
+              "drunk",
+              "beber"
+            ],
+            [
+              "go",
+              "went",
+              "gone / been",
+              "ir"
+            ],
+            [
+              "see",
+              "saw",
+              "seen",
+              "ver"
+            ],
+            [
+              "buy",
+              "bought",
+              "bought",
+              "comprar"
+            ],
+            [
+              "bring",
+              "brought",
+              "brought",
+              "traer"
+            ],
+            [
+              "think",
+              "thought",
+              "thought",
+              "pensar"
+            ],
+            [
+              "teach",
+              "taught",
+              "taught",
+              "enseñar"
+            ],
+            [
+              "catch",
+              "caught",
+              "caught",
+              "coger, pillar"
+            ],
+            [
+              "get",
+              "got",
+              "got",
+              "conseguir, llegar"
+            ],
+            [
+              "give",
+              "gave",
+              "given",
+              "dar"
+            ],
+            [
+              "take",
+              "took",
+              "taken",
+              "tomar, llevar"
+            ],
+            [
+              "write",
+              "wrote",
+              "written",
+              "escribir"
+            ],
+            [
+              "read",
+              "read /red/",
+              "read /red/",
+              "leer"
+            ],
+            [
+              "know",
+              "knew",
+              "known",
+              "saber, conocer"
+            ],
+            [
+              "meet",
+              "met",
+              "met",
+              "conocer, quedar"
+            ],
+            [
+              "find",
+              "found",
+              "found",
+              "encontrar"
+            ],
+            [
+              "lose",
+              "lost",
+              "lost",
+              "perder"
+            ],
+            [
+              "leave",
+              "left",
+              "left",
+              "dejar, irse"
+            ],
+            [
+              "feel",
+              "felt",
+              "felt",
+              "sentir"
+            ],
+            [
+              "keep",
+              "kept",
+              "kept",
+              "guardar, mantener"
+            ],
+            [
+              "sleep",
+              "slept",
+              "slept",
+              "dormir"
+            ],
+            [
+              "spend",
+              "spent",
+              "spent",
+              "gastar, pasar"
+            ],
+            [
+              "pay",
+              "paid",
+              "paid",
+              "pagar"
+            ],
+            [
+              "say",
+              "said",
+              "said",
+              "decir"
+            ],
+            [
+              "tell",
+              "told",
+              "told",
+              "contar, decir"
+            ],
+            [
+              "speak",
+              "spoke",
+              "spoken",
+              "hablar"
+            ],
+            [
+              "break",
+              "broke",
+              "broken",
+              "romper"
+            ],
+            [
+              "choose",
+              "chose",
+              "chosen",
+              "elegir"
+            ],
+            [
+              "fly",
+              "flew",
+              "flown",
+              "volar"
+            ],
+            [
+              "swim",
+              "swam",
+              "swum",
+              "nadar"
+            ],
+            [
+              "begin",
+              "began",
+              "begun",
+              "empezar"
+            ],
+            [
+              "cut",
+              "cut",
+              "cut",
+              "cortar"
+            ],
+            [
+              "put",
+              "put",
+              "put",
+              "poner"
+            ],
+            [
+              "fall",
+              "fell",
+              "fallen",
+              "caer"
+            ],
+            [
+              "grow",
+              "grew",
+              "grown",
+              "crecer, cultivar"
+            ]
+          ]
+        },
+        {
+          "title": "Present perfect o past simple",
+          "head": [
+            "",
+            "Present perfect",
+            "Past simple"
+          ],
+          "rows": [
+            [
+              "¿Cuándo?",
+              "no se dice o no importa",
+              "momento concreto y terminado"
+            ],
+            [
+              "Marcadores",
+              "ever, never, already, yet, just, so far",
+              "yesterday, last week, in 2019, … ago, When…?"
+            ],
+            [
+              "Ejemplo",
+              "I'**ve been** to Italy three times.",
+              "I **went** to Italy last summer."
+            ]
+          ]
+        }
+      ],
+      "exceptions": [
+        "*been* y *gone*: *She **has been** to London* = ha estado y ya volvió; *She **has gone** to London* = se ha ido y sigue allí.",
+        "*already* y *just* van entre *have* y el participio (*I've **just** eaten*); *yet* va al final y solo en negativas y preguntas (*Have you finished **yet**?*).",
+        "Con *this morning / today / this week* puedes usar present perfect si ese periodo **no ha terminado**: *I've had three coffees today.*"
+      ],
+      "practice": [
+        {
+          "q": "___ you ever ___ (try) Indian food?",
+          "a": "Have … tried"
+        },
+        {
+          "q": "I ___ (never / eat) oysters.",
+          "a": "have never eaten"
+        },
+        {
+          "q": "She ___ (go) to the supermarket. She'll be back soon.",
+          "a": "has gone"
+        },
+        {
+          "q": "We ___ (have) lunch at 2 yesterday.",
+          "a": "had",
+          "why": "*yesterday* → past simple"
+        }
+      ]
     },
     {
       "id": "present-perfect-continuous",
@@ -109,7 +408,56 @@
           "why": "*for* + periodo (3 years); *since* + punto de inicio (2021, Monday)."
         }
       ],
-      "source": "cuaderno"
+      "tables": [
+        {
+          "title": "*for* o *since*",
+          "head": [
+            "for + periodo",
+            "since + punto de inicio"
+          ],
+          "rows": [
+            [
+              "for **9 years**",
+              "since **2017**"
+            ],
+            [
+              "for **two weeks**",
+              "since **last Monday**"
+            ],
+            [
+              "for **a long time**",
+              "since **I was a child**"
+            ],
+            [
+              "for **ages**",
+              "since **September**"
+            ]
+          ]
+        }
+      ],
+      "exceptions": [
+        "Con **verbos de estado** se usa present perfect **simple**, no continuo: *I've **known** him for years* (no *I've been knowing*).",
+        "*How long have you lived here?* y *How long have you been living here?* significan casi lo mismo con *live, work, study*."
+      ],
+      "practice": [
+        {
+          "q": "I ___ (learn) English since 2020.",
+          "a": "have been learning"
+        },
+        {
+          "q": "She's been working here ___ six months.",
+          "a": "for"
+        },
+        {
+          "q": "We've been waiting ___ ten o'clock.",
+          "a": "since"
+        },
+        {
+          "q": "How long ___ you ___ (know) Ana?",
+          "a": "have … known",
+          "why": "*know* es de estado."
+        }
+      ]
     },
     {
       "id": "going-to",
@@ -160,7 +508,52 @@
           "why": "No olvides el verbo *be* (*am / is / are*)."
         }
       ],
-      "source": "cuaderno"
+      "tables": [
+        {
+          "title": "Futuro en B1: ¿cuál uso?",
+          "head": [
+            "Forma",
+            "Uso",
+            "Ejemplo"
+          ],
+          "rows": [
+            [
+              "going to",
+              "intención o plan decidido; predicción con pruebas",
+              "I'**m going to** cook paella tonight. / Look at those clouds! It'**s going to** rain."
+            ],
+            [
+              "present continuous",
+              "plan ya organizado (hora, sitio)",
+              "I'**m meeting** Ana at 8."
+            ],
+            [
+              "will",
+              "decisión en el momento, promesa, predicción sin pruebas",
+              "I'**ll have** the fish, please. / I think it **will** be sunny."
+            ],
+            [
+              "present simple",
+              "horarios",
+              "The train **leaves** at 6."
+            ]
+          ]
+        }
+      ],
+      "exceptions": [
+        "Con *go* se suele decir *I'm going to the cinema* (presente continuo) en vez de *I'm going to go to the cinema*, aunque las dos son correctas."
+      ],
+      "practice": [
+        {
+          "q": "Look at that man! He ___ (fall).",
+          "a": "is going to fall",
+          "why": "Predicción con pruebas."
+        },
+        {
+          "q": "I ___ (not / eat) dessert tonight. I'm on a diet.",
+          "a": "'m not going to eat"
+        }
+      ]
     },
     {
       "id": "past-simple",
@@ -218,7 +611,51 @@
           "why": "*ago* va detrás del periodo de tiempo."
         }
       ],
-      "source": "cuaderno"
+      "tables": [
+        {
+          "title": "Pronunciación de -ed en verbos regulares",
+          "head": [
+            "Sonido",
+            "Cuándo",
+            "Ejemplos"
+          ],
+          "rows": [
+            [
+              "/t/",
+              "después de /p, k, f, s, ʃ, tʃ/",
+              "cooked, washed, watched, baked"
+            ],
+            [
+              "/d/",
+              "después de vocal y otros sonidos sonoros",
+              "played, boiled, grilled, steamed"
+            ],
+            [
+              "/ɪd/",
+              "después de /t/ o /d/ (se añade una sílaba)",
+              "wanted, needed, roasted, waited"
+            ]
+          ]
+        }
+      ],
+      "exceptions": [
+        "Con *was / were* no se usa *did*: *Where **were** you?* (no *Where did you be?*).",
+        "Ortografía: *stop → stopped*, *study → studied*, *play → played*, *fry → fried*."
+      ],
+      "practice": [
+        {
+          "q": "When ___ you ___ (meet) him?",
+          "a": "did … meet"
+        },
+        {
+          "q": "I ___ (not / go) out last night.",
+          "a": "didn't go"
+        },
+        {
+          "q": "They ___ (be) at home yesterday.",
+          "a": "were"
+        }
+      ]
     }
   ]
 }

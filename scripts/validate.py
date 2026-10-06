@@ -13,10 +13,12 @@ ICONS = os.path.join(ROOT, 'icons')
 errors, warnings = [], []
 
 ID_RE = re.compile(r'^[a-z0-9]+(-[a-z0-9]+)*$')
-VOCAB_FIELDS = {'en', 'ipa', 'pron', 'es', 'icon', 'note', 'example', 'example_es', 'source', 'say'}
+VOCAB_FIELDS = {'en', 'ipa', 'pron', 'es', 'icon', 'note', 'example', 'example_es', 'say'}
 VOCAB_REQUIRED = ('en', 'ipa', 'pron', 'es')
-UNIT_FIELDS = {'id', 'type', 'level', 'title', 'title_es', 'description', 'sources', 'sections'}
-GRAMMAR_FIELDS = {'id', 'title', 'title_es', 'use', 'forms', 'keywords', 'examples', 'mistakes', 'source'}
+UNIT_FIELDS = {'id', 'type', 'level', 'title', 'title_es', 'icon', 'description', 'sections'}
+LEVELS = {'A1', 'A2', 'B1', 'B2', 'C1', 'C2'}
+RESERVED = {'inicio', 'vocabulario', 'gramatica'}
+GRAMMAR_FIELDS = {'id', 'title', 'title_es', 'use', 'forms', 'tables', 'keywords', 'examples', 'exceptions', 'tips', 'mistakes', 'practice'}
 VOWELS = re.compile(r'[aeiouáéíóúAEIOUÁÉÍÓÚ]+')
 
 
@@ -33,7 +35,6 @@ def text_ok(where, value):
 
 
 def check_vocab(path, unit):
-    sources = unit.get('sources') or {}
     for si, sec in enumerate(unit['sections']):
         items = sec.get('items')
         w = f'{path} › sección «{sec.get("id")}»'
@@ -61,9 +62,6 @@ def check_vocab(path, unit):
             icon = it.get('icon')
             if icon is not None and not os.path.exists(os.path.join(ICONS, f'{icon}.svg')):
                 err(wi, f'el icono "{icon}" no existe en icons/ (añádelo con scripts/add_icon.py {icon})')
-            src = it.get('source')
-            if src is not None and src not in sources:
-                err(wi, f'"source": "{src}" no está definido en "sources" de la unidad')
             if it.get('example_es') and not it.get('example'):
                 warn(wi, 'hay "example_es" pero no "example"')
             key = str(it.get('en', '')).lower()
@@ -87,10 +85,25 @@ def check_grammar(path, unit):
         for i, m in enumerate(sec.get('mistakes', [])):
             for k in ('wrong', 'right'):
                 if k not in m: err(f'{w} › mistakes {i + 1}', f'falta "{k}"')
-        if not any(sec.get(k) for k in ('use', 'forms', 'examples', 'mistakes')):
-            err(w, 'la sección está vacía: añade al menos "use", "forms", "examples" o "mistakes"')
-        if sec.get('source') and sec['source'] not in (unit.get('sources') or {}):
-            err(w, f'"source": "{sec["source"]}" no está definido en "sources"')
+        for i, t in enumerate(sec.get('tables', [])):
+            wt = f'{w} › tables {i + 1}'
+            rows = t.get('rows')
+            if not isinstance(rows, list) or not rows:
+                err(wt, 'falta "rows" (lista de filas)'); continue
+            width = len(t['head']) if isinstance(t.get('head'), list) else len(rows[0])
+            for j, r in enumerate(rows):
+                if not isinstance(r, list): err(wt, f'la fila {j + 1} debe ser una lista ["…", "…"]'); continue
+                if len(r) != width: err(wt, f'la fila {j + 1} tiene {len(r)} columnas y debería tener {width}')
+                for c in r: text_ok(f'{wt} › fila {j + 1}', c) if c else None
+        for k in ('exceptions', 'tips'):
+            v = sec.get(k, [])
+            if not isinstance(v, list): err(w, f'"{k}" debe ser una lista de textos'); continue
+            for x in v: text_ok(f'{w} › {k}', x)
+        for i, p in enumerate(sec.get('practice', [])):
+            for k in ('q', 'a'):
+                if k not in p: err(f'{w} › practice {i + 1}', f'falta "{k}"')
+        if not any(sec.get(k) for k in ('use', 'forms', 'tables', 'examples', 'mistakes')):
+            err(w, 'la sección está vacía: añade al menos "use", "forms", "tables", "examples" o "mistakes"')
 
 
 def main():
@@ -118,6 +131,13 @@ def main():
         if uid and os.path.splitext(os.path.basename(rel))[0] != uid:
             err(path, f'el nombre del archivo debe coincidir con el id: {uid}.json')
         if uid in ids: err(path, f'el id "{uid}" ya lo usa {ids[uid]}')
+        if uid in RESERVED: err(path, f'el id "{uid}" está reservado para la página de inicio; elige otro')
+        if 'level' not in unit: warn(path, 'falta "level" (se mostrará B1)')
+        elif unit['level'] not in LEVELS: err(path, f'"level" debe ser uno de: {", ".join(sorted(LEVELS))}')
+        if 'icon' in unit and not os.path.exists(os.path.join(ICONS, f'{unit["icon"]}.svg')):
+            err(path, f'el icono del tema "{unit["icon"]}" no existe en icons/')
+        for k in ('title', 'title_es', 'description'):
+            if k in unit: text_ok(f'{path} › {k}', unit[k])
         ids[uid] = path
         t = unit.get('type')
         if t not in ('vocabulary', 'grammar'):

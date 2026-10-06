@@ -4,6 +4,8 @@ Vocabulario y gramática de inglés para preparar el B1. Cada palabra tiene imag
 
 Todo el contenido está en archivos JSON dentro de `data/`. Para añadir un tema nuevo no hace falta tocar el código.
 
+La web tiene una portada con todos los temas, un menú **Vocabulario** y otro **Gramática** con cada tema, un buscador que busca en todo el vocabulario y, dentro de cada tema, un índice de secciones y un modo repaso que oculta el español.
+
 ## Ver la web
 
 - **En internet:** activa GitHub Pages (ver más abajo) y entra en `https://TU-USUARIO.github.io/NOMBRE-DEL-REPO/`.
@@ -50,6 +52,20 @@ scripts/add_icon.py     descarga iconos nuevos
    ```
 5. Comprueba que está bien con `python3 scripts/validate.py`.
 
+### Datos de cada tema
+
+| Campo | ¿Obligatorio? | Qué es |
+|---|---|---|
+| `id` | sí | Nombre interno, en minúsculas y con guiones. Igual que el nombre del archivo. No uses `inicio`, `vocabulario` ni `gramatica`. |
+| `type` | sí | `"vocabulary"` o `"grammar"`. Decide en qué menú aparece. |
+| `title` / `title_es` | `title` sí | Título en inglés y en español. El español es el que se ve en menús y tarjetas. |
+| `icon` | no | Icono del tema en el menú, en la portada y en la cabecera del tema. Si falta, se usa el de la primera palabra. |
+| `level` | recomendado | A1, A2, B1, B2, C1 o C2. |
+| `description` | no | Una frase que se ve en la tarjeta de la portada. |
+| `sections` | sí | Lista de secciones. Cada una lleva `id`, `title`, `title_es` y sus `items` (vocabulario) o su explicación (gramática). |
+
+El orden de `data/index.json` es el orden de los menús y de la portada.
+
 Para **completar un tema que ya existe**, abre su JSON y añade palabras a la lista `"items"` de la sección que quieras, o crea una sección nueva en `"sections"`.
 
 ## Formato de una palabra
@@ -63,8 +79,7 @@ Para **completar un tema que ya existe**, abre su JSON y añade palabras a la li
   "icon": "eggplant",
   "note": "EE. UU.: *eggplant*.",
   "example": "I love grilled aubergine.",
-  "example_es": "Me encanta la berenjena a la plancha.",
-  "source": "libro"
+  "example_es": "Me encanta la berenjena a la plancha."
 }
 ```
 
@@ -77,7 +92,6 @@ Para **completar un tema que ya existe**, abre su JSON y añade palabras a la li
 | `icon` | no | Nombre de un archivo de `icons/` sin `.svg`. Si no hay icono, sale la inicial de la palabra. |
 | `note` | no | Nota: diferencias UK/US, falsos amigos, plurales… |
 | `example` / `example_es` | no | Frase de ejemplo (con audio) y su traducción. |
-| `source` | no | De dónde sale la palabra. Tiene que ser una de las claves de `"sources"` de la unidad; aparece como etiqueta y se puede filtrar. |
 | `say` | no | Texto que lee el audio, si es distinto de `en`. |
 
 En `note`, `example` y `es` puedes usar `*cursiva*` y `**negrita**`. No se admite HTML. Si en una nota escribes una pronunciación entre comillas latinas con la sílaba fuerte en mayúsculas, como «CHÓK-lat», se resalta igual que en la columna de pronunciación.
@@ -111,7 +125,18 @@ En `note`, `example` y `es` puedes usar `*cursiva*` y `**negrita**`. No se admit
 }
 ```
 
-Todos los apartados son opcionales, pero cada sección necesita al menos uno.
+Otros apartados opcionales de una sección de gramática:
+
+| Campo | Qué es |
+|---|---|
+| `tables` | Tablas: `[{ "title": "…", "head": ["Col 1", "Col 2"], "rows": [["a", "b"], ["c", "d"]], "note": "…" }]`. Todas las filas deben tener tantas columnas como `head`. |
+| `exceptions` | Lista de excepciones (recuadro naranja): `["…", "…"]`. |
+| `tips` | Lista de trucos y recordatorios: `["…", "…"]`. |
+| `practice` | Ejercicios con la respuesta oculta: `[{ "q": "She ___ (eat) fish.", "a": "eats", "why": "opcional" }]`. Escribe el hueco con `___`. |
+
+En todos los textos puedes usar `*cursiva*` y `**negrita**`.
+
+Todos los apartados son opcionales, pero cada sección necesita al menos uno de `use`, `forms`, `tables`, `examples` o `mistakes`.
 
 ## Iconos
 

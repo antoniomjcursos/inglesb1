@@ -13,43 +13,41 @@
 </head>
 <body>
 <!--APP-->
-<div class="wrap">
-  <header class="top">
-    <p class="eyebrow">Inglés · Nivel B1</p>
-    <h1 id="unit-title">Cuaderno de inglés</h1>
-    <p class="lede" id="unit-desc"></p>
-  </header>
-
-  <nav class="units" id="units" aria-label="Temas"></nav>
-
-  <details class="key" id="key">
-    <summary>Cómo leer la pronunciación</summary>
-    <div class="key-grid">
-      <div><b>/ˈ/</b> en el AFI: la sílaba que sigue lleva el acento. <b>/ː/</b>: vocal larga. <b>/ə/</b>: vocal débil, casi muda.</div>
-      <div>En la versión española, la <b>negrita</b> es la sílaba fuerte. Las vocales dobles (<b>ii</b>, <b>uu</b>, <b>aa</b>, <b>oo</b>) se alargan.</div>
-      <div><b>zz</b> = una «s» que zumba, como una abeja (<i>peas</i>, <i>cheese</i>). <b>z</b> = nuestra «z» de «zapato» (<i>healthy</i>).</div>
-      <div><b>y</b> = la «y» fuerte de «¡yo!» (<i>ginger</i>). <b>zh</b> = la «ll» argentina de «yo» (<i>aubergine</i>).</div>
-      <div><b>j</b> = una «h» aspirada suave, nunca la «j» fuerte (<i>honey</i>). <b>sh</b> = «chsss», pidiendo silencio.</div>
+<header class="hdr" id="hdr">
+  <div class="hdr-in">
+    <a class="brand" href="#inicio">
+      <span class="brand-mark" aria-hidden="true">B1</span>
+      <span class="brand-txt">Cuaderno de inglés</span>
+    </a>
+    <nav class="menu" id="menu" aria-label="Menú principal">
+      <a class="m-link" href="#inicio" data-nav="inicio">Inicio</a>
+      <div class="m-drop">
+        <button class="m-btn" type="button" aria-expanded="false" aria-controls="dd-vocabulary" data-nav="vocabulary">Vocabulario <span class="caret" aria-hidden="true"></span></button>
+        <div class="m-panel" id="dd-vocabulary" hidden></div>
+      </div>
+      <div class="m-drop">
+        <button class="m-btn" type="button" aria-expanded="false" aria-controls="dd-grammar" data-nav="grammar">Gramática <span class="caret" aria-hidden="true"></span></button>
+        <div class="m-panel" id="dd-grammar" hidden></div>
+      </div>
+    </nav>
+    <div class="hdr-search">
+      <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="11" cy="11" r="7" fill="none" stroke="currentColor" stroke-width="2"/><path d="m20 20-3.5-3.5" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+      <input id="q" type="search" placeholder="Buscar palabra…" autocomplete="off" aria-label="Buscar en todo el vocabulario">
     </div>
-  </details>
-
-  <div class="bar" id="bar">
-    <div class="tools">
-      <input id="q" type="search" placeholder="Buscar en todos los temas, en inglés o en español…" autocomplete="off">
-      <select id="src" class="ctl" aria-label="Origen de las palabras" hidden></select>
-      <label class="ctl" id="quiz-wrap"><input id="quiz" type="checkbox"> Modo repaso</label>
-    </div>
-    <nav class="cats" id="cats" aria-label="Secciones"></nav>
+    <button class="burger" id="burger" type="button" aria-expanded="false" aria-controls="menu" aria-label="Abrir menú">
+      <span></span><span></span><span></span>
+    </button>
   </div>
+</header>
 
-  <div class="notice" id="notice" role="status" hidden></div>
-  <main id="list"></main>
-  <p class="empty" id="empty" hidden>No hay ninguna palabra que coincida.</p>
+<div class="notice wrap" id="notice" role="status" hidden></div>
+<main id="view"></main>
 
-  <footer>
-    <p>Ilustraciones: <a href="https://github.com/microsoft/fluentui-emoji">Fluent Emoji</a> © Microsoft Corporation (licencia MIT) y dibujos propios. El audio usa la voz inglesa de tu dispositivo.</p>
-  </footer>
-</div>
+<footer class="ftr">
+  <div class="wrap">
+    <p>Cuaderno de inglés B1 · Ilustraciones: <a href="https://github.com/microsoft/fluentui-emoji">Fluent Emoji</a> © Microsoft Corporation (MIT) y dibujos propios. El audio usa la voz inglesa de tu dispositivo.</p>
+  </div>
+</footer>
 <div class="toast" id="toast" role="status" hidden></div>
 <!--/APP-->
 <script src="assets/app.js"></script>

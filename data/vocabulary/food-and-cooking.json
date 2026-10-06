@@ -4,11 +4,8 @@
   "level": "B1",
   "title": "Food and cooking",
   "title_es": "Comida y cocina",
+  "icon": "cooking",
   "description": "Alimentos, formas de cocinar, adjetivos y hábitos alimenticios.",
-  "sources": {
-    "libro": "Libro · Vocabulary Bank, p. 238",
-    "apuntes": "Fotocopia «Food and eating vocabulary»"
-  },
   "sections": [
     {
       "id": "sea",
@@ -20,16 +17,14 @@
           "ipa": "kræb",
           "pron": "krab",
           "es": "cangrejo",
-          "icon": "crab",
-          "source": "libro"
+          "icon": "crab"
         },
         {
           "en": "lobster",
           "ipa": "ˈlɒb.stə",
           "pron": "LÓBsta",
           "es": "langosta, bogavante",
-          "icon": "lobster",
-          "source": "libro"
+          "icon": "lobster"
         },
         {
           "en": "mussels",
@@ -37,8 +32,7 @@
           "pron": "MÁselzz",
           "es": "mejillones",
           "icon": "x-mussels",
-          "note": "La «e» casi desaparece: «MÁslzz».",
-          "source": "libro"
+          "note": "La «e» casi desaparece: «MÁslzz»."
         },
         {
           "en": "prawns",
@@ -46,8 +40,7 @@
           "pron": "próonzz",
           "es": "gambas, langostinos",
           "icon": "shrimp",
-          "note": "EE. UU.: *shrimp* /ʃrɪmp/ «shrimp».",
-          "source": "libro"
+          "note": "EE. UU.: *shrimp* /ʃrɪmp/ «shrimp»."
         },
         {
           "en": "salmon",
@@ -55,8 +48,7 @@
           "pron": "SÁman",
           "es": "salmón",
           "icon": "x-salmon",
-          "note": "¡La «l» no se pronuncia!",
-          "source": "libro"
+          "note": "¡La «l» no se pronuncia!"
         },
         {
           "en": "squid",
@@ -64,8 +56,7 @@
           "pron": "skuíd",
           "es": "calamar",
           "icon": "squid",
-          "note": "*fried squid* = calamares fritos.",
-          "source": "libro"
+          "note": "*fried squid* = calamares fritos."
         },
         {
           "en": "tuna",
@@ -73,8 +64,7 @@
           "pron": "TIÚna",
           "es": "atún",
           "icon": "x-tuna",
-          "note": "EE. UU.: /ˈtuː.nə/ «túna». *tinned tuna* = atún en lata.",
-          "source": "libro"
+          "note": "EE. UU.: /ˈtuː.nə/ «túna». *tinned tuna* = atún en lata."
         },
         {
           "en": "fish",
@@ -111,24 +101,21 @@
           "pron": "bíif",
           "es": "carne de vaca, ternera",
           "icon": "cow",
-          "note": "El animal es *cow*.",
-          "source": "libro"
+          "note": "El animal es *cow*."
         },
         {
           "en": "chicken",
           "ipa": "ˈtʃɪk.ɪn",
           "pron": "CHÍkin",
           "es": "pollo",
-          "icon": "poultry-leg",
-          "source": "libro"
+          "icon": "poultry-leg"
         },
         {
           "en": "duck",
           "ipa": "dʌk",
           "pron": "dak",
           "es": "pato",
-          "icon": "duck",
-          "source": "libro"
+          "icon": "duck"
         },
         {
           "en": "lamb",
@@ -136,8 +123,7 @@
           "pron": "lam",
           "es": "cordero",
           "icon": "ewe",
-          "note": "La «b» final no se pronuncia.",
-          "source": "libro"
+          "note": "La «b» final no se pronuncia."
         },
         {
           "en": "pork",
@@ -145,8 +131,7 @@
           "pron": "póok",
           "es": "carne de cerdo",
           "icon": "pig",
-          "note": "El animal es *pig*.",
-          "source": "libro"
+          "note": "El animal es *pig*."
         },
         {
           "en": "steak",
@@ -191,24 +176,21 @@
           "pron": "ÓUbazhiin",
           "es": "berenjena",
           "icon": "eggplant",
-          "note": "EE. UU.: *eggplant* /ˈeɡ.plænt/ «ÉGplant».",
-          "source": "libro"
+          "note": "EE. UU.: *eggplant* /ˈeɡ.plænt/ «ÉGplant»."
         },
         {
           "en": "avocado",
           "ipa": "ˌæv.əˈkɑː.dəʊ",
           "pron": "avoKÁAdou",
           "es": "aguacate",
-          "icon": "avocado",
-          "source": "libro"
+          "icon": "avocado"
         },
         {
           "en": "beans",
           "ipa": "biːnz",
           "pron": "bíinzz",
           "es": "judías, alubias",
-          "icon": "beans",
-          "source": "libro"
+          "icon": "beans"
         },
         {
           "en": "beetroot",
@@ -216,16 +198,14 @@
           "pron": "BÍITruut",
           "es": "remolacha",
           "icon": "x-beetroot",
-          "note": "EE. UU.: *beet*.",
-          "source": "libro"
+          "note": "EE. UU.: *beet*."
         },
         {
           "en": "cabbage",
           "ipa": "ˈkæb.ɪdʒ",
           "pron": "KÁbich",
           "es": "col, repollo",
-          "icon": "x-cabbage",
-          "source": "libro"
+          "icon": "x-cabbage"
         },
         {
           "en": "courgette",
@@ -233,16 +213,14 @@
           "pron": "kooZHÉT",
           "es": "calabacín",
           "icon": "x-courgette",
-          "note": "EE. UU.: *zucchini* /zuˈkiː.ni/ «zzuKÍIni».",
-          "source": "libro"
+          "note": "EE. UU.: *zucchini* /zuˈkiː.ni/ «zzuKÍIni»."
         },
         {
           "en": "cucumber",
           "ipa": "ˈkjuː.kʌm.bə",
           "pron": "KIÚkamba",
           "es": "pepino",
-          "icon": "cucumber",
-          "source": "libro"
+          "icon": "cucumber"
         },
         {
           "en": "red pepper",
@@ -250,8 +228,7 @@
           "pron": "red PÉpa",
           "es": "pimiento rojo",
           "icon": "bell-pepper",
-          "note": "*pepper* solo también es la pimienta. *green pepper* = pimiento verde.",
-          "source": "libro"
+          "note": "*pepper* solo también es la pimienta. *green pepper* = pimiento verde."
         },
         {
           "en": "carrot",
@@ -371,48 +348,42 @@
           "ipa": "ˈtʃer.iz",
           "pron": "CHÉrizz",
           "es": "cerezas",
-          "icon": "cherries",
-          "source": "libro"
+          "icon": "cherries"
         },
         {
           "en": "grapes",
           "ipa": "ɡreɪps",
           "pron": "gréips",
           "es": "uvas",
-          "icon": "grapes",
-          "source": "libro"
+          "icon": "grapes"
         },
         {
           "en": "lemon",
           "ipa": "ˈlem.ən",
           "pron": "LÉmon",
           "es": "limón",
-          "icon": "lemon",
-          "source": "libro"
+          "icon": "lemon"
         },
         {
           "en": "mango",
           "ipa": "ˈmæŋ.ɡəʊ",
           "pron": "MÁNgou",
           "es": "mango",
-          "icon": "mango",
-          "source": "libro"
+          "icon": "mango"
         },
         {
           "en": "melon",
           "ipa": "ˈmel.ən",
           "pron": "MÉlon",
           "es": "melón",
-          "icon": "melon",
-          "source": "libro"
+          "icon": "melon"
         },
         {
           "en": "peach",
           "ipa": "piːtʃ",
           "pron": "píich",
           "es": "melocotón",
-          "icon": "peach",
-          "source": "libro"
+          "icon": "peach"
         },
         {
           "en": "pear",
@@ -420,8 +391,7 @@
           "pron": "péa",
           "es": "pera",
           "icon": "pear",
-          "note": "Suena igual que *pair* (par).",
-          "source": "libro"
+          "note": "Suena igual que *pair* (par)."
         },
         {
           "en": "raspberries",
@@ -429,8 +399,7 @@
           "pron": "RÁAZZberizz",
           "es": "frambuesas",
           "icon": "x-raspberries",
-          "note": "La «p» no se pronuncia.",
-          "source": "libro"
+          "note": "La «p» no se pronuncia."
         },
         {
           "en": "apple",
@@ -510,8 +479,7 @@
           "pron": "béikt",
           "es": "horneado, al horno",
           "icon": "baguette-bread",
-          "note": "Verbo: *bake*. *a baked potato* = patata asada al horno.",
-          "source": "libro"
+          "note": "Verbo: *bake*. *a baked potato* = patata asada al horno."
         },
         {
           "en": "boiled",
@@ -519,8 +487,7 @@
           "pron": "bóild",
           "es": "hervido, cocido",
           "icon": "shallow-pan-of-food",
-          "note": "Verbo: *boil*. *a boiled egg* = un huevo cocido.",
-          "source": "libro"
+          "note": "Verbo: *boil*. *a boiled egg* = un huevo cocido."
         },
         {
           "en": "fried",
@@ -528,8 +495,7 @@
           "pron": "fráid",
           "es": "frito",
           "icon": "cooking",
-          "note": "Verbo: *fry*. *a fried egg* = un huevo frito.",
-          "source": "libro"
+          "note": "Verbo: *fry*. *a fried egg* = un huevo frito."
         },
         {
           "en": "grilled",
@@ -537,8 +503,7 @@
           "pron": "grild",
           "es": "a la parrilla, a la plancha",
           "icon": "meat-on-bone",
-          "note": "Verbo: *grill*. *grilled salmon* = salmón a la plancha.",
-          "source": "libro"
+          "note": "Verbo: *grill*. *grilled salmon* = salmón a la plancha."
         },
         {
           "en": "roast",
@@ -546,8 +511,7 @@
           "pron": "róust",
           "es": "asado (al horno)",
           "icon": "roasted-sweet-potato",
-          "note": "Verbo: *roast*. Se dice *roast chicken* (pollo asado); también *roasted*.",
-          "source": "libro"
+          "note": "Verbo: *roast*. Se dice *roast chicken* (pollo asado); también *roasted*."
         },
         {
           "en": "steamed",
@@ -555,8 +519,7 @@
           "pron": "stíimd",
           "es": "al vapor",
           "icon": "dumpling",
-          "note": "Verbo: *steam*. *steamed vegetables* = verduras al vapor.",
-          "source": "libro"
+          "note": "Verbo: *steam*. *steamed vegetables* = verduras al vapor."
         },
         {
           "en": "deep-fried",
@@ -587,8 +550,7 @@
           "pron": "fresh",
           "es": "fresco",
           "icon": "seedling",
-          "note": "*fresh fish* = pescado fresco.",
-          "source": "apuntes"
+          "note": "*fresh fish* = pescado fresco."
         },
         {
           "en": "frozen",
@@ -596,8 +558,7 @@
           "pron": "FRÓUzzen",
           "es": "congelado",
           "icon": "snowflake",
-          "note": "*frozen lasagne* /ləˈzæn.jə/ «laZZÁNia».",
-          "source": "apuntes"
+          "note": "*frozen lasagne* /ləˈzæn.jə/ «laZZÁNia»."
         },
         {
           "en": "low-fat / high-fat",
@@ -605,8 +566,7 @@
           "pron": "lou-FAT / jai-FAT",
           "es": "bajo / alto en grasa",
           "icon": "x-low-fat",
-          "note": "*low-fat cheese* = queso bajo en grasa.",
-          "source": "apuntes"
+          "note": "*low-fat cheese* = queso bajo en grasa."
         },
         {
           "en": "raw",
@@ -614,8 +574,7 @@
           "pron": "róo",
           "es": "crudo",
           "icon": "sushi",
-          "note": "*raw fish* = pescado crudo.",
-          "source": "apuntes"
+          "note": "*raw fish* = pescado crudo."
         },
         {
           "en": "spicy",
@@ -623,8 +582,7 @@
           "pron": "SPÁIsi",
           "es": "picante",
           "icon": "hot-face",
-          "note": "*spicy chicken* = pollo picante.",
-          "source": "apuntes"
+          "note": "*spicy chicken* = pollo picante."
         },
         {
           "en": "takeaway",
@@ -632,8 +590,7 @@
           "pron": "TÉIkauei",
           "es": "para llevar",
           "icon": "takeout-box",
-          "note": "*takeaway pizza*. EE. UU.: *takeout*.",
-          "source": "apuntes"
+          "note": "*takeaway pizza*. EE. UU.: *takeout*."
         },
         {
           "en": "tinned",
@@ -641,8 +598,7 @@
           "pron": "tind",
           "es": "enlatado, en lata",
           "icon": "canned-food",
-          "note": "*tinned meatballs* /ˈmiːt.bɔːlz/ «MÍITboolzz» = albóndigas en lata. EE. UU.: *canned*.",
-          "source": "apuntes"
+          "note": "*tinned meatballs* /ˈmiːt.bɔːlz/ «MÍITboolzz» = albóndigas en lata. EE. UU.: *canned*."
         },
         {
           "en": "ready-made",
@@ -650,8 +606,7 @@
           "pron": "redi-MÉID",
           "es": "precocinado, ya preparado",
           "icon": "bento-box",
-          "note": "*a ready-made dish* = un plato precocinado.",
-          "source": "apuntes"
+          "note": "*a ready-made dish* = un plato precocinado."
         },
         {
           "en": "delicious",
@@ -659,8 +614,7 @@
           "pron": "diLÍshas",
           "es": "delicioso",
           "icon": "face-savoring-food",
-          "note": "*It tastes nice* = sabe bien. *It's nice* = está bueno.",
-          "source": "apuntes"
+          "note": "*It tastes nice* = sabe bien. *It's nice* = está bueno."
         },
         {
           "en": "disgusting",
@@ -668,8 +622,7 @@
           "pron": "disGÁStin",
           "es": "asqueroso",
           "icon": "nauseated-face",
-          "note": "*It's disgusting!* = ¡Está asqueroso!",
-          "source": "apuntes"
+          "note": "*It's disgusting!* = ¡Está asqueroso!"
         },
         {
           "en": "fizzy",
@@ -677,8 +630,7 @@
           "pron": "FÍzzi",
           "es": "con gas",
           "icon": "cup-with-straw",
-          "note": "*fizzy drinks* = refrescos con gas.",
-          "source": "apuntes"
+          "note": "*fizzy drinks* = refrescos con gas."
         },
         {
           "en": "healthy / unhealthy",
@@ -686,8 +638,7 @@
           "pron": "JÉLzi / anJÉLzi",
           "es": "sano / poco sano",
           "icon": "green-apple",
-          "note": "La «th» se pronuncia como nuestra «z».",
-          "source": "apuntes"
+          "note": "La «th» se pronuncia como nuestra «z»."
         },
         {
           "en": "fatty",
@@ -695,8 +646,7 @@
           "pron": "FÁti",
           "es": "grasiento, con mucha grasa",
           "icon": "hamburger",
-          "note": "*fatty food* = comida grasienta.",
-          "source": "apuntes"
+          "note": "*fatty food* = comida grasienta."
         }
       ]
     },
@@ -711,8 +661,7 @@
           "pron": "iit ÁUT",
           "es": "comer fuera",
           "icon": "clinking-glasses",
-          "note": "*I eat out a lot* = como mucho fuera.",
-          "source": "libro"
+          "note": "*I eat out a lot* = como mucho fuera."
         },
         {
           "en": "cut down on",
@@ -720,8 +669,7 @@
           "pron": "kat DÁUN on",
           "es": "reducir, tomar menos",
           "icon": "backhand-index-pointing-down",
-          "note": "*cut down on sugar* = tomar menos azúcar.",
-          "source": "libro"
+          "note": "*cut down on sugar* = tomar menos azúcar."
         },
         {
           "en": "cut out",
@@ -729,8 +677,7 @@
           "pron": "kat ÁUT",
           "es": "dejar de tomar, eliminar",
           "icon": "prohibited",
-          "note": "*cut out sugar* = dejar el azúcar por completo.",
-          "source": "libro"
+          "note": "*cut out sugar* = dejar el azúcar por completo."
         },
         {
           "en": "eat sensibly",
@@ -738,8 +685,7 @@
           "pron": "iit SÉNsibli",
           "es": "comer con sensatez",
           "icon": "thumbs-up",
-          "note": "Falso amigo: *sensible* = sensato; «sensible» en español es *sensitive*.",
-          "source": "apuntes"
+          "note": "Falso amigo: *sensible* = sensato; «sensible» en español es *sensitive*."
         },
         {
           "en": "be on a diet",
@@ -747,8 +693,7 @@
           "pron": "bi on a DÁIet",
           "es": "estar a dieta",
           "icon": "clipboard",
-          "note": "*I'm on a diet* = estoy a dieta.",
-          "source": "apuntes"
+          "note": "*I'm on a diet* = estoy a dieta."
         },
         {
           "en": "lose weight",
@@ -756,8 +701,7 @@
           "pron": "luuzz UÉIT",
           "es": "adelgazar, perder peso",
           "icon": "chart-decreasing",
-          "note": "Pasado: *lost*. La «gh» de *weight* no suena.",
-          "source": "apuntes"
+          "note": "Pasado: *lost*. La «gh» de *weight* no suena."
         },
         {
           "en": "put on weight",
@@ -765,8 +709,7 @@
           "pron": "put on UÉIT",
           "es": "engordar, coger peso",
           "icon": "chart-increasing",
-          "note": "También *gain weight*.",
-          "source": "apuntes"
+          "note": "También *gain weight*."
         },
         {
           "en": "order food",
@@ -774,8 +717,7 @@
           "pron": "ÓOda fuud",
           "es": "pedir comida",
           "icon": "mobile-phone",
-          "note": "*order a takeaway* = pedir comida a domicilio.",
-          "source": "apuntes"
+          "note": "*order a takeaway* = pedir comida a domicilio."
         },
         {
           "en": "take vitamins",
@@ -783,16 +725,14 @@
           "pron": "teik VÍtaminzz",
           "es": "tomar vitaminas",
           "icon": "pill",
-          "note": "EE. UU.: /ˈvaɪ.t̬ə.mɪnz/ «VÁIraminzz».",
-          "source": "apuntes"
+          "note": "EE. UU.: /ˈvaɪ.t̬ə.mɪnz/ «VÁIraminzz»."
         },
         {
           "en": "take food supplements",
           "ipa": "teɪk fuːd ˈsʌp.lɪ.mənts",
           "pron": "teik fuud SÁplimants",
           "es": "tomar complementos alimenticios",
-          "icon": "test-tube",
-          "source": "apuntes"
+          "icon": "test-tube"
         },
         {
           "en": "try new food",
@@ -800,24 +740,21 @@
           "pron": "trai niu FÚUD",
           "es": "probar comida nueva",
           "icon": "tongue",
-          "note": "*try* = probar (comida) o intentar.",
-          "source": "apuntes"
+          "note": "*try* = probar (comida) o intentar."
         },
         {
           "en": "contain vitamins and minerals",
           "ipa": "kənˈteɪn ˈvɪt.ə.mɪnz ənd ˈmɪn.ər.əlz",
           "pron": "konTÉIN VÍtaminzz and MÍneralzz",
           "es": "contener vitaminas y minerales",
-          "icon": "sparkles",
-          "source": "apuntes"
+          "icon": "sparkles"
         },
         {
           "en": "have a balanced diet",
           "ipa": "hæv ə ˈbæl.ənst ˈdaɪ.ət",
           "pron": "jav a BÁlanst DÁIet",
           "es": "llevar una dieta equilibrada",
-          "icon": "balance-scale",
-          "source": "apuntes"
+          "icon": "balance-scale"
         }
       ]
     },
@@ -832,8 +769,7 @@
           "pron": "kaabou-JÁIdreits",
           "es": "hidratos de carbono",
           "icon": "sheaf-of-rice",
-          "note": "*carbs* /kɑːbz/ «kaabzz». *high / low in carbs* = rico / pobre en hidratos.",
-          "source": "apuntes"
+          "note": "*carbs* /kɑːbz/ «kaabzz». *high / low in carbs* = rico / pobre en hidratos."
         },
         {
           "en": "proteins",
@@ -841,8 +777,7 @@
           "pron": "PRÓUtiinzz",
           "es": "proteínas",
           "icon": "person-lifting-weights",
-          "note": "*rich / high in protein* = rico en proteínas.",
-          "source": "apuntes"
+          "note": "*rich / high in protein* = rico en proteínas."
         },
         {
           "en": "sugar",
@@ -850,8 +785,7 @@
           "pron": "SHÚga",
           "es": "azúcar",
           "icon": "candy",
-          "note": "*high in sugar* = con mucho azúcar.",
-          "source": "apuntes"
+          "note": "*high in sugar* = con mucho azúcar."
         },
         {
           "en": "fats",
@@ -859,8 +793,7 @@
           "pron": "fats",
           "es": "grasas",
           "icon": "droplet",
-          "note": "*fat* también es «gordo» (adjetivo).",
-          "source": "apuntes"
+          "note": "*fat* también es «gordo» (adjetivo)."
         },
         {
           "en": "eating habits",
@@ -868,16 +801,14 @@
           "pron": "ÍItin JÁbits",
           "es": "hábitos alimenticios",
           "icon": "spiral-calendar",
-          "note": "*change your eating habits* = cambiar tus hábitos.",
-          "source": "apuntes"
+          "note": "*change your eating habits* = cambiar tus hábitos."
         },
         {
           "en": "nutritionist",
           "ipa": "njuˈtrɪʃ.ən.ɪst",
           "pron": "niuTRÍshanist",
           "es": "nutricionista",
-          "icon": "health-worker",
-          "source": "apuntes"
+          "icon": "health-worker"
         }
       ]
     },

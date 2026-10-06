@@ -4,10 +4,8 @@
   "level": "B1",
   "title": "People and feelings",
   "title_es": "Personalidad y sentimientos",
+  "icon": "smiling-face-with-smiling-eyes",
   "description": "Adjetivos para describir a personas, cosas y cómo nos sentimos.",
-  "sources": {
-    "cuaderno": "Apuntes de clase (cuaderno)"
-  },
   "sections": [
     {
       "id": "describing",
@@ -22,8 +20,7 @@
           "icon": "party-popper",
           "note": "*fun* = entretenido; *funny* = te hace reír.",
           "example": "The party was fun.",
-          "example_es": "La fiesta fue divertida.",
-          "source": "cuaderno"
+          "example_es": "La fiesta fue divertida."
         },
         {
           "en": "funny",
@@ -33,40 +30,35 @@
           "icon": "face-with-tears-of-joy",
           "note": "Algo que te hace reír (*makes you laugh*), o raro (*weird, strange*).",
           "example": "There was a funny smell in the classroom.",
-          "example_es": "Había un olor raro en la clase.",
-          "source": "cuaderno"
+          "example_es": "Había un olor raro en la clase."
         },
         {
           "en": "entertaining",
           "ipa": "ˌen.təˈteɪ.nɪŋ",
           "pron": "entaTÉIning",
           "es": "entretenido",
-          "icon": "performing-arts",
-          "source": "cuaderno"
+          "icon": "performing-arts"
         },
         {
           "en": "weird",
           "ipa": "wɪəd",
           "pron": "uíad",
           "es": "raro, extraño",
-          "icon": "alien",
-          "source": "cuaderno"
+          "icon": "alien"
         },
         {
           "en": "strange",
           "ipa": "streɪndʒ",
           "pron": "stréinch",
           "es": "extraño",
-          "icon": "thinking-face",
-          "source": "cuaderno"
+          "icon": "face-with-raised-eyebrow"
         },
         {
           "en": "lively",
           "ipa": "ˈlaɪv.li",
           "pron": "LÁIVli",
           "es": "animado, lleno de vida",
-          "icon": "mirror-ball",
-          "source": "cuaderno"
+          "icon": "mirror-ball"
         },
         {
           "en": "terrific",
@@ -74,24 +66,21 @@
           "pron": "taRÍfik",
           "es": "genial, estupendo",
           "icon": "star-struck",
-          "note": "Falso amigo: no significa «terrorífico». = *great*.",
-          "source": "cuaderno"
+          "note": "Falso amigo: no significa «terrorífico». = *great*."
         },
         {
           "en": "motivated",
           "ipa": "ˈməʊ.tɪ.veɪ.tɪd",
           "pron": "MÓUtiveitid",
           "es": "motivado",
-          "icon": "flexed-biceps",
-          "source": "cuaderno"
+          "icon": "flexed-biceps"
         },
         {
           "en": "positive / negative",
           "ipa": "ˈpɒz.ə.tɪv / ˈneɡ.ə.tɪv",
           "pron": "PÓzzativ / NÉgativ",
           "es": "positivo / negativo",
-          "icon": "plus",
-          "source": "cuaderno"
+          "icon": "plus"
         },
         {
           "en": "friendly",
@@ -99,64 +88,56 @@
           "pron": "FRÉNDli",
           "es": "simpático, amable",
           "icon": "beaming-face-with-smiling-eyes",
-          "note": "Ojo: *sympathetic* no es «simpático», sino «comprensivo».",
-          "source": "cuaderno"
+          "note": "Ojo: *sympathetic* no es «simpático», sino «comprensivo»."
         },
         {
           "en": "loyal",
           "ipa": "ˈlɔɪ.əl",
           "pron": "LÓIal",
           "es": "leal",
-          "icon": "dog",
-          "source": "cuaderno"
+          "icon": "dog"
         },
         {
           "en": "reasonable",
           "ipa": "ˈriː.zən.ə.bəl",
           "pron": "RÍIzzanabel",
           "es": "razonable",
-          "icon": "balance-scale",
-          "source": "cuaderno"
+          "icon": "balance-scale"
         },
         {
           "en": "lovely",
           "ipa": "ˈlʌv.li",
           "pron": "LÁVli",
           "es": "encantador, precioso",
-          "icon": "heart-with-ribbon",
-          "source": "cuaderno"
+          "icon": "heart-with-ribbon"
         },
         {
           "en": "inquisitive",
           "ipa": "ɪnˈkwɪz.ə.tɪv",
           "pron": "inKUÍzzativ",
           "es": "curioso, preguntón",
-          "icon": "face-with-monocle",
-          "source": "cuaderno"
+          "icon": "face-with-monocle"
         },
         {
           "en": "artistic",
           "ipa": "ɑːˈtɪs.tɪk",
           "pron": "aaTÍStik",
           "es": "artístico",
-          "icon": "artist-palette",
-          "source": "cuaderno"
+          "icon": "artist-palette"
         },
         {
           "en": "intense",
           "ipa": "ɪnˈtens",
           "pron": "inTÉNS",
           "es": "intenso",
-          "icon": "fire",
-          "source": "cuaderno"
+          "icon": "collision"
         },
         {
           "en": "philosophical",
           "ipa": "ˌfɪl.əˈsɒf.ɪ.kəl",
           "pron": "filaSÓfikal",
           "es": "filosófico",
-          "icon": "thinking-face",
-          "source": "cuaderno"
+          "icon": "thinking-face"
         },
         {
           "en": "joyful",
@@ -164,8 +145,7 @@
           "pron": "YÓIfal",
           "es": "alegre, feliz",
           "icon": "smiling-face-with-smiling-eyes",
-          "note": "= *happy*, pero más literario.",
-          "source": "cuaderno"
+          "note": "= *happy*, pero más literario."
         },
         {
           "en": "rusty",
@@ -174,8 +154,7 @@
           "es": "oxidado; desentrenado",
           "icon": "gear",
           "example": "My English is a bit rusty.",
-          "example_es": "Tengo el inglés un poco oxidado.",
-          "source": "cuaderno"
+          "example_es": "Tengo el inglés un poco oxidado."
         },
         {
           "en": "authentic",
@@ -183,16 +162,14 @@
           "pron": "ooZÉNtik",
           "es": "auténtico",
           "icon": "gem-stone",
-          "note": "La «th» es como nuestra «z».",
-          "source": "cuaderno"
+          "note": "La «th» es como nuestra «z»."
         },
         {
           "en": "greedy",
           "ipa": "ˈɡriː.di",
           "pron": "GRÍIdi",
           "es": "glotón; avaricioso",
-          "icon": "money-mouth-face",
-          "source": "cuaderno"
+          "icon": "money-mouth-face"
         },
         {
           "en": "successful",
@@ -200,8 +177,7 @@
           "pron": "sakSÉSfal",
           "es": "de éxito, exitoso",
           "icon": "trophy",
-          "note": "Se escribe con una sola «l» al final.",
-          "source": "cuaderno"
+          "note": "Se escribe con una sola «l» al final."
         }
       ]
     },
@@ -217,24 +193,21 @@
           "es": "disgustado, molesto",
           "icon": "worried-face",
           "example": "She was upset by her cousin's reaction.",
-          "example_es": "Le sentó mal la reacción de su primo.",
-          "source": "cuaderno"
+          "example_es": "Le sentó mal la reacción de su primo."
         },
         {
           "en": "surprised",
           "ipa": "səˈpraɪzd",
           "pron": "saPRÁIZZD",
           "es": "sorprendido",
-          "icon": "astonished-face",
-          "source": "cuaderno"
+          "icon": "astonished-face"
         },
         {
           "en": "shocked",
           "ipa": "ʃɒkt",
           "pron": "shokt",
           "es": "impactado, horrorizado",
-          "icon": "face-screaming-in-fear",
-          "source": "cuaderno"
+          "icon": "face-screaming-in-fear"
         }
       ]
     }
