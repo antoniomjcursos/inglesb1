@@ -281,7 +281,15 @@
         if (!en.isIntersecting) return;
         links.forEach((a) => a.classList.remove('on'));
         const a = links.get(en.target.dataset.sec);
-        if (a) { a.classList.add('on'); if (a.parentElement.parentElement.scrollWidth > a.parentElement.parentElement.clientWidth) a.scrollIntoView({ block: 'nearest', inline: 'nearest' }); }
+        if (a) {
+          a.classList.add('on');
+          // on phones the index is a horizontal strip: slide only that strip, never the page
+          const strip = a.closest('.toc');
+          if (strip && strip.scrollWidth > strip.clientWidth) {
+            const left = a.offsetLeft - strip.offsetLeft - 16;
+            strip.scrollTo({ left: Math.max(0, left), behavior: 'smooth' });
+          }
+        }
       });
     }, { rootMargin: `-${hdr.offsetHeight + 10}px 0px -65% 0px` });
     view.querySelectorAll('section[data-sec]').forEach((s) => tocObserver.observe(s));

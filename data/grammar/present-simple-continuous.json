@@ -510,6 +510,19 @@
       "use": "Los **verbos de acción** (*cook, make, eat, play*) pueden ir en presente simple o continuo. Los **verbos de estado** (*non-action* o *state verbs*) describen sentimientos, opiniones, conocimientos, posesión o sentidos, y **normalmente no van en continuo**, aunque hablemos de ahora mismo.",
       "tables": [
         {
+          "title": "Verbos de acción comunes (pueden ir en simple o continuo)",
+          "head": [
+            "Verbos",
+            "Ejemplo"
+          ],
+          "rows": [
+            [
+              "eat, sleep, work, live, study, drink, walk, drive, cook, make, play, read",
+              "I **usually drive** to work, but this week I'**m walking**."
+            ]
+          ]
+        },
+        {
           "title": "Verbos de estado más usados en B1",
           "head": [
             "Tipo",
@@ -631,6 +644,11 @@
         "Los verbos de los sentidos con adjetivo van en simple: *It **smells** good*, *You **look** great*, *It **sounds** interesting*."
       ],
       "mistakes": [
+        {
+          "wrong": "I am needing to buy some shoes now.",
+          "right": "I need to buy some shoes now.",
+          "why": "*need* es un verbo de estado: nunca en continuo, aunque diga *now*."
+        },
         {
           "wrong": "I'm not believing you.",
           "right": "I don't believe you.",
@@ -1033,6 +1051,93 @@
           ]
         },
         {
+          "title": "El mismo verbo en los dos tiempos: *sleep*",
+          "head": [
+            "",
+            "Present simple",
+            "Present continuous"
+          ],
+          "rows": [
+            [
+              "Forma",
+              "infinitivo (+ **-s** con he / she / it)",
+              "*be* + verbo-**ing**"
+            ],
+            [
+              "Afirmativa",
+              "You **sleep** 8 hours a day. / She **sleeps** 8 hours a day.",
+              "You **are sleeping** now. / She **is sleeping** now."
+            ],
+            [
+              "Negativa",
+              "You **don't sleep** 8 hours a day. / She **doesn't sleep** 8 hours a day.",
+              "You **aren't sleeping** now. / She **isn't sleeping** now."
+            ],
+            [
+              "Pregunta",
+              "**Do** you **sleep** 8 hours a day? / **Does** she **sleep** 8 hours a day?",
+              "**Are** you **sleeping** now? / **Is** she **sleeping** now?"
+            ],
+            [
+              "Usos",
+              "1. acciones habituales · 2. cosas que son verdad",
+              "1. lo que pasa ahora · 2. acciones temporales"
+            ],
+            [
+              "Expresiones de tiempo",
+              "*always, often, usually, sometimes, hardly ever, never*; *every day, once a week, twice a month*",
+              "*now, at the moment, right now*; *today, this week, these days*"
+            ]
+          ]
+        },
+        {
+          "title": "Ortografía comparada: 3.ª persona y -ing",
+          "head": [
+            "Verbo",
+            "he / she / it",
+            "-ing",
+            "Regla"
+          ],
+          "rows": [
+            [
+              "work",
+              "work**s**",
+              "work**ing**",
+              "regla general"
+            ],
+            [
+              "live",
+              "live**s**",
+              "liv**ing**",
+              "-e: solo -s / quita la -e"
+            ],
+            [
+              "study",
+              "stud**ies**",
+              "study**ing**",
+              "consonante + y → -ies / -ing sin cambios"
+            ],
+            [
+              "play",
+              "play**s**",
+              "play**ing**",
+              "vocal + y: sin cambios"
+            ],
+            [
+              "watch",
+              "watch**es**",
+              "watch**ing**",
+              "-ch → -es"
+            ],
+            [
+              "get",
+              "get**s**",
+              "ge**tt**ing",
+              "C-V-C: dobla la consonante en -ing"
+            ]
+          ]
+        },
+        {
           "title": "Preguntas para practicar con un compañero",
           "head": [
             "On a typical day (simple)",
@@ -1063,6 +1168,11 @@
         }
       ],
       "examples": [
+        {
+          "en": "I usually have lunch at home, but today I'm having lunch in a pub.",
+          "es": "Normalmente como en casa, pero hoy como en un pub.",
+          "note": "Hábito (simple) frente a hoy (continuo) con un verbo de acción."
+        },
         {
           "en": "What do you usually have for breakfast? — I usually have toast and coffee.",
           "es": "¿Qué sueles desayunar? — Normalmente tostadas y café."
