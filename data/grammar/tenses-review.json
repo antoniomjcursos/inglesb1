@@ -5,7 +5,7 @@
   "title": "Tenses review",
   "title_es": "Repaso de tiempos verbales",
   "icon": "hourglass-not-done",
-  "description": "Present perfect simple y continuous, going to y past simple.",
+  "description": "Present perfect simple y continuous y past simple. El futuro tiene su propio tema: «Futuro».",
   "sections": [
     {
       "id": "present-perfect-simple",
@@ -456,102 +456,6 @@
           "q": "How long ___ you ___ (know) Ana?",
           "a": "have … known",
           "why": "*know* es de estado."
-        }
-      ]
-    },
-    {
-      "id": "going-to",
-      "title": "Going to",
-      "title_es": "Planes futuros",
-      "use": "Para **planes e intenciones** que ya has decidido, y para predicciones cuando ves que algo va a pasar.",
-      "forms": [
-        {
-          "label": "Afirmativa",
-          "pattern": "sujeto + am / is / are + going to + infinitivo",
-          "example": "I'm going to cook tonight."
-        },
-        {
-          "label": "Negativa",
-          "pattern": "sujeto + 'm not / isn't / aren't + going to + infinitivo",
-          "example": "I'm not going to eat dessert."
-        },
-        {
-          "label": "Pregunta",
-          "pattern": "Am / Is / Are + sujeto + going to + infinitivo?",
-          "example": "Are you going to eat dessert?"
-        }
-      ],
-      "keywords": [
-        "tonight",
-        "tomorrow",
-        "next week",
-        "this summer"
-      ],
-      "examples": [
-        {
-          "en": "Are you going to eat dessert?",
-          "es": "¿Vas a tomar postre?"
-        },
-        {
-          "en": "No, I'm not going to eat dessert.",
-          "es": "No, no voy a tomar postre."
-        },
-        {
-          "en": "Look at those clouds! It's going to rain.",
-          "es": "¡Mira esas nubes! Va a llover."
-        }
-      ],
-      "mistakes": [
-        {
-          "wrong": "I going to cook pasta.",
-          "right": "I'm going to cook pasta.",
-          "why": "No olvides el verbo *be* (*am / is / are*)."
-        }
-      ],
-      "tables": [
-        {
-          "title": "Futuro en B1: ¿cuál uso?",
-          "head": [
-            "Forma",
-            "Uso",
-            "Ejemplo"
-          ],
-          "rows": [
-            [
-              "going to",
-              "intención o plan decidido; predicción con pruebas",
-              "I'**m going to** cook paella tonight. / Look at those clouds! It'**s going to** rain."
-            ],
-            [
-              "present continuous",
-              "plan ya organizado (hora, sitio)",
-              "I'**m meeting** Ana at 8."
-            ],
-            [
-              "will",
-              "decisión en el momento, promesa, predicción sin pruebas",
-              "I'**ll have** the fish, please. / I think it **will** be sunny."
-            ],
-            [
-              "present simple",
-              "horarios",
-              "The train **leaves** at 6."
-            ]
-          ]
-        }
-      ],
-      "exceptions": [
-        "Con *go* se suele decir *I'm going to the cinema* (presente continuo) en vez de *I'm going to go to the cinema*, aunque las dos son correctas."
-      ],
-      "practice": [
-        {
-          "q": "Look at that man! He ___ (fall).",
-          "a": "is going to fall",
-          "why": "Predicción con pruebas."
-        },
-        {
-          "q": "I ___ (not / eat) dessert tonight. I'm on a diet.",
-          "a": "'m not going to eat"
         }
       ]
     },

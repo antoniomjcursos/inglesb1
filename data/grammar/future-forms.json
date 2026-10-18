@@ -1,0 +1,526 @@
+{
+  "id": "future-forms",
+  "type": "grammar",
+  "level": "B1",
+  "title": "Future forms",
+  "title_es": "Futuro",
+  "icon": "crystal-ball",
+  "description": "Present simple, present continuous, be going to, will y shall: cuándo usar cada uno.",
+  "sections": [
+    {
+      "id": "which-future",
+      "title": "Which future?",
+      "title_es": "¿Qué futuro uso? Resumen",
+      "use": "En inglés no hay un solo futuro: la forma depende de **qué tipo de futuro** es. Esta tabla resume las cinco formas de B1; abajo tienes cada una con detalle.",
+      "tables": [
+        {
+          "title": "Las formas de futuro de un vistazo",
+          "head": [
+            "Forma",
+            "Uso",
+            "Ejemplo",
+            "Español"
+          ],
+          "rows": [
+            [
+              "present simple",
+              "horarios: trenes, vuelos, tiendas, cursos",
+              "The last train to London **leaves** at 10.30 p.m.",
+              "El último tren sale a las 22:30."
+            ],
+            [
+              "present continuous",
+              "planes **ya organizados** (con fecha, hora o personas)",
+              "This weekend I'**m travelling** to Dublin.",
+              "Este fin de semana viajo a Dublín."
+            ],
+            [
+              "be going to",
+              "intenciones y ambiciones",
+              "This summer I'**m going to visit** Dublin.",
+              "Este verano voy a visitar Dublín."
+            ],
+            [
+              "be going to",
+              "predicciones **con pruebas**",
+              "Look at those clouds! It'**s going to rain**.",
+              "¡Mira esas nubes! Va a llover."
+            ],
+            [
+              "will",
+              "predicciones **sin pruebas** (lo que crees)",
+              "You'**ll love** New York.",
+              "Te va a encantar Nueva York."
+            ],
+            [
+              "will",
+              "decisiones **en el momento**",
+              "I'**ll have** the steak, please.",
+              "Tomaré el filete, por favor."
+            ],
+            [
+              "will",
+              "promesas y ofrecimientos",
+              "I promise I **won't do** that again.",
+              "Te prometo que no lo volveré a hacer."
+            ],
+            [
+              "shall (I / we)",
+              "sugerencias y ofrecimientos en pregunta",
+              "**Shall we eat out** tonight?",
+              "¿Cenamos fuera esta noche?"
+            ]
+          ]
+        },
+        {
+          "title": "Expresiones de tiempo futuro",
+          "head": [
+            "Expresión",
+            "Español"
+          ],
+          "rows": [
+            [
+              "tonight / tomorrow",
+              "esta noche / mañana"
+            ],
+            [
+              "this weekend / this summer",
+              "este fin de semana / este verano"
+            ],
+            [
+              "next week / next year",
+              "la semana que viene / el año que viene"
+            ],
+            [
+              "in two days / in 2030",
+              "dentro de dos días / en 2030"
+            ],
+            [
+              "soon / later",
+              "pronto / más tarde"
+            ],
+            [
+              "the day after tomorrow",
+              "pasado mañana"
+            ]
+          ]
+        }
+      ],
+      "exceptions": [
+        "A veces es difícil distinguir un **plan organizado** (presente continuo) de una **intención** (*going to*): en esos casos valen las dos. *I'm seeing my parents at the weekend* = *I'm going to see my parents at the weekend*.",
+        "Igual con las predicciones: si no está claro si hay pruebas (*going to*) o es tu opinión (*will*), las dos son correctas.",
+        "En las oraciones con *when, after, before, as soon as* el futuro va en **presente**: *I'll call you when I **arrive*** (no *when I will arrive*)."
+      ],
+      "practice": [
+        {
+          "q": "My sister ___ (have) a baby in April.",
+          "a": "'s having",
+          "why": "Ya está organizado (es un hecho previsto)."
+        },
+        {
+          "q": "___ anyone in your family ___ (move) house soon?",
+          "a": "Is … moving",
+          "why": "*anyone* va en singular."
+        },
+        {
+          "q": "___ you ___ (see) your parents at the weekend?",
+          "a": "Are … going to see",
+          "why": "También: *Are you seeing…?*"
+        },
+        {
+          "q": "Do you think you ___ (live) at home next year?",
+          "a": "'ll live",
+          "why": "*think* + *will* para opinar sobre el futuro."
+        },
+        {
+          "q": "The museum ___ (open) at 9 tomorrow.",
+          "a": "opens",
+          "why": "Horario."
+        },
+        {
+          "q": "It's cold in here. — I ___ (close) the window.",
+          "a": "'ll close",
+          "why": "Decisión en el momento."
+        }
+      ]
+    },
+    {
+      "id": "present-simple-future",
+      "title": "Present simple for the future",
+      "title_es": "Presente simple: horarios",
+      "use": "Para cosas que siguen un **horario o calendario fijo**: transportes, horarios de apertura y cierre, y el principio o el final de cursos, clases o eventos.",
+      "forms": [
+        {
+          "label": "Afirmativa",
+          "pattern": "sujeto + verbo (he / she / it + -s)",
+          "example": "The plane lands at 7.15."
+        },
+        {
+          "label": "Pregunta",
+          "pattern": "What time / When + does + sujeto + infinitivo?",
+          "example": "What time does the film start?"
+        }
+      ],
+      "examples": [
+        {
+          "en": "The last train to London leaves at 10.30 p.m.",
+          "es": "El último tren a Londres sale a las 22:30."
+        },
+        {
+          "en": "The museum opens at 9 and closes at 6.",
+          "es": "El museo abre a las 9 y cierra a las 6."
+        },
+        {
+          "en": "The new course starts on Monday.",
+          "es": "El curso nuevo empieza el lunes."
+        }
+      ],
+      "exceptions": [
+        "No se usa para planes personales: *I'm meeting Ana tomorrow* (no *I meet Ana tomorrow*)."
+      ],
+      "practice": [
+        {
+          "q": "The bus ___ (leave) at 8.45 tomorrow morning.",
+          "a": "leaves"
+        },
+        {
+          "q": "When ___ the school year ___ (finish)?",
+          "a": "does … finish"
+        }
+      ]
+    },
+    {
+      "id": "present-continuous-future",
+      "title": "Present continuous for the future",
+      "title_es": "Presente continuo: planes organizados",
+      "use": "Para **planes ya organizados**: has quedado con alguien, has comprado el billete, tienes la cita. Suele llevar una expresión de tiempo (*tonight, on Friday, next week*).",
+      "forms": [
+        {
+          "label": "Afirmativa",
+          "pattern": "sujeto + am / is / are + verbo-ing",
+          "example": "I'm having some beers with my friends tonight."
+        },
+        {
+          "label": "Negativa",
+          "pattern": "sujeto + 'm not / isn't / aren't + verbo-ing",
+          "example": "We aren't going away this summer."
+        },
+        {
+          "label": "Pregunta",
+          "pattern": "(Wh-) + am / is / are + sujeto + verbo-ing?",
+          "example": "What are you doing this weekend?"
+        }
+      ],
+      "examples": [
+        {
+          "en": "This weekend I'm travelling to Dublin.",
+          "es": "Este fin de semana viajo a Dublín."
+        },
+        {
+          "en": "I'm having some beers with my friends tonight.",
+          "es": "Esta noche he quedado con mis amigos para tomar unas cervezas."
+        },
+        {
+          "en": "My sister's having a baby in April.",
+          "es": "Mi hermana tiene un bebé en abril."
+        },
+        {
+          "en": "Is anyone in your family moving house soon?",
+          "es": "¿Alguien de tu familia se muda pronto?"
+        }
+      ],
+      "tips": [
+        "*What are you doing tonight?* es la forma más natural de preguntar por los planes de alguien."
+      ],
+      "exceptions": [
+        "Sin expresión de tiempo puede confundirse con el presente: *I'm working* (ahora) frente a *I'm working on Saturday* (plan)."
+      ],
+      "practice": [
+        {
+          "q": "We ___ (fly) to Rome on Friday. We've got the tickets.",
+          "a": "are flying"
+        },
+        {
+          "q": "What ___ you ___ (do) tomorrow evening?",
+          "a": "are … doing"
+        }
+      ]
+    },
+    {
+      "id": "going-to-future",
+      "title": "Be going to",
+      "title_es": "Going to: intenciones y predicciones con pruebas",
+      "use": "Para **intenciones y ambiciones** (lo que has decidido hacer, aunque no esté organizado) y para **predicciones basadas en pruebas** que ves ahora.",
+      "forms": [
+        {
+          "label": "Afirmativa",
+          "pattern": "sujeto + am / is / are + going to + infinitivo",
+          "example": "This summer I'm going to visit Dublin."
+        },
+        {
+          "label": "Negativa",
+          "pattern": "sujeto + 'm not / isn't / aren't + going to + infinitivo",
+          "example": "I'm not going to eat dessert."
+        },
+        {
+          "label": "Pregunta",
+          "pattern": "Am / Is / Are + sujeto + going to + infinitivo?",
+          "example": "Are you going to see your parents at the weekend?"
+        }
+      ],
+      "examples": [
+        {
+          "en": "This summer I'm going to visit Dublin.",
+          "es": "Este verano voy a visitar Dublín.",
+          "note": "Intención."
+        },
+        {
+          "en": "Look at those dark clouds. It's going to rain.",
+          "es": "Mira esas nubes negras. Va a llover.",
+          "note": "Predicción con pruebas."
+        },
+        {
+          "en": "It's going to rain on Saturday. I've seen the forecast.",
+          "es": "Va a llover el sábado. He visto la previsión."
+        }
+      ],
+      "exceptions": [
+        "Con *go* se suele decir *I'm going to the cinema* en lugar de *I'm going to go to the cinema*, aunque las dos son correctas.",
+        "En inglés hablado informal se oye *gonna* (*I'm gonna call her*). No lo escribas en el examen."
+      ],
+      "mistakes": [
+        {
+          "wrong": "I going to cook pasta.",
+          "right": "I'm going to cook pasta.",
+          "why": "No olvides *am / is / are*."
+        },
+        {
+          "wrong": "She's going to visits her aunt.",
+          "right": "She's going to visit her aunt.",
+          "why": "Después de *going to*, infinitivo sin *-s*."
+        }
+      ],
+      "practice": [
+        {
+          "q": "Look at that man! He ___ (fall).",
+          "a": "is going to fall",
+          "why": "Predicción con pruebas."
+        },
+        {
+          "q": "I ___ (not / eat) dessert tonight. I'm on a diet.",
+          "a": "'m not going to eat"
+        },
+        {
+          "q": "What ___ you ___ (study) next year?",
+          "a": "are … going to study"
+        }
+      ]
+    },
+    {
+      "id": "will",
+      "title": "Will",
+      "title_es": "Will: predicciones, decisiones, promesas",
+      "use": "Para **predicciones basadas en tu opinión** (sin pruebas), **decisiones que tomas en el momento de hablar**, **promesas** y **ofrecimientos**. Es igual para todas las personas.",
+      "forms": [
+        {
+          "label": "Afirmativa",
+          "pattern": "sujeto + will ('ll) + infinitivo",
+          "example": "You'll love New York."
+        },
+        {
+          "label": "Negativa",
+          "pattern": "sujeto + won't (will not) + infinitivo",
+          "example": "I promise I won't do that again."
+        },
+        {
+          "label": "Pregunta",
+          "pattern": "Will + sujeto + infinitivo?",
+          "example": "Will you help me?"
+        },
+        {
+          "label": "Resp. corta",
+          "pattern": "Yes, I will. / No, I won't.",
+          "example": "Can you turn it on? — Yes, I will."
+        }
+      ],
+      "tables": [
+        {
+          "title": "Los usos de *will*",
+          "head": [
+            "Uso",
+            "Ejemplo",
+            "Español"
+          ],
+          "rows": [
+            [
+              "Predicción (opinión)",
+              "I think it **will** be a great party.",
+              "Creo que será una fiesta genial."
+            ],
+            [
+              "Decisión en el momento",
+              "I'**ll have** the steak, please.",
+              "Tomaré el filete, por favor."
+            ],
+            [
+              "Promesa",
+              "I **won't tell** anyone.",
+              "No se lo diré a nadie."
+            ],
+            [
+              "Ofrecimiento",
+              "That bag looks heavy. I'**ll carry** it.",
+              "Esa bolsa pesa. Te la llevo yo."
+            ],
+            [
+              "Petición",
+              "**Will** you turn on the light, please?",
+              "¿Enciendes la luz, por favor?"
+            ]
+          ]
+        },
+        {
+          "title": "*probably* y *definitely* con *will*",
+          "head": [
+            "Afirmativa",
+            "Negativa"
+          ],
+          "rows": [
+            [
+              "He'll **probably** come. (después de *will*)",
+              "He **probably** won't come. (antes de *won't*)"
+            ],
+            [
+              "She'll **definitely** pass.",
+              "She **definitely** won't pass."
+            ]
+          ]
+        }
+      ],
+      "examples": [
+        {
+          "en": "You'll love New York. It's an incredible city.",
+          "es": "Te va a encantar Nueva York. Es una ciudad increíble."
+        },
+        {
+          "en": "Do you think you'll live at home next year?",
+          "es": "¿Crees que vivirás en casa el año que viene?"
+        },
+        {
+          "en": "I promise I won't do that again.",
+          "es": "Te prometo que no lo volveré a hacer."
+        }
+      ],
+      "exceptions": [
+        "Para opinar en negativo se dice ***I don't think** it will rain*, mejor que *I think it won't rain*.",
+        "Si **ya lo habías decidido** antes de hablar, usa *going to*: *I'm going to buy a car* (lo pensé ayer) frente a *I'll buy it!* (lo decido ahora).",
+        "**Extra:** para posibilidad usa *might* o *may*: *I **might** go to the party* (quizás vaya)."
+      ],
+      "mistakes": [
+        {
+          "wrong": "I will to call you tomorrow.",
+          "right": "I'll call you tomorrow.",
+          "why": "Después de *will*, infinitivo sin *to*."
+        },
+        {
+          "wrong": "I think it won't rain.",
+          "right": "I don't think it will rain.",
+          "why": "La negación va en *think*."
+        },
+        {
+          "wrong": "I'll call you when I will arrive.",
+          "right": "I'll call you when I arrive.",
+          "why": "Después de *when*, presente."
+        }
+      ],
+      "practice": [
+        {
+          "q": "The phone's ringing. — I ___ (answer) it!",
+          "a": "'ll answer",
+          "why": "Decisión en el momento."
+        },
+        {
+          "q": "I don't think she ___ (come) to the wedding.",
+          "a": "will come"
+        },
+        {
+          "q": "I promise I ___ (not / be) late again.",
+          "a": "won't be"
+        },
+        {
+          "q": "he / probably / win (will)",
+          "a": "He'll probably win.",
+          "why": "*probably* va después de *will*."
+        }
+      ]
+    },
+    {
+      "id": "shall",
+      "title": "Shall",
+      "title_es": "Shall: sugerencias y ofrecimientos",
+      "use": "En **preguntas** para hacer una **sugerencia** (*shall we…?*) o un **ofrecimiento** (*shall I…?*). Solo se usa con **I** y **we**.",
+      "forms": [
+        {
+          "label": "Sugerencia",
+          "pattern": "Shall we + infinitivo?",
+          "example": "Shall we eat out tonight?"
+        },
+        {
+          "label": "Ofrecimiento",
+          "pattern": "Shall I + infinitivo?",
+          "example": "Shall I help you with your homework?"
+        }
+      ],
+      "tables": [
+        {
+          "title": "Cómo contestar",
+          "head": [
+            "Pregunta",
+            "Sí",
+            "No"
+          ],
+          "rows": [
+            [
+              "Shall we eat out tonight?",
+              "Good idea! / Yes, let's.",
+              "I'd rather stay at home."
+            ],
+            [
+              "Shall I help you?",
+              "Yes, please. That's very kind.",
+              "No, thanks. I'm fine."
+            ]
+          ]
+        }
+      ],
+      "examples": [
+        {
+          "en": "Shall I start?",
+          "es": "¿Empiezo yo?"
+        },
+        {
+          "en": "Shall we check the answers?",
+          "es": "¿Comprobamos las respuestas?"
+        },
+        {
+          "en": "Shall I open the window?",
+          "es": "¿Abro la ventana?"
+        }
+      ],
+      "exceptions": [
+        "Solo con *I / we*: nunca *Shall you…?*",
+        "En inglés americano se usa poco: dicen *Should I…?* o *Do you want me to…?*"
+      ],
+      "practice": [
+        {
+          "q": "It's hot in here. ___ I open the window?",
+          "a": "Shall"
+        },
+        {
+          "q": "___ we order a pizza tonight? — Good idea!",
+          "a": "Shall"
+        }
+      ]
+    }
+  ]
+}

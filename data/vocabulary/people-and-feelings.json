@@ -2,10 +2,10 @@
   "id": "people-and-feelings",
   "type": "vocabulary",
   "level": "B1",
-  "title": "People and feelings",
+  "title": "People, personality and feelings",
   "title_es": "Personalidad y sentimientos",
   "icon": "smiling-face-with-smiling-eyes",
-  "description": "Adjetivos para describir a personas, cosas y cómo nos sentimos.",
+  "description": "Adjetivos de personalidad positivos y negativos, sus contrarios, profesiones y sentimientos.",
   "sections": [
     {
       "id": "describing",
@@ -28,7 +28,7 @@
           "pron": "FÁni",
           "es": "gracioso; raro",
           "icon": "face-with-tears-of-joy",
-          "note": "Algo que te hace reír (*makes you laugh*), o raro (*weird, strange*).",
+          "note": "Algo que te hace reír (*makes you laugh* /lɑːf/ «laaf»), o raro (*weird, strange*).",
           "example": "There was a funny smell in the classroom.",
           "example_es": "Había un olor raro en la clase."
         },
@@ -88,7 +88,7 @@
           "pron": "FRÉNDli",
           "es": "simpático, amable",
           "icon": "beaming-face-with-smiling-eyes",
-          "note": "Ojo: *sympathetic* no es «simpático», sino «comprensivo»."
+          "note": "Contrario: *unfriendly* (antipático). Ojo: *sympathetic* no es «simpático», sino «comprensivo»."
         },
         {
           "en": "loyal",
@@ -169,7 +169,8 @@
           "ipa": "ˈɡriː.di",
           "pron": "GRÍIdi",
           "es": "glotón; avaricioso",
-          "icon": "money-mouth-face"
+          "icon": "money-mouth-face",
+          "note": "Con comida, glotón; con dinero, avaricioso."
         },
         {
           "en": "successful",
@@ -178,6 +179,360 @@
           "es": "de éxito, exitoso",
           "icon": "trophy",
           "note": "Se escribe con una sola «l» al final."
+        }
+      ]
+    },
+    {
+      "id": "positive",
+      "title": "Personality: positive",
+      "title_es": "Personalidad: cualidades",
+      "items": [
+        {
+          "en": "talkative",
+          "ipa": "ˈtɔː.kə.tɪv",
+          "pron": "TÓOkativ",
+          "es": "hablador",
+          "icon": "speaking-head"
+        },
+        {
+          "en": "quiet",
+          "ipa": "ˈkwaɪ.ət",
+          "pron": "KUÁIat",
+          "es": "tranquilo, callado",
+          "icon": "zipper-mouth-face",
+          "note": "¡No lo confundas con *quite* /kwaɪt/ «kuáit» (bastante)!"
+        },
+        {
+          "en": "calm",
+          "ipa": "kɑːm",
+          "pron": "kaam",
+          "es": "tranquilo, sereno",
+          "icon": "person-in-lotus-position",
+          "note": "La «l» no se pronuncia."
+        },
+        {
+          "en": "helpful",
+          "ipa": "ˈhelp.fəl",
+          "pron": "JÉLPfal",
+          "es": "servicial, que ayuda",
+          "icon": "raising-hands",
+          "note": "Contrario: *unhelpful*."
+        },
+        {
+          "en": "sensible",
+          "ipa": "ˈsen.sə.bəl",
+          "pron": "SÉNsabel",
+          "es": "sensato",
+          "icon": "brain",
+          "note": "Falso amigo: alguien que piensa antes de actuar. «Sensible» en inglés es *sensitive*."
+        },
+        {
+          "en": "sensitive",
+          "ipa": "ˈsen.sə.tɪv",
+          "pron": "SÉNsativ",
+          "es": "sensible (emocional)",
+          "icon": "face-holding-back-tears",
+          "note": "Alguien que siente mucho las cosas; = *emotional*. Contrario: *insensitive*."
+        },
+        {
+          "en": "responsible",
+          "ipa": "rɪˈspɒn.sə.bəl",
+          "pron": "riSPÓNsabel",
+          "es": "responsable",
+          "icon": "clipboard",
+          "note": "Contrario: *irresponsible* (*ir-* delante de *r*)."
+        },
+        {
+          "en": "reliable",
+          "ipa": "rɪˈlaɪə.bəl",
+          "pron": "riLÁIabel",
+          "es": "fiable, de confianza",
+          "icon": "handshake",
+          "note": "Alguien con quien se puede contar. Contrario: *unreliable*."
+        },
+        {
+          "en": "honest",
+          "ipa": "ˈɒn.ɪst",
+          "pron": "Ónist",
+          "es": "honrado, sincero",
+          "icon": "smiling-face-with-halo",
+          "note": "La «h» no suena. Contrario: *dishonest*."
+        },
+        {
+          "en": "brave",
+          "ipa": "breɪv",
+          "pron": "bréiv",
+          "es": "valiente",
+          "icon": "lion"
+        },
+        {
+          "en": "affectionate",
+          "ipa": "əˈfek.ʃən.ət",
+          "pron": "aFÉKshanat",
+          "es": "cariñoso",
+          "icon": "smiling-face-with-hearts"
+        },
+        {
+          "en": "ambitious",
+          "ipa": "æmˈbɪʃ.əs",
+          "pron": "amBÍshas",
+          "es": "ambicioso",
+          "icon": "rocket"
+        },
+        {
+          "en": "charming",
+          "ipa": "ˈtʃɑː.mɪŋ",
+          "pron": "CHÁAming",
+          "es": "encantador",
+          "icon": "bouquet"
+        },
+        {
+          "en": "competitive",
+          "ipa": "kəmˈpet.ə.tɪv",
+          "pron": "komPÉtativ",
+          "es": "competitivo",
+          "icon": "1st-place-medal"
+        },
+        {
+          "en": "imaginative",
+          "ipa": "ɪˈmædʒ.ɪ.nə.tɪv",
+          "pron": "iMÁyinativ",
+          "es": "imaginativo",
+          "icon": "rainbow"
+        },
+        {
+          "en": "independent",
+          "ipa": "ˌɪn.dɪˈpen.dənt",
+          "pron": "indiPÉNdant",
+          "es": "independiente",
+          "icon": "person-walking"
+        },
+        {
+          "en": "mature",
+          "ipa": "məˈtʃʊə",
+          "pron": "maCHÚA",
+          "es": "maduro",
+          "icon": "owl",
+          "note": "Contrario: *immature* (*im-* delante de *m*)."
+        },
+        {
+          "en": "patient",
+          "ipa": "ˈpeɪ.ʃənt",
+          "pron": "PÉIshant",
+          "es": "paciente",
+          "icon": "snail",
+          "note": "Contrario: *impatient* (*im-* delante de *p*)."
+        },
+        {
+          "en": "self-confident",
+          "ipa": "ˌselfˈkɒn.fɪ.dənt",
+          "pron": "self-KÓNfidant",
+          "es": "seguro de sí mismo",
+          "icon": "smiling-face-with-sunglasses"
+        },
+        {
+          "en": "sociable",
+          "ipa": "ˈsəʊ.ʃə.bəl",
+          "pron": "SÓUshabel",
+          "es": "sociable",
+          "icon": "partying-face",
+          "note": "Contrario: *unsociable*."
+        },
+        {
+          "en": "hard-working",
+          "ipa": "ˌhɑːdˈwɜː.kɪŋ",
+          "pron": "jaad-UÉRking",
+          "es": "trabajador",
+          "icon": "honeybee"
+        },
+        {
+          "en": "generous",
+          "ipa": "ˈdʒen.ər.əs",
+          "pron": "YÉnaras",
+          "es": "generoso",
+          "icon": "wrapped-gift",
+          "note": "Contrario: *mean* (tacaño)."
+        },
+        {
+          "en": "rebellious",
+          "ipa": "rɪˈbel.i.əs",
+          "pron": "riBÉLias",
+          "es": "rebelde",
+          "icon": "sign-of-the-horns"
+        },
+        {
+          "en": "crazy / mad",
+          "ipa": "ˈkreɪ.zi / mæd",
+          "pron": "KRÉIzzi / mad",
+          "es": "loco",
+          "icon": "zany-face",
+          "note": "En Reino Unido, *mad* también es «enfadado»: *He's mad at me*."
+        }
+      ]
+    },
+    {
+      "id": "negative",
+      "title": "Personality: negative",
+      "title_es": "Personalidad: defectos",
+      "items": [
+        {
+          "en": "stubborn",
+          "ipa": "ˈstʌb.ən",
+          "pron": "STÁban",
+          "es": "terco, cabezota",
+          "icon": "ox"
+        },
+        {
+          "en": "shy",
+          "ipa": "ʃaɪ",
+          "pron": "shái",
+          "es": "tímido",
+          "icon": "see-no-evil-monkey"
+        },
+        {
+          "en": "impatient",
+          "ipa": "ɪmˈpeɪ.ʃənt",
+          "pron": "imPÉIshant",
+          "es": "impaciente",
+          "icon": "stopwatch"
+        },
+        {
+          "en": "lazy",
+          "ipa": "ˈleɪ.zi",
+          "pron": "LÉIzzi",
+          "es": "vago, perezoso",
+          "icon": "sloth"
+        },
+        {
+          "en": "proud",
+          "ipa": "praʊd",
+          "pron": "práud",
+          "es": "orgulloso; soberbio",
+          "icon": "peacock",
+          "note": "Puede ser positivo: *I'm proud of you* = estoy orgulloso de ti."
+        },
+        {
+          "en": "resentful",
+          "ipa": "rɪˈzent.fəl",
+          "pron": "riZZÉNTfal",
+          "es": "rencoroso",
+          "icon": "pouting-face"
+        },
+        {
+          "en": "unfriendly",
+          "ipa": "ʌnˈfrend.li",
+          "pron": "anFRÉNDli",
+          "es": "antipático",
+          "icon": "unamused-face"
+        },
+        {
+          "en": "indecisive",
+          "ipa": "ˌɪn.dɪˈsaɪ.sɪv",
+          "pron": "indiSÁIsiv",
+          "es": "indeciso",
+          "icon": "red-question-mark"
+        },
+        {
+          "en": "rude",
+          "ipa": "ruːd",
+          "pron": "ruud",
+          "es": "maleducado, grosero",
+          "icon": "face-with-symbols-on-mouth",
+          "note": "Cuando no tienes buenos modales."
+        },
+        {
+          "en": "impolite",
+          "ipa": "ˌɪm.pəlˈaɪt",
+          "pron": "impaLÁIT",
+          "es": "descortés",
+          "icon": "no-entry",
+          "note": "Contrario de *polite* (educado). Más suave que *rude*."
+        },
+        {
+          "en": "mean",
+          "ipa": "miːn",
+          "pron": "miin",
+          "es": "tacaño; malo (con la gente)",
+          "icon": "locked",
+          "note": "Contrario de *generous*."
+        },
+        {
+          "en": "cruel",
+          "ipa": "ˈkruː.əl",
+          "pron": "KRÚal",
+          "es": "cruel",
+          "icon": "angry-face-with-horns"
+        },
+        {
+          "en": "selfish",
+          "ipa": "ˈsel.fɪʃ",
+          "pron": "SÉLfish",
+          "es": "egoísta",
+          "icon": "crown"
+        },
+        {
+          "en": "bossy",
+          "ipa": "ˈbɒs.i",
+          "pron": "BÓsi",
+          "es": "mandón",
+          "icon": "megaphone"
+        },
+        {
+          "en": "anxious",
+          "ipa": "ˈæŋk.ʃəs",
+          "pron": "ÁNKshas",
+          "es": "ansioso, nervioso",
+          "icon": "anxious-face-with-sweat"
+        },
+        {
+          "en": "insecure",
+          "ipa": "ˌɪn.sɪˈkjʊə",
+          "pron": "insiKIÚA",
+          "es": "inseguro",
+          "icon": "face-with-diagonal-mouth"
+        },
+        {
+          "en": "moody",
+          "ipa": "ˈmuː.di",
+          "pron": "MÚUdi",
+          "es": "malhumorado, de humor cambiante",
+          "icon": "cloud-with-lightning"
+        },
+        {
+          "en": "spoilt",
+          "ipa": "spɔɪlt",
+          "pron": "spóilt",
+          "es": "consentido, mimado",
+          "icon": "baby"
+        },
+        {
+          "en": "dishonest",
+          "ipa": "dɪsˈɒn.ɪst",
+          "pron": "disÓnist",
+          "es": "deshonesto, poco honrado",
+          "note": "Contrario de *honest* (*dis-*)."
+        },
+        {
+          "en": "liar",
+          "ipa": "ˈlaɪ.ə",
+          "pron": "LÁIa",
+          "es": "mentiroso",
+          "icon": "lying-face",
+          "note": "Es un nombre: *He's a liar.* Verbo: *lie* (mentir)."
+        },
+        {
+          "en": "shameless",
+          "ipa": "ˈʃeɪm.ləs",
+          "pron": "SHÉIMlas",
+          "es": "sinvergüenza",
+          "icon": "smirking-face"
+        },
+        {
+          "en": "afraid of change",
+          "ipa": "əˌfreɪd əv ˈtʃeɪndʒ",
+          "pron": "aFRÉID av CHÉINCH",
+          "es": "con miedo a los cambios",
+          "icon": "fearful-face"
         }
       ]
     },
@@ -208,6 +563,95 @@
           "pron": "shokt",
           "es": "impactado, horrorizado",
           "icon": "face-screaming-in-fear"
+        }
+      ]
+    },
+    {
+      "id": "jobs",
+      "title": "Jobs and personality",
+      "title_es": "Profesiones y personalidad",
+      "items": [
+        {
+          "en": "In my job you have to be…",
+          "ipa": "ɪn maɪ ˈdʒɒb juː ˈhæv tə bi",
+          "pron": "in mai YOB yu JAV ta bi",
+          "es": "En mi trabajo tienes que ser…",
+          "icon": "briefcase",
+          "example": "In my job you have to be patient and reliable.",
+          "example_es": "En mi trabajo tienes que ser paciente y de fiar."
+        },
+        {
+          "en": "judge",
+          "ipa": "dʒʌdʒ",
+          "pron": "yach",
+          "es": "juez",
+          "icon": "judge",
+          "example": "A judge has to be honest, reliable and self-confident.",
+          "example_es": "Un juez tiene que ser honrado, fiable y seguro de sí mismo."
+        },
+        {
+          "en": "doctor",
+          "ipa": "ˈdɒk.tə",
+          "pron": "DÓKta",
+          "es": "médico",
+          "icon": "health-worker",
+          "example": "A doctor has to be calm and responsible.",
+          "example_es": "Un médico tiene que ser tranquilo y responsable."
+        },
+        {
+          "en": "teacher",
+          "ipa": "ˈtiː.tʃə",
+          "pron": "TÍIcha",
+          "es": "profesor/a",
+          "icon": "teacher",
+          "example": "A good teacher is patient, hard-working and reliable.",
+          "example_es": "Un buen profesor es paciente, trabajador y de fiar."
+        },
+        {
+          "en": "journalist",
+          "ipa": "ˈdʒɜː.nə.lɪst",
+          "pron": "YÉRnalist",
+          "es": "periodista",
+          "icon": "newspaper",
+          "example": "Journalists need to be sociable.",
+          "example_es": "Los periodistas tienen que ser sociables."
+        },
+        {
+          "en": "influencer",
+          "ipa": "ˈɪn.flu.ən.sə",
+          "pron": "ÍNfluansa",
+          "es": "influencer",
+          "icon": "mobile-phone",
+          "example": "Influencers are usually imaginative, self-confident and sociable.",
+          "example_es": "Los influencers suelen ser imaginativos, seguros y sociables."
+        },
+        {
+          "en": "footballer",
+          "ipa": "ˈfʊt.bɔː.lə",
+          "pron": "FÚTboola",
+          "es": "futbolista",
+          "icon": "soccer-ball",
+          "example": "Footballers are competitive, ambitious and healthy.",
+          "example_es": "Los futbolistas son competitivos, ambiciosos y sanos."
+        },
+        {
+          "en": "bullfighter",
+          "ipa": "ˈbʊl.faɪ.tə",
+          "pron": "BÚLfaita",
+          "es": "torero",
+          "icon": "water-buffalo",
+          "example": "A bullfighter has to be brave and self-confident.",
+          "example_es": "Un torero tiene que ser valiente y seguro de sí mismo."
+        },
+        {
+          "en": "politician",
+          "ipa": "ˌpɒl.əˈtɪʃ.ən",
+          "pron": "polaTÍshan",
+          "es": "político",
+          "icon": "classical-building",
+          "note": "*politics* = la política; *policy* = una política (medida concreta).",
+          "example": "Some people think politicians are liars, but a good politician has to be honest.",
+          "example_es": "Hay quien piensa que los políticos son mentirosos, pero un buen político tiene que ser honrado."
         }
       ]
     }

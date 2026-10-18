@@ -111,6 +111,16 @@
           "es": "presentar (a alguien)",
           "icon": "waving-hand",
           "note": "Falso amigo: «introducir» (meter) es *put in* o *insert*."
+        },
+        {
+          "en": "lie (lay, lain)",
+          "ipa": "laɪ",
+          "pron": "lái",
+          "es": "estar tumbado, tumbarse",
+          "icon": "person-in-bed",
+          "note": "¡Ojo! Su pasado es *lay*. Y *lay* (laid, laid) = poner, colocar (*lay the table*). *lie* (lied) también es mentir.",
+          "example": "I lay on the sofa all afternoon.",
+          "example_es": "Me pasé la tarde tumbado en el sofá."
         }
       ]
     },

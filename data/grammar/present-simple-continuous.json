@@ -1212,10 +1212,236 @@
           "q": "The head chef is ill, so he ___ (not work) today.",
           "a": "isn't working",
           "why": "Temporal: hoy."
+        },
+        {
+          "q": "You ___ (not / like) spicy food, do you?",
+          "a": "don't like"
+        },
+        {
+          "q": "My brother ___ (not / study) at the moment. He's watching TV.",
+          "a": "isn't studying"
+        },
+        {
+          "q": "We often ___ (visit) our grandparents on Sundays.",
+          "a": "visit"
+        },
+        {
+          "q": "___ (she / go) to the gym often?",
+          "a": "Does she go"
+        },
+        {
+          "q": "___ (he / work) from home now?",
+          "a": "Is he working"
+        },
+        {
+          "q": "We ___ (go) to my aunt's wedding this weekend.",
+          "a": "are going",
+          "why": "Plan organizado."
+        },
+        {
+          "q": "It ___ (rain) a lot in Galicia.",
+          "a": "rains",
+          "why": "Algo general."
+        },
+        {
+          "q": "How long ___ (your cousin / stay) with you?",
+          "a": "is your cousin staying",
+          "why": "Visita temporal."
         }
       ],
       "tips": [
         "**Regla de dos pasos:** primero mira el verbo (si es de estado → simple); si es de acción, decide el adverbio (hábito → simple; ahora o temporal → continuo)."
+      ]
+    },
+    {
+      "id": "family-questions",
+      "title": "Questions about family",
+      "title_es": "Preguntas sobre la familia",
+      "use": "Para hablar de tu familia usa **presente simple** con rutinas, situaciones permanentes y verbos de estado, y **presente continuo** con lo que pasa ahora, situaciones temporales y planes ya organizados. Practica formando las preguntas y contéstalas con un compañero.",
+      "tables": [
+        {
+          "title": "Pistas para elegir",
+          "head": [
+            "Si preguntas por…",
+            "Tiempo",
+            "Ejemplo"
+          ],
+          "rows": [
+            [
+              "una rutina o frecuencia",
+              "simple",
+              "How often **does** your family **get** together?"
+            ],
+            [
+              "algo permanente",
+              "simple",
+              "Where **do** your relatives on your father's side **live**?"
+            ],
+            [
+              "un verbo de estado (*have, like, remember, feel* = opinar)",
+              "simple",
+              "**Do** you **have** a lot in common with your cousins?"
+            ],
+            [
+              "ahora o estos días",
+              "continuo",
+              "**Are** you **sharing** a bedroom with a sibling these days?"
+            ],
+            [
+              "un plan ya organizado",
+              "continuo",
+              "**Are** you **visiting** your grandparents this weekend?"
+            ]
+          ]
+        },
+        {
+          "title": "Preguntas por el sujeto (sin *do / does*)",
+          "head": [
+            "Pregunta por…",
+            "✗ Incorrecto",
+            "✓ Correcto"
+          ],
+          "rows": [
+            [
+              "el sujeto (*who*)",
+              "Who does usually act as the main breadwinner?",
+              "Who **usually acts** as the main breadwinner?"
+            ],
+            [
+              "el objeto (*who*)",
+              "Who you get on well with?",
+              "Who **do you get on** well with?"
+            ],
+            [
+              "el sujeto (*anyone*)",
+              "Are anyone in your family moving house?",
+              "**Is** anyone in your family **moving** house soon?"
+            ]
+          ],
+          "note": "*anyone*, *everyone* y *someone* van con verbo en singular."
+        }
+      ],
+      "examples": [
+        {
+          "en": "How often does she go to the gym? — She goes to the gym twice a week.",
+          "es": "¿Cada cuánto va al gimnasio? — Va dos veces a la semana."
+        },
+        {
+          "en": "Do you get along with your step-siblings? — Yes, I do.",
+          "es": "¿Te llevas bien con tus hermanastros? — Sí."
+        },
+        {
+          "en": "Where are they at the moment? — They aren't at school at the moment.",
+          "es": "¿Dónde están ahora? — Ahora no están en el colegio.",
+          "note": "Se dice *at school* (sin *the*) cuando vas como alumno."
+        },
+        {
+          "en": "Who are you having lunch with this week? — I'm having lunch with my sister.",
+          "es": "¿Con quién comes esta semana? — Como con mi hermana.",
+          "note": "Plan organizado: continuo."
+        }
+      ],
+      "exceptions": [
+        "*family* puede ir con verbo en singular o plural en inglés británico: *How often **does** your family get together?* / *How often **do** your family get together?*",
+        "*see eye to eye* y *feel* (encontrarse) suelen ir en simple, pero con *these days* o *at present* también se oye el continuo para algo temporal: *Are you seeing eye to eye with your siblings these days?*",
+        "*live* va en simple si es permanente (*Where do they live?*) y en continuo si es temporal (*She's living with us this month*)."
+      ],
+      "tips": [
+        "En las preguntas por el sujeto con *who*, el verbo lleva *-s* como en una afirmación: *Who **cooks** in your house?*"
+      ],
+      "practice": [
+        {
+          "q": "Who / you / get on well with / in your family?",
+          "a": "Who do you get on well with in your family?",
+          "why": "Situación permanente."
+        },
+        {
+          "q": "you / see eye to eye with your siblings / these days?",
+          "a": "Do you see eye to eye with your siblings these days?",
+          "why": "*see eye to eye* = estar de acuerdo (estado). También: *Are you seeing…?*"
+        },
+        {
+          "q": "How often / your extended family / get together?",
+          "a": "How often does your extended family get together?",
+          "why": "Frecuencia: simple."
+        },
+        {
+          "q": "you / plan / a family reunion / this month?",
+          "a": "Are you planning a family reunion this month?",
+          "why": "Plan de este mes: continuo."
+        },
+        {
+          "q": "Who / you / take after / in your family?",
+          "a": "Who do you take after in your family?"
+        },
+        {
+          "q": "your parents / raise / any pets / at the moment?",
+          "a": "Are your parents raising any pets at the moment?"
+        },
+        {
+          "q": "How many relatives / live / near you / right now?",
+          "a": "How many relatives live near you right now?",
+          "why": "Pregunta por el sujeto. Si es temporal: *are living*."
+        },
+        {
+          "q": "you / share / a bedroom / with a sibling / these days?",
+          "a": "Are you sharing a bedroom with a sibling these days?"
+        },
+        {
+          "q": "What / you and your significant other / like to do / at weekends?",
+          "a": "What do you and your significant other like to do at weekends?",
+          "why": "*like* es de estado."
+        },
+        {
+          "q": "you / spend / a lot of time with your in-laws / this week?",
+          "a": "Are you spending a lot of time with your in-laws this week?"
+        },
+        {
+          "q": "Who / usually / act as the main breadwinner / in traditional families?",
+          "a": "Who usually acts as the main breadwinner in traditional families?",
+          "why": "Pregunta por el sujeto: sin *does*."
+        },
+        {
+          "q": "your family / host / any relatives / this week?",
+          "a": "Is your family hosting any relatives this week?"
+        },
+        {
+          "q": "you / have / a lot of things in common / with your cousins?",
+          "a": "Do you have a lot of things in common with your cousins?",
+          "why": "*have* = tener: estado."
+        },
+        {
+          "q": "How often / you / quarrel / with your brothers or sisters?",
+          "a": "How often do you quarrel with your brothers or sisters?"
+        },
+        {
+          "q": "you / try / to make up / with a friend or relative / right now?",
+          "a": "Are you trying to make up with a friend or relative right now?"
+        },
+        {
+          "q": "Where / your relatives on your father's side / live?",
+          "a": "Where do your relatives on your father's side live?"
+        },
+        {
+          "q": "you / visit / your grandparents / this weekend?",
+          "a": "Are you visiting your grandparents this weekend?",
+          "why": "Plan organizado. También: *Are you going to visit…?*"
+        },
+        {
+          "q": "What good memories / you / remember / from your childhood?",
+          "a": "What good memories do you remember from your childhood?",
+          "why": "*remember* es de estado."
+        },
+        {
+          "q": "you / feel / very close to your immediate family / at present?",
+          "a": "Do you feel very close to your immediate family at present?",
+          "why": "También: *Are you feeling…?*"
+        },
+        {
+          "q": "anyone in your family / start a family / or / adopt / this year?",
+          "a": "Is anyone in your family starting a family or adopting this year?",
+          "why": "*anyone* va en singular."
+        }
       ]
     }
   ]
