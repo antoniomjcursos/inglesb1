@@ -220,6 +220,19 @@
         {
           "en": "How often do you eat seafood? — About once a week.",
           "es": "¿Cada cuánto comes marisco? — Una vez a la semana más o menos."
+        },
+        {
+          "en": "Jake takes vitamins every day.",
+          "es": "Jake toma vitaminas todos los días."
+        },
+        {
+          "en": "We often cycle to work in the summer.",
+          "es": "En verano solemos ir al trabajo en bici."
+        },
+        {
+          "en": "Clare buys a lot of takeaways, but I prefer home-made food.",
+          "es": "Clare compra mucha comida para llevar, pero yo prefiero la casera.",
+          "note": "*prefer* es de estado."
         }
       ],
       "exceptions": [
@@ -443,6 +456,20 @@
           "en": "We're having dinner at a new restaurant on Friday.",
           "es": "El viernes cenamos en un restaurante nuevo.",
           "note": "Plan ya organizado."
+        },
+        {
+          "en": "Sorry, I can't talk right now. I'm driving.",
+          "es": "Perdona, ahora no puedo hablar. Estoy conduciendo."
+        },
+        {
+          "en": "I'm sleeping a lot at the moment because I'm studying for my exams.",
+          "es": "Ahora duermo mucho porque estoy preparando los exámenes.",
+          "note": "Situación temporal."
+        },
+        {
+          "en": "My parents are getting older, so I'm visiting them more often.",
+          "es": "Mis padres se hacen mayores, así que los visito más a menudo.",
+          "note": "Cambio en marcha."
         }
       ],
       "exceptions": [
@@ -631,6 +658,21 @@
         {
           "en": "I used to hate olives, but now I love them.",
           "es": "Antes odiaba las aceitunas, pero ahora me encantan."
+        },
+        {
+          "en": "Wow! This tastes delicious! Did you make it yourself?",
+          "es": "¡Qué rico! ¿Lo has hecho tú?",
+          "note": "*taste* = saber a: estado."
+        },
+        {
+          "en": "You look very serious! What are you thinking about?",
+          "es": "¡Qué serio estás! ¿En qué piensas?",
+          "note": "*look* = parecer (estado); *think about* = acción."
+        },
+        {
+          "en": "I need a lot of sleep at the moment.",
+          "es": "Ahora necesito dormir mucho.",
+          "note": "*need* es de estado, aunque diga *at the moment*."
         }
       ],
       "exceptions": [
@@ -937,6 +979,14 @@
           "en": "We hardly ever eat out these days.",
           "es": "Estos días casi nunca comemos fuera.",
           "note": "Con un adverbio de frecuencia, *these days* también admite simple."
+        },
+        {
+          "en": "We hardly ever eat together as a family.",
+          "es": "Casi nunca comemos juntos en familia."
+        },
+        {
+          "en": "I don't usually have ready-made food, but I don't have much time tonight.",
+          "es": "No suelo comer platos preparados, pero esta noche no tengo mucho tiempo."
         }
       ],
       "exceptions": [
@@ -1184,6 +1234,14 @@
         {
           "en": "I normally work in an office, but I'm working from home this week.",
           "es": "Normalmente trabajo en una oficina, pero esta semana trabajo desde casa."
+        },
+        {
+          "en": "Elena doesn't work on Fridays, but she's working this Friday because a colleague is ill.",
+          "es": "Elena no trabaja los viernes, pero este viernes trabaja porque un compañero está enfermo."
+        },
+        {
+          "en": "I live in Granada, but I'm staying with my aunt in Madrid this month.",
+          "es": "Vivo en Granada, pero este mes me quedo con mi tía en Madrid."
         }
       ],
       "practice": [
@@ -1247,6 +1305,35 @@
           "q": "How long ___ (your cousin / stay) with you?",
           "a": "is your cousin staying",
           "why": "Visita temporal."
+        },
+        {
+          "q": "Jake ___ (take) vitamins every day.",
+          "a": "takes",
+          "why": "Rutina."
+        },
+        {
+          "q": "I ___ (prefer) home-made food to takeaways.",
+          "a": "prefer",
+          "why": "*prefer* es de estado."
+        },
+        {
+          "q": "In the summer, we often ___ (cycle) to work.",
+          "a": "cycle",
+          "why": "Hábito con *often*."
+        },
+        {
+          "q": "Hi, Beth! I can't talk now. I ___ (drive).",
+          "a": "'m driving"
+        },
+        {
+          "q": "Wow! It ___ (taste) delicious!",
+          "a": "tastes",
+          "why": "*taste* + adjetivo: estado."
+        },
+        {
+          "q": "I ___ (need) a lot of sleep at the moment.",
+          "a": "need",
+          "why": "*need* nunca en continuo."
         }
       ],
       "tips": [

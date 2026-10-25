@@ -1,0 +1,416 @@
+{
+  "id": "grammar-summary",
+  "type": "grammar",
+  "level": "B1",
+  "title": "Grammar summary",
+  "title_es": "Resumen de gramática",
+  "icon": "memo",
+  "description": "Todas las fórmulas y usos de un vistazo: tiempos verbales, futuro, *should* y *shall*.",
+  "sections": [
+    {
+      "id": "formulas",
+      "title": "Formulas",
+      "title_es": "Fórmulas de todos los tiempos",
+      "use": "Cada tiempo con su fórmula en **afirmativa**, **negativa** y **pregunta**. *V* = verbo en infinitivo; *V-ing* = gerundio; *participio* = 3.ª columna de los irregulares (*eaten, been, done*).",
+      "tables": [
+        {
+          "title": "Presentes",
+          "head": [
+            "Tiempo",
+            "Afirmativa",
+            "Negativa",
+            "Pregunta",
+            "Ejemplo"
+          ],
+          "rows": [
+            [
+              "Present simple",
+              "sujeto + **V** (he / she / it + **-s**)",
+              "sujeto + **don't / doesn't** + V",
+              "**Do / Does** + sujeto + V?",
+              "She **works** here. / **Does** she **work** here?"
+            ],
+            [
+              "Present continuous",
+              "sujeto + **am / is / are** + **V-ing**",
+              "sujeto + **'m not / isn't / aren't** + V-ing",
+              "**Am / Is / Are** + sujeto + V-ing?",
+              "They'**re cooking**. / **Are** they **cooking**?"
+            ]
+          ]
+        },
+        {
+          "title": "Pasado y presente perfecto",
+          "head": [
+            "Tiempo",
+            "Afirmativa",
+            "Negativa",
+            "Pregunta",
+            "Ejemplo"
+          ],
+          "rows": [
+            [
+              "Past simple",
+              "sujeto + **V-ed** / irregular",
+              "sujeto + **didn't** + V",
+              "**Did** + sujeto + V?",
+              "I **met** him in 2020. / **Did** you **meet** him?"
+            ],
+            [
+              "Past simple de *be*",
+              "sujeto + **was / were**",
+              "sujeto + **wasn't / weren't**",
+              "**Was / Were** + sujeto…?",
+              "Where **were** you yesterday?"
+            ],
+            [
+              "Present perfect simple",
+              "sujeto + **have / has** + **participio**",
+              "sujeto + **haven't / hasn't** + participio",
+              "**Have / Has** + sujeto + participio?",
+              "**Have** you ever **eaten** tripe?"
+            ],
+            [
+              "Present perfect continuous",
+              "sujeto + **have / has been** + **V-ing**",
+              "sujeto + **haven't / hasn't been** + V-ing",
+              "**Have / Has** + sujeto + **been** + V-ing?",
+              "I'**ve been working** here for 9 years."
+            ]
+          ]
+        },
+        {
+          "title": "Futuro",
+          "head": [
+            "Forma",
+            "Afirmativa",
+            "Negativa",
+            "Pregunta",
+            "Ejemplo"
+          ],
+          "rows": [
+            [
+              "be going to",
+              "sujeto + **am / is / are going to** + V",
+              "sujeto + **'m not / isn't / aren't going to** + V",
+              "**Am / Is / Are** + sujeto + **going to** + V?",
+              "It'**s going to rain**."
+            ],
+            [
+              "will",
+              "sujeto + **will ('ll)** + V",
+              "sujeto + **won't** + V",
+              "**Will** + sujeto + V?",
+              "I'**ll help** you."
+            ],
+            [
+              "shall",
+              "—",
+              "—",
+              "**Shall I / we** + V?",
+              "**Shall we** eat out?"
+            ],
+            [
+              "Present continuous (futuro)",
+              "igual que el presente continuo + expresión de futuro",
+              "",
+              "",
+              "I'**m meeting** Ana **tonight**."
+            ],
+            [
+              "Present simple (futuro)",
+              "igual que el presente simple, para horarios",
+              "",
+              "",
+              "The train **leaves** at 6."
+            ]
+          ]
+        },
+        {
+          "title": "Verbos modales: *should*",
+          "head": [
+            "Forma",
+            "Afirmativa",
+            "Negativa",
+            "Pregunta",
+            "Ejemplo"
+          ],
+          "rows": [
+            [
+              "should",
+              "sujeto + **should** + V",
+              "sujeto + **shouldn't** + V",
+              "**Should** + sujeto + V?",
+              "You **should** drink more water."
+            ]
+          ],
+          "note": "Los modales (*should, will, can, must…*) no llevan *-s*, ni *do / does*, ni *to* delante del verbo."
+        }
+      ]
+    },
+    {
+      "id": "uses",
+      "title": "Uses",
+      "title_es": "¿Qué tiempo uso? Por usos",
+      "use": "Busca **lo que quieres decir** en la primera columna y mira qué tiempo te hace falta.",
+      "tables": [
+        {
+          "title": "Quiero hablar de…",
+          "head": [
+            "Quiero hablar de…",
+            "Tiempo",
+            "Ejemplo",
+            "Español"
+          ],
+          "rows": [
+            [
+              "hábitos y rutinas",
+              "present simple",
+              "I **usually have** toast for breakfast.",
+              "Normalmente desayuno tostadas."
+            ],
+            [
+              "cosas siempre verdad",
+              "present simple",
+              "Water **boils** at 100 °C.",
+              "El agua hierve a 100 °C."
+            ],
+            [
+              "gustos, opiniones, lo que sé o tengo (verbos de estado)",
+              "present simple",
+              "I **don't understand** this recipe.",
+              "No entiendo esta receta."
+            ],
+            [
+              "algo que pasa ahora mismo",
+              "present continuous",
+              "She'**s sleeping** now.",
+              "Ahora está durmiendo."
+            ],
+            [
+              "algo temporal (estos días)",
+              "present continuous",
+              "I'**m eating** less meat these days.",
+              "Estos días como menos carne."
+            ],
+            [
+              "algo que está cambiando",
+              "present continuous",
+              "Prices **are going up**.",
+              "Los precios están subiendo."
+            ],
+            [
+              "una queja con *always*",
+              "present continuous",
+              "He'**s always leaving** dirty plates!",
+              "¡Siempre deja platos sucios!"
+            ],
+            [
+              "una acción terminada en un momento concreto",
+              "past simple",
+              "I **met** him five years ago.",
+              "Lo conocí hace cinco años."
+            ],
+            [
+              "experiencias en la vida (sin decir cuándo)",
+              "present perfect simple",
+              "I'**ve never eaten** oysters.",
+              "Nunca he comido ostras."
+            ],
+            [
+              "cuánto tiempo llevo haciendo algo",
+              "present perfect continuous",
+              "I'**ve been learning** English since 2020.",
+              "Llevo aprendiendo inglés desde 2020."
+            ],
+            [
+              "un horario futuro",
+              "present simple",
+              "The museum **opens** at 9.",
+              "El museo abre a las 9."
+            ],
+            [
+              "un plan ya organizado",
+              "present continuous",
+              "I'**m flying** to Rome on Friday.",
+              "El viernes vuelo a Roma."
+            ],
+            [
+              "una intención o ambición",
+              "be going to",
+              "I'**m going to learn** to cook.",
+              "Voy a aprender a cocinar."
+            ],
+            [
+              "una predicción con pruebas",
+              "be going to",
+              "Look at the clouds! It'**s going to rain**.",
+              "¡Mira las nubes! Va a llover."
+            ],
+            [
+              "una predicción (mi opinión)",
+              "will",
+              "I think you'**ll love** it.",
+              "Creo que te encantará."
+            ],
+            [
+              "una decisión en el momento",
+              "will",
+              "I'**ll have** the fish, please.",
+              "Tomaré el pescado, por favor."
+            ],
+            [
+              "una promesa u ofrecimiento",
+              "will",
+              "I **won't tell** anyone.",
+              "No se lo diré a nadie."
+            ],
+            [
+              "una sugerencia u ofrecimiento en pregunta",
+              "shall",
+              "**Shall I** open the window?",
+              "¿Abro la ventana?"
+            ],
+            [
+              "un consejo",
+              "should",
+              "You **should** cut down on sugar.",
+              "Deberías tomar menos azúcar."
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "id": "time-expressions",
+      "title": "Time expressions",
+      "title_es": "Expresiones de tiempo por tiempo verbal",
+      "use": "Muchas veces la **expresión de tiempo** te da la pista del tiempo verbal. Ojo: con verbos de estado manda el verbo (*I need it **now***, en simple).",
+      "tables": [
+        {
+          "title": "Pistas de tiempo",
+          "head": [
+            "Tiempo",
+            "Expresiones típicas"
+          ],
+          "rows": [
+            [
+              "Present simple",
+              "always, usually, often, sometimes, hardly ever, never, every day, once a week, on Mondays"
+            ],
+            [
+              "Present continuous",
+              "now, right now, at the moment, today, this week, these days, nowadays"
+            ],
+            [
+              "Past simple",
+              "yesterday, last night / week / year, … ago, in 2019, when I was a child"
+            ],
+            [
+              "Present perfect simple",
+              "ever, never, already, yet, just, so far, today (sin terminar)"
+            ],
+            [
+              "Present perfect continuous",
+              "How long…?, for + periodo, since + momento"
+            ],
+            [
+              "Futuro",
+              "tonight, tomorrow, this weekend, next week, soon, in two days"
+            ]
+          ]
+        },
+        {
+          "title": "El auxiliar de cada tiempo (para preguntas y negativas)",
+          "head": [
+            "Tiempo",
+            "Auxiliar",
+            "Pregunta",
+            "Negativa"
+          ],
+          "rows": [
+            [
+              "Present simple",
+              "do / does",
+              "**Do** you…? / **Does** she…?",
+              "don't / doesn't"
+            ],
+            [
+              "Present continuous",
+              "am / is / are",
+              "**Are** you …-ing?",
+              "'m not / isn't / aren't"
+            ],
+            [
+              "Past simple",
+              "did",
+              "**Did** you…?",
+              "didn't"
+            ],
+            [
+              "Present perfect",
+              "have / has",
+              "**Have** you…?",
+              "haven't / hasn't"
+            ],
+            [
+              "will",
+              "will",
+              "**Will** you…?",
+              "won't"
+            ],
+            [
+              "should",
+              "should",
+              "**Should** I…?",
+              "shouldn't"
+            ]
+          ],
+          "note": "Después de *do, does, did, will, should* el verbo va siempre en **infinitivo sin -s**: *Does she **work**?*, *He didn't **go***."
+        }
+      ],
+      "practice": [
+        {
+          "q": "I ___ (never / be) to London.",
+          "a": "have never been",
+          "why": "Experiencia: present perfect."
+        },
+        {
+          "q": "She ___ (work) from home this week.",
+          "a": "is working",
+          "why": "Temporal: present continuous."
+        },
+        {
+          "q": "We ___ (meet) in 2018.",
+          "a": "met",
+          "why": "Momento concreto: past simple."
+        },
+        {
+          "q": "How long ___ you ___ (study) English?",
+          "a": "have … been studying",
+          "why": "Duración hasta ahora."
+        },
+        {
+          "q": "Look! The baby ___ (fall) asleep.",
+          "a": "is going to fall",
+          "why": "Predicción con pruebas."
+        },
+        {
+          "q": "___ I make some coffee?",
+          "a": "Shall",
+          "why": "Ofrecimiento con *I*."
+        },
+        {
+          "q": "You ___ (not / drink) so much coffee.",
+          "a": "shouldn't drink",
+          "why": "Consejo."
+        },
+        {
+          "q": "My brother ___ (not / like) fish.",
+          "a": "doesn't like",
+          "why": "Verbo de estado: present simple."
+        }
+      ]
+    }
+  ]
+}

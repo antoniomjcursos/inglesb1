@@ -11,7 +11,6 @@
   let INDEX = { title: 'Cuaderno de inglés B1', units: [] };
   let UNITS = [];
   let quizOn = false;
-  let tocObserver = null;
 
   /* ---------- text helpers ---------- */
   const esc = (s) => String(s ?? '').replace(/[&<>"']/g, (c) => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' }[c]));
@@ -24,11 +23,16 @@
   const norm = (s) => String(s ?? '').toLowerCase().normalize('NFD').replace(/[̀-ͯ]/g, '');
   const words = (n) => n + (n === 1 ? ' palabra' : ' palabras');
   const apartados = (n) => n + (n === 1 ? ' apartado' : ' apartados');
-  const itemsOf = (u) => (u.sections || []).flatMap((s) => s.items || []);
+  // a section holds "items", "groups" (sub-sections with their own items), or both
+  const secItems = (s) => [...(s.items || []), ...(s.groups || []).flatMap((g) => g.items || [])];
+  const itemsOf = (u) => (u.sections || []).flatMap(secItems);
+  // words are always shown in alphabetical order, ignoring "the", "a", "to" and brackets at the start
+  const sortKey = (en) => norm(en).replace(/^\([^)]*\)\s*/, '').replace(/^(the|a|an|to)\s+/, '').replace(/[^a-z0-9 ]/g, '').trim();
+  const alpha = (arr) => [...(arr || [])].sort((a, b) => sortKey(a.en).localeCompare(sortKey(b.en), 'en'));
   const sizeOf = (u) => u.type === 'vocabulary' ? words(itemsOf(u).length) : apartados((u.sections || []).length);
   const iconImg = (name, size, alt) => name
     ? `<img src="icons/${esc(name)}.svg" alt="${esc(alt || '')}" width="${size}" height="${size}" loading="lazy">` : '';
-  const unitIcon = (u) => u.icon || ((u.sections || [])[0]?.items || []).find((i) => i.icon)?.icon || 'red-apple';
+  const unitIcon = (u) => u.icon || itemsOf(u).find((i) => i.icon)?.icon || 'red-apple';
   const SPK = '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M11 5 6 9H3v6h3l5 4z"/><path d="M15.5 8.5a5 5 0 0 1 0 7"/><path d="M18.5 5.5a9 9 0 0 1 0 13"/></svg>';
   const sayBtn = (text, label, small) =>
     `<button class="say${small ? ' sm' : ''}" type="button" data-say="${esc(text)}" aria-label="Escuchar: ${esc(label || text)}">${SPK}</button>`;
@@ -117,27 +121,76 @@
   function route() {
     const id = decodeURIComponent(location.hash.slice(1)) || 'inicio';
     q.value = '';
-    const unit = UNITS.find((u) => u.id === id);
+    const unit = UNITS.find((u) => u.id === id) || null;
     menu.querySelectorAll('.m-item').forEach((a) => a.toggleAttribute('aria-current', !!unit && a.dataset.id === unit.id));
-    if (unit) { renderUnit(unit); window.scrollTo(0, 0); return; }
-    renderHome();
-    const target = id === 'vocabulario' || id === 'gramatica' ? $('sec-' + id) : null;
-    if (target) target.scrollIntoView(); else window.scrollTo(0, 0);
+    renderTree(unit, id);
   }
   window.addEventListener('hashchange', route);
 
-  /* ---------- home ---------- */
-  function renderHome() {
-    markNav('inicio');
-    document.title = INDEX.title || 'Cuaderno de inglés B1';
+  /* ---------- the tree: Vocabulario / Gramática → temas → secciones → subsecciones → palabras ---------- */
+  let openState = {};
+  try { openState = JSON.parse(localStorage.getItem('tree-open') || '{}') || {}; } catch (e) { openState = {}; }
+  const saveOpen = () => { try { localStorage.setItem('tree-open', JSON.stringify(openState)); } catch (e) { /* storage unavailable */ } };
+  const isOpen = (k, def) => (k in openState ? openState[k] : def);
+  const domId = (k) => 'n-' + k.replace(/[^a-z0-9]+/gi, '-');
+  const LAZY = new Map();   // branch contents are only built when the branch is opened
+  function node(key, level, head, count, def, body) {
+    const open = isOpen(key, def);
+    LAZY.set(key, body);
+    return `<details class="node lv${level}" id="${domId(key)}" data-k="${esc(key)}"${open ? ' open' : ''}>
+      <summary class="node-h"><span class="tw" aria-hidden="true"></span>${head}${count ? `<span class="count">${count}</span>` : ''}</summary>
+      <div class="node-body">${open ? body() : ''}</div></details>`;
+  }
+  function fill(d) {
+    const body = d.querySelector(':scope > .node-body');
+    if (body && !body.childElementCount && LAZY.has(d.dataset.k)) body.innerHTML = LAZY.get(d.dataset.k)();
+  }
+  const title = (tag, main, sub) => `<${tag} class="sec">${esc(main)}${sub ? ` <small>${esc(sub)}</small>` : ''}</${tag}>`;
+  const wordsTable = (unit, items) => table(alpha(items).map((it) => row(unit, it)).join(''));
+  function unitBody(u) {
+    const isV = u.type === 'vocabulary';
+    let html = u.description ? `<p class="unit-desc">${md(u.description)}</p>` : '';
+    (u.sections || []).forEach((s) => {
+      const k = 's:' + u.id + ':' + s.id;
+      if (!isV) { html += node(k, 3, title('h3', s.title, s.title_es), '', false, () => grammarBody(s)); return; }
+      const total = secItems(s).length;
+      if (!total) return;
+      html += node(k, 3, title('h3', s.title, s.title_es), words(total), false, () => {
+        let inner = (s.items || []).length ? wordsTable(u, s.items) : '';
+        (s.groups || []).forEach((g) => {
+          if (!(g.items || []).length) return;
+          inner += node(k + ':' + g.id, 4, title('h4', g.title, g.title_es), words(g.items.length), false, () => wordsTable(u, g.items));
+        });
+        return inner;
+      });
+    });
+    return html;
+  }
+  function treeHtml() {
+    let html = '';
+    Object.keys(TYPES).forEach((type) => {
+      const us = UNITS.filter((u) => u.type === type);
+      if (!us.length) return;
+      html += node('t:' + type, 1, title('h2', TYPES[type].label), us.length + (us.length === 1 ? ' tema' : ' temas'), true, () =>
+        us.map((u) => node('u:' + u.id, 2, `${iconImg(unitIcon(u), 36)}${title('h3', u.title_es || u.title, u.title)}`, sizeOf(u), false, () => unitBody(u))).join(''));
+    });
+    return html;
+  }
+  function renderTree(focus, id) {
+    markNav(focus ? focus.type : 'inicio');
+    document.title = focus ? (focus.title_es || focus.title) + ' · ' + (INDEX.title || 'Cuaderno de inglés B1') : (INDEX.title || 'Cuaderno de inglés B1');
+    // the branch asked for in the address is always open
+    const want = focus ? ['t:' + focus.type, 'u:' + focus.id]
+      : id === 'vocabulario' ? ['t:vocabulary'] : id === 'gramatica' ? ['t:grammar'] : [];
+    want.forEach((k) => { openState[k] = true; });
+    if (want.length) saveOpen();
+    LAZY.clear();
+    const isHome = !focus && !want.length;
     const vocab = UNITS.filter((u) => u.type === 'vocabulary'), gram = UNITS.filter((u) => u.type === 'grammar');
     const nWords = vocab.reduce((a, u) => a + itemsOf(u).length, 0);
-    const mosaic = vocab.flatMap((u) => (u.sections || []).map((s) => (s.items || []).find((i) => i.icon)?.icon)).filter(Boolean)
+    const mosaic = vocab.flatMap((u) => (u.sections || []).map((s) => secItems(s).find((i) => i.icon)?.icon)).filter(Boolean)
       .filter((v, i, a) => a.indexOf(v) === i).slice(0, 12);
-    const card = (u) => `<a class="card" href="#${esc(u.id)}">${iconImg(unitIcon(u), 52)}
-      <div><h3>${esc(u.title_es || u.title)}</h3><span class="en">${esc(u.title)}</span>
-      ${u.description ? `<p>${md(u.description)}</p>` : ''}<span class="n">${sizeOf(u)}</span></div></a>`;
-    view.innerHTML = `
+    const heroHtml = `
       <section class="hero"><div class="wrap hero-in">
         <div>
           <p class="eyebrow">Inglés · Nivel B1</p>
@@ -154,10 +207,17 @@
           </div>
         </div>
         <div class="mosaic" aria-hidden="true">${mosaic.map((i) => `<span>${iconImg(i, 40)}</span>`).join('')}</div>
-      </div></section>
-      <div class="wrap">
-        ${vocab.length ? `<section class="home-sec" id="sec-vocabulario"><h2>Vocabulario</h2><p class="sub">Elige un tema. También puedes buscar cualquier palabra desde la barra de arriba.</p><div class="cards">${vocab.map(card).join('')}</div></section>` : ''}
-        ${gram.length ? `<section class="home-sec" id="sec-gramatica"><h2>Gramática</h2><p class="sub">Explicación, estructura, ejemplos con audio y errores típicos.</p><div class="cards">${gram.map(card).join('')}</div></section>` : ''}
+      </div></section>`;
+    view.innerHTML = `
+      ${isHome ? heroHtml : ''}
+      <div class="wrap tree-wrap">
+        <div class="tree-tools">
+          <label class="ctl"><input id="quiz" type="checkbox"${quizOn ? ' checked' : ''}> Modo repaso (ocultar el español)</label>
+          <span class="tt-gap"></span>
+          <button type="button" class="tt-btn" data-tree="open">Expandir todo</button>
+          <button type="button" class="tt-btn" data-tree="close">Contraer todo</button>
+        </div>
+        <div class="tree" id="tree">${treeHtml()}</div>
         <section class="key-card" aria-labelledby="key-h">
           <h2 id="key-h">Cómo leer la pronunciación</h2>
           <div class="key-grid">
@@ -170,9 +230,41 @@
           </div>
         </section>
       </div>`;
+    $('quiz').addEventListener('change', (e) => setQuiz(e.target.checked));
+    const target = want.length ? $(domId(want[want.length - 1])) : null;
+    if (target) {
+      const y = target.getBoundingClientRect().top + window.scrollY - hdr.offsetHeight - 12;
+      window.scrollTo({ top: Math.max(0, y), behavior: 'instant' });
+    } else window.scrollTo(0, 0);
+  }
+  // open/close bookkeeping for every branch
+  view.addEventListener('toggle', (e) => {
+    const d = e.target;
+    if (!d.matches || !d.matches('details.node[data-k]')) return;
+    if (d.open) fill(d);
+    openState[d.dataset.k] = d.open;
+    saveOpen();
+  }, true);
+  function setTree(open) {
+    const tree = $('tree');
+    if (!tree) return;
+    if (open) {
+      let closed;
+      // opening a branch builds its children, which may hold more closed branches
+      while ((closed = [...tree.querySelectorAll('details.node:not([open])')]).length) {
+        closed.forEach((d) => { d.open = true; fill(d); openState[d.dataset.k] = true; });
+      }
+    } else {
+      tree.querySelectorAll('details.node').forEach((d) => { d.open = false; openState[d.dataset.k] = false; });
+    }
+    saveOpen();
+  }
+  function setQuiz(on) {
+    quizOn = on;
+    document.body.classList.toggle('quiz', on);
+    view.querySelectorAll('tr.show').forEach((r) => r.classList.remove('show'));
   }
 
-  /* ---------- unit page ---------- */
   function row(unit, it, where) {
     const icon = it.icon ? iconImg(it.icon, 56)
       : `<span class="ph" aria-hidden="true">${esc(it.en.replace(/^(It's|I'm|I)\s+/i, '').charAt(0).toUpperCase())}</span>`;
@@ -189,7 +281,7 @@
   const table = (rowsHtml) => `<div class="tbl"><table>
       <thead><tr><th>Imagen</th><th>Inglés</th><th>Pronunciación</th><th>Español</th><th><span class="sr">Escuchar</span></th></tr></thead>
       <tbody>${rowsHtml}</tbody></table></div>`;
-  function grammarSection(s) {
+  function grammarBody(s) {
     const forms = (s.forms || []).map((f) =>
       `<div class="form"><span class="lbl">${esc(f.label)}</span><code>${esc(f.pattern)}</code>${f.example ? `<span class="fx">${esc(f.example)}</span>` : ''}</div>`).join('');
     const kw = (s.keywords || []).map((k) => `<span>${esc(k)}</span>`).join('');
@@ -210,8 +302,7 @@
       `<li class="pq"><span class="pq-n">${i + 1}</span><span class="pq-q">${md(p.q).replace(/_{3,}/g, '<span class="gap">______</span>')}</span>
         <button class="pq-btn" type="button" aria-expanded="false">Ver respuesta</button>
         <span class="pq-a" hidden><b>${md(p.a)}</b>${p.why ? ` · ${md(p.why)}` : ''}</span></li>`).join('');
-    return `<section id="s-${esc(s.id)}" data-sec="${esc(s.id)}">
-      <h2 class="sec">${esc(s.title)} <small>${esc(s.title_es || '')}</small></h2>
+    return `
       <div class="g-card">
         ${s.use ? `<p class="g-use">${md(s.use)}</p>` : ''}
         ${forms ? `<div><p class="g-h">Estructura</p><div class="forms">${forms}</div></div>` : ''}
@@ -222,95 +313,27 @@
         ${(s.tips || []).length ? `<div class="box"><p class="g-h">Recuerda</p>${list(s.tips)}</div>` : ''}
         ${mist ? `<div><p class="g-h">Errores típicos</p><div class="mist">${mist}</div></div>` : ''}
         ${practice ? `<div><p class="g-h">Practica</p><ol class="practice">${practice}</ol></div>` : ''}
-      </div></section>`;
-  }
-  function renderUnit(unit) {
-    markNav(unit.type);
-    const T = TYPES[unit.type] || TYPES.vocabulary;
-    document.title = (unit.title_es || unit.title) + ' · ' + (INDEX.title || 'Cuaderno de inglés B1');
-    const isVocab = unit.type === 'vocabulary';
-    const opts = isVocab ? `<div class="opts-wrap"><h2>Opciones</h2><div class="opts">
-        <label class="ctl"><input id="quiz" type="checkbox"${quizOn ? ' checked' : ''}> Modo repaso (ocultar el español)</label>
-      </div></div>` : '';
-    view.innerHTML = `
-      <div class="band"><div class="wrap band-in">
-        ${iconImg(unitIcon(unit), 72)}
-        <div>
-          <p class="crumbs"><a href="#inicio">Inicio</a> › <a href="#${T.home}">${T.label}</a></p>
-          <h1>${esc(unit.title_es || unit.title)}</h1>
-          <p class="en">${esc(unit.title)}${unit.description ? ' · ' + md(unit.description) : ''} · ${sizeOf(unit)}</p>
-        </div>
-      </div></div>
-      <div class="wrap layout">
-        <aside class="side">
-          <nav class="toc-wrap" aria-label="En este tema"><h2>En este tema</h2><ul class="toc" id="toc"></ul></nav>
-          ${opts}
-        </aside>
-        <div class="content" id="content"></div>
       </div>`;
-    const draw = () => {
-      let html = '', toc = '';
-      (unit.sections || []).forEach((s) => {
-        if (!isVocab) { html += grammarSection(s); toc += `<li><a href="#" data-go="${esc(s.id)}">${esc(s.title_es || s.title)}</a></li>`; return; }
-        const items = s.items || [];
-        if (!items.length) return;
-        html += `<section id="s-${esc(s.id)}" data-sec="${esc(s.id)}">
-          <h2 class="sec">${esc(s.title)} <small>${esc(s.title_es || '')}</small><span class="count">${words(items.length)}</span></h2>
-          ${table(items.map((it) => row(unit, it)).join(''))}</section>`;
-        toc += `<li><a href="#" data-go="${esc(s.id)}"><span>${esc(s.title_es || s.title)}</span><small>${items.length}</small></a></li>`;
-      });
-      $('content').innerHTML = html || '<p class="empty">Este tema todavía no tiene palabras.</p>';
-      $('toc').innerHTML = toc;
-      watchToc();
-    };
-    draw();
-    if ($('quiz')) $('quiz').addEventListener('change', (e) => setQuiz(e.target.checked));
   }
-  function setQuiz(on) {
-    quizOn = on;
-    document.body.classList.toggle('quiz', on);
-    view.querySelectorAll('tr.show').forEach((r) => r.classList.remove('show'));
-  }
-  // highlight the section being read in the side index
-  function watchToc() {
-    if (tocObserver) tocObserver.disconnect();
-    if (!('IntersectionObserver' in window)) return;
-    const links = new Map([...view.querySelectorAll('.toc a')].map((a) => [a.dataset.go, a]));
-    tocObserver = new IntersectionObserver((entries) => {
-      entries.forEach((en) => {
-        if (!en.isIntersecting) return;
-        links.forEach((a) => a.classList.remove('on'));
-        const a = links.get(en.target.dataset.sec);
-        if (a) {
-          a.classList.add('on');
-          // on phones the index is a horizontal strip: slide only that strip, never the page
-          const strip = a.closest('.toc');
-          if (strip && strip.scrollWidth > strip.clientWidth) {
-            const left = a.offsetLeft - strip.offsetLeft - 16;
-            strip.scrollTo({ left: Math.max(0, left), behavior: 'smooth' });
-          }
-        }
-      });
-    }, { rootMargin: `-${hdr.offsetHeight + 10}px 0px -65% 0px` });
-    view.querySelectorAll('section[data-sec]').forEach((s) => tocObserver.observe(s));
-  }
-
   /* ---------- search ---------- */
   function renderSearch(text) {
     markNav('');
     const t = norm(text);
     const hits = [];
-    UNITS.filter((u) => u.type === 'vocabulary').forEach((u) => (u.sections || []).forEach((s) => (s.items || []).forEach((it) => {
-      if (norm([it.en, it.es, it.note].join(' ')).includes(t)) hits.push({ u, s, it });
-    })));
+    UNITS.filter((u) => u.type === 'vocabulary').forEach((u) => (u.sections || []).forEach((s) => {
+      [{ s, items: s.items || [] }, ...(s.groups || []).map((g) => ({ s: g, parent: s, items: g.items || [] }))].forEach((blk) => blk.items.forEach((it) => {
+        if (norm([it.en, it.es, it.note].join(' ')).includes(t)) hits.push({ u, s: blk.s, parent: blk.parent, it });
+      }));
+    }));
+    hits.sort((a, b) => sortKey(a.it.en).localeCompare(sortKey(b.it.en), 'en'));
     view.innerHTML = `
       <div class="band"><div class="wrap band-in"><div>
         <p class="crumbs"><a href="#inicio">Inicio</a> › Búsqueda</p>
         <h1>«${esc(text)}»</h1>
         <p class="en">${hits.length ? words(hits.length) + ' en todo el vocabulario' : 'Sin resultados'}</p>
       </div></div></div>
-      <div class="wrap layout" style="grid-template-columns:minmax(0,1fr)"><div class="content">
-        ${hits.length ? table(hits.map((h) => row(h.u, h.it, (h.u.title_es || h.u.title) + ' › ' + (h.s.title_es || h.s.title))).join(''))
+      <div class="wrap layout single"><div class="content">
+        ${hits.length ? table(hits.map((h) => row(h.u, h.it, [h.u.title_es || h.u.title, h.parent && (h.parent.title_es || h.parent.title), h.s.title_es || h.s.title].filter(Boolean).join(' › '))).join(''))
           : '<p class="empty">No hay ninguna palabra que coincida. Prueba en inglés o en español, sin tildes si quieres.</p>'}
       </div></div>`;
   }
@@ -323,13 +346,8 @@
 
   /* ---------- clicks inside the page ---------- */
   view.addEventListener('click', (e) => {
-    const go = e.target.closest('a[data-go]');
-    if (go) {
-      e.preventDefault();
-      const sec = $('s-' + go.dataset.go);
-      if (sec) sec.scrollIntoView({ block: 'start' });
-      return;
-    }
+    const tt = e.target.closest('[data-tree]');
+    if (tt) { setTree(tt.dataset.tree === 'open'); return; }
     const pb = e.target.closest('.pq-btn');
     if (pb) {
       const ans = pb.nextElementSibling, open = ans.hidden;

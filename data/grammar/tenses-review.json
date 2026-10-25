@@ -48,6 +48,10 @@
         {
           "en": "She has been to London twice.",
           "es": "Ha estado en Londres dos veces."
+        },
+        {
+          "en": "Have you ever tried Indian food? — Yes, I have. I love it!",
+          "es": "¿Has probado alguna vez la comida india? — Sí, ¡me encanta!"
         }
       ],
       "mistakes": [
@@ -394,6 +398,10 @@
         {
           "en": "She's been learning English since September.",
           "es": "Está aprendiendo inglés desde septiembre."
+        },
+        {
+          "en": "We've been living in this flat since 2020.",
+          "es": "Vivimos en este piso desde 2020."
         }
       ],
       "mistakes": [
@@ -501,6 +509,10 @@
         {
           "en": "When did you meet him? — I met him 5 years ago.",
           "es": "¿Cuándo lo conociste? — Lo conocí hace 5 años."
+        },
+        {
+          "en": "I grew up in a small village and moved to the city when I was 18.",
+          "es": "Me crié en un pueblo pequeño y me mudé a la ciudad a los 18."
         }
       ],
       "mistakes": [

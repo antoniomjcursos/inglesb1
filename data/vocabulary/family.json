@@ -8,873 +8,904 @@
   "description": "Parentescos, familia política y reconstituida, tipos de familia, phrasal verbs y expresiones sobre la vida familiar.",
   "sections": [
     {
-      "id": "immediate",
-      "title": "Immediate family",
-      "title_es": "Familia directa",
-      "items": [
+      "id": "members",
+      "title": "Family members",
+      "title_es": "Miembros de la familia",
+      "groups": [
         {
-          "en": "parents",
-          "ipa": "ˈpeə.rənts",
-          "pron": "PÉArants",
-          "es": "padres (padre y madre)",
-          "icon": "people-hugging",
-          "note": "*parent* (singular) vale para el padre o la madre: no tiene género. ¡Falso amigo! «parientes» en inglés es *relatives*."
+          "id": "immediate",
+          "title": "Immediate family",
+          "title_es": "Familia directa",
+          "items": [
+            {
+              "en": "parents",
+              "ipa": "ˈpeə.rənts",
+              "pron": "PÉArants",
+              "es": "padres (padre y madre)",
+              "icon": "people-hugging",
+              "note": "*parent* (singular) vale para el padre o la madre: no tiene género. ¡Falso amigo! «parientes» en inglés es *relatives*."
+            },
+            {
+              "en": "mother / mum",
+              "ipa": "ˈmʌð.ə / mʌm",
+              "pron": "MÁda / mam",
+              "es": "madre / mamá",
+              "icon": "woman",
+              "note": "Infantil: *mummy*. EE. UU.: *mom* /mɑːm/ «maam»."
+            },
+            {
+              "en": "father / dad",
+              "ipa": "ˈfɑː.ðə / dæd",
+              "pron": "FÁAda / dad",
+              "es": "padre / papá",
+              "icon": "man",
+              "note": "Infantil: *daddy*."
+            },
+            {
+              "en": "son",
+              "ipa": "sʌn",
+              "pron": "san",
+              "es": "hijo",
+              "icon": "boy",
+              "note": "Suena igual que *sun* (sol)."
+            },
+            {
+              "en": "daughter",
+              "ipa": "ˈdɔː.tə",
+              "pron": "DÓOta",
+              "es": "hija",
+              "icon": "girl",
+              "note": "La «gh» no se pronuncia."
+            },
+            {
+              "en": "children",
+              "ipa": "ˈtʃɪl.drən",
+              "pron": "CHÍLdran",
+              "es": "hijos; niños",
+              "icon": "child",
+              "note": "Singular: *child* /tʃaɪld/ «cháild». Plural irregular. Coloquial: *kids*."
+            },
+            {
+              "en": "brother",
+              "ipa": "ˈbrʌð.ə",
+              "pron": "BRÁda",
+              "es": "hermano",
+              "icon": "boy"
+            },
+            {
+              "en": "sister",
+              "ipa": "ˈsɪs.tə",
+              "pron": "SÍSta",
+              "es": "hermana",
+              "icon": "girl"
+            },
+            {
+              "en": "sibling",
+              "ipa": "ˈsɪb.lɪŋ",
+              "pron": "SÍbling",
+              "es": "hermano o hermana",
+              "icon": "busts-in-silhouette",
+              "note": "Hermano o hermana: no tiene género. Plural: *siblings*.",
+              "example": "Do you have any siblings?",
+              "example_es": "¿Tienes hermanos?"
+            },
+            {
+              "en": "twin",
+              "ipa": "twɪn",
+              "pron": "tuin",
+              "es": "gemelo/a, mellizo/a",
+              "note": "*identical twins* = gemelos idénticos."
+            },
+            {
+              "en": "only child",
+              "ipa": "ˌəʊn.li ˈtʃaɪld",
+              "pron": "ounli CHÁILD",
+              "es": "hijo/a único/a",
+              "icon": "bust-in-silhouette",
+              "example": "Would you rather be an only child or have five noisy siblings?",
+              "example_es": "¿Preferirías ser hijo único o tener cinco hermanos ruidosos?"
+            },
+            {
+              "en": "baby",
+              "ipa": "ˈbeɪ.bi",
+              "pron": "BÉIbi",
+              "es": "bebé",
+              "icon": "baby"
+            },
+            {
+              "en": "family members",
+              "ipa": "ˈfæm.əl.i ˌmem.bəz",
+              "pron": "FÁmili membazz",
+              "es": "miembros de la familia",
+              "note": "*family* → *family members* → *relatives*: de lo general a cada persona."
+            }
+          ]
         },
         {
-          "en": "mother / mum",
-          "ipa": "ˈmʌð.ə / mʌm",
-          "pron": "MÁda / mam",
-          "es": "madre / mamá",
-          "icon": "woman",
-          "note": "Infantil: *mummy*. EE. UU.: *mom* /mɑːm/ «maam»."
+          "id": "extended",
+          "title": "Extended family",
+          "title_es": "Familia extensa",
+          "items": [
+            {
+              "en": "grandparents",
+              "ipa": "ˈɡræn.peə.rənts",
+              "pron": "GRÁNpearants",
+              "es": "abuelos",
+              "icon": "older-person",
+              "note": "La «d» casi no se pronuncia."
+            },
+            {
+              "en": "grandmother / grandma",
+              "ipa": "ˈɡræn.mʌð.ə",
+              "pron": "GRÁNmada",
+              "es": "abuela",
+              "icon": "old-woman",
+              "note": "Familiar: *grandma, granny, nan*."
+            },
+            {
+              "en": "grandfather / grandpa",
+              "ipa": "ˈɡræn.fɑː.ðə",
+              "pron": "GRÁNfaada",
+              "es": "abuelo",
+              "icon": "old-man",
+              "note": "Familiar: *grandpa, grandad*."
+            },
+            {
+              "en": "grandchildren",
+              "ipa": "ˈɡræn.tʃɪl.drən",
+              "pron": "GRÁNchildran",
+              "es": "nietos",
+              "icon": "child",
+              "note": "*grandson* = nieto; *granddaughter* = nieta."
+            },
+            {
+              "en": "great-grandparents",
+              "ipa": "ˌɡreɪtˈɡræn.peə.rənts",
+              "pron": "greit-GRÁNpearants",
+              "es": "bisabuelos",
+              "icon": "framed-picture"
+            },
+            {
+              "en": "uncle",
+              "ipa": "ˈʌŋ.kəl",
+              "pron": "ÁNkel",
+              "es": "tío",
+              "icon": "man-beard"
+            },
+            {
+              "en": "aunt",
+              "ipa": "ɑːnt",
+              "pron": "aant",
+              "es": "tía",
+              "icon": "woman-curly-hair",
+              "note": "EE. UU.: /ænt/ «ant»."
+            },
+            {
+              "en": "cousin",
+              "ipa": "ˈkʌz.ən",
+              "pron": "KÁzzen",
+              "es": "primo/a",
+              "icon": "person-curly-hair",
+              "note": "Vale para chico y chica. ¡No confundas con *cushion* (cojín)!"
+            },
+            {
+              "en": "nephew",
+              "ipa": "ˈnef.juː",
+              "pron": "NÉfiu",
+              "es": "sobrino",
+              "icon": "boy"
+            },
+            {
+              "en": "niece",
+              "ipa": "niːs",
+              "pron": "niis",
+              "es": "sobrina",
+              "icon": "girl"
+            },
+            {
+              "en": "relative",
+              "ipa": "ˈrel.ə.tɪv",
+              "pron": "RÉlativ",
+              "es": "pariente, familiar",
+              "icon": "houses",
+              "note": "También *relation*. *a distant relative* = un pariente lejano."
+            },
+            {
+              "en": "ancestors",
+              "ipa": "ˈæn.ses.təz",
+              "pron": "ÁNsestazz",
+              "es": "antepasados",
+              "icon": "evergreen-tree",
+              "note": "Las personas de las que desciendes, normalmente más lejanas que los abuelos.",
+              "example": "My ancestors came from a small fishing village.",
+              "example_es": "Mis antepasados venían de un pequeño pueblo de pescadores."
+            }
+          ]
         },
         {
-          "en": "father / dad",
-          "ipa": "ˈfɑː.ðə / dæd",
-          "pron": "FÁAda / dad",
-          "es": "padre / papá",
-          "icon": "man",
-          "note": "Infantil: *daddy*."
+          "id": "partners-in-laws",
+          "title": "Partners and in-laws",
+          "title_es": "Pareja y familia política",
+          "items": [
+            {
+              "en": "husband",
+              "ipa": "ˈhʌz.bənd",
+              "pron": "JÁZZband",
+              "es": "marido",
+              "icon": "man-in-tuxedo"
+            },
+            {
+              "en": "wife",
+              "ipa": "waɪf",
+              "pron": "uáif",
+              "es": "esposa, mujer",
+              "icon": "woman-with-veil",
+              "note": "Plural irregular: *wives*."
+            },
+            {
+              "en": "spouse",
+              "ipa": "spaʊs",
+              "pron": "spáus",
+              "es": "cónyuge",
+              "icon": "ring",
+              "note": "Palabra formal para marido o esposa."
+            },
+            {
+              "en": "partner",
+              "ipa": "ˈpɑːt.nə",
+              "pron": "PÁATna",
+              "es": "pareja",
+              "icon": "two-hearts",
+              "note": "Pareja estable, casada o no."
+            },
+            {
+              "en": "significant other",
+              "ipa": "sɪɡˌnɪf.ɪ.kənt ˈʌð.ə",
+              "pron": "sigNÍfikant Áda",
+              "es": "pareja, media naranja",
+              "icon": "heart-hands",
+              "note": "Tu cónyuge o pareja estable. Tono algo humorístico."
+            },
+            {
+              "en": "fiancé / fiancée",
+              "ipa": "fiˈɒn.seɪ",
+              "pron": "fiÓNsei",
+              "es": "prometido / prometida",
+              "icon": "gem-stone",
+              "note": "Se pronuncian igual."
+            },
+            {
+              "en": "ex-husband / ex-wife",
+              "ipa": "ˌeksˈhʌz.bənd / ˌeksˈwaɪf",
+              "pron": "eks-JÁZZband / eks-UÁIF",
+              "es": "exmarido / exmujer",
+              "icon": "broken-chain"
+            },
+            {
+              "en": "in-laws",
+              "ipa": "ˈɪn.lɔːz",
+              "pron": "ÍNloozz",
+              "es": "familia política, suegros",
+              "note": "*my in-laws* = mis suegros (y la familia de mi pareja)."
+            },
+            {
+              "en": "mother-in-law / father-in-law",
+              "ipa": "ˈmʌð.ər.ɪn.lɔː",
+              "pron": "MÁDarinloo",
+              "es": "suegra / suegro"
+            },
+            {
+              "en": "brother-in-law / sister-in-law",
+              "ipa": "ˈbrʌð.ər.ɪn.lɔː",
+              "pron": "BRÁDarinloo",
+              "es": "cuñado / cuñada"
+            },
+            {
+              "en": "son-in-law / daughter-in-law",
+              "ipa": "ˈsʌn.ɪn.lɔː",
+              "pron": "SÁNinloo",
+              "es": "yerno / nuera",
+              "note": "Plural: *sons-in-law* (la «s» va en la primera palabra)."
+            },
+            {
+              "en": "wedding",
+              "ipa": "ˈwed.ɪŋ",
+              "pron": "UÉding",
+              "es": "boda",
+              "icon": "church",
+              "note": "*wedding* = la boda (el día y la celebración); *marriage* = el matrimonio (la relación)."
+            },
+            {
+              "en": "marriage",
+              "ipa": "ˈmær.ɪdʒ",
+              "pron": "MÁrich",
+              "es": "matrimonio",
+              "icon": "heart-with-ribbon"
+            },
+            {
+              "en": "bride / groom",
+              "ipa": "braɪd / ɡruːm",
+              "pron": "bráid / gruum",
+              "es": "novia / novio (el día de la boda)",
+              "icon": "bouquet",
+              "note": "Fuera de la boda, «mi novio/a» es *my boyfriend / my girlfriend*."
+            },
+            {
+              "en": "honeymoon",
+              "ipa": "ˈhʌn.i.muːn",
+              "pron": "JÁnimuun",
+              "es": "luna de miel",
+              "icon": "crescent-moon"
+            },
+            {
+              "en": "widow / widower",
+              "ipa": "ˈwɪd.əʊ / ˈwɪd.əʊ.ə",
+              "pron": "UÍdou / UÍdoua",
+              "es": "viuda / viudo",
+              "icon": "black-heart",
+              "note": "Ojo: *widow* es la mujer; el hombre es *widower*."
+            }
+          ]
         },
         {
-          "en": "son",
-          "ipa": "sʌn",
-          "pron": "san",
-          "es": "hijo",
-          "icon": "boy",
-          "note": "Suena igual que *sun* (sol)."
-        },
-        {
-          "en": "daughter",
-          "ipa": "ˈdɔː.tə",
-          "pron": "DÓOta",
-          "es": "hija",
-          "icon": "girl",
-          "note": "La «gh» no se pronuncia."
-        },
-        {
-          "en": "children",
-          "ipa": "ˈtʃɪl.drən",
-          "pron": "CHÍLdran",
-          "es": "hijos; niños",
-          "icon": "child",
-          "note": "Singular: *child* /tʃaɪld/ «cháild». Plural irregular. Coloquial: *kids*."
-        },
-        {
-          "en": "brother",
-          "ipa": "ˈbrʌð.ə",
-          "pron": "BRÁda",
-          "es": "hermano",
-          "icon": "boy"
-        },
-        {
-          "en": "sister",
-          "ipa": "ˈsɪs.tə",
-          "pron": "SÍSta",
-          "es": "hermana",
-          "icon": "girl"
-        },
-        {
-          "en": "sibling",
-          "ipa": "ˈsɪb.lɪŋ",
-          "pron": "SÍbling",
-          "es": "hermano o hermana",
-          "icon": "busts-in-silhouette",
-          "note": "Hermano o hermana: no tiene género. Plural: *siblings*.",
-          "example": "Do you have any siblings?",
-          "example_es": "¿Tienes hermanos?"
-        },
-        {
-          "en": "twin",
-          "ipa": "twɪn",
-          "pron": "tuin",
-          "es": "gemelo/a, mellizo/a",
-          "note": "*identical twins* = gemelos idénticos."
-        },
-        {
-          "en": "only child",
-          "ipa": "ˌəʊn.li ˈtʃaɪld",
-          "pron": "ounli CHÁILD",
-          "es": "hijo/a único/a",
-          "icon": "bust-in-silhouette",
-          "example": "Would you rather be an only child or have five noisy siblings?",
-          "example_es": "¿Preferirías ser hijo único o tener cinco hermanos ruidosos?"
-        },
-        {
-          "en": "baby",
-          "ipa": "ˈbeɪ.bi",
-          "pron": "BÉIbi",
-          "es": "bebé",
-          "icon": "baby"
-        },
-        {
-          "en": "family members",
-          "ipa": "ˈfæm.əl.i ˌmem.bəz",
-          "pron": "FÁmili membazz",
-          "es": "miembros de la familia",
-          "note": "*family* → *family members* → *relatives*: de lo general a cada persona."
+          "id": "step-families",
+          "title": "Step-families",
+          "title_es": "Familias reconstituidas",
+          "items": [
+            {
+              "en": "stepfather / stepmother",
+              "ipa": "ˈstepˌfɑː.ðə / ˈstepˌmʌð.ə",
+              "pron": "STÉPfaada / STÉPmada",
+              "es": "padrastro / madrastra",
+              "note": "El nuevo marido de tu madre o la nueva mujer de tu padre."
+            },
+            {
+              "en": "stepbrother / stepsister",
+              "ipa": "ˈstepˌbrʌð.ə / ˈstepˌsɪs.tə",
+              "pron": "STÉPbrada / STÉPsista",
+              "es": "hermanastro / hermanastra",
+              "note": "Hijo/a de tu padrastro o madrastra: no compartís ningún padre."
+            },
+            {
+              "en": "stepson / stepdaughter",
+              "ipa": "ˈstep.sʌn / ˈstepˌdɔː.tə",
+              "pron": "STÉPsan / STÉPdoota",
+              "es": "hijastro / hijastra"
+            },
+            {
+              "en": "half brother / half sister",
+              "ipa": "ˈhɑːf ˌbrʌð.ə",
+              "pron": "JÁAF brada",
+              "es": "medio hermano / media hermana",
+              "note": "Compartís **uno** de los padres, es decir, compartís sangre. Un *stepbrother* no. La «l» de *half* no suena."
+            },
+            {
+              "en": "godmother / godfather",
+              "ipa": "ˈɡɒdˌmʌð.ə / ˈɡɒdˌfɑː.ðə",
+              "pron": "GÓDmada / GÓDfaada",
+              "es": "madrina / padrino"
+            }
+          ]
         }
       ]
     },
     {
-      "id": "extended",
-      "title": "Extended family",
-      "title_es": "Familia extensa",
-      "items": [
-        {
-          "en": "grandparents",
-          "ipa": "ˈɡræn.peə.rənts",
-          "pron": "GRÁNpearants",
-          "es": "abuelos",
-          "icon": "older-person",
-          "note": "La «d» casi no se pronuncia."
-        },
-        {
-          "en": "grandmother / grandma",
-          "ipa": "ˈɡræn.mʌð.ə",
-          "pron": "GRÁNmada",
-          "es": "abuela",
-          "icon": "old-woman",
-          "note": "Familiar: *grandma, granny, nan*."
-        },
-        {
-          "en": "grandfather / grandpa",
-          "ipa": "ˈɡræn.fɑː.ðə",
-          "pron": "GRÁNfaada",
-          "es": "abuelo",
-          "icon": "old-man",
-          "note": "Familiar: *grandpa, grandad*."
-        },
-        {
-          "en": "grandchildren",
-          "ipa": "ˈɡræn.tʃɪl.drən",
-          "pron": "GRÁNchildran",
-          "es": "nietos",
-          "icon": "child",
-          "note": "*grandson* = nieto; *granddaughter* = nieta."
-        },
-        {
-          "en": "great-grandparents",
-          "ipa": "ˌɡreɪtˈɡræn.peə.rənts",
-          "pron": "greit-GRÁNpearants",
-          "es": "bisabuelos",
-          "icon": "framed-picture"
-        },
-        {
-          "en": "uncle",
-          "ipa": "ˈʌŋ.kəl",
-          "pron": "ÁNkel",
-          "es": "tío",
-          "icon": "man-beard"
-        },
-        {
-          "en": "aunt",
-          "ipa": "ɑːnt",
-          "pron": "aant",
-          "es": "tía",
-          "icon": "woman-curly-hair",
-          "note": "EE. UU.: /ænt/ «ant»."
-        },
-        {
-          "en": "cousin",
-          "ipa": "ˈkʌz.ən",
-          "pron": "KÁzzen",
-          "es": "primo/a",
-          "icon": "person-curly-hair",
-          "note": "Vale para chico y chica. ¡No confundas con *cushion* (cojín)!"
-        },
-        {
-          "en": "nephew",
-          "ipa": "ˈnef.juː",
-          "pron": "NÉfiu",
-          "es": "sobrino",
-          "icon": "boy"
-        },
-        {
-          "en": "niece",
-          "ipa": "niːs",
-          "pron": "niis",
-          "es": "sobrina",
-          "icon": "girl"
-        },
-        {
-          "en": "relative",
-          "ipa": "ˈrel.ə.tɪv",
-          "pron": "RÉlativ",
-          "es": "pariente, familiar",
-          "icon": "houses",
-          "note": "También *relation*. *a distant relative* = un pariente lejano."
-        },
-        {
-          "en": "ancestors",
-          "ipa": "ˈæn.ses.təz",
-          "pron": "ÁNsestazz",
-          "es": "antepasados",
-          "icon": "evergreen-tree",
-          "note": "Las personas de las que desciendes, normalmente más lejanas que los abuelos.",
-          "example": "My ancestors came from a small fishing village.",
-          "example_es": "Mis antepasados venían de un pequeño pueblo de pescadores."
-        }
-      ]
-    },
-    {
-      "id": "partners-in-laws",
-      "title": "Partners and in-laws",
-      "title_es": "Pareja y familia política",
-      "items": [
-        {
-          "en": "husband",
-          "ipa": "ˈhʌz.bənd",
-          "pron": "JÁZZband",
-          "es": "marido",
-          "icon": "man-in-tuxedo"
-        },
-        {
-          "en": "wife",
-          "ipa": "waɪf",
-          "pron": "uáif",
-          "es": "esposa, mujer",
-          "icon": "woman-with-veil",
-          "note": "Plural irregular: *wives*."
-        },
-        {
-          "en": "spouse",
-          "ipa": "spaʊs",
-          "pron": "spáus",
-          "es": "cónyuge",
-          "icon": "ring",
-          "note": "Palabra formal para marido o esposa."
-        },
-        {
-          "en": "partner",
-          "ipa": "ˈpɑːt.nə",
-          "pron": "PÁATna",
-          "es": "pareja",
-          "icon": "two-hearts",
-          "note": "Pareja estable, casada o no."
-        },
-        {
-          "en": "significant other",
-          "ipa": "sɪɡˌnɪf.ɪ.kənt ˈʌð.ə",
-          "pron": "sigNÍfikant Áda",
-          "es": "pareja, media naranja",
-          "icon": "heart-hands",
-          "note": "Tu cónyuge o pareja estable. Tono algo humorístico."
-        },
-        {
-          "en": "fiancé / fiancée",
-          "ipa": "fiˈɒn.seɪ",
-          "pron": "fiÓNsei",
-          "es": "prometido / prometida",
-          "icon": "gem-stone",
-          "note": "Se pronuncian igual."
-        },
-        {
-          "en": "ex-husband / ex-wife",
-          "ipa": "ˌeksˈhʌz.bənd / ˌeksˈwaɪf",
-          "pron": "eks-JÁZZband / eks-UÁIF",
-          "es": "exmarido / exmujer",
-          "icon": "broken-chain"
-        },
-        {
-          "en": "in-laws",
-          "ipa": "ˈɪn.lɔːz",
-          "pron": "ÍNloozz",
-          "es": "familia política, suegros",
-          "note": "*my in-laws* = mis suegros (y la familia de mi pareja)."
-        },
-        {
-          "en": "mother-in-law / father-in-law",
-          "ipa": "ˈmʌð.ər.ɪn.lɔː",
-          "pron": "MÁDarinloo",
-          "es": "suegra / suegro"
-        },
-        {
-          "en": "brother-in-law / sister-in-law",
-          "ipa": "ˈbrʌð.ər.ɪn.lɔː",
-          "pron": "BRÁDarinloo",
-          "es": "cuñado / cuñada"
-        },
-        {
-          "en": "son-in-law / daughter-in-law",
-          "ipa": "ˈsʌn.ɪn.lɔː",
-          "pron": "SÁNinloo",
-          "es": "yerno / nuera",
-          "note": "Plural: *sons-in-law* (la «s» va en la primera palabra)."
-        },
-        {
-          "en": "wedding",
-          "ipa": "ˈwed.ɪŋ",
-          "pron": "UÉding",
-          "es": "boda",
-          "icon": "church",
-          "note": "*wedding* = la boda (el día y la celebración); *marriage* = el matrimonio (la relación)."
-        },
-        {
-          "en": "marriage",
-          "ipa": "ˈmær.ɪdʒ",
-          "pron": "MÁrich",
-          "es": "matrimonio",
-          "icon": "heart-with-ribbon"
-        },
-        {
-          "en": "bride / groom",
-          "ipa": "braɪd / ɡruːm",
-          "pron": "bráid / gruum",
-          "es": "novia / novio (el día de la boda)",
-          "icon": "bouquet",
-          "note": "Fuera de la boda, «mi novio/a» es *my boyfriend / my girlfriend*."
-        },
-        {
-          "en": "honeymoon",
-          "ipa": "ˈhʌn.i.muːn",
-          "pron": "JÁnimuun",
-          "es": "luna de miel",
-          "icon": "crescent-moon"
-        },
-        {
-          "en": "widow / widower",
-          "ipa": "ˈwɪd.əʊ / ˈwɪd.əʊ.ə",
-          "pron": "UÍdou / UÍdoua",
-          "es": "viuda / viudo",
-          "icon": "black-heart",
-          "note": "Ojo: *widow* es la mujer; el hombre es *widower*."
-        }
-      ]
-    },
-    {
-      "id": "step-families",
-      "title": "Step-families",
-      "title_es": "Familias reconstituidas",
-      "items": [
-        {
-          "en": "stepfather / stepmother",
-          "ipa": "ˈstepˌfɑː.ðə / ˈstepˌmʌð.ə",
-          "pron": "STÉPfaada / STÉPmada",
-          "es": "padrastro / madrastra",
-          "note": "El nuevo marido de tu madre o la nueva mujer de tu padre."
-        },
-        {
-          "en": "stepbrother / stepsister",
-          "ipa": "ˈstepˌbrʌð.ə / ˈstepˌsɪs.tə",
-          "pron": "STÉPbrada / STÉPsista",
-          "es": "hermanastro / hermanastra",
-          "note": "Hijo/a de tu padrastro o madrastra: no compartís ningún padre."
-        },
-        {
-          "en": "stepson / stepdaughter",
-          "ipa": "ˈstep.sʌn / ˈstepˌdɔː.tə",
-          "pron": "STÉPsan / STÉPdoota",
-          "es": "hijastro / hijastra"
-        },
-        {
-          "en": "half brother / half sister",
-          "ipa": "ˈhɑːf ˌbrʌð.ə",
-          "pron": "JÁAF brada",
-          "es": "medio hermano / media hermana",
-          "note": "Compartís **uno** de los padres, es decir, compartís sangre. Un *stepbrother* no. La «l» de *half* no suena."
-        },
-        {
-          "en": "godmother / godfather",
-          "ipa": "ˈɡɒdˌmʌð.ə / ˈɡɒdˌfɑː.ðə",
-          "pron": "GÓDmada / GÓDfaada",
-          "es": "madrina / padrino"
-        }
-      ]
-    },
-    {
-      "id": "types",
-      "title": "Types of family",
-      "title_es": "Tipos de familia",
-      "items": [
-        {
-          "en": "immediate family",
-          "ipa": "ɪˈmiː.di.ət ˈfæm.əl.i",
-          "pron": "iMÍIdiat FÁmili",
-          "es": "familia directa (padres, hijos, hermanos)",
-          "icon": "house",
-          "note": "También *nuclear family* /ˈnjuː.kli.ə/ «NIÚUklia»."
-        },
-        {
-          "en": "extended family",
-          "ipa": "ɪkˈsten.dɪd ˈfæm.əl.i",
-          "pron": "ikSTÉNdid FÁmili",
-          "es": "familia extensa",
-          "icon": "houses"
-        },
-        {
-          "en": "close-knit family",
-          "ipa": "ˌkləʊsˈnɪt ˈfæm.əl.i",
-          "pron": "klous-NÍT FÁmili",
-          "es": "familia muy unida",
-          "icon": "hugging-face",
-          "note": "En *knit* la «k» no suena."
-        },
-        {
-          "en": "one-parent family",
-          "ipa": "ˌwʌn.peə.rənt ˈfæm.əl.i",
-          "pron": "uan-PÉArant FÁmili",
-          "es": "familia monoparental",
-          "icon": "person-feeding-baby",
-          "note": "También *single-parent family*."
-        },
-        {
-          "en": "single parenthood",
-          "ipa": "ˌsɪŋ.ɡəl ˈpeə.rənt.hʊd",
-          "pron": "SÍNgel PÉArantjud",
-          "es": "monoparentalidad (criar solo/a)",
-          "icon": "woman-feeding-baby"
-        },
-        {
-          "en": "traditional / non-traditional family",
-          "ipa": "trəˈdɪʃ.ən.əl",
-          "pron": "traDÍshanal",
-          "es": "familia tradicional / no tradicional",
-          "icon": "house-with-garden"
-        }
-      ]
-    },
-    {
-      "id": "family-life",
+      "id": "life",
       "title": "Family life",
       "title_es": "Vida familiar",
-      "items": [
+      "groups": [
         {
-          "en": "family gathering",
-          "ipa": "ˈfæm.əl.i ˈɡæð.ər.ɪŋ",
-          "pron": "FÁmili GÁdaring",
-          "es": "reunión familiar",
-          "icon": "clinking-glasses",
-          "note": "También *family reunion* o *get-together*. Coloquial: «quedada».",
-          "example": "We're a very close-knit family, so every family gathering is noisy and fun.",
-          "example_es": "Somos una familia muy unida, así que cada reunión familiar es ruidosa y divertida."
+          "id": "types",
+          "title": "Types of family",
+          "title_es": "Tipos de familia",
+          "items": [
+            {
+              "en": "immediate family",
+              "ipa": "ɪˈmiː.di.ət ˈfæm.əl.i",
+              "pron": "iMÍIdiat FÁmili",
+              "es": "familia directa (padres, hijos, hermanos)",
+              "icon": "house",
+              "note": "También *nuclear family* /ˈnjuː.kli.ə/ «NIÚUklia»."
+            },
+            {
+              "en": "extended family",
+              "ipa": "ɪkˈsten.dɪd ˈfæm.əl.i",
+              "pron": "ikSTÉNdid FÁmili",
+              "es": "familia extensa",
+              "icon": "houses"
+            },
+            {
+              "en": "close-knit family",
+              "ipa": "ˌkləʊsˈnɪt ˈfæm.əl.i",
+              "pron": "klous-NÍT FÁmili",
+              "es": "familia muy unida",
+              "icon": "hugging-face",
+              "note": "En *knit* la «k» no suena."
+            },
+            {
+              "en": "one-parent family",
+              "ipa": "ˌwʌn.peə.rənt ˈfæm.əl.i",
+              "pron": "uan-PÉArant FÁmili",
+              "es": "familia monoparental",
+              "icon": "person-feeding-baby",
+              "note": "También *single-parent family*."
+            },
+            {
+              "en": "single parenthood",
+              "ipa": "ˌsɪŋ.ɡəl ˈpeə.rənt.hʊd",
+              "pron": "SÍNgel PÉArantjud",
+              "es": "monoparentalidad (criar solo/a)",
+              "icon": "woman-feeding-baby"
+            },
+            {
+              "en": "traditional / non-traditional family",
+              "ipa": "trəˈdɪʃ.ən.əl",
+              "pron": "traDÍshanal",
+              "es": "familia tradicional / no tradicional",
+              "icon": "house-with-garden"
+            },
+            {
+              "en": "blended family",
+              "ipa": "ˌblen.dɪd ˈfæm.əl.i",
+              "pron": "BLÉNdid FÁmili",
+              "es": "familia reconstituida",
+              "icon": "houses",
+              "note": "Dos familias que se unen y forman una nueva: padrastros, hermanastros… También *stepfamily*.",
+              "example": "We're a blended family: I live with my mum, my stepdad and his two kids.",
+              "example_es": "Somos una familia reconstituida: vivo con mi madre, mi padrastro y sus dos hijos."
+            }
+          ]
         },
         {
-          "en": "childhood",
-          "ipa": "ˈtʃaɪld.hʊd",
-          "pron": "CHÁILDjud",
-          "es": "infancia",
-          "icon": "teddy-bear"
-        },
-        {
-          "en": "upbringing",
-          "ipa": "ˈʌpˌbrɪŋ.ɪŋ",
-          "pron": "ÁPbringing",
-          "es": "crianza, educación (en casa)",
-          "icon": "baby-bottle"
-        },
-        {
-          "en": "good memories",
-          "ipa": "ɡʊd ˈmem.ər.iz",
-          "pron": "gud MÉmarizz",
-          "es": "buenos recuerdos",
-          "icon": "camera-with-flash",
-          "note": "*memory* = recuerdo y también memoria."
-        },
-        {
-          "en": "relationship",
-          "ipa": "rɪˈleɪ.ʃən.ʃɪp",
-          "pron": "riLÉIshanship",
-          "es": "relación",
-          "icon": "link",
-          "note": "*I have a good relationship with my parents.*"
-        },
-        {
-          "en": "birth rate",
-          "ipa": "ˈbɜːθ ˌreɪt",
-          "pron": "BÉRZ reit",
-          "es": "tasa de natalidad",
-          "icon": "chart-decreasing"
-        },
-        {
-          "en": "birth order",
-          "ipa": "ˈbɜːθ ˌɔː.də",
-          "pron": "BÉRZ ooda",
-          "es": "orden de nacimiento",
-          "icon": "baby-symbol",
-          "note": "Ser *the oldest* (el mayor), *the middle child* (el mediano) o *the youngest* (el pequeño)."
-        },
-        {
-          "en": "sibling rivalry",
-          "ipa": "ˌsɪb.lɪŋ ˈraɪ.vəl.ri",
-          "pron": "sibling RÁIvalri",
-          "es": "rivalidad entre hermanos",
-          "icon": "boxing-glove",
-          "example": "We had a bit of sibling rivalry, but I have great memories of staying up late.",
-          "example_es": "Había algo de rivalidad entre hermanos, pero tengo muy buenos recuerdos de quedarnos despiertos hasta tarde."
-        },
-        {
-          "en": "breadwinner",
-          "ipa": "ˈbredˌwɪn.ə",
-          "pron": "BRÉDuina",
-          "es": "quien mantiene a la familia",
-          "icon": "money-bag",
-          "note": "La persona de la familia que gana más dinero: *the main breadwinner*.",
-          "example": "Would you rather be the main breadwinner or stay at home to raise children?",
-          "example_es": "¿Preferirías ser quien mantiene a la familia o quedarte en casa criando a los hijos?"
+          "id": "life-nouns",
+          "title": "Family life",
+          "title_es": "Vida familiar",
+          "items": [
+            {
+              "en": "family gathering",
+              "ipa": "ˈfæm.əl.i ˈɡæð.ər.ɪŋ",
+              "pron": "FÁmili GÁdaring",
+              "es": "reunión familiar",
+              "icon": "clinking-glasses",
+              "note": "También *family reunion* o *get-together*. Coloquial: «quedada».",
+              "example": "We're a very close-knit family, so every family gathering is noisy and fun.",
+              "example_es": "Somos una familia muy unida, así que cada reunión familiar es ruidosa y divertida."
+            },
+            {
+              "en": "childhood",
+              "ipa": "ˈtʃaɪld.hʊd",
+              "pron": "CHÁILDjud",
+              "es": "infancia",
+              "icon": "teddy-bear"
+            },
+            {
+              "en": "upbringing",
+              "ipa": "ˈʌpˌbrɪŋ.ɪŋ",
+              "pron": "ÁPbringing",
+              "es": "crianza, educación (en casa)",
+              "icon": "baby-bottle"
+            },
+            {
+              "en": "good memories",
+              "ipa": "ɡʊd ˈmem.ər.iz",
+              "pron": "gud MÉmarizz",
+              "es": "buenos recuerdos",
+              "icon": "camera-with-flash",
+              "note": "*memory* = recuerdo y también memoria."
+            },
+            {
+              "en": "relationship",
+              "ipa": "rɪˈleɪ.ʃən.ʃɪp",
+              "pron": "riLÉIshanship",
+              "es": "relación",
+              "icon": "link",
+              "note": "*I have a good relationship with my parents.*"
+            },
+            {
+              "en": "birth rate",
+              "ipa": "ˈbɜːθ ˌreɪt",
+              "pron": "BÉRZ reit",
+              "es": "tasa de natalidad",
+              "icon": "chart-decreasing"
+            },
+            {
+              "en": "birth order",
+              "ipa": "ˈbɜːθ ˌɔː.də",
+              "pron": "BÉRZ ooda",
+              "es": "orden de nacimiento",
+              "icon": "baby-symbol",
+              "note": "Ser *the oldest* (el mayor), *the middle child* (el mediano) o *the youngest* (el pequeño)."
+            },
+            {
+              "en": "sibling rivalry",
+              "ipa": "ˌsɪb.lɪŋ ˈraɪ.vəl.ri",
+              "pron": "sibling RÁIvalri",
+              "es": "rivalidad entre hermanos",
+              "icon": "boxing-glove",
+              "example": "We had a bit of sibling rivalry, but I have great memories of staying up late.",
+              "example_es": "Había algo de rivalidad entre hermanos, pero tengo muy buenos recuerdos de quedarnos despiertos hasta tarde."
+            },
+            {
+              "en": "breadwinner",
+              "ipa": "ˈbredˌwɪn.ə",
+              "pron": "BRÉDuina",
+              "es": "quien mantiene a la familia",
+              "icon": "money-bag",
+              "note": "La persona de la familia que gana más dinero: *the main breadwinner*.",
+              "example": "Would you rather be the main breadwinner or stay at home to raise children?",
+              "example_es": "¿Preferirías ser quien mantiene a la familia o quedarte en casa criando a los hijos?"
+            }
+          ]
         }
       ]
     },
     {
-      "id": "phrasal-verbs",
-      "title": "Phrasal verbs",
-      "title_es": "Phrasal verbs",
-      "items": [
+      "id": "words",
+      "title": "Verbs and expressions",
+      "title_es": "Verbos y expresiones",
+      "groups": [
         {
-          "en": "take after",
-          "ipa": "ˌteɪk ˈɑːf.tə",
-          "pron": "teik ÁAFta",
-          "es": "parecerse a (un familiar)",
-          "icon": "mirror",
-          "example": "I take after my dad because we are both quiet and love sports.",
-          "example_es": "Me parezco a mi padre porque los dos somos tranquilos y nos encanta el deporte.",
-          "note": "Parecerse a un familiar mayor (en carácter o en físico). Compara con *look like*."
+          "id": "phrasal-verbs",
+          "title": "Phrasal verbs",
+          "title_es": "Phrasal verbs",
+          "items": [
+            {
+              "en": "take after",
+              "ipa": "ˌteɪk ˈɑːf.tə",
+              "pron": "teik ÁAFta",
+              "es": "parecerse a (un familiar)",
+              "icon": "mirror",
+              "example": "I take after my dad because we are both quiet and love sports.",
+              "example_es": "Me parezco a mi padre porque los dos somos tranquilos y nos encanta el deporte.",
+              "note": "Parecerse a un familiar mayor (en carácter o en físico). Compara con *look like*."
+            },
+            {
+              "en": "bring up",
+              "ipa": "ˌbrɪŋ ˈʌp",
+              "pron": "bring AP",
+              "es": "criar, educar",
+              "icon": "person-feeding-baby",
+              "note": "Informal. En registro formal: *raise*. Pasado: *brought up* /brɔːt/.",
+              "example": "She was brought up by her grandparents.",
+              "example_es": "La criaron sus abuelos."
+            },
+            {
+              "en": "grow up",
+              "ipa": "ˌɡrəʊ ˈʌp",
+              "pron": "grou AP",
+              "es": "crecer, criarse",
+              "icon": "seedling",
+              "note": "Pasado: *grew up*.",
+              "example": "I grew up in a small village.",
+              "example_es": "Me crié en un pueblo pequeño."
+            },
+            {
+              "en": "fall out (with)",
+              "ipa": "ˌfɔːl ˈaʊt",
+              "pron": "fool ÁUT",
+              "es": "pelearse, enfadarse (con)",
+              "icon": "face-with-steam-from-nose",
+              "note": "Informal; = *argue* (discutir). En registro formal: *get angry*, *argue*. Pasado: *fell out*.",
+              "example": "I used to fall out with my twin brother because he took my clothes without asking!",
+              "example_es": "Me peleaba con mi hermano gemelo porque me cogía la ropa sin pedírmela."
+            },
+            {
+              "en": "make up",
+              "ipa": "ˌmeɪk ˈʌp",
+              "pron": "meik AP",
+              "es": "hacer las paces",
+              "icon": "handshake",
+              "example": "We usually make up five minutes later and laugh about it!",
+              "example_es": "Normalmente hacemos las paces cinco minutos después y nos reímos.",
+              "note": "Tres significados: **hacer las paces**; **maquillarse** (*make-up* = maquillaje); **inventarse** (*make up a story*)."
+            },
+            {
+              "en": "get on (well) with",
+              "ipa": "ˌɡet ˈɒn wɪð",
+              "pron": "get ON uid",
+              "es": "llevarse (bien) con",
+              "icon": "grinning-face-with-big-eyes",
+              "example": "I get on really well with my brother-in-law.",
+              "example_es": "Me llevo muy bien con mi cuñado."
+            },
+            {
+              "en": "get along with",
+              "ipa": "ˌɡet əˈlɒŋ wɪð",
+              "pron": "get aLÓNG uid",
+              "es": "llevarse bien con",
+              "icon": "people-hugging",
+              "note": "Igual que *get on with*; más americano.",
+              "example": "I get along with my sister really well.",
+              "example_es": "Me llevo muy bien con mi hermana."
+            },
+            {
+              "en": "look after",
+              "ipa": "ˌlʊk ˈɑːf.tə",
+              "pron": "luk ÁAFta",
+              "es": "cuidar (de)",
+              "icon": "woman-feeding-baby",
+              "example": "My mum looks after my kids on Fridays.",
+              "example_es": "Mi madre me cuida a los niños los viernes."
+            },
+            {
+              "en": "look like",
+              "ipa": "ˈlʊk ˌlaɪk",
+              "pron": "LUK laik",
+              "es": "parecerse (físicamente) a",
+              "icon": "magnifying-glass-tilted-left",
+              "note": "*look like* = parecerse físicamente a **cualquiera**; *take after* = parecerse a **un familiar**.",
+              "example": "You look like your mum, but you take after your dad.",
+              "example_es": "Te pareces físicamente a tu madre, pero eres como tu padre."
+            },
+            {
+              "en": "fall in love (with)",
+              "ipa": "ˌfɔːl ɪn ˈlʌv",
+              "pron": "fool in LAV",
+              "es": "enamorarse (de)",
+              "icon": "smiling-face-with-heart-eyes",
+              "note": "Pasado: *fell in love*.",
+              "example": "They fell in love on holiday.",
+              "example_es": "Se enamoraron en vacaciones."
+            },
+            {
+              "en": "break up (with)",
+              "ipa": "ˌbreɪk ˈʌp",
+              "pron": "breik AP",
+              "es": "romper, cortar (con alguien)",
+              "icon": "face-holding-back-tears",
+              "note": "Pasado: *broke up*. Nombre: *a break-up* (una ruptura).",
+              "example": "She broke up with her boyfriend last month.",
+              "example_es": "Cortó con su novio el mes pasado."
+            },
+            {
+              "en": "pass away",
+              "ipa": "ˌpɑːs əˈweɪ",
+              "pron": "paas aUÉI",
+              "es": "fallecer",
+              "icon": "wilted-flower",
+              "note": "Forma educada de *die*."
+            }
+          ]
         },
         {
-          "en": "bring up",
-          "ipa": "ˌbrɪŋ ˈʌp",
-          "pron": "bring AP",
-          "es": "criar, educar",
-          "icon": "person-feeding-baby",
-          "note": "Informal. En registro formal: *raise*. Pasado: *brought up* /brɔːt/.",
-          "example": "She was brought up by her grandparents.",
-          "example_es": "La criaron sus abuelos."
+          "id": "verbs",
+          "title": "Verbs",
+          "title_es": "Verbos",
+          "items": [
+            {
+              "en": "raise (children)",
+              "ipa": "reɪz",
+              "pron": "réizz",
+              "es": "criar (hijos)",
+              "icon": "child",
+              "note": "= *bring up*."
+            },
+            {
+              "en": "adopt",
+              "ipa": "əˈdɒpt",
+              "pron": "aDÓPT",
+              "es": "adoptar",
+              "icon": "heart-hands",
+              "example": "I would love to adopt a shelter cat with my partner.",
+              "example_es": "Me encantaría adoptar un gato de una protectora con mi pareja."
+            },
+            {
+              "en": "quarrel (with)",
+              "ipa": "ˈkwɒr.əl",
+              "pron": "KUÓral",
+              "es": "discutir, reñir (con)",
+              "icon": "anger-symbol",
+              "note": "*quarrel with your siblings*. Más común: *argue*."
+            },
+            {
+              "en": "get divorced / be divorced",
+              "ipa": "ɡet dɪˈvɔːst",
+              "pron": "get diVÓORST",
+              "es": "divorciarse / estar divorciado",
+              "icon": "broken-heart"
+            },
+            {
+              "en": "separate",
+              "ipa": "ˈsep.ər.eɪt",
+              "pron": "SÉpareit",
+              "es": "separarse",
+              "icon": "scissors",
+              "note": "Como adjetivo, *separate* se pronuncia /ˈsep.ər.ət/ «SÉparat»."
+            },
+            {
+              "en": "get married (to)",
+              "ipa": "ɡet ˈmær.id",
+              "pron": "get MÁrid",
+              "es": "casarse (con)",
+              "icon": "wedding",
+              "note": "Se dice *married **to***, no *married with*."
+            },
+            {
+              "en": "share (a bedroom)",
+              "ipa": "ʃeə",
+              "pron": "shea",
+              "es": "compartir (habitación)",
+              "icon": "bed",
+              "example": "I had to share a bedroom with my stepbrother.",
+              "example_es": "Tenía que compartir habitación con mi hermanastro."
+            },
+            {
+              "en": "cohabit",
+              "ipa": "kəʊˈhæb.ɪt",
+              "pron": "kouJÁbit",
+              "es": "convivir (en pareja sin casarse)",
+              "icon": "house",
+              "note": "Más coloquial: *live together*.",
+              "example": "Many couples cohabit for a few years before they start a family.",
+              "example_es": "Muchas parejas conviven unos años antes de tener hijos."
+            },
+            {
+              "en": "start a family",
+              "ipa": "ˌstɑːt ə ˈfæm.əl.i",
+              "pron": "staat a FÁmili",
+              "es": "formar una familia, tener hijos",
+              "icon": "pregnant-woman"
+            },
+            {
+              "en": "give birth (to)",
+              "ipa": "ˌɡɪv ˈbɜːθ",
+              "pron": "giv BÉRZ",
+              "es": "dar a luz",
+              "icon": "baby"
+            },
+            {
+              "en": "get angry",
+              "ipa": "ɡet ˈæŋ.ɡri",
+              "pron": "get ÁNgri",
+              "es": "enfadarse",
+              "icon": "angry-face",
+              "note": "Más formal que *fall out*."
+            },
+            {
+              "en": "get pregnant",
+              "ipa": "ɡet ˈpreɡ.nənt",
+              "pron": "get PRÉGnant",
+              "es": "quedarse embarazada",
+              "icon": "pregnant-person",
+              "note": "*be pregnant* = estar embarazada."
+            },
+            {
+              "en": "die",
+              "ipa": "daɪ",
+              "pron": "dái",
+              "es": "morir",
+              "icon": "headstone",
+              "note": "*dead* = muerto (adjetivo); *death* /deθ/ = la muerte. Educado: *pass away*; muy informal: *kick the bucket*."
+            }
+          ]
         },
         {
-          "en": "grow up",
-          "ipa": "ˌɡrəʊ ˈʌp",
-          "pron": "grou AP",
-          "es": "crecer, criarse",
-          "icon": "seedling",
-          "note": "Pasado: *grew up*.",
-          "example": "I grew up in a small village.",
-          "example_es": "Me crié en un pueblo pequeño."
-        },
-        {
-          "en": "fall out (with)",
-          "ipa": "ˌfɔːl ˈaʊt",
-          "pron": "fool ÁUT",
-          "es": "pelearse, enfadarse (con)",
-          "icon": "face-with-steam-from-nose",
-          "note": "Informal; = *argue* (discutir). En registro formal: *get angry*, *argue*. Pasado: *fell out*.",
-          "example": "I used to fall out with my twin brother because he took my clothes without asking!",
-          "example_es": "Me peleaba con mi hermano gemelo porque me cogía la ropa sin pedírmela."
-        },
-        {
-          "en": "make up",
-          "ipa": "ˌmeɪk ˈʌp",
-          "pron": "meik AP",
-          "es": "hacer las paces",
-          "icon": "handshake",
-          "example": "We usually make up five minutes later and laugh about it!",
-          "example_es": "Normalmente hacemos las paces cinco minutos después y nos reímos.",
-          "note": "Tres significados: **hacer las paces**; **maquillarse** (*make-up* = maquillaje); **inventarse** (*make up a story*)."
-        },
-        {
-          "en": "get on (well) with",
-          "ipa": "ˌɡet ˈɒn wɪð",
-          "pron": "get ON uid",
-          "es": "llevarse (bien) con",
-          "icon": "grinning-face-with-big-eyes",
-          "example": "I get on really well with my brother-in-law.",
-          "example_es": "Me llevo muy bien con mi cuñado."
-        },
-        {
-          "en": "get along with",
-          "ipa": "ˌɡet əˈlɒŋ wɪð",
-          "pron": "get aLÓNG uid",
-          "es": "llevarse bien con",
-          "icon": "people-hugging",
-          "note": "Igual que *get on with*; más americano.",
-          "example": "I get along with my sister really well.",
-          "example_es": "Me llevo muy bien con mi hermana."
-        },
-        {
-          "en": "look after",
-          "ipa": "ˌlʊk ˈɑːf.tə",
-          "pron": "luk ÁAFta",
-          "es": "cuidar (de)",
-          "icon": "woman-feeding-baby",
-          "example": "My mum looks after my kids on Fridays.",
-          "example_es": "Mi madre me cuida a los niños los viernes."
-        },
-        {
-          "en": "look like",
-          "ipa": "ˈlʊk ˌlaɪk",
-          "pron": "LUK laik",
-          "es": "parecerse (físicamente) a",
-          "icon": "magnifying-glass-tilted-left",
-          "note": "*look like* = parecerse físicamente a **cualquiera**; *take after* = parecerse a **un familiar**.",
-          "example": "You look like your mum, but you take after your dad.",
-          "example_es": "Te pareces físicamente a tu madre, pero eres como tu padre."
-        },
-        {
-          "en": "fall in love (with)",
-          "ipa": "ˌfɔːl ɪn ˈlʌv",
-          "pron": "fool in LAV",
-          "es": "enamorarse (de)",
-          "icon": "smiling-face-with-heart-eyes",
-          "note": "Pasado: *fell in love*.",
-          "example": "They fell in love on holiday.",
-          "example_es": "Se enamoraron en vacaciones."
-        },
-        {
-          "en": "break up (with)",
-          "ipa": "ˌbreɪk ˈʌp",
-          "pron": "breik AP",
-          "es": "romper, cortar (con alguien)",
-          "icon": "face-holding-back-tears",
-          "note": "Pasado: *broke up*. Nombre: *a break-up* (una ruptura).",
-          "example": "She broke up with her boyfriend last month.",
-          "example_es": "Cortó con su novio el mes pasado."
-        },
-        {
-          "en": "pass away",
-          "ipa": "ˌpɑːs əˈweɪ",
-          "pron": "paas aUÉI",
-          "es": "fallecer",
-          "icon": "wilted-flower",
-          "note": "Forma educada de *die*."
-        }
-      ]
-    },
-    {
-      "id": "verbs",
-      "title": "Verbs",
-      "title_es": "Verbos",
-      "items": [
-        {
-          "en": "raise (children)",
-          "ipa": "reɪz",
-          "pron": "réizz",
-          "es": "criar (hijos)",
-          "icon": "child",
-          "note": "= *bring up*."
-        },
-        {
-          "en": "adopt",
-          "ipa": "əˈdɒpt",
-          "pron": "aDÓPT",
-          "es": "adoptar",
-          "icon": "heart-hands",
-          "example": "I would love to adopt a shelter cat with my partner.",
-          "example_es": "Me encantaría adoptar un gato de una protectora con mi pareja."
-        },
-        {
-          "en": "quarrel (with)",
-          "ipa": "ˈkwɒr.əl",
-          "pron": "KUÓral",
-          "es": "discutir, reñir (con)",
-          "icon": "anger-symbol",
-          "note": "*quarrel with your siblings*. Más común: *argue*."
-        },
-        {
-          "en": "get divorced / be divorced",
-          "ipa": "ɡet dɪˈvɔːst",
-          "pron": "get diVÓORST",
-          "es": "divorciarse / estar divorciado",
-          "icon": "broken-heart"
-        },
-        {
-          "en": "separate",
-          "ipa": "ˈsep.ər.eɪt",
-          "pron": "SÉpareit",
-          "es": "separarse",
-          "icon": "scissors",
-          "note": "Como adjetivo, *separate* se pronuncia /ˈsep.ər.ət/ «SÉparat»."
-        },
-        {
-          "en": "get married (to)",
-          "ipa": "ɡet ˈmær.id",
-          "pron": "get MÁrid",
-          "es": "casarse (con)",
-          "icon": "wedding",
-          "note": "Se dice *married **to***, no *married with*."
-        },
-        {
-          "en": "share (a bedroom)",
-          "ipa": "ʃeə",
-          "pron": "shea",
-          "es": "compartir (habitación)",
-          "icon": "bed",
-          "example": "I had to share a bedroom with my stepbrother.",
-          "example_es": "Tenía que compartir habitación con mi hermanastro."
-        },
-        {
-          "en": "cohabit",
-          "ipa": "kəʊˈhæb.ɪt",
-          "pron": "kouJÁbit",
-          "es": "convivir (en pareja sin casarse)",
-          "icon": "house",
-          "note": "Más coloquial: *live together*.",
-          "example": "Many couples cohabit for a few years before they start a family.",
-          "example_es": "Muchas parejas conviven unos años antes de tener hijos."
-        },
-        {
-          "en": "start a family",
-          "ipa": "ˌstɑːt ə ˈfæm.əl.i",
-          "pron": "staat a FÁmili",
-          "es": "formar una familia, tener hijos",
-          "icon": "pregnant-woman"
-        },
-        {
-          "en": "give birth (to)",
-          "ipa": "ˌɡɪv ˈbɜːθ",
-          "pron": "giv BÉRZ",
-          "es": "dar a luz",
-          "icon": "baby"
-        },
-        {
-          "en": "get angry",
-          "ipa": "ɡet ˈæŋ.ɡri",
-          "pron": "get ÁNgri",
-          "es": "enfadarse",
-          "icon": "angry-face",
-          "note": "Más formal que *fall out*."
-        },
-        {
-          "en": "get pregnant",
-          "ipa": "ɡet ˈpreɡ.nənt",
-          "pron": "get PRÉGnant",
-          "es": "quedarse embarazada",
-          "icon": "pregnant-person",
-          "note": "*be pregnant* = estar embarazada."
-        },
-        {
-          "en": "die",
-          "ipa": "daɪ",
-          "pron": "dái",
-          "es": "morir",
-          "icon": "headstone",
-          "note": "*dead* = muerto (adjetivo); *death* /deθ/ = la muerte. Educado: *pass away*; muy informal: *kick the bucket*."
-        }
-      ]
-    },
-    {
-      "id": "expressions",
-      "title": "Expressions",
-      "title_es": "Expresiones",
-      "items": [
-        {
-          "en": "have (a lot of) things in common",
-          "ipa": "ˈθɪŋz ɪn ˈkɒm.ən",
-          "pron": "zingzz in KÓman",
-          "es": "tener (mucho) en común",
-          "icon": "puzzle-piece",
-          "example": "My partner and I have a lot of things in common, like cinema and hiking.",
-          "example_es": "Mi pareja y yo tenemos mucho en común, como el cine y el senderismo."
-        },
-        {
-          "en": "get together",
-          "ipa": "ˌɡet təˈɡeð.ə",
-          "pron": "get taGÉda",
-          "es": "reunirse, quedar",
-          "icon": "spiral-calendar",
-          "note": "Nombre: *a get-together* = una reunión informal.",
-          "example": "Whenever we get together, we cook a huge Sunday lunch.",
-          "example_es": "Siempre que nos reunimos, cocinamos una comida de domingo enorme."
-        },
-        {
-          "en": "on my father's / mother's side",
-          "ipa": "ɒn maɪ ˈfɑː.ðəz ˌsaɪd",
-          "pron": "on mai FÁAdazz said",
-          "es": "por parte de padre / madre",
-          "icon": "deciduous-tree",
-          "example": "He's a cousin on my father's side.",
-          "example_es": "Es primo mío por parte de padre."
-        },
-        {
-          "en": "be close to",
-          "ipa": "bi ˈkləʊs tə",
-          "pron": "bi KLÓUS ta",
-          "es": "estar muy unido a",
-          "icon": "people-hugging",
-          "note": "*close* (unido, cerca) lleva «s»; el verbo *close* (cerrar) lleva «zz»."
-        },
-        {
-          "en": "(not) see eye to eye",
-          "ipa": "ˌsiː ˌaɪ tə ˈaɪ",
-          "pron": "sii ai ta ÁI",
-          "es": "(no) estar de acuerdo, (no) verlo igual",
-          "icon": "eyes",
-          "example": "My dad and I don't see eye to eye on my weekend curfew.",
-          "example_es": "Mi padre y yo no estamos de acuerdo con mi hora de volver los fines de semana.",
-          "note": "= estar de acuerdo. *curfew* = hora límite para volver a casa."
-        },
-        {
-          "en": "be under age",
-          "ipa": "bi ˌʌn.dər ˈeɪdʒ",
-          "pron": "bi ánder ÉICH",
-          "es": "ser menor de edad",
-          "icon": "no-one-under-eighteen",
-          "example": "When I was under age, my parents never allowed me to go out after 10 p.m.",
-          "example_es": "Cuando era menor de edad, mis padres nunca me dejaban salir después de las 10."
-        },
-        {
-          "en": "come of age",
-          "ipa": "ˌkʌm əv ˈeɪdʒ",
-          "pron": "kam av ÉICH",
-          "es": "alcanzar la mayoría de edad",
-          "icon": "party-popper",
-          "example": "I'm coming of age on 17th October.",
-          "example_es": "Cumplo la mayoría de edad el 17 de octubre."
-        },
-        {
-          "en": "run in the family",
-          "ipa": "ˌrʌn ɪn ðə ˈfæm.əl.i",
-          "pron": "ran in da FÁmili",
-          "es": "ser cosa de familia",
-          "icon": "dna",
-          "example": "Red hair runs in our family.",
-          "example_es": "El pelo pelirrojo es cosa de familia."
-        },
-        {
-          "en": "the black sheep (of the family)",
-          "ipa": "ðə ˌblæk ˈʃiːp",
-          "pron": "da blak SHÍIP",
-          "es": "la oveja negra (de la familia)",
-          "icon": "ewe"
-        },
-        {
-          "en": "Like father, like son.",
-          "ipa": "ˌlaɪk ˈfɑː.ðə ˌlaɪk ˈsʌn",
-          "pron": "laik FÁAda laik SAN",
-          "es": "De tal palo, tal astilla.",
-          "icon": "man"
-        },
-        {
-          "en": "I'm turning 18.",
-          "ipa": "aɪm ˌtɜː.nɪŋ eɪˈtiːn",
-          "pron": "aim terning eiTÍIN",
-          "es": "Voy a cumplir 18 años.",
-          "icon": "birthday-cake",
-          "note": "*turn* + edad = cumplir años."
-        },
-        {
-          "en": "kick the bucket",
-          "ipa": "ˌkɪk ðə ˈbʌk.ɪt",
-          "pron": "kik da BÁkit",
-          "es": "estirar la pata",
-          "icon": "bucket",
-          "note": "Muy informal y humorístico. Neutro: *die*; educado: *pass away*."
-        },
-        {
-          "en": "enemy / enemies",
-          "ipa": "ˈen.ə.mi / ˈen.ə.miz",
-          "pron": "Énami / Énamizz",
-          "es": "enemigo / enemigos",
-          "icon": "crossed-swords",
-          "note": "Plural: consonante + *-y* → *-ies*."
-        },
-        {
-          "en": "Would you rather…?",
-          "ipa": "wʊd juː ˈrɑː.ðə",
-          "pron": "uud yu RÁAda",
-          "es": "¿Preferirías…?",
-          "icon": "thinking-face",
-          "note": "Respuesta: *I'd rather* + infinitivo sin *to*.",
-          "example": "Would you rather have a huge extended family or a tiny nuclear family? — I'd rather have a tiny family because it's quieter.",
-          "example_es": "¿Preferirías una familia extensa enorme o una familia nuclear pequeña? — Preferiría una familia pequeña porque es más tranquila."
+          "id": "expressions",
+          "title": "Expressions",
+          "title_es": "Expresiones",
+          "items": [
+            {
+              "en": "have (a lot of) things in common",
+              "ipa": "ˈθɪŋz ɪn ˈkɒm.ən",
+              "pron": "zingzz in KÓman",
+              "es": "tener (mucho) en común",
+              "icon": "puzzle-piece",
+              "example": "My partner and I have a lot of things in common, like cinema and hiking.",
+              "example_es": "Mi pareja y yo tenemos mucho en común, como el cine y el senderismo."
+            },
+            {
+              "en": "get together",
+              "ipa": "ˌɡet təˈɡeð.ə",
+              "pron": "get taGÉda",
+              "es": "reunirse, quedar",
+              "icon": "spiral-calendar",
+              "note": "Nombre: *a get-together* = una reunión informal.",
+              "example": "Whenever we get together, we cook a huge Sunday lunch.",
+              "example_es": "Siempre que nos reunimos, cocinamos una comida de domingo enorme."
+            },
+            {
+              "en": "on my father's / mother's side",
+              "ipa": "ɒn maɪ ˈfɑː.ðəz ˌsaɪd",
+              "pron": "on mai FÁAdazz said",
+              "es": "por parte de padre / madre",
+              "icon": "deciduous-tree",
+              "example": "He's a cousin on my father's side.",
+              "example_es": "Es primo mío por parte de padre."
+            },
+            {
+              "en": "be close to",
+              "ipa": "bi ˈkləʊs tə",
+              "pron": "bi KLÓUS ta",
+              "es": "estar muy unido a",
+              "icon": "people-hugging",
+              "note": "*close* (unido, cerca) lleva «s»; el verbo *close* (cerrar) lleva «zz»."
+            },
+            {
+              "en": "(not) see eye to eye",
+              "ipa": "ˌsiː ˌaɪ tə ˈaɪ",
+              "pron": "sii ai ta ÁI",
+              "es": "(no) estar de acuerdo, (no) verlo igual",
+              "icon": "eyes",
+              "example": "My dad and I don't see eye to eye on my weekend curfew.",
+              "example_es": "Mi padre y yo no estamos de acuerdo con mi hora de volver los fines de semana.",
+              "note": "= estar de acuerdo. *curfew* = hora límite para volver a casa."
+            },
+            {
+              "en": "be under age",
+              "ipa": "bi ˌʌn.dər ˈeɪdʒ",
+              "pron": "bi ánder ÉICH",
+              "es": "ser menor de edad",
+              "icon": "no-one-under-eighteen",
+              "example": "When I was under age, my parents never allowed me to go out after 10 p.m.",
+              "example_es": "Cuando era menor de edad, mis padres nunca me dejaban salir después de las 10."
+            },
+            {
+              "en": "come of age",
+              "ipa": "ˌkʌm əv ˈeɪdʒ",
+              "pron": "kam av ÉICH",
+              "es": "alcanzar la mayoría de edad",
+              "icon": "party-popper",
+              "example": "I'm coming of age on 17th October.",
+              "example_es": "Cumplo la mayoría de edad el 17 de octubre."
+            },
+            {
+              "en": "run in the family",
+              "ipa": "ˌrʌn ɪn ðə ˈfæm.əl.i",
+              "pron": "ran in da FÁmili",
+              "es": "ser cosa de familia",
+              "icon": "dna",
+              "example": "Red hair runs in our family.",
+              "example_es": "El pelo pelirrojo es cosa de familia."
+            },
+            {
+              "en": "the black sheep (of the family)",
+              "ipa": "ðə ˌblæk ˈʃiːp",
+              "pron": "da blak SHÍIP",
+              "es": "la oveja negra (de la familia)",
+              "icon": "ewe"
+            },
+            {
+              "en": "Like father, like son.",
+              "ipa": "ˌlaɪk ˈfɑː.ðə ˌlaɪk ˈsʌn",
+              "pron": "laik FÁAda laik SAN",
+              "es": "De tal palo, tal astilla.",
+              "icon": "man"
+            },
+            {
+              "en": "I'm turning 18.",
+              "ipa": "aɪm ˌtɜː.nɪŋ eɪˈtiːn",
+              "pron": "aim terning eiTÍIN",
+              "es": "Voy a cumplir 18 años.",
+              "icon": "birthday-cake",
+              "note": "*turn* + edad = cumplir años."
+            },
+            {
+              "en": "kick the bucket",
+              "ipa": "ˌkɪk ðə ˈbʌk.ɪt",
+              "pron": "kik da BÁkit",
+              "es": "estirar la pata",
+              "icon": "bucket",
+              "note": "Muy informal y humorístico. Neutro: *die*; educado: *pass away*."
+            },
+            {
+              "en": "enemy / enemies",
+              "ipa": "ˈen.ə.mi / ˈen.ə.miz",
+              "pron": "Énami / Énamizz",
+              "es": "enemigo / enemigos",
+              "icon": "crossed-swords",
+              "note": "Plural: consonante + *-y* → *-ies*."
+            },
+            {
+              "en": "Would you rather…?",
+              "ipa": "wʊd juː ˈrɑː.ðə",
+              "pron": "uud yu RÁAda",
+              "es": "¿Preferirías…?",
+              "icon": "thinking-face",
+              "note": "Respuesta: *I'd rather* + infinitivo sin *to*.",
+              "example": "Would you rather have a huge extended family or a tiny nuclear family? — I'd rather have a tiny family because it's quieter.",
+              "example_es": "¿Preferirías una familia extensa enorme o una familia nuclear pequeña? — Preferiría una familia pequeña porque es más tranquila."
+            }
+          ]
         }
       ]
     }

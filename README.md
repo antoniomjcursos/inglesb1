@@ -4,7 +4,7 @@ Vocabulario y gramática de inglés para preparar el B1. Cada palabra tiene imag
 
 Todo el contenido está en archivos JSON dentro de `data/`. Para añadir un tema nuevo no hace falta tocar el código.
 
-La web tiene una portada con todos los temas, un menú **Vocabulario** y otro **Gramática** con cada tema, un buscador que busca en todo el vocabulario y, dentro de cada tema, un índice de secciones y un modo repaso que oculta el español.
+La web muestra todo como **un único árbol desplegable**: Vocabulario y Gramática → temas → secciones → subsecciones → palabras. Además tiene un menú **Vocabulario** y otro **Gramática** con cada tema, un buscador que busca en todo el vocabulario y un modo repaso que oculta el español.
 
 ## Ver la web
 
@@ -65,6 +65,26 @@ scripts/add_icon.py     descarga iconos nuevos
 | `sections` | sí | Lista de secciones. Cada una lleva `id`, `title`, `title_es` y sus `items` (vocabulario) o su explicación (gramática). |
 
 El orden de `data/index.json` es el orden de los menús y de la portada.
+
+### Secciones y subsecciones (árbol)
+
+En la web, cada tema se ve como un **árbol que se puede expandir y contraer**: secciones y, dentro, subsecciones. Las **palabras se ordenan solas alfabéticamente** dentro de cada bloque (sin contar *the*, *a*, *to* ni lo que va entre paréntesis al principio), así que puedes añadirlas en cualquier orden.
+
+Una sección puede tener `items` (palabras), `groups` (subsecciones) o las dos cosas:
+
+```json
+{
+  "id": "food",
+  "title": "Food",
+  "title_es": "Alimentos",
+  "groups": [
+    { "id": "fruit", "title": "Fruit", "title_es": "Frutas", "items": [ … ] },
+    { "id": "veg", "title": "Vegetables", "title_es": "Verduras", "items": [ … ] }
+  ]
+}
+```
+
+Cada subsección necesita `id` (distinto dentro de su sección), `title` y su lista de `items`.
 
 Para **completar un tema que ya existe**, abre su JSON y añade palabras a la lista `"items"` de la sección que quieras, o crea una sección nueva en `"sections"`.
 

@@ -141,6 +141,53 @@
           "q": "It's cold in here. — I ___ (close) the window.",
           "a": "'ll close",
           "why": "Decisión en el momento."
+        },
+        {
+          "q": "I'm going shopping. ___ I buy anything for you?",
+          "a": "Shall",
+          "why": "Ofrecimiento con *I*."
+        },
+        {
+          "q": "I heard on the radio that the weather ___ (be) great this weekend.",
+          "a": "will be",
+          "why": "Predicción."
+        },
+        {
+          "q": "Paolo ___ (buy) a new car next week. He's already chosen it.",
+          "a": "is buying",
+          "why": "Plan organizado. También: *is going to buy*."
+        },
+        {
+          "q": "I ___ (have) dinner with my brother at 8 tonight.",
+          "a": "'m having",
+          "why": "Plan con hora."
+        },
+        {
+          "q": "I'm sure Kwame ___ (help) you with your homework.",
+          "a": "will help",
+          "why": "Opinión con *I'm sure*."
+        }
+      ],
+      "examples": [
+        {
+          "en": "I'm going into town this afternoon. Shall I go to the supermarket on my way back?",
+          "es": "Esta tarde voy al centro. ¿Paso por el súper a la vuelta?",
+          "note": "Plan (continuo) + ofrecimiento (*shall*)."
+        },
+        {
+          "en": "OK, I'll get bread, milk and some eggs.",
+          "es": "Vale, compro pan, leche y unos huevos.",
+          "note": "Decisión en el momento (*will*)."
+        },
+        {
+          "en": "The weather will be excellent this weekend, and my parents are coming to stay with me.",
+          "es": "Hará muy buen tiempo este fin de semana, y mis padres vienen a quedarse conmigo.",
+          "note": "Predicción (*will*) + plan organizado (continuo)."
+        },
+        {
+          "en": "I'm going to see the new film tomorrow. — I think you'll love it.",
+          "es": "Mañana voy a ver la película nueva. — Creo que te va a encantar.",
+          "note": "Intención (*going to*) + opinión (*will*)."
         }
       ]
     },
@@ -173,6 +220,10 @@
         {
           "en": "The new course starts on Monday.",
           "es": "El curso nuevo empieza el lunes."
+        },
+        {
+          "en": "My flight to Dublin leaves at 6.40 a.m. on Saturday.",
+          "es": "Mi vuelo a Dublín sale el sábado a las 6:40."
         }
       ],
       "exceptions": [
@@ -227,6 +278,10 @@
         {
           "en": "Is anyone in your family moving house soon?",
           "es": "¿Alguien de tu familia se muda pronto?"
+        },
+        {
+          "en": "We're meeting Bob outside the cinema at 7.30.",
+          "es": "Hemos quedado con Bob a las 7:30 en la puerta del cine."
         }
       ],
       "tips": [
@@ -282,6 +337,11 @@
         {
           "en": "It's going to rain on Saturday. I've seen the forecast.",
           "es": "Va a llover el sábado. He visto la previsión."
+        },
+        {
+          "en": "I'm going to cook more at home this year.",
+          "es": "Este año voy a cocinar más en casa.",
+          "note": "Propósito."
         }
       ],
       "exceptions": [
@@ -409,6 +469,11 @@
         {
           "en": "I promise I won't do that again.",
           "es": "Te prometo que no lo volveré a hacer."
+        },
+        {
+          "en": "Don't worry, I'll help you with the dishes.",
+          "es": "Tranquilo, te ayudo con los platos.",
+          "note": "Ofrecimiento."
         }
       ],
       "exceptions": [
@@ -505,6 +570,10 @@
         {
           "en": "Shall I open the window?",
           "es": "¿Abro la ventana?"
+        },
+        {
+          "en": "Shall we invite your parents for Sunday lunch?",
+          "es": "¿Invitamos a tus padres a comer el domingo?"
         }
       ],
       "exceptions": [

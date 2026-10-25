@@ -34,10 +34,32 @@ def text_ok(where, value):
     return True
 
 
-def check_vocab(path, unit):
-    for si, sec in enumerate(unit['sections']):
-        items = sec.get('items')
+def vocab_blocks(path, unit):
+    """Yields (where, items) for every section and every sub-section ("groups")."""
+    for sec in unit['sections']:
         w = f'{path} › sección «{sec.get("id")}»'
+        groups = sec.get('groups')
+        if groups is not None and not isinstance(groups, list):
+            err(w, '"groups" debe ser una lista de subsecciones'); continue
+        if not sec.get('items') and not groups:
+            err(w, 'la sección necesita "items" (palabras) o "groups" (subsecciones)'); continue
+        if sec.get('items') is not None:
+            yield w, sec['items']
+        gids = set()
+        for g in groups or []:
+            gid = g.get('id', '')
+            wg = f'{w} › subsección «{gid}»'
+            if not ID_RE.match(gid): err(wg, '"id" no válido (minúsculas y guiones)')
+            if gid in gids: err(wg, 'id de subsección repetido')
+            gids.add(gid)
+            if 'title' not in g: err(wg, 'falta "title"')
+            for k in g:
+                if k not in ('id', 'title', 'title_es', 'items'): warn(wg, f'campo desconocido "{k}"')
+            yield wg, g.get('items')
+
+
+def check_vocab(path, unit):
+    for w, items in vocab_blocks(path, unit):
         if not isinstance(items, list) or not items:
             err(w, 'falta la lista "items" o está vacía'); continue
         seen = set()
