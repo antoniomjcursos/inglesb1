@@ -289,6 +289,11 @@
       `<li>${sayBtn(e.en, e.en, true)}<div><div class="en">${esc(e.en)}</div><div class="tr">${md(e.es)}</div>${e.note ? `<div class="tr">${md(e.note)}</div>` : ''}</div></li>`).join('');
     const mist = (s.mistakes || []).map((m) =>
       `<div class="mi"><span class="w"><span class="sr">Incorrecto: </span>${esc(m.wrong)}</span><span class="r"><span class="sr">Correcto: </span>${esc(m.right)}</span>${m.why ? `<span class="why">${md(m.why)}</span>` : ''}</div>`).join('');
+    const gtable = (t) => `<div class="gt-scroll"><table class="gtable">
+          ${t.head ? `<thead><tr>${t.head.map((h) => `<th>${md(h)}</th>`).join('')}</tr></thead>` : ''}
+          <tbody>${(t.rows || []).map((r) => `<tr>${r.map((c) => `<td>${md(c)}</td>`).join('')}</tr>`).join('')}</tbody>
+        </table></div>`;
+    const summary = s.summary ? `<div class="g-summary"><p class="g-h">Resumen</p>${gtable(s.summary)}</div>` : '';
     const tables = (s.tables || []).map((t) => `<div class="gt">
         ${t.title ? `<p class="gt-title">${md(t.title)}</p>` : ''}
         <div class="gt-scroll"><table class="gtable">
@@ -304,6 +309,7 @@
         <span class="pq-a" hidden><b>${md(p.a)}</b>${p.why ? ` · ${md(p.why)}` : ''}</span></li>`).join('');
     return `
       <div class="g-card">
+        ${summary}
         ${s.use ? `<p class="g-use">${md(s.use)}</p>` : ''}
         ${forms ? `<div><p class="g-h">Estructura</p><div class="forms">${forms}</div></div>` : ''}
         ${tables ? `<div><p class="g-h">Tablas</p><div class="gts">${tables}</div></div>` : ''}

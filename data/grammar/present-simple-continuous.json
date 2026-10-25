@@ -11,6 +11,45 @@
       "id": "present-simple",
       "title": "Present simple",
       "title_es": "Presente simple: hábitos y verdades",
+      "summary": {
+        "head": [
+          "",
+          "Qué es / cómo se forma",
+          "Ejemplo"
+        ],
+        "rows": [
+          [
+            "Uso",
+            "hábitos, rutinas, verdades generales, gustos",
+            "I **usually cook** at home."
+          ],
+          [
+            "Afirmativa",
+            "sujeto + V (he / she / it + **-s**)",
+            "She **works** in a restaurant."
+          ],
+          [
+            "Negativa",
+            "**don't / doesn't** + V",
+            "He **doesn't eat** meat."
+          ],
+          [
+            "Pregunta",
+            "**Do / Does** + sujeto + V?",
+            "**Do** you **like** fish?"
+          ],
+          [
+            "Pistas",
+            "always, usually, often, never, every day, once a week",
+            "We eat out **once a week**."
+          ],
+          [
+            "Ojo",
+            "adverbio **antes** del verbo y **después** de *be*",
+            "I **always** eat soup. / I'm **always** late."
+          ]
+        ]
+      },
       "use": "Para **hábitos y rutinas** (lo que haces normalmente), cosas que son **siempre verdad** y **gustos y opiniones**. Suele ir con adverbios de frecuencia (*always, usually, never*) o con expresiones como *every day* u *once a week*.",
       "forms": [
         {
@@ -309,6 +348,45 @@
       "id": "present-continuous",
       "title": "Present continuous",
       "title_es": "Presente continuo: ahora y temporal",
+      "summary": {
+        "head": [
+          "",
+          "Qué es / cómo se forma",
+          "Ejemplo"
+        ],
+        "rows": [
+          [
+            "Uso",
+            "ahora mismo, temporal, cambios, planes organizados",
+            "She'**s sleeping** now."
+          ],
+          [
+            "Afirmativa",
+            "**am / is / are** + V-ing",
+            "I'**m cooking** dinner."
+          ],
+          [
+            "Negativa",
+            "**'m not / isn't / aren't** + V-ing",
+            "She **isn't working** today."
+          ],
+          [
+            "Pregunta",
+            "**Am / Is / Are** + sujeto + V-ing?",
+            "What **are** you **doing**?"
+          ],
+          [
+            "Pistas",
+            "now, at the moment, today, this week, these days",
+            "I'm eating less meat **these days**."
+          ],
+          [
+            "Ojo",
+            "no con verbos de estado; *always* + continuo = queja",
+            "I **need** it now. / He's always **complaining**!"
+          ]
+        ]
+      },
       "use": "Para acciones que **están pasando ahora**, situaciones **temporales** (estos días, esta semana), cosas que **están cambiando** y **planes ya organizados** para el futuro (*future arrangements*).",
       "forms": [
         {
@@ -534,6 +612,35 @@
       "id": "state-verbs",
       "title": "Action and non-action verbs",
       "title_es": "Verbos de acción y de estado",
+      "summary": {
+        "head": [
+          "",
+          "Qué es / cómo se forma",
+          "Ejemplo"
+        ],
+        "rows": [
+          [
+            "Verbos de acción",
+            "simple o continuo: *eat, cook, work, drive…*",
+            "I usually **drive**, but today I'**m walking**."
+          ],
+          [
+            "Verbos de estado",
+            "**solo simple**: *like, love, want, need, know, believe, understand, seem…*",
+            "I **don't understand** it."
+          ],
+          [
+            "Con *now*",
+            "el verbo de estado sigue en simple",
+            "I **want** a coffee now."
+          ],
+          [
+            "Dos significados",
+            "*have, think, taste, smell, see, look* van en continuo si son acción",
+            "I **have** a cat. / I'**m having** lunch."
+          ]
+        ]
+      },
       "use": "Los **verbos de acción** (*cook, make, eat, play*) pueden ir en presente simple o continuo. Los **verbos de estado** (*non-action* o *state verbs*) describen sentimientos, opiniones, conocimientos, posesión o sentidos, y **normalmente no van en continuo**, aunque hablemos de ahora mismo.",
       "tables": [
         {
@@ -752,6 +859,40 @@
       "id": "adverbs-and-tenses",
       "title": "Adverbs, state verbs and tenses",
       "title_es": "Adverbios, verbos de estado y tiempos",
+      "summary": {
+        "head": [
+          "",
+          "Qué es / cómo se forma",
+          "Ejemplo"
+        ],
+        "rows": [
+          [
+            "Paso 1",
+            "el adverbio da la pista: hábito → simple; ahora → continuo",
+            "I **usually cook**. / I'**m cooking** now."
+          ],
+          [
+            "Paso 2",
+            "si el verbo es de estado, **simple** aunque diga *now*",
+            "I **don't understand** it right now."
+          ],
+          [
+            "Posición en simple",
+            "antes del verbo; después de *be*; entre *don't* y el verbo",
+            "I **don't usually** drink coffee."
+          ],
+          [
+            "Posición en continuo",
+            "después de *am / is / are*",
+            "I'm **still** waiting."
+          ],
+          [
+            "*still* en negativa",
+            "antes del auxiliar",
+            "I **still don't** understand."
+          ]
+        ]
+      },
       "use": "**Cómo decidir en dos pasos:** el **adverbio** te da la pista (hábito → simple; ahora o temporal → continuo), pero el **verbo** pesa más: si es un verbo de estado, va en presente simple aunque el adverbio pida continuo. **En resumen:** mira primero el verbo. Si es de estado, simple casi siempre. Si es de acción, decide el adverbio.",
       "tables": [
         {
@@ -1068,6 +1209,30 @@
       "id": "simple-or-continuous",
       "title": "Simple or continuous?",
       "title_es": "¿Simple o continuo? Resumen y preguntas",
+      "summary": {
+        "head": [
+          "",
+          "Qué es / cómo se forma",
+          "Ejemplo"
+        ],
+        "rows": [
+          [
+            "Simple",
+            "hábitos, verdades, gustos, verbos de estado",
+            "I **work** in an office."
+          ],
+          [
+            "Continuo",
+            "ahora, temporal, cambios, planes",
+            "I'**m working** from home this week."
+          ],
+          [
+            "Truco",
+            "primero el verbo (¿estado?), luego el adverbio (¿hábito o ahora?)",
+            "I **want** a coffee now. (estado)"
+          ]
+        ]
+      },
       "use": "Resumen para decidir rápido, y modelos de preguntas: **On a typical day** (costumbres → simple) y **At the moment / Nowadays** (ahora → continuo, salvo verbos de estado).",
       "tables": [
         {
@@ -1344,6 +1509,35 @@
       "id": "family-questions",
       "title": "Questions about family",
       "title_es": "Preguntas sobre la familia",
+      "summary": {
+        "head": [
+          "",
+          "Qué es / cómo se forma",
+          "Ejemplo"
+        ],
+        "rows": [
+          [
+            "Rutina o permanente",
+            "simple",
+            "How often **does** your family **get** together?"
+          ],
+          [
+            "Ahora, temporal o plan",
+            "continuo",
+            "**Are** you **visiting** your grandparents this weekend?"
+          ],
+          [
+            "Pregunta por el sujeto",
+            "sin *do / does*: *Who* + verbo con -s",
+            "Who usually **acts** as the breadwinner?"
+          ],
+          [
+            "*anyone / someone*",
+            "verbo en singular",
+            "**Is** anyone in your family moving house?"
+          ]
+        ]
+      },
       "use": "Para hablar de tu familia usa **presente simple** con rutinas, situaciones permanentes y verbos de estado, y **presente continuo** con lo que pasa ahora, situaciones temporales y planes ya organizados. Practica formando las preguntas y contéstalas con un compañero.",
       "tables": [
         {

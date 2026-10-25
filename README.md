@@ -149,6 +149,7 @@ Otros apartados opcionales de una sección de gramática:
 
 | Campo | Qué es |
 |---|---|
+| `summary` | Tabla de **resumen** que sale la primera, recuadrada: `{ "head": ["", "Qué es / cómo se forma", "Ejemplo"], "rows": [["Uso", "…", "…"]] }`. |
 | `tables` | Tablas: `[{ "title": "…", "head": ["Col 1", "Col 2"], "rows": [["a", "b"], ["c", "d"]], "note": "…" }]`. Todas las filas deben tener tantas columnas como `head`. |
 | `exceptions` | Lista de excepciones (recuadro naranja): `["…", "…"]`. |
 | `tips` | Lista de trucos y recordatorios: `["…", "…"]`. |

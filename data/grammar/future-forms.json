@@ -11,6 +11,50 @@
       "id": "which-future",
       "title": "Which future?",
       "title_es": "¿Qué futuro uso? Resumen",
+      "summary": {
+        "head": [
+          "",
+          "Qué es / cómo se forma",
+          "Ejemplo"
+        ],
+        "rows": [
+          [
+            "Horario",
+            "present simple",
+            "The train **leaves** at 6."
+          ],
+          [
+            "Plan organizado",
+            "present continuous",
+            "I'**m meeting** Ana tonight."
+          ],
+          [
+            "Intención",
+            "be going to",
+            "I'**m going to learn** to cook."
+          ],
+          [
+            "Predicción con pruebas",
+            "be going to",
+            "It'**s going to rain**."
+          ],
+          [
+            "Predicción (opinión)",
+            "will",
+            "You'**ll love** it."
+          ],
+          [
+            "Decisión en el momento, promesa",
+            "will",
+            "I'**ll have** the fish. / I **won't tell** anyone."
+          ],
+          [
+            "Sugerencia u ofrecimiento",
+            "Shall I / we…?",
+            "**Shall we** eat out?"
+          ]
+        ]
+      },
       "use": "En inglés no hay un solo futuro: la forma depende de **qué tipo de futuro** es. Esta tabla resume las cinco formas de B1; abajo tienes cada una con detalle.",
       "tables": [
         {
@@ -195,6 +239,30 @@
       "id": "present-simple-future",
       "title": "Present simple for the future",
       "title_es": "Presente simple: horarios",
+      "summary": {
+        "head": [
+          "",
+          "Qué es / cómo se forma",
+          "Ejemplo"
+        ],
+        "rows": [
+          [
+            "Uso",
+            "horarios fijos: transportes, tiendas, cursos",
+            "The museum **opens** at 9."
+          ],
+          [
+            "Fórmula",
+            "igual que el presente simple",
+            "What time **does** the film **start**?"
+          ],
+          [
+            "Ojo",
+            "no para planes personales",
+            "I'**m meeting** Ana (no *I meet Ana*)."
+          ]
+        ]
+      },
       "use": "Para cosas que siguen un **horario o calendario fijo**: transportes, horarios de apertura y cierre, y el principio o el final de cursos, clases o eventos.",
       "forms": [
         {
@@ -244,6 +312,30 @@
       "id": "present-continuous-future",
       "title": "Present continuous for the future",
       "title_es": "Presente continuo: planes organizados",
+      "summary": {
+        "head": [
+          "",
+          "Qué es / cómo se forma",
+          "Ejemplo"
+        ],
+        "rows": [
+          [
+            "Uso",
+            "planes **ya organizados** (hora, sitio, personas)",
+            "I'**m flying** to Rome on Friday."
+          ],
+          [
+            "Fórmula",
+            "**am / is / are** + V-ing + expresión de futuro",
+            "We'**re having** dinner out **tonight**."
+          ],
+          [
+            "Pregunta típica",
+            "What are you doing + tiempo?",
+            "What **are** you **doing** this weekend?"
+          ]
+        ]
+      },
       "use": "Para **planes ya organizados**: has quedado con alguien, has comprado el billete, tienes la cita. Suele llevar una expresión de tiempo (*tonight, on Friday, next week*).",
       "forms": [
         {
@@ -305,6 +397,35 @@
       "id": "going-to-future",
       "title": "Be going to",
       "title_es": "Going to: intenciones y predicciones con pruebas",
+      "summary": {
+        "head": [
+          "",
+          "Qué es / cómo se forma",
+          "Ejemplo"
+        ],
+        "rows": [
+          [
+            "Uso 1",
+            "intenciones y ambiciones",
+            "I'**m going to visit** Dublin this summer."
+          ],
+          [
+            "Uso 2",
+            "predicción con pruebas que ves",
+            "Look at those clouds! It'**s going to rain**."
+          ],
+          [
+            "Fórmula",
+            "**am / is / are going to** + V",
+            "She **isn't going to come**."
+          ],
+          [
+            "Ojo",
+            "*going to go* → mejor *going to*",
+            "I'm **going to** the cinema."
+          ]
+        ]
+      },
       "use": "Para **intenciones y ambiciones** (lo que has decidido hacer, aunque no esté organizado) y para **predicciones basadas en pruebas** que ves ahora.",
       "forms": [
         {
@@ -380,6 +501,40 @@
       "id": "will",
       "title": "Will",
       "title_es": "Will: predicciones, decisiones, promesas",
+      "summary": {
+        "head": [
+          "",
+          "Qué es / cómo se forma",
+          "Ejemplo"
+        ],
+        "rows": [
+          [
+            "Usos",
+            "predicción (opinión), decisión en el momento, promesa, ofrecimiento",
+            "I think it **will** be sunny."
+          ],
+          [
+            "Afirmativa",
+            "**will ('ll)** + V",
+            "I'**ll call** you."
+          ],
+          [
+            "Negativa",
+            "**won't** + V",
+            "I **won't be** late."
+          ],
+          [
+            "Pregunta",
+            "**Will** + sujeto + V?",
+            "**Will** you **help** me?"
+          ],
+          [
+            "Ojo",
+            "*I don't think it will…*; después de *when*, presente",
+            "I'll call you **when I arrive**."
+          ]
+        ]
+      },
       "use": "Para **predicciones basadas en tu opinión** (sin pruebas), **decisiones que tomas en el momento de hablar**, **promesas** y **ofrecimientos**. Es igual para todas las personas.",
       "forms": [
         {
@@ -523,6 +678,30 @@
       "id": "shall",
       "title": "Shall",
       "title_es": "Shall: sugerencias y ofrecimientos",
+      "summary": {
+        "head": [
+          "",
+          "Qué es / cómo se forma",
+          "Ejemplo"
+        ],
+        "rows": [
+          [
+            "Uso",
+            "sugerencias y ofrecimientos en pregunta",
+            "**Shall I** help you?"
+          ],
+          [
+            "Fórmula",
+            "**Shall I / we** + V?",
+            "**Shall we** order a pizza?"
+          ],
+          [
+            "Ojo",
+            "solo con *I* y *we*",
+            "(nunca *Shall you…?*)"
+          ]
+        ]
+      },
       "use": "En **preguntas** para hacer una **sugerencia** (*shall we…?*) o un **ofrecimiento** (*shall I…?*). Solo se usa con **I** y **we**.",
       "forms": [
         {

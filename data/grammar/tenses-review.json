@@ -11,6 +11,45 @@
       "id": "present-perfect-simple",
       "title": "Present perfect simple",
       "title_es": "Pretérito perfecto: experiencias",
+      "summary": {
+        "head": [
+          "",
+          "Qué es / cómo se forma",
+          "Ejemplo"
+        ],
+        "rows": [
+          [
+            "Uso",
+            "experiencias sin decir cuándo; resultado ahora",
+            "I'**ve been** to London twice."
+          ],
+          [
+            "Afirmativa",
+            "**have / has** + participio",
+            "She'**s eaten** sushi."
+          ],
+          [
+            "Negativa",
+            "**haven't / hasn't** + participio",
+            "I **haven't finished** yet."
+          ],
+          [
+            "Pregunta",
+            "**Have / Has** + sujeto + participio?",
+            "**Have** you ever **tried** it?"
+          ],
+          [
+            "Pistas",
+            "ever, never, already, yet, just",
+            "I've **just** eaten."
+          ],
+          [
+            "Ojo",
+            "si dices cuándo → past simple",
+            "I **ate** sushi yesterday."
+          ]
+        ]
+      },
       "use": "Para hablar de **experiencias** en tu vida sin decir cuándo ocurrieron. En preguntas se usa mucho *ever* (alguna vez) y en respuestas *never* (nunca).",
       "forms": [
         {
@@ -368,6 +407,40 @@
       "id": "present-perfect-continuous",
       "title": "Present perfect continuous",
       "title_es": "Llevar tiempo haciendo algo",
+      "summary": {
+        "head": [
+          "",
+          "Qué es / cómo se forma",
+          "Ejemplo"
+        ],
+        "rows": [
+          [
+            "Uso",
+            "llevar tiempo haciendo algo (empezó y sigue)",
+            "I'**ve been working** here for 9 years."
+          ],
+          [
+            "Fórmula",
+            "**have / has been** + V-ing",
+            "She'**s been learning** English."
+          ],
+          [
+            "Pregunta",
+            "How long + have / has + sujeto + been + V-ing?",
+            "How long **have** you **been living** here?"
+          ],
+          [
+            "Pistas",
+            "**for** + periodo; **since** + momento",
+            "for 3 years / since 2020"
+          ],
+          [
+            "Ojo",
+            "verbos de estado → present perfect simple",
+            "I'**ve known** him for years."
+          ]
+        ]
+      },
       "use": "Para acciones que **empezaron en el pasado y siguen ahora**. Equivale a «llevar… haciendo». Se pregunta con *How long…?* y se responde con *for* (periodo) o *since* (desde un momento).",
       "forms": [
         {
@@ -471,6 +544,45 @@
       "id": "past-simple",
       "title": "Past simple",
       "title_es": "Pasado simple",
+      "summary": {
+        "head": [
+          "",
+          "Qué es / cómo se forma",
+          "Ejemplo"
+        ],
+        "rows": [
+          [
+            "Uso",
+            "acción terminada en un momento concreto",
+            "I **met** him five years ago."
+          ],
+          [
+            "Afirmativa",
+            "V + **-ed** o irregular",
+            "We **went** to Rome."
+          ],
+          [
+            "Negativa",
+            "**didn't** + V",
+            "I **didn't go** out."
+          ],
+          [
+            "Pregunta",
+            "**Did** + sujeto + V?",
+            "When **did** you **meet** him?"
+          ],
+          [
+            "Pistas",
+            "yesterday, last…, … ago, in 2019",
+            "**last** week"
+          ],
+          [
+            "Ojo",
+            "*was / were* sin *did*",
+            "Where **were** you?"
+          ]
+        ]
+      },
       "use": "Para acciones **terminadas en un momento concreto** del pasado: *yesterday*, *last week*, *in 2019*, *five years ago*.",
       "forms": [
         {

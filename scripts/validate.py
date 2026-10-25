@@ -18,7 +18,7 @@ VOCAB_REQUIRED = ('en', 'ipa', 'pron', 'es')
 UNIT_FIELDS = {'id', 'type', 'level', 'title', 'title_es', 'icon', 'description', 'sections'}
 LEVELS = {'A1', 'A2', 'B1', 'B2', 'C1', 'C2'}
 RESERVED = {'inicio', 'vocabulario', 'gramatica'}
-GRAMMAR_FIELDS = {'id', 'title', 'title_es', 'use', 'forms', 'tables', 'keywords', 'examples', 'exceptions', 'tips', 'mistakes', 'practice'}
+GRAMMAR_FIELDS = {'id', 'title', 'title_es', 'summary', 'use', 'forms', 'tables', 'keywords', 'examples', 'exceptions', 'tips', 'mistakes', 'practice'}
 VOWELS = re.compile(r'[aeiouáéíóúAEIOUÁÉÍÓÚ]+')
 
 
@@ -107,6 +107,17 @@ def check_grammar(path, unit):
         for i, m in enumerate(sec.get('mistakes', [])):
             for k in ('wrong', 'right'):
                 if k not in m: err(f'{w} › mistakes {i + 1}', f'falta "{k}"')
+        summ = sec.get('summary')
+        if summ is not None:
+            if not isinstance(summ, dict) or not isinstance(summ.get('rows'), list) or not summ['rows']:
+                err(f'{w} › summary', 'debe ser { "head": [...], "rows": [[...], ...] }')
+            else:
+                width = len(summ['head']) if isinstance(summ.get('head'), list) else len(summ['rows'][0])
+                for j, r in enumerate(summ['rows']):
+                    if not isinstance(r, list) or len(r) != width:
+                        err(f'{w} › summary', f'la fila {j + 1} debe tener {width} columnas')
+                    else:
+                        for c in r: text_ok(f'{w} › summary › fila {j + 1}', c) if c else None
         for i, t in enumerate(sec.get('tables', [])):
             wt = f'{w} › tables {i + 1}'
             rows = t.get('rows')

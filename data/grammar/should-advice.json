@@ -11,6 +11,40 @@
       "id": "should",
       "title": "should / shouldn't",
       "title_es": "Deberías / no deberías",
+      "summary": {
+        "head": [
+          "",
+          "Qué es / cómo se forma",
+          "Ejemplo"
+        ],
+        "rows": [
+          [
+            "Uso",
+            "dar o pedir consejo",
+            "You **should** drink more water."
+          ],
+          [
+            "Afirmativa",
+            "**should** + V (sin *to*, sin *-s*)",
+            "She **should** rest."
+          ],
+          [
+            "Negativa",
+            "**shouldn't** + V",
+            "You **shouldn't** eat so much sugar."
+          ],
+          [
+            "Pregunta",
+            "**Should** + sujeto + V?",
+            "**Should** I cut out sugar?"
+          ],
+          [
+            "Comparar",
+            "*must* = obligación fuerte; *have to* = norma; *mustn't* = prohibido; *don't have to* = no hace falta",
+            "You **don't have to** tip."
+          ]
+        ]
+      },
       "use": "Para dar **consejos** o decir lo que es buena idea. Es igual para todas las personas (no lleva *-s*) y va seguido del infinitivo **sin** *to*.",
       "forms": [
         {

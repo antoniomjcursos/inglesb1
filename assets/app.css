@@ -247,6 +247,10 @@ body.quiz tr:not(.show) .reveal{display:inline-block}
 .mi .why{font-size:.9rem;color:var(--muted)}
 
 .gts{display:grid;gap:16px}
+.g-summary{border:2px solid var(--accent);border-radius:12px;padding:12px 14px;background:var(--surface)}
+.g-summary .g-h{color:var(--accent);margin-bottom:8px}
+.g-summary .gtable{border:0}
+.g-summary .gtable th{background:var(--chip)}
 .g-card>*,.gts>*,.gt{min-width:0}
 .gt-title{font-weight:700;margin:0 0 6px}
 .gt-scroll{overflow-x:auto}
