@@ -152,7 +152,7 @@
     let html = u.description ? `<p class="unit-desc">${md(u.description)}</p>` : '';
     (u.sections || []).forEach((s) => {
       const k = 's:' + u.id + ':' + s.id;
-      if (!isV) { html += node(k, 3, title('h3', s.title, s.title_es), '', false, () => grammarBody(s)); return; }
+      if (!isV) { html += node(k, 3, title('h3', s.title, s.title_es), '', false, () => grammarBody(s, u)); return; }
       const total = secItems(s).length;
       if (!total) return;
       html += node(k, 3, title('h3', s.title, s.title_es), words(total), false, () => {
@@ -281,7 +281,64 @@
   const table = (rowsHtml) => `<div class="tbl"><table>
       <thead><tr><th>Imagen</th><th>Inglés</th><th>Pronunciación</th><th>Español</th><th><span class="sr">Escuchar</span></th></tr></thead>
       <tbody>${rowsHtml}</tbody></table></div>`;
-  function grammarBody(s) {
+  /* ---------- irregular verbs: table and random test ---------- */
+  const formCell = (w, ipa, p) => w === '—' ? '<span class="vt-none">—</span>'
+    : `<div class="vt-w"><b>${esc(w)}</b> ${sayBtn(w, w, true)}</div><div class="ipa">/${esc(ipa)}/</div><span class="sp">${pron(p)}</span>`;
+  function verbTable(verbs) {
+    const rows = alpha(verbs).map((v) => `<tr>
+        <td class="vt-es">${md(v.es)}${v.note ? `<div class="note">${md(v.note)}</div>` : ''}</td>
+        <td>${formCell(v.en, v.ipa, v.pron)}</td>
+        <td>${formCell(v.past, v.past_ipa, v.past_pron)}</td>
+        <td>${formCell(v.pp, v.pp_ipa, v.pp_pron)}</td></tr>`).join('');
+    return `<div class="gt-scroll"><table class="gtable vtable">
+      <thead><tr><th>Español</th><th>Infinitivo</th><th>Pasado</th><th>Participio</th></tr></thead><tbody>${rows}</tbody></table></div>`;
+  }
+  const QUIZ = new Map();   // quiz id -> verb list
+  function quizRows(verbs, n) {
+    const pool = verbs.filter((v) => v.pp !== '—' && v.past !== '—');
+    for (let i = pool.length - 1; i > 0; i--) { const j = Math.floor(Math.random() * (i + 1)); [pool[i], pool[j]] = [pool[j], pool[i]]; }
+    return pool.slice(0, n).map((v, i) => `<li class="qz-row" data-en="${esc(v.en)}">
+        <span class="qz-n">${i + 1}</span>
+        <span class="qz-v"><b>${esc(v.en)}</b> <small>${esc(v.es)}</small></span>
+        <label><span class="sr">Pasado de ${esc(v.en)}</span><input type="text" class="qz-in" data-k="past" autocomplete="off" autocapitalize="off" spellcheck="false" placeholder="pasado"></label>
+        <label><span class="sr">Participio de ${esc(v.en)}</span><input type="text" class="qz-in" data-k="pp" autocomplete="off" autocapitalize="off" spellcheck="false" placeholder="participio"></label>
+        <span class="qz-fix" hidden></span></li>`).join('');
+  }
+  function quizHtml(id, verbs, n) {
+    QUIZ.set(id, { verbs, n });
+    return `<div class="quiz" data-quiz="${esc(id)}">
+      <ol class="qz-list">${quizRows(verbs, n)}</ol>
+      <div class="qz-bar"><button type="button" class="btn primary" data-qz="check">Comprobar</button>
+        <button type="button" class="btn" data-qz="new">Nuevo test</button><span class="qz-score" role="status"></span></div></div>`;
+  }
+  const answerOk = (given, correct) => {
+    const g = norm(given).replace(/\s+/g, ' ').trim();
+    if (!g) return false;
+    const options = correct.split('/').map((x) => norm(x).trim());
+    return options.includes(g) || g.split(/\s*\/\s*/).every((x) => options.includes(x));
+  };
+  function checkQuiz(box) {
+    const { verbs } = QUIZ.get(box.dataset.quiz) || { verbs: [] };
+    let ok = 0, total = 0;
+    box.querySelectorAll('.qz-row').forEach((row) => {
+      const v = verbs.find((x) => x.en === row.dataset.en);
+      if (!v) return;
+      const fixes = [];
+      row.querySelectorAll('.qz-in').forEach((inp) => {
+        const correct = v[inp.dataset.k];
+        const good = answerOk(inp.value, correct);
+        total++; if (good) ok++;
+        inp.classList.toggle('ok', good); inp.classList.toggle('bad', !good);
+        if (!good) fixes.push(correct);
+      });
+      const fix = row.querySelector('.qz-fix');
+      fix.hidden = !fixes.length;
+      fix.textContent = fixes.length ? `${v.en} – ${v.past} – ${v.pp}` : '';
+    });
+    box.querySelector('.qz-score').textContent = `${ok} de ${total} correctas`;
+  }
+
+  function grammarBody(s, u) {
     const forms = (s.forms || []).map((f) =>
       `<div class="form"><span class="lbl">${esc(f.label)}</span><code>${esc(f.pattern)}</code>${f.example ? `<span class="fx">${esc(f.example)}</span>` : ''}</div>`).join('');
     const kw = (s.keywords || []).map((k) => `<span>${esc(k)}</span>`).join('');
@@ -307,10 +364,18 @@
       `<li class="pq"><span class="pq-n">${i + 1}</span><span class="pq-q">${md(p.q).replace(/_{3,}/g, '<span class="gap">______</span>')}</span>
         <button class="pq-btn" type="button" aria-expanded="false">Ver respuesta</button>
         <span class="pq-a" hidden><b>${md(p.a)}</b>${p.why ? ` · ${md(p.why)}` : ''}</span></li>`).join('');
+    const verbs = s.verbs ? `<div><p class="g-h">Verbos</p>${verbTable(s.verbs)}</div>` : '';
+    let quiz = '';
+    if (s.quiz && u) {
+      const src = (u.sections || []).find((x) => x.id === s.quiz.source) || s;
+      quiz = `<div><p class="g-h">Test</p>${quizHtml(u.id + ':' + s.id, src.verbs || [], s.quiz.count || 10)}</div>`;
+    }
     return `
       <div class="g-card">
         ${summary}
         ${s.use ? `<p class="g-use">${md(s.use)}</p>` : ''}
+        ${verbs}
+        ${quiz}
         ${forms ? `<div><p class="g-h">Estructura</p><div class="forms">${forms}</div></div>` : ''}
         ${tables ? `<div><p class="g-h">Tablas</p><div class="gts">${tables}</div></div>` : ''}
         ${kw ? `<div><p class="g-h">Palabras clave</p><div class="kw">${kw}</div></div>` : ''}
@@ -354,6 +419,18 @@
   view.addEventListener('click', (e) => {
     const tt = e.target.closest('[data-tree]');
     if (tt) { setTree(tt.dataset.tree === 'open'); return; }
+    const qz = e.target.closest('[data-qz]');
+    if (qz) {
+      const box = qz.closest('.quiz');
+      if (qz.dataset.qz === 'check') checkQuiz(box);
+      else {
+        const { verbs, n } = QUIZ.get(box.dataset.quiz);
+        box.querySelector('.qz-list').innerHTML = quizRows(verbs, n);
+        box.querySelector('.qz-score').textContent = '';
+        const first = box.querySelector('.qz-in'); if (first) first.focus();
+      }
+      return;
+    }
     const pb = e.target.closest('.pq-btn');
     if (pb) {
       const ans = pb.nextElementSibling, open = ans.hidden;

@@ -1,0 +1,563 @@
+{
+  "id": "money",
+  "type": "vocabulary",
+  "level": "B1",
+  "title": "Money",
+  "title_es": "Dinero",
+  "icon": "money-bag",
+  "description": "Verbos del dinero, formas de pago, banco y finanzas personales, y expresiones para hablar de precios.",
+  "sections": [
+    {
+      "id": "verbs",
+      "title": "Money verbs",
+      "title_es": "Verbos del dinero",
+      "items": [
+        {
+          "en": "afford",
+          "ipa": "əˈfɔːd",
+          "pron": "aFÓOD",
+          "es": "permitirse (pagar)",
+          "icon": "money-bag",
+          "note": "Casi siempre con *can / can't*: *I can't afford it* = no me lo puedo permitir.",
+          "example": "I can't afford to buy a new car right now.",
+          "example_es": "Ahora mismo no me puedo permitir un coche nuevo."
+        },
+        {
+          "en": "borrow (from)",
+          "ipa": "ˈbɒr.əʊ",
+          "pron": "BÓrou",
+          "es": "pedir prestado (a)",
+          "icon": "handshake",
+          "note": "Tú **recibes** el dinero. Compara con *lend*: *Can I borrow 10 euros?* = *Can you lend me 10 euros?*",
+          "example": "Can I borrow 10 euros until tomorrow?",
+          "example_es": "¿Me prestas 10 euros hasta mañana?"
+        },
+        {
+          "en": "lend (to)",
+          "ipa": "lend",
+          "pron": "lend",
+          "es": "prestar (a)",
+          "icon": "hand-with-index-finger-and-thumb-crossed",
+          "note": "Tú **das** el dinero. Pasado: *lent*. ¡No confundas con *borrow*!",
+          "example": "He lent me his book.",
+          "example_es": "Me prestó su libro."
+        },
+        {
+          "en": "owe",
+          "ipa": "əʊ",
+          "pron": "óu",
+          "es": "deber (dinero)",
+          "icon": "receipt",
+          "example": "I owe you 5 euros for the coffee.",
+          "example_es": "Te debo 5 euros del café."
+        },
+        {
+          "en": "pay back",
+          "ipa": "ˌpeɪ ˈbæk",
+          "pron": "pei BAK",
+          "es": "devolver (dinero prestado)",
+          "icon": "counterclockwise-arrows-button",
+          "note": "Pasado: *paid back*. El objeto puede ir en medio: *pay you back*.",
+          "example": "I'll pay you back on Friday.",
+          "example_es": "Te lo devuelvo el viernes."
+        },
+        {
+          "en": "charge",
+          "ipa": "tʃɑːdʒ",
+          "pron": "chaach",
+          "es": "cobrar",
+          "icon": "label",
+          "example": "How much do you charge for delivery?",
+          "example_es": "¿Cuánto cobráis por el envío?"
+        },
+        {
+          "en": "earn",
+          "ipa": "ɜːn",
+          "pron": "éern",
+          "es": "ganar (trabajando)",
+          "icon": "briefcase",
+          "note": "*earn* = ganar con tu trabajo; *win* = ganar un premio o un juego.",
+          "example": "He earns a good salary as an engineer.",
+          "example_es": "Gana un buen sueldo como ingeniero."
+        },
+        {
+          "en": "win",
+          "ipa": "wɪn",
+          "pron": "uin",
+          "es": "ganar (un premio, la lotería)",
+          "icon": "trophy",
+          "note": "Pasado: *won* /wʌn/ «uan».",
+          "example": "She won 100 euros in the lottery.",
+          "example_es": "Ganó 100 euros en la lotería."
+        },
+        {
+          "en": "save (up)",
+          "ipa": "seɪv",
+          "pron": "séiv",
+          "es": "ahorrar",
+          "icon": "coin",
+          "note": "*save up for* = ahorrar para algo.",
+          "example": "I'm saving up for a trip to Japan.",
+          "example_es": "Estoy ahorrando para un viaje a Japón."
+        },
+        {
+          "en": "spend (on)",
+          "ipa": "spend",
+          "pron": "spend",
+          "es": "gastar (en)",
+          "icon": "shopping-bags",
+          "note": "Pasado: *spent*. Va con *on*: *spend money on clothes*.",
+          "example": "She spends a lot of money on clothes.",
+          "example_es": "Se gasta mucho dinero en ropa."
+        },
+        {
+          "en": "waste",
+          "ipa": "weɪst",
+          "pron": "uéist",
+          "es": "malgastar, desperdiciar",
+          "icon": "money-with-wings",
+          "note": "También con el tiempo: *waste time*.",
+          "example": "Don't waste your money on things you don't need.",
+          "example_es": "No malgastes el dinero en cosas que no necesitas."
+        },
+        {
+          "en": "be worth",
+          "ipa": "bi ˈwɜːθ",
+          "pron": "bi UÉERZ",
+          "es": "valer (tener un valor de)",
+          "icon": "gem-stone",
+          "example": "My house is worth about 200,000 euros.",
+          "example_es": "Mi casa vale unos 200.000 euros."
+        },
+        {
+          "en": "cost",
+          "ipa": "kɒst",
+          "pron": "kost",
+          "es": "costar",
+          "icon": "label",
+          "note": "Irregular: *cost – cost – cost*.",
+          "example": "These shoes cost 200 dollars.",
+          "example_es": "Estos zapatos cuestan 200 dólares."
+        },
+        {
+          "en": "inherit",
+          "ipa": "ɪnˈher.ɪt",
+          "pron": "inJÉrit",
+          "es": "heredar",
+          "icon": "old-man",
+          "example": "I'm going to inherit 2,000 pounds from my uncle.",
+          "example_es": "Voy a heredar 2.000 libras de mi tío."
+        },
+        {
+          "en": "invest (in)",
+          "ipa": "ɪnˈvest",
+          "pron": "inVÉST",
+          "es": "invertir (en)",
+          "icon": "chart-increasing",
+          "example": "My uncle invested all his money in property.",
+          "example_es": "Mi tío invirtió todo su dinero en inmuebles."
+        },
+        {
+          "en": "raise",
+          "ipa": "reɪz",
+          "pron": "réizz",
+          "es": "recaudar (dinero)",
+          "icon": "raising-hands",
+          "note": "También es «criar» (*raise children*).",
+          "example": "We'll raise money for a new hospital.",
+          "example_es": "Recaudaremos dinero para un hospital nuevo."
+        },
+        {
+          "en": "transfer",
+          "ipa": "trænsˈfɜː",
+          "pron": "transFÉER",
+          "es": "transferir, hacer una transferencia",
+          "icon": "counterclockwise-arrows-button",
+          "note": "Como nombre se pronuncia /ˈtræns.fɜː/ «TRÁNSfeer».",
+          "example": "I want to transfer some money to my son's account.",
+          "example_es": "Quiero hacer una transferencia a la cuenta de mi hijo."
+        }
+      ]
+    },
+    {
+      "id": "phrasal",
+      "title": "Phrasal verbs and prepositions",
+      "title_es": "Phrasal verbs y preposiciones",
+      "items": [
+        {
+          "en": "take out (money)",
+          "ipa": "ˌteɪk ˈaʊt",
+          "pron": "teik ÁUT",
+          "es": "sacar (dinero)",
+          "icon": "bank",
+          "example": "I took out 200 euros from a cash machine.",
+          "example_es": "Saqué 200 euros de un cajero."
+        },
+        {
+          "en": "live on",
+          "ipa": "ˈlɪv ɒn",
+          "pron": "LIV on",
+          "es": "vivir con (una cantidad)",
+          "icon": "house",
+          "example": "It's difficult for us to live on only one salary.",
+          "example_es": "Nos cuesta vivir con un solo sueldo."
+        },
+        {
+          "en": "live off",
+          "ipa": "ˈlɪv ɒf",
+          "pron": "LIV of",
+          "es": "vivir a costa de",
+          "icon": "people-hugging",
+          "example": "I have to live off my parents while I'm at university.",
+          "example_es": "Tengo que vivir de mis padres mientras estoy en la universidad."
+        },
+        {
+          "en": "pay for",
+          "ipa": "ˈpeɪ fɔː",
+          "pron": "PÉI foo",
+          "es": "pagar (algo)",
+          "icon": "receipt",
+          "note": "Se paga *for* algo: *I paid for the dinner*. Con tarjeta: *pay **by** card*.",
+          "example": "I paid for the dinner last night.",
+          "example_es": "Anoche pagué yo la cena."
+        },
+        {
+          "en": "charge (sb) for",
+          "ipa": "ˈtʃɑːdʒ fɔː",
+          "pron": "CHÁACH foo",
+          "es": "cobrar (a alguien) por",
+          "icon": "label",
+          "example": "They charged us 60 euros for a bottle of wine.",
+          "example_es": "Nos cobraron 60 euros por una botella de vino."
+        },
+        {
+          "en": "lend (money) to",
+          "ipa": "ˈlend tuː",
+          "pron": "LEND tuu",
+          "es": "prestar (dinero) a",
+          "icon": "hand-with-index-finger-and-thumb-crossed",
+          "example": "I don't like lending money to friends.",
+          "example_es": "No me gusta prestar dinero a los amigos."
+        },
+        {
+          "en": "borrow (money) from",
+          "ipa": "ˈbɒr.əʊ frɒm",
+          "pron": "BÓrou from",
+          "es": "pedir prestado a",
+          "icon": "handshake",
+          "example": "I borrowed a lot of money from the bank.",
+          "example_es": "Pedí mucho dinero prestado al banco."
+        }
+      ]
+    },
+    {
+      "id": "payments",
+      "title": "Money and payments",
+      "title_es": "Dinero y pagos",
+      "items": [
+        {
+          "en": "bill",
+          "ipa": "bɪl",
+          "pron": "bil",
+          "es": "factura; cuenta",
+          "icon": "receipt",
+          "note": "*Can we have the bill?* = ¿Nos trae la cuenta? En EE. UU. la cuenta es *check*, y *bill* también es un billete (en UK, *note*)."
+        },
+        {
+          "en": "cash",
+          "ipa": "kæʃ",
+          "pron": "kash",
+          "es": "dinero en efectivo",
+          "icon": "dollar-banknote",
+          "note": "Billetes y monedas."
+        },
+        {
+          "en": "change",
+          "ipa": "tʃeɪndʒ",
+          "pron": "chéinch",
+          "es": "cambio; suelto",
+          "icon": "coin",
+          "note": "Dos significados: las monedas sueltas, y el dinero que te devuelven cuando pagas de más.",
+          "example": "Here's your change.",
+          "example_es": "Aquí tiene su cambio."
+        },
+        {
+          "en": "coins",
+          "ipa": "kɔɪnz",
+          "pron": "kóinzz",
+          "es": "monedas",
+          "icon": "coin"
+        },
+        {
+          "en": "notes / banknotes",
+          "ipa": "nəʊts / ˈbæŋk.nəʊts",
+          "pron": "nouts / BÁNKnouts",
+          "es": "billetes",
+          "icon": "euro-banknote",
+          "note": "En EE. UU.: *bills*."
+        },
+        {
+          "en": "credit card / debit card",
+          "ipa": "ˈkred.ɪt kɑːd / ˈdeb.ɪt kɑːd",
+          "pron": "KRÉdit kaad / DÉbit kaad",
+          "es": "tarjeta de crédito / de débito",
+          "icon": "credit-card"
+        },
+        {
+          "en": "currency",
+          "ipa": "ˈkʌr.ən.si",
+          "pron": "KÁransi",
+          "es": "moneda (de un país), divisa",
+          "icon": "euro-banknote",
+          "note": "*The euro is the currency of Spain.*"
+        },
+        {
+          "en": "receipt",
+          "ipa": "rɪˈsiːt",
+          "pron": "riSÍIT",
+          "es": "recibo, tique",
+          "icon": "receipt",
+          "note": "¡La «p» no se pronuncia!"
+        },
+        {
+          "en": "pay by card",
+          "ipa": "ˌpeɪ baɪ ˈkɑːd",
+          "pron": "pei bai KAAD",
+          "es": "pagar con tarjeta",
+          "icon": "credit-card",
+          "example": "Can I pay by card?",
+          "example_es": "¿Puedo pagar con tarjeta?"
+        },
+        {
+          "en": "pay in cash",
+          "ipa": "ˌpeɪ ɪn ˈkæʃ",
+          "pron": "pei in KASH",
+          "es": "pagar en efectivo",
+          "icon": "dollar-banknote"
+        },
+        {
+          "en": "contactless payment",
+          "ipa": "ˌkɒn.tækt.ləs ˈpeɪ.mənt",
+          "pron": "KÓNtaktlas PÉImant",
+          "es": "pago sin contacto",
+          "icon": "credit-card",
+          "note": "Pagar acercando la tarjeta o el móvil, sin meter el PIN."
+        }
+      ]
+    },
+    {
+      "id": "finances",
+      "title": "Personal finances and banking",
+      "title_es": "Finanzas personales y banco",
+      "items": [
+        {
+          "en": "ATM / cash machine",
+          "ipa": "ˌeɪ.tiːˈem / ˈkæʃ məˌʃiːn",
+          "pron": "ei-tii-ÉM / KASH mashiin",
+          "es": "cajero automático",
+          "icon": "bank",
+          "note": "En Reino Unido también *cashpoint*."
+        },
+        {
+          "en": "bank account",
+          "ipa": "ˈbæŋk əˌkaʊnt",
+          "pron": "BANK akaunt",
+          "es": "cuenta bancaria",
+          "icon": "bank"
+        },
+        {
+          "en": "budget",
+          "ipa": "ˈbʌdʒ.ɪt",
+          "pron": "BÁyit",
+          "es": "presupuesto",
+          "icon": "clipboard",
+          "note": "*on a budget* = con poco dinero.",
+          "example": "We're travelling on a budget this year.",
+          "example_es": "Este año viajamos con poco presupuesto."
+        },
+        {
+          "en": "fee",
+          "ipa": "fiː",
+          "pron": "fii",
+          "es": "tarifa, cuota, honorarios",
+          "icon": "ticket",
+          "note": "*school fees* = matrícula; *bank fee* = comisión."
+        },
+        {
+          "en": "loan",
+          "ipa": "ləʊn",
+          "pron": "loun",
+          "es": "préstamo",
+          "icon": "bank",
+          "note": "*take out a loan* = pedir un préstamo."
+        },
+        {
+          "en": "pocket money",
+          "ipa": "ˈpɒk.ɪt ˌmʌn.i",
+          "pron": "PÓkit mani",
+          "es": "paga (de los niños)",
+          "icon": "child",
+          "note": "Dinero que los padres dan a los hijos cada semana o cada mes."
+        },
+        {
+          "en": "salary",
+          "ipa": "ˈsæl.ər.i",
+          "pron": "SÁlari",
+          "es": "sueldo (fijo, mensual o anual)",
+          "icon": "briefcase",
+          "note": "*salary* = sueldo fijo; *wages* = se cobra por horas o por semanas."
+        },
+        {
+          "en": "wages",
+          "ipa": "ˈweɪ.dʒɪz",
+          "pron": "UÉIyizz",
+          "es": "salario (por horas o semanal)",
+          "icon": "hourglass-done"
+        },
+        {
+          "en": "savings",
+          "ipa": "ˈseɪ.vɪŋz",
+          "pron": "SÉIvingzz",
+          "es": "ahorros",
+          "icon": "money-bag"
+        },
+        {
+          "en": "account",
+          "ipa": "əˈkaʊnt",
+          "pron": "aKÁUNT",
+          "es": "cuenta (bancaria)",
+          "icon": "bank",
+          "note": "*current account* = cuenta corriente; *savings account* = cuenta de ahorro."
+        },
+        {
+          "en": "mortgage",
+          "ipa": "ˈmɔː.ɡɪdʒ",
+          "pron": "MÓOgich",
+          "es": "hipoteca",
+          "icon": "house",
+          "note": "¡La «t» no se pronuncia!"
+        },
+        {
+          "en": "insurance",
+          "ipa": "ɪnˈʃɔː.rəns",
+          "pron": "inSHÓOrans",
+          "es": "seguro",
+          "icon": "clipboard",
+          "note": "*car insurance* = seguro del coche."
+        },
+        {
+          "en": "tax",
+          "ipa": "tæks",
+          "pron": "taks",
+          "es": "impuesto",
+          "icon": "classical-building",
+          "note": "*pay taxes* = pagar impuestos."
+        },
+        {
+          "en": "donation",
+          "ipa": "dəʊˈneɪ.ʃən",
+          "pron": "douNÉIshan",
+          "es": "donativo, donación",
+          "icon": "wrapped-gift",
+          "note": "Verbo: *donate*."
+        },
+        {
+          "en": "debt",
+          "ipa": "det",
+          "pron": "det",
+          "es": "deuda",
+          "icon": "chart-decreasing",
+          "note": "¡La «b» no se pronuncia! *get into debt* = endeudarse; *be in debt* = tener deudas.",
+          "example": "I never get into debt. I hate owing people money.",
+          "example_es": "Nunca me endeudo. Odio deber dinero."
+        }
+      ]
+    },
+    {
+      "id": "describing",
+      "title": "Prices and expressions",
+      "title_es": "Precios y expresiones",
+      "items": [
+        {
+          "en": "cheap",
+          "ipa": "tʃiːp",
+          "pron": "chiip",
+          "es": "barato",
+          "icon": "label",
+          "note": "Contrario: *expensive*."
+        },
+        {
+          "en": "expensive",
+          "ipa": "ɪkˈspen.sɪv",
+          "pron": "ikSPÉNsiv",
+          "es": "caro",
+          "icon": "gem-stone"
+        },
+        {
+          "en": "affordable",
+          "ipa": "əˈfɔː.də.bəl",
+          "pron": "aFÓOdabel",
+          "es": "asequible, a buen precio",
+          "icon": "thumbs-up"
+        },
+        {
+          "en": "good value for money",
+          "ipa": "ɡʊd ˌvæl.juː fə ˈmʌn.i",
+          "pron": "gud váliu fa MÁni",
+          "es": "buena relación calidad-precio",
+          "icon": "balance-scale",
+          "example": "The menu of the day is good value for money.",
+          "example_es": "El menú del día tiene buena relación calidad-precio."
+        },
+        {
+          "en": "It costs an arm and a leg.",
+          "ipa": "ɪt ˌkɒsts ən ˌɑːm ənd ə ˈleɡ",
+          "pron": "it kosts an aam and a LEG",
+          "es": "Cuesta un ojo de la cara.",
+          "icon": "mechanical-leg",
+          "note": "Muy informal."
+        },
+        {
+          "en": "broke",
+          "ipa": "brəʊk",
+          "pron": "brouk",
+          "es": "sin blanca, sin dinero",
+          "icon": "face-with-hand-over-mouth",
+          "note": "Informal: *I'm broke until payday*."
+        },
+        {
+          "en": "wealthy / rich",
+          "ipa": "ˈwel.θi / rɪtʃ",
+          "pron": "UÉLzi / rich",
+          "es": "adinerado / rico",
+          "icon": "crown",
+          "note": "*wealthy* es algo más formal."
+        },
+        {
+          "en": "price",
+          "ipa": "praɪs",
+          "pron": "práis",
+          "es": "precio",
+          "icon": "label",
+          "note": "*How much is it?* / *What's the price?*"
+        },
+        {
+          "en": "discount",
+          "ipa": "ˈdɪs.kaʊnt",
+          "pron": "DÍSkaunt",
+          "es": "descuento",
+          "icon": "shopping-cart",
+          "note": "*Is there a student discount?*"
+        },
+        {
+          "en": "refund",
+          "ipa": "ˈriː.fʌnd",
+          "pron": "RÍIfand",
+          "es": "reembolso, devolución del dinero",
+          "icon": "counterclockwise-arrows-button",
+          "note": "*Can I get a refund?* = ¿Me pueden devolver el dinero?"
+        }
+      ]
+    }
+  ]
+}

@@ -151,6 +151,8 @@ Otros apartados opcionales de una sección de gramática:
 |---|---|
 | `summary` | Tabla de **resumen** que sale la primera, recuadrada: `{ "head": ["", "Qué es / cómo se forma", "Ejemplo"], "rows": [["Uso", "…", "…"]] }`. |
 | `tables` | Tablas: `[{ "title": "…", "head": ["Col 1", "Col 2"], "rows": [["a", "b"], ["c", "d"]], "note": "…" }]`. Todas las filas deben tener tantas columnas como `head`. |
+| `verbs` | Tabla de verbos irregulares: `[{ "en": "go", "ipa": "ɡəʊ", "pron": "góu", "past": "went", "past_ipa": "went", "past_pron": "uent", "pp": "gone", "pp_ipa": "ɡɒn", "pp_pron": "gon", "es": "ir" }]`. Si hay dos formas, sepáralas con ` / ` (*learnt / learned*). |
+| `quiz` | Test al azar de pasado y participio: `{ "source": "list", "count": 10 }` (`source` = id de la sección que tiene los `verbs`). |
 | `exceptions` | Lista de excepciones (recuadro naranja): `["…", "…"]`. |
 | `tips` | Lista de trucos y recordatorios: `["…", "…"]`. |
 | `practice` | Ejercicios con la respuesta oculta: `[{ "q": "She ___ (eat) fish.", "a": "eats", "why": "opcional" }]`. Escribe el hueco con `___`. |
