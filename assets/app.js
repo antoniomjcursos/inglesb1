@@ -484,7 +484,7 @@
   const saveRev = () => { try { localStorage.setItem(REV_KEY, JSON.stringify(REV)); } catch (e) { /* storage unavailable */ } };
   if (!REV.hard || typeof REV.hard !== 'object') REV.hard = { vocabulary: [], grammar: [] };
   REV.hard.vocabulary = REV.hard.vocabulary || []; REV.hard.grammar = REV.hard.grammar || [];
-  let deck = [], pos = 0, shown = false, hardMode = false;
+  let deck = [], pos = 0, shown = false, hardMode = false, optsOpen = false;
   const plain = (t) => String(t ?? '').replace(/\*+/g, '');
   const hardSet = () => new Set(REV.hard[REV.kind]);
   function toggleHard(id, on) {
@@ -554,6 +554,7 @@
       const seen = new Set();
       cards = cards.filter((c) => hard.has(c.id) && !seen.has(c.id) && seen.add(c.id));
     }
+    cards.forEach((c, i) => { c.n = i; });
     if (REV.order === 'random' && !keepOrder) for (let i = cards.length - 1; i > 0; i--) { const j = Math.floor(Math.random() * (i + 1)); [cards[i], cards[j]] = [cards[j], cards[i]]; }
     return cards;
   }
@@ -637,6 +638,7 @@
     const play = $('rv-play');
     if (!deck.length) return;
     if (pos >= deck.length) {
+      optsOpen = false;
       const nHard = buildDeck(true, true).length;
       play.innerHTML = `<div class="rv-card rv-end"><p class="rv-main">¡Repaso terminado!</p><p class="rv-ans">Has repasado ${deck.length} tarjeta${deck.length === 1 ? '' : 's'}.</p>
         <p class="rv-ex">${nHard ? `Tienes ${nHard} en tu lista «No me la sé».` : 'Tu lista «No me la sé» está vacía.'}</p>
@@ -647,6 +649,7 @@
     const inList = hardSet().has(c.id);
     play.innerHTML = `
       ${hardMode ? '<p class="rv-mode">Repasando tu lista «No me la sé»</p>' : ''}
+      ${optsBar()}
       <div class="rv-top"><span class="rv-where">${esc(c.where)}</span><span class="rv-count">${pos + 1} / ${deck.length}</span></div>
       <div class="rv-bar"><span style="width:${Math.round((pos / deck.length) * 100)}%"></span></div>
       <div class="rv-card${shown ? ' open' : ''}" id="rv-card" tabindex="0" role="button" aria-label="${shown ? 'Siguiente tarjeta' : 'Mostrar la respuesta'}">
@@ -667,11 +670,52 @@
       if (txt) speak(txt, null);
     }
   }
+  // Barra de opciones durante el repaso: cambia la configuración sin salir.
+  function optsBar() {
+    const seg = (opt, val, label, on) => `<button type="button" class="rv-seg" data-opt="${opt}" data-val="${val}" aria-pressed="${on}">${label}</button>`;
+    return `<div class="rv-optwrap"><button type="button" class="btn rv-gear" data-rv="opts" aria-expanded="${optsOpen}" aria-controls="rv-opts">⚙ Opciones <kbd>O</kbd></button>
+    <div class="rv-opts" id="rv-opts" role="dialog" aria-label="Opciones del repaso"${optsOpen ? '' : ' hidden'}>
+      <div class="rv-opts-h"><b>Opciones del repaso</b><button type="button" class="rv-x" data-rv="opts" aria-label="Cerrar opciones">×</button></div>
+      <div class="rv-optg"><span class="rv-optl">Dirección <kbd>D</kbd></span>${seg('dir', 'en-es', 'Inglés → Español', REV.dir === 'en-es')}${seg('dir', 'es-en', 'Español → Inglés', REV.dir === 'es-en')}</div>
+      <div class="rv-optg"><span class="rv-optl">Orden</span>${seg('order', 'list', 'Lista', REV.order === 'list')}${seg('order', 'random', 'Aleatorio', REV.order === 'random')}</div>
+      ${REV.kind === 'vocabulary' ? `<div class="rv-optg"><span class="rv-optl">Icono <kbd>I</kbd></span>${seg('icons', '1', 'Con', REV.icons)}${seg('icons', '0', 'Sin', !REV.icons)}</div>` : ''}
+      <div class="rv-optg"><span class="rv-optl">Voz automática</span>${seg('audio', '1', 'Sí', REV.audio)}${seg('audio', '0', 'No', !REV.audio)}</div>
+      <p class="rv-help">Los cambios se aplican al momento, sin perder por dónde vas.</p>
+    </div></div>`;
+  }
+  function setOpt(opt, val) {
+    if (opt === 'dir' || opt === 'icons') {
+      if (opt === 'dir') REV.dir = val; else REV.icons = val === '1';
+      // Regenera las tarjetas con la nueva configuración, en el mismo orden y en la misma posición.
+      const fresh = new Map(buildDeck(hardMode, true).map((c) => [c.id, c]));
+      deck = deck.map((c) => { const f = fresh.get(c.id); return f ? { ...f, n: c.n } : c; });
+      if (opt === 'dir') shown = false;
+    } else if (opt === 'order') {
+      REV.order = val;
+      // Las ya vistas se quedan; las que faltan se reordenan.
+      const start = shown ? pos + 1 : pos;
+      const rest = deck.slice(start);
+      if (val === 'random') for (let i = rest.length - 1; i > 0; i--) { const j = Math.floor(Math.random() * (i + 1)); [rest[i], rest[j]] = [rest[j], rest[i]]; }
+      else rest.sort((a, b) => a.n - b.n);
+      deck = deck.slice(0, start).concat(rest);
+    } else if (opt === 'audio') {
+      REV.audio = val === '1';
+      if (!REV.audio && window.speechSynthesis) speechSynthesis.cancel();
+    }
+    saveRev(); syncOpts(); drawCard();
+    const b = view.querySelector(`#rv-opts [data-opt="${opt}"][data-val="${opt === 'icons' || opt === 'audio' ? (opt === 'icons' ? (REV.icons ? '1' : '0') : (REV.audio ? '1' : '0')) : REV[opt]}"]`);
+    if (b && optsOpen) b.focus();
+  }
+  function syncOpts() {
+    view.querySelectorAll('#rv-setup input[name="dir"], #rv-setup input[name="order"]').forEach((i) => { i.checked = REV[i.name] === i.value; });
+    view.querySelectorAll('#rv-setup input[name="icons"]').forEach((i) => { i.checked = (i.value === '1') === REV.icons; });
+    const au = $('rv-audio'); if (au) au.checked = REV.audio;
+  }
   function startReview(fromList) {
     hardMode = !!fromList;
     deck = buildDeck(hardMode);
     if (!deck.length) return;
-    pos = 0; shown = false;
+    pos = 0; shown = false; optsOpen = false;
     $('rv-setup').hidden = true; $('rv-play').hidden = false;
     drawCard();
     window.scrollTo(0, 0);
@@ -702,6 +746,8 @@
     const tab = e.target.closest('.rv-tab');
     if (tab) { REV.kind = tab.dataset.kind; saveRev(); renderReview(); return; }
     if (e.target.closest('#rv-start')) { startReview(); return; }
+    const o = e.target.closest('[data-opt]');
+    if (o) { if (o.getAttribute('aria-pressed') !== 'true') setOpt(o.dataset.opt, o.dataset.val); return; }
     const a = e.target.closest('[data-rv]');
     if (a) {
       const act = a.dataset.rv;
@@ -709,6 +755,7 @@
         REV.sel[REV.kind] = act === 'all' ? UNITS.filter((u) => u.type === REV.kind).flatMap((u) => leavesOf(u).map((l) => l.key)) : [];
         saveRev(); syncChecks(); return;
       }
+      if (act === 'opts') { optsOpen = !optsOpen; drawCard(); if (optsOpen) { const f = view.querySelector('#rv-opts .rv-seg'); if (f) f.focus(); } else { const g = view.querySelector('.rv-gear'); if (g) g.focus(); } return; }
       if (act === 'hard') { startReview(true); return; }
       if (act === 'clear') { REV.hard[REV.kind] = []; saveRev(); drawHardPanel(); return; }
       if (act === 'mark') { const c = deck[pos]; if (c) { toggleHard(c.id); drawCard(); } return; }
@@ -718,14 +765,20 @@
       else if (act === 'exit') { $('rv-play').hidden = true; $('rv-setup').hidden = false; drawHardPanel(); if (window.speechSynthesis) speechSynthesis.cancel(); }
       return;
     }
+    if (optsOpen && !e.target.closest('.rv-optwrap')) { optsOpen = false; drawCard(); return; }
     if (e.target.closest('#rv-card') && !e.target.closest('.say')) step(1);
   });
   document.addEventListener('keydown', (e) => {
     const play = $('rv-play');
     if (!play || play.hidden) return;
     if (e.target.closest && e.target.closest('input, textarea, select')) return;
+    if ((e.key === 'o' || e.key === 'O') && pos < deck.length) { e.preventDefault(); optsOpen = !optsOpen; drawCard(); if (optsOpen) { const f = view.querySelector('#rv-opts .rv-seg'); if (f) f.focus(); } return; }
+    if (optsOpen && e.key === 'Escape') { e.preventDefault(); optsOpen = false; drawCard(); const g = view.querySelector('.rv-gear'); if (g) g.focus(); return; }
+    if (optsOpen && (e.key === ' ' || e.key === 'Enter') && e.target.closest && e.target.closest('#rv-opts button')) return;
     if (e.key === ' ' || e.key === 'Enter' || e.key === 'ArrowRight') { e.preventDefault(); step(1); }
     else if (e.key === 'ArrowLeft') { e.preventDefault(); step(-1); }
+    else if ((e.key === 'd' || e.key === 'D') && pos < deck.length) { e.preventDefault(); setOpt('dir', REV.dir === 'en-es' ? 'es-en' : 'en-es'); }
+    else if ((e.key === 'i' || e.key === 'I') && REV.kind === 'vocabulary' && pos < deck.length) { e.preventDefault(); setOpt('icons', REV.icons ? '0' : '1'); }
     else if ((e.key === 'n' || e.key === 'N') && deck[pos]) { e.preventDefault(); toggleHard(deck[pos].id); drawCard(); }
     else if (e.key === 'Escape') { play.hidden = true; $('rv-setup').hidden = false; drawHardPanel(); }
   });

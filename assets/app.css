@@ -424,3 +424,18 @@ kbd{font-family:var(--f-body);font-size:.85em;padding:1px 6px;border:1px solid v
 .rv-mark kbd{margin-left:4px}
 .rv-mode{margin:0;padding:6px 12px;border-radius:8px;background:var(--bad-bg);color:var(--bad);font-weight:700;text-align:center}
 @media (max-width:820px){.rv-hard{grid-column:auto}}
+
+/* Opciones dentro del repaso (ventana emergente) */
+.rv-optwrap{position:relative;display:flex;justify-content:flex-end;margin:0 0 10px}
+.rv-gear{font-size:.9rem;padding:6px 12px}
+.rv-gear[aria-expanded="true"]{background:var(--chip)}
+.rv-opts{position:absolute;top:calc(100% + 6px);right:0;z-index:30;width:min(360px,calc(100vw - 32px));display:flex;flex-direction:column;gap:12px;padding:14px 16px;background:var(--surface);border:1px solid var(--line);border-radius:14px;box-shadow:var(--shadow)}
+.rv-opts[hidden]{display:none}
+.rv-opts-h{display:flex;justify-content:space-between;align-items:center}
+.rv-optg{display:flex;align-items:center;gap:6px;flex-wrap:wrap;min-width:0}
+.rv-optl{flex:0 0 100%;font-size:.75rem;font-weight:700;text-transform:uppercase;letter-spacing:.04em;color:var(--muted)}
+.rv-optl kbd{text-transform:none;font-size:.7rem}
+.rv-seg{font:inherit;font-size:.88rem;padding:6px 12px;border-radius:999px;border:1px solid var(--line);background:transparent;color:var(--ink);cursor:pointer}
+.rv-seg:hover{border-color:var(--accent)}
+.rv-seg[aria-pressed="true"]{background:var(--accent);border-color:var(--accent);color:var(--accent-ink);font-weight:700;cursor:default}
+.rv-opts .rv-help{margin:0;font-size:.82rem}
