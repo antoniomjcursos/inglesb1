@@ -439,3 +439,5 @@ kbd{font-family:var(--f-body);font-size:.85em;padding:1px 6px;border:1px solid v
 .rv-seg:hover{border-color:var(--accent)}
 .rv-seg[aria-pressed="true"]{background:var(--accent);border-color:var(--accent);color:var(--accent-ink);font-weight:700;cursor:default}
 .rv-opts .rv-help{margin:0;font-size:.82rem}
+.rv-clear.armed{background:var(--bad);border-color:var(--bad);color:#fff}
+.rv-opts .rv-clear{font-size:.86rem;padding:5px 12px}

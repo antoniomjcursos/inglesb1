@@ -542,15 +542,17 @@
       ? { ...idl, where, say: it.say || it.en, front: `${pic}<p class="rv-main">${esc(it.en)}</p>${prn}`, back: `<p class="rv-ans">${md(it.es)}</p>${extra}` }
       : { ...idl, where, say: it.say || it.en, sayOnBack: true, front: `${pic}<p class="rv-main">${md(it.es)}</p>`, back: `<p class="rv-ans">${esc(it.en)}</p>${prn}${extra}` };
   }
-  function buildDeck(fromList, keepOrder) {
+  // fromList: solo las de «No me la sé» · keepOrder: sin barajar · everything: todas las tarjetas posibles (para regenerarlas)
+  function buildDeck(fromList, keepOrder, everything) {
     const sel = new Set(REV.sel[REV.kind] || []), hard = hardSet();
+    const wide = fromList || everything;
     let cards = [];
     UNITS.filter((u) => u.type === REV.kind).forEach((u) => leavesOf(u).forEach((leaf) => {
-      if (!fromList && !sel.has(leaf.key)) return;
+      if (!wide && !sel.has(leaf.key)) return;
       if (REV.kind === 'vocabulary') alpha(leaf.items).forEach((it) => cards.push(vocabCard(leaf, it)));
-      else cards = cards.concat(grammarCards(leaf.u, leaf.s, fromList));
+      else cards = cards.concat(grammarCards(leaf.u, leaf.s, wide));
     }));
-    if (fromList) {
+    if (fromList && !everything) {
       const seen = new Set();
       cards = cards.filter((c) => hard.has(c.id) && !seen.has(c.id) && seen.add(c.id));
     }
@@ -642,13 +644,13 @@
       const nHard = buildDeck(true, true).length;
       play.innerHTML = `<div class="rv-card rv-end"><p class="rv-main">¡Repaso terminado!</p><p class="rv-ans">Has repasado ${deck.length} tarjeta${deck.length === 1 ? '' : 's'}.</p>
         <p class="rv-ex">${nHard ? `Tienes ${nHard} en tu lista «No me la sé».` : 'Tu lista «No me la sé» está vacía.'}</p>
-        <div class="rv-ctrl">${nHard ? `<button type="button" class="btn primary" data-rv="hard">Repasar mi lista · ${nHard}</button>` : ''}<button type="button" class="btn${nHard ? '' : ' primary'}" data-rv="again">Repetir</button><button type="button" class="btn" data-rv="shuffle">Repetir en otro orden</button><button type="button" class="btn" data-rv="exit">Cambiar selección</button></div></div>`;
+        <div class="rv-ctrl">${nHard ? `<button type="button" class="btn primary" data-rv="hard">Repasar mi lista · ${nHard}</button>` : ''}<button type="button" class="btn${nHard ? '' : ' primary'}" data-rv="again">Repetir</button><button type="button" class="btn" data-rv="shuffle">Repetir en otro orden</button><button type="button" class="btn" data-rv="exit">Cambiar selección</button>${nHard ? clearBtn() : ''}</div></div>`;
       return;
     }
     const c = deck[pos];
     const inList = hardSet().has(c.id);
     play.innerHTML = `
-      ${hardMode ? '<p class="rv-mode">Repasando tu lista «No me la sé»</p>' : ''}
+      ${hardMode ? `<p class="rv-mode">Repasando tu lista «No me la sé» · ahora tiene ${hardSet().size}</p>` : ''}
       ${optsBar()}
       <div class="rv-top"><span class="rv-where">${esc(c.where)}</span><span class="rv-count">${pos + 1} / ${deck.length}</span></div>
       <div class="rv-bar"><span style="width:${Math.round((pos / deck.length) * 100)}%"></span></div>
@@ -680,14 +682,35 @@
       <div class="rv-optg"><span class="rv-optl">Orden</span>${seg('order', 'list', 'Lista', REV.order === 'list')}${seg('order', 'random', 'Aleatorio', REV.order === 'random')}</div>
       ${REV.kind === 'vocabulary' ? `<div class="rv-optg"><span class="rv-optl">Icono <kbd>I</kbd></span>${seg('icons', '1', 'Con', REV.icons)}${seg('icons', '0', 'Sin', !REV.icons)}</div>` : ''}
       <div class="rv-optg"><span class="rv-optl">Voz automática</span>${seg('audio', '1', 'Sí', REV.audio)}${seg('audio', '0', 'No', !REV.audio)}</div>
+      <div class="rv-optg"><span class="rv-optl">Mi lista «No me la sé» · ${hardSet().size}</span>${clearBtn()}</div>
       <p class="rv-help">Los cambios se aplican al momento, sin perder por dónde vas.</p>
     </div></div>`;
+  }
+  function clearBtn() {
+    const n = hardSet().size;
+    return `<button type="button" class="btn rv-clear" data-rv="clear"${n ? '' : ' disabled'}>${n ? 'Vaciar la lista' : 'La lista está vacía'}</button>`;
+  }
+  // Vaciar pide confirmación: el primer clic arma el botón y el segundo vacía.
+  let clearTimer = null;
+  function clearList(btn) {
+    if (btn.dataset.armed !== '1') {
+      btn.dataset.armed = '1'; btn.classList.add('armed');
+      btn.textContent = `¿Seguro? Pulsa otra vez para borrar ${hardSet().size}`;
+      clearTimeout(clearTimer);
+      clearTimer = setTimeout(() => { if (btn.isConnected) { btn.dataset.armed = ''; btn.classList.remove('armed'); btn.textContent = 'Vaciar la lista'; } }, 4000);
+      return;
+    }
+    clearTimeout(clearTimer);
+    REV.hard[REV.kind] = []; saveRev();
+    toast('Lista «No me la sé» vaciada');
+    drawHardPanel();
+    if ($('rv-play') && !$('rv-play').hidden) drawCard();
   }
   function setOpt(opt, val) {
     if (opt === 'dir' || opt === 'icons') {
       if (opt === 'dir') REV.dir = val; else REV.icons = val === '1';
       // Regenera las tarjetas con la nueva configuración, en el mismo orden y en la misma posición.
-      const fresh = new Map(buildDeck(hardMode, true).map((c) => [c.id, c]));
+      const fresh = new Map(buildDeck(false, true, hardMode).map((c) => [c.id, c]));
       deck = deck.map((c) => { const f = fresh.get(c.id); return f ? { ...f, n: c.n } : c; });
       if (opt === 'dir') shown = false;
     } else if (opt === 'order') {
@@ -757,9 +780,15 @@
       }
       if (act === 'opts') { optsOpen = !optsOpen; drawCard(); if (optsOpen) { const f = view.querySelector('#rv-opts .rv-seg'); if (f) f.focus(); } else { const g = view.querySelector('.rv-gear'); if (g) g.focus(); } return; }
       if (act === 'hard') { startReview(true); return; }
-      if (act === 'clear') { REV.hard[REV.kind] = []; saveRev(); drawHardPanel(); return; }
+      if (act === 'clear') { clearList(a); return; }
       if (act === 'mark') { const c = deck[pos]; if (c) { toggleHard(c.id); drawCard(); } return; }
       if (act === 'next') step(1); else if (act === 'prev') step(-1);
+      else if ((act === 'again' || act === 'shuffle') && hardMode) {
+        deck = buildDeck(true, act === 'again');
+        if (act === 'shuffle') for (let i = deck.length - 1; i > 0; i--) { const j = Math.floor(Math.random() * (i + 1)); [deck[i], deck[j]] = [deck[j], deck[i]]; }
+        pos = 0; shown = false;
+        if (deck.length) drawCard(); else { $('rv-play').hidden = true; $('rv-setup').hidden = false; drawHardPanel(); toast('Tu lista está vacía: ¡ya te las sabes todas!'); }
+      }
       else if (act === 'again') { pos = 0; shown = false; drawCard(); }
       else if (act === 'shuffle') { for (let i = deck.length - 1; i > 0; i--) { const j = Math.floor(Math.random() * (i + 1)); [deck[i], deck[j]] = [deck[j], deck[i]]; } pos = 0; shown = false; drawCard(); }
       else if (act === 'exit') { $('rv-play').hidden = true; $('rv-setup').hidden = false; drawHardPanel(); if (window.speechSynthesis) speechSynthesis.cancel(); }
