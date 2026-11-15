@@ -1,0 +1,1069 @@
+{
+  "id": "irregular-verbs",
+  "type": "grammar",
+  "level": "B1",
+  "title": "Irregular verbs",
+  "title_es": "Verbos irregulares",
+  "icon": "books",
+  "description": "Los verbos irregulares de B1 con pasado, participio, traducción, pronunciación y un test al azar.",
+  "sections": [
+    {
+      "id": "list",
+      "title": "Irregular verbs list",
+      "title_es": "Lista de verbos irregulares",
+      "summary": {
+        "head": [
+          "",
+          "Qué es",
+          "Ejemplo"
+        ],
+        "rows": [
+          [
+            "Pasado (past simple)",
+            "2.ª columna: para acciones terminadas",
+            "I **bought** a car last year."
+          ],
+          [
+            "Participio (past participle)",
+            "3.ª columna: para el present perfect y la pasiva",
+            "I've **bought** a car."
+          ],
+          [
+            "Cómo estudiarlos",
+            "por grupos que se parecen (tabla de abajo) y con el test",
+            "sing – sang – sung / ring – rang – rung"
+          ]
+        ]
+      },
+      "use": "Toca el altavoz para oír cada forma. Debajo de cada verbo tienes el AFI y la pronunciación a la española (la **negrita** es la sílaba fuerte).",
+      "verbs": [
+        {
+          "en": "be",
+          "ipa": "bi",
+          "pron": "bi",
+          "past": "was / were",
+          "past_ipa": "wɒz / wɜː",
+          "past_pron": "uoz / uéer",
+          "pp": "been",
+          "pp_ipa": "biːn",
+          "pp_pron": "biin",
+          "es": "ser, estar"
+        },
+        {
+          "en": "beat",
+          "ipa": "biːt",
+          "pron": "biit",
+          "past": "beat",
+          "past_ipa": "biːt",
+          "past_pron": "biit",
+          "pp": "beaten",
+          "pp_ipa": "ˈbiː.tən",
+          "pp_pron": "BÍItan",
+          "es": "golpear; ganar (a alguien)"
+        },
+        {
+          "en": "become",
+          "ipa": "bɪˈkʌm",
+          "pron": "biKÁM",
+          "past": "became",
+          "past_ipa": "bɪˈkeɪm",
+          "past_pron": "biKÉIM",
+          "pp": "become",
+          "pp_ipa": "bɪˈkʌm",
+          "pp_pron": "biKÁM",
+          "es": "convertirse en, llegar a ser"
+        },
+        {
+          "en": "begin",
+          "ipa": "bɪˈɡɪn",
+          "pron": "biGÍN",
+          "past": "began",
+          "past_ipa": "bɪˈɡæn",
+          "past_pron": "biGÁN",
+          "pp": "begun",
+          "pp_ipa": "bɪˈɡʌn",
+          "pp_pron": "biGÁN",
+          "es": "empezar"
+        },
+        {
+          "en": "bite",
+          "ipa": "baɪt",
+          "pron": "báit",
+          "past": "bit",
+          "past_ipa": "bɪt",
+          "past_pron": "bit",
+          "pp": "bitten",
+          "pp_ipa": "ˈbɪt.ən",
+          "pp_pron": "BÍtan",
+          "es": "morder"
+        },
+        {
+          "en": "break",
+          "ipa": "breɪk",
+          "pron": "bréik",
+          "past": "broke",
+          "past_ipa": "brəʊk",
+          "past_pron": "bróuk",
+          "pp": "broken",
+          "pp_ipa": "ˈbrəʊ.kən",
+          "pp_pron": "BRÓUkan",
+          "es": "romper"
+        },
+        {
+          "en": "bring",
+          "ipa": "brɪŋ",
+          "pron": "bring",
+          "past": "brought",
+          "past_ipa": "brɔːt",
+          "past_pron": "broot",
+          "pp": "brought",
+          "pp_ipa": "brɔːt",
+          "pp_pron": "broot",
+          "es": "traer"
+        },
+        {
+          "en": "build",
+          "ipa": "bɪld",
+          "pron": "bild",
+          "past": "built",
+          "past_ipa": "bɪlt",
+          "past_pron": "bilt",
+          "pp": "built",
+          "pp_ipa": "bɪlt",
+          "pp_pron": "bilt",
+          "es": "construir"
+        },
+        {
+          "en": "buy",
+          "ipa": "baɪ",
+          "pron": "bái",
+          "past": "bought",
+          "past_ipa": "bɔːt",
+          "past_pron": "boot",
+          "pp": "bought",
+          "pp_ipa": "bɔːt",
+          "pp_pron": "boot",
+          "es": "comprar"
+        },
+        {
+          "en": "can",
+          "ipa": "kæn",
+          "pron": "kan",
+          "past": "could",
+          "past_ipa": "kʊd",
+          "past_pron": "kud",
+          "pp": "—",
+          "pp_ipa": "—",
+          "pp_pron": "—",
+          "es": "poder",
+          "note": "No tiene participio: se usa *be able to* (*I've been able to*)."
+        },
+        {
+          "en": "catch",
+          "ipa": "kætʃ",
+          "pron": "kach",
+          "past": "caught",
+          "past_ipa": "kɔːt",
+          "past_pron": "koot",
+          "pp": "caught",
+          "pp_ipa": "kɔːt",
+          "pp_pron": "koot",
+          "es": "coger, atrapar"
+        },
+        {
+          "en": "choose",
+          "ipa": "tʃuːz",
+          "pron": "chuuzz",
+          "past": "chose",
+          "past_ipa": "tʃəʊz",
+          "past_pron": "chóuzz",
+          "pp": "chosen",
+          "pp_ipa": "ˈtʃəʊ.zən",
+          "pp_pron": "CHÓUzzan",
+          "es": "elegir"
+        },
+        {
+          "en": "come",
+          "ipa": "kʌm",
+          "pron": "kam",
+          "past": "came",
+          "past_ipa": "keɪm",
+          "past_pron": "kéim",
+          "pp": "come",
+          "pp_ipa": "kʌm",
+          "pp_pron": "kam",
+          "es": "venir"
+        },
+        {
+          "en": "cost",
+          "ipa": "kɒst",
+          "pron": "kost",
+          "past": "cost",
+          "past_ipa": "kɒst",
+          "past_pron": "kost",
+          "pp": "cost",
+          "pp_ipa": "kɒst",
+          "pp_pron": "kost",
+          "es": "costar"
+        },
+        {
+          "en": "cut",
+          "ipa": "kʌt",
+          "pron": "kat",
+          "past": "cut",
+          "past_ipa": "kʌt",
+          "past_pron": "kat",
+          "pp": "cut",
+          "pp_ipa": "kʌt",
+          "pp_pron": "kat",
+          "es": "cortar"
+        },
+        {
+          "en": "do",
+          "ipa": "duː",
+          "pron": "duu",
+          "past": "did",
+          "past_ipa": "dɪd",
+          "past_pron": "did",
+          "pp": "done",
+          "pp_ipa": "dʌn",
+          "pp_pron": "dan",
+          "es": "hacer"
+        },
+        {
+          "en": "draw",
+          "ipa": "drɔː",
+          "pron": "droo",
+          "past": "drew",
+          "past_ipa": "druː",
+          "past_pron": "druu",
+          "pp": "drawn",
+          "pp_ipa": "drɔːn",
+          "pp_pron": "droon",
+          "es": "dibujar"
+        },
+        {
+          "en": "dream",
+          "ipa": "driːm",
+          "pron": "driim",
+          "past": "dreamt / dreamed",
+          "past_ipa": "dremt / driːmd",
+          "past_pron": "dremt / driimd",
+          "pp": "dreamt / dreamed",
+          "pp_ipa": "dremt / driːmd",
+          "pp_pron": "dremt / driimd",
+          "es": "soñar"
+        },
+        {
+          "en": "drink",
+          "ipa": "drɪŋk",
+          "pron": "drink",
+          "past": "drank",
+          "past_ipa": "dræŋk",
+          "past_pron": "drank",
+          "pp": "drunk",
+          "pp_ipa": "drʌŋk",
+          "pp_pron": "drank",
+          "es": "beber"
+        },
+        {
+          "en": "drive",
+          "ipa": "draɪv",
+          "pron": "dráiv",
+          "past": "drove",
+          "past_ipa": "drəʊv",
+          "past_pron": "dróuv",
+          "pp": "driven",
+          "pp_ipa": "ˈdrɪv.ən",
+          "pp_pron": "DRÍvan",
+          "es": "conducir"
+        },
+        {
+          "en": "eat",
+          "ipa": "iːt",
+          "pron": "iit",
+          "past": "ate",
+          "past_ipa": "eɪt",
+          "past_pron": "éit",
+          "pp": "eaten",
+          "pp_ipa": "ˈiː.tən",
+          "pp_pron": "ÍItan",
+          "es": "comer"
+        },
+        {
+          "en": "fall",
+          "ipa": "fɔːl",
+          "pron": "fool",
+          "past": "fell",
+          "past_ipa": "fel",
+          "past_pron": "fel",
+          "pp": "fallen",
+          "pp_ipa": "ˈfɔː.lən",
+          "pp_pron": "FÓOlan",
+          "es": "caer(se)"
+        },
+        {
+          "en": "feel",
+          "ipa": "fiːl",
+          "pron": "fiil",
+          "past": "felt",
+          "past_ipa": "felt",
+          "past_pron": "felt",
+          "pp": "felt",
+          "pp_ipa": "felt",
+          "pp_pron": "felt",
+          "es": "sentir(se)"
+        },
+        {
+          "en": "find",
+          "ipa": "faɪnd",
+          "pron": "fáind",
+          "past": "found",
+          "past_ipa": "faʊnd",
+          "past_pron": "fáund",
+          "pp": "found",
+          "pp_ipa": "faʊnd",
+          "pp_pron": "fáund",
+          "es": "encontrar"
+        },
+        {
+          "en": "fly",
+          "ipa": "flaɪ",
+          "pron": "flái",
+          "past": "flew",
+          "past_ipa": "fluː",
+          "past_pron": "fluu",
+          "pp": "flown",
+          "pp_ipa": "fləʊn",
+          "pp_pron": "flóun",
+          "es": "volar"
+        },
+        {
+          "en": "forget",
+          "ipa": "fəˈɡet",
+          "pron": "faGÉT",
+          "past": "forgot",
+          "past_ipa": "fəˈɡɒt",
+          "past_pron": "faGÓT",
+          "pp": "forgotten",
+          "pp_ipa": "fəˈɡɒt.ən",
+          "pp_pron": "faGÓtan",
+          "es": "olvidar"
+        },
+        {
+          "en": "get",
+          "ipa": "ɡet",
+          "pron": "get",
+          "past": "got",
+          "past_ipa": "ɡɒt",
+          "past_pron": "got",
+          "pp": "got",
+          "pp_ipa": "ɡɒt",
+          "pp_pron": "got",
+          "es": "conseguir, llegar, ponerse"
+        },
+        {
+          "en": "give",
+          "ipa": "ɡɪv",
+          "pron": "giv",
+          "past": "gave",
+          "past_ipa": "ɡeɪv",
+          "past_pron": "géiv",
+          "pp": "given",
+          "pp_ipa": "ˈɡɪv.ən",
+          "pp_pron": "GÍvan",
+          "es": "dar"
+        },
+        {
+          "en": "go",
+          "ipa": "ɡəʊ",
+          "pron": "góu",
+          "past": "went",
+          "past_ipa": "went",
+          "past_pron": "uent",
+          "pp": "gone",
+          "pp_ipa": "ɡɒn",
+          "pp_pron": "gon",
+          "es": "ir",
+          "note": "*been* = ha ido y ha vuelto; *gone* = se ha ido y sigue allí."
+        },
+        {
+          "en": "grow",
+          "ipa": "ɡrəʊ",
+          "pron": "gróu",
+          "past": "grew",
+          "past_ipa": "ɡruː",
+          "past_pron": "gruu",
+          "pp": "grown",
+          "pp_ipa": "ɡrəʊn",
+          "pp_pron": "gróun",
+          "es": "crecer, cultivar"
+        },
+        {
+          "en": "hang",
+          "ipa": "hæŋ",
+          "pron": "jang",
+          "past": "hung",
+          "past_ipa": "hʌŋ",
+          "past_pron": "jang",
+          "pp": "hung",
+          "pp_ipa": "hʌŋ",
+          "pp_pron": "jang",
+          "es": "colgar"
+        },
+        {
+          "en": "have",
+          "ipa": "hæv",
+          "pron": "jav",
+          "past": "had",
+          "past_ipa": "hæd",
+          "past_pron": "jad",
+          "pp": "had",
+          "pp_ipa": "hæd",
+          "pp_pron": "jad",
+          "es": "tener, tomar"
+        },
+        {
+          "en": "hear",
+          "ipa": "hɪə",
+          "pron": "jía",
+          "past": "heard",
+          "past_ipa": "hɜːd",
+          "past_pron": "jéerd",
+          "pp": "heard",
+          "pp_ipa": "hɜːd",
+          "pp_pron": "jéerd",
+          "es": "oír"
+        },
+        {
+          "en": "hit",
+          "ipa": "hɪt",
+          "pron": "jit",
+          "past": "hit",
+          "past_ipa": "hɪt",
+          "past_pron": "jit",
+          "pp": "hit",
+          "pp_ipa": "hɪt",
+          "pp_pron": "jit",
+          "es": "golpear"
+        },
+        {
+          "en": "hurt",
+          "ipa": "hɜːt",
+          "pron": "jéert",
+          "past": "hurt",
+          "past_ipa": "hɜːt",
+          "past_pron": "jéert",
+          "pp": "hurt",
+          "pp_ipa": "hɜːt",
+          "pp_pron": "jéert",
+          "es": "hacer(se) daño, doler"
+        },
+        {
+          "en": "keep",
+          "ipa": "kiːp",
+          "pron": "kiip",
+          "past": "kept",
+          "past_ipa": "kept",
+          "past_pron": "kept",
+          "pp": "kept",
+          "pp_ipa": "kept",
+          "pp_pron": "kept",
+          "es": "guardar, mantener"
+        },
+        {
+          "en": "know",
+          "ipa": "nəʊ",
+          "pron": "nóu",
+          "past": "knew",
+          "past_ipa": "njuː",
+          "past_pron": "niú",
+          "pp": "known",
+          "pp_ipa": "nəʊn",
+          "pp_pron": "nóun",
+          "es": "saber, conocer"
+        },
+        {
+          "en": "learn",
+          "ipa": "lɜːn",
+          "pron": "léern",
+          "past": "learnt / learned",
+          "past_ipa": "lɜːnt / lɜːnd",
+          "past_pron": "léernt / léernd",
+          "pp": "learnt / learned",
+          "pp_ipa": "lɜːnt / lɜːnd",
+          "pp_pron": "léernt / léernd",
+          "es": "aprender"
+        },
+        {
+          "en": "leave",
+          "ipa": "liːv",
+          "pron": "liiv",
+          "past": "left",
+          "past_ipa": "left",
+          "past_pron": "left",
+          "pp": "left",
+          "pp_ipa": "left",
+          "pp_pron": "left",
+          "es": "dejar, irse"
+        },
+        {
+          "en": "lend",
+          "ipa": "lend",
+          "pron": "lend",
+          "past": "lent",
+          "past_ipa": "lent",
+          "past_pron": "lent",
+          "pp": "lent",
+          "pp_ipa": "lent",
+          "pp_pron": "lent",
+          "es": "prestar"
+        },
+        {
+          "en": "let",
+          "ipa": "let",
+          "pron": "let",
+          "past": "let",
+          "past_ipa": "let",
+          "past_pron": "let",
+          "pp": "let",
+          "pp_ipa": "let",
+          "pp_pron": "let",
+          "es": "dejar, permitir"
+        },
+        {
+          "en": "lie",
+          "ipa": "laɪ",
+          "pron": "lái",
+          "past": "lay",
+          "past_ipa": "leɪ",
+          "past_pron": "léi",
+          "pp": "lain",
+          "pp_ipa": "leɪn",
+          "pp_pron": "léin",
+          "es": "estar tumbado, tumbarse",
+          "note": "¡Ojo! *lay* (laid, laid) = poner. *lie* (lied, lied) = mentir."
+        },
+        {
+          "en": "lose",
+          "ipa": "luːz",
+          "pron": "luuzz",
+          "past": "lost",
+          "past_ipa": "lɒst",
+          "past_pron": "lost",
+          "pp": "lost",
+          "pp_ipa": "lɒst",
+          "pp_pron": "lost",
+          "es": "perder"
+        },
+        {
+          "en": "make",
+          "ipa": "meɪk",
+          "pron": "méik",
+          "past": "made",
+          "past_ipa": "meɪd",
+          "past_pron": "méid",
+          "pp": "made",
+          "pp_ipa": "meɪd",
+          "pp_pron": "méid",
+          "es": "hacer, fabricar"
+        },
+        {
+          "en": "mean",
+          "ipa": "miːn",
+          "pron": "miin",
+          "past": "meant",
+          "past_ipa": "ment",
+          "past_pron": "ment",
+          "pp": "meant",
+          "pp_ipa": "ment",
+          "pp_pron": "ment",
+          "es": "significar, querer decir"
+        },
+        {
+          "en": "meet",
+          "ipa": "miːt",
+          "pron": "miit",
+          "past": "met",
+          "past_ipa": "met",
+          "past_pron": "met",
+          "pp": "met",
+          "pp_ipa": "met",
+          "pp_pron": "met",
+          "es": "conocer, quedar"
+        },
+        {
+          "en": "pay",
+          "ipa": "peɪ",
+          "pron": "péi",
+          "past": "paid",
+          "past_ipa": "peɪd",
+          "past_pron": "péid",
+          "pp": "paid",
+          "pp_ipa": "peɪd",
+          "pp_pron": "péid",
+          "es": "pagar"
+        },
+        {
+          "en": "put",
+          "ipa": "pʊt",
+          "pron": "put",
+          "past": "put",
+          "past_ipa": "pʊt",
+          "past_pron": "put",
+          "pp": "put",
+          "pp_ipa": "pʊt",
+          "pp_pron": "put",
+          "es": "poner"
+        },
+        {
+          "en": "read",
+          "ipa": "riːd",
+          "pron": "riid",
+          "past": "read",
+          "past_ipa": "red",
+          "past_pron": "red",
+          "pp": "read",
+          "pp_ipa": "red",
+          "pp_pron": "red",
+          "es": "leer",
+          "note": "Se escribe igual, pero el pasado y el participio se pronuncian /red/ «red»."
+        },
+        {
+          "en": "ride",
+          "ipa": "raɪd",
+          "pron": "ráid",
+          "past": "rode",
+          "past_ipa": "rəʊd",
+          "past_pron": "róud",
+          "pp": "ridden",
+          "pp_ipa": "ˈrɪd.ən",
+          "pp_pron": "RÍdan",
+          "es": "montar (en bici, a caballo)"
+        },
+        {
+          "en": "ring",
+          "ipa": "rɪŋ",
+          "pron": "ring",
+          "past": "rang",
+          "past_ipa": "ræŋ",
+          "past_pron": "rang",
+          "pp": "rung",
+          "pp_ipa": "rʌŋ",
+          "pp_pron": "rang",
+          "es": "sonar; llamar por teléfono"
+        },
+        {
+          "en": "run",
+          "ipa": "rʌn",
+          "pron": "ran",
+          "past": "ran",
+          "past_ipa": "ræn",
+          "past_pron": "ran",
+          "pp": "run",
+          "pp_ipa": "rʌn",
+          "pp_pron": "ran",
+          "es": "correr"
+        },
+        {
+          "en": "say",
+          "ipa": "seɪ",
+          "pron": "séi",
+          "past": "said",
+          "past_ipa": "sed",
+          "past_pron": "sed",
+          "pp": "said",
+          "pp_ipa": "sed",
+          "pp_pron": "sed",
+          "es": "decir"
+        },
+        {
+          "en": "see",
+          "ipa": "siː",
+          "pron": "sii",
+          "past": "saw",
+          "past_ipa": "sɔː",
+          "past_pron": "soo",
+          "pp": "seen",
+          "pp_ipa": "siːn",
+          "pp_pron": "siin",
+          "es": "ver"
+        },
+        {
+          "en": "sell",
+          "ipa": "sel",
+          "pron": "sel",
+          "past": "sold",
+          "past_ipa": "səʊld",
+          "past_pron": "sóuld",
+          "pp": "sold",
+          "pp_ipa": "səʊld",
+          "pp_pron": "sóuld",
+          "es": "vender"
+        },
+        {
+          "en": "send",
+          "ipa": "send",
+          "pron": "send",
+          "past": "sent",
+          "past_ipa": "sent",
+          "past_pron": "sent",
+          "pp": "sent",
+          "pp_ipa": "sent",
+          "pp_pron": "sent",
+          "es": "enviar"
+        },
+        {
+          "en": "set",
+          "ipa": "set",
+          "pron": "set",
+          "past": "set",
+          "past_ipa": "set",
+          "past_pron": "set",
+          "pp": "set",
+          "pp_ipa": "set",
+          "pp_pron": "set",
+          "es": "poner, fijar"
+        },
+        {
+          "en": "shine",
+          "ipa": "ʃaɪn",
+          "pron": "sháin",
+          "past": "shone",
+          "past_ipa": "ʃɒn",
+          "past_pron": "shon",
+          "pp": "shone",
+          "pp_ipa": "ʃɒn",
+          "pp_pron": "shon",
+          "es": "brillar"
+        },
+        {
+          "en": "shut",
+          "ipa": "ʃʌt",
+          "pron": "shat",
+          "past": "shut",
+          "past_ipa": "ʃʌt",
+          "past_pron": "shat",
+          "pp": "shut",
+          "pp_ipa": "ʃʌt",
+          "pp_pron": "shat",
+          "es": "cerrar"
+        },
+        {
+          "en": "sing",
+          "ipa": "sɪŋ",
+          "pron": "sing",
+          "past": "sang",
+          "past_ipa": "sæŋ",
+          "past_pron": "sang",
+          "pp": "sung",
+          "pp_ipa": "sʌŋ",
+          "pp_pron": "sang",
+          "es": "cantar"
+        },
+        {
+          "en": "sit",
+          "ipa": "sɪt",
+          "pron": "sit",
+          "past": "sat",
+          "past_ipa": "sæt",
+          "past_pron": "sat",
+          "pp": "sat",
+          "pp_ipa": "sæt",
+          "pp_pron": "sat",
+          "es": "sentarse"
+        },
+        {
+          "en": "sleep",
+          "ipa": "sliːp",
+          "pron": "sliip",
+          "past": "slept",
+          "past_ipa": "slept",
+          "past_pron": "slept",
+          "pp": "slept",
+          "pp_ipa": "slept",
+          "pp_pron": "slept",
+          "es": "dormir"
+        },
+        {
+          "en": "smell",
+          "ipa": "smel",
+          "pron": "smel",
+          "past": "smelt / smelled",
+          "past_ipa": "smelt / smeld",
+          "past_pron": "smelt / smeld",
+          "pp": "smelt / smelled",
+          "pp_ipa": "smelt / smeld",
+          "pp_pron": "smelt / smeld",
+          "es": "oler"
+        },
+        {
+          "en": "speak",
+          "ipa": "spiːk",
+          "pron": "spiik",
+          "past": "spoke",
+          "past_ipa": "spəʊk",
+          "past_pron": "spóuk",
+          "pp": "spoken",
+          "pp_ipa": "ˈspəʊ.kən",
+          "pp_pron": "SPÓUkan",
+          "es": "hablar"
+        },
+        {
+          "en": "spend",
+          "ipa": "spend",
+          "pron": "spend",
+          "past": "spent",
+          "past_ipa": "spent",
+          "past_pron": "spent",
+          "pp": "spent",
+          "pp_ipa": "spent",
+          "pp_pron": "spent",
+          "es": "gastar; pasar (tiempo)"
+        },
+        {
+          "en": "stand",
+          "ipa": "stænd",
+          "pron": "stand",
+          "past": "stood",
+          "past_ipa": "stʊd",
+          "past_pron": "stud",
+          "pp": "stood",
+          "pp_ipa": "stʊd",
+          "pp_pron": "stud",
+          "es": "estar de pie"
+        },
+        {
+          "en": "steal",
+          "ipa": "stiːl",
+          "pron": "stiil",
+          "past": "stole",
+          "past_ipa": "stəʊl",
+          "past_pron": "stóul",
+          "pp": "stolen",
+          "pp_ipa": "ˈstəʊ.lən",
+          "pp_pron": "STÓUlan",
+          "es": "robar"
+        },
+        {
+          "en": "swim",
+          "ipa": "swɪm",
+          "pron": "suim",
+          "past": "swam",
+          "past_ipa": "swæm",
+          "past_pron": "suam",
+          "pp": "swum",
+          "pp_ipa": "swʌm",
+          "pp_pron": "suam",
+          "es": "nadar"
+        },
+        {
+          "en": "take",
+          "ipa": "teɪk",
+          "pron": "téik",
+          "past": "took",
+          "past_ipa": "tʊk",
+          "past_pron": "tuk",
+          "pp": "taken",
+          "pp_ipa": "ˈteɪ.kən",
+          "pp_pron": "TÉIkan",
+          "es": "tomar, llevar"
+        },
+        {
+          "en": "teach",
+          "ipa": "tiːtʃ",
+          "pron": "tiich",
+          "past": "taught",
+          "past_ipa": "tɔːt",
+          "past_pron": "toot",
+          "pp": "taught",
+          "pp_ipa": "tɔːt",
+          "pp_pron": "toot",
+          "es": "enseñar"
+        },
+        {
+          "en": "tell",
+          "ipa": "tel",
+          "pron": "tel",
+          "past": "told",
+          "past_ipa": "təʊld",
+          "past_pron": "tóuld",
+          "pp": "told",
+          "pp_ipa": "təʊld",
+          "pp_pron": "tóuld",
+          "es": "contar, decir"
+        },
+        {
+          "en": "think",
+          "ipa": "θɪŋk",
+          "pron": "zink",
+          "past": "thought",
+          "past_ipa": "θɔːt",
+          "past_pron": "zoot",
+          "pp": "thought",
+          "pp_ipa": "θɔːt",
+          "pp_pron": "zoot",
+          "es": "pensar"
+        },
+        {
+          "en": "throw",
+          "ipa": "θrəʊ",
+          "pron": "zróu",
+          "past": "threw",
+          "past_ipa": "θruː",
+          "past_pron": "zruu",
+          "pp": "thrown",
+          "pp_ipa": "θrəʊn",
+          "pp_pron": "zróun",
+          "es": "lanzar, tirar"
+        },
+        {
+          "en": "understand",
+          "ipa": "ˌʌn.dəˈstænd",
+          "pron": "andaSTÁND",
+          "past": "understood",
+          "past_ipa": "ˌʌn.dəˈstʊd",
+          "past_pron": "andaSTÚD",
+          "pp": "understood",
+          "pp_ipa": "ˌʌn.dəˈstʊd",
+          "pp_pron": "andaSTÚD",
+          "es": "entender"
+        },
+        {
+          "en": "wake",
+          "ipa": "weɪk",
+          "pron": "uéik",
+          "past": "woke",
+          "past_ipa": "wəʊk",
+          "past_pron": "uóuk",
+          "pp": "woken",
+          "pp_ipa": "ˈwəʊ.kən",
+          "pp_pron": "UÓUkan",
+          "es": "despertar(se)"
+        },
+        {
+          "en": "wear",
+          "ipa": "weə",
+          "pron": "uéa",
+          "past": "wore",
+          "past_ipa": "wɔː",
+          "past_pron": "uóo",
+          "pp": "worn",
+          "pp_ipa": "wɔːn",
+          "pp_pron": "uóon",
+          "es": "llevar puesto"
+        },
+        {
+          "en": "win",
+          "ipa": "wɪn",
+          "pron": "uin",
+          "past": "won",
+          "past_ipa": "wʌn",
+          "past_pron": "uan",
+          "pp": "won",
+          "pp_ipa": "wʌn",
+          "pp_pron": "uan",
+          "es": "ganar",
+          "note": "*won* se pronuncia igual que *one*."
+        },
+        {
+          "en": "write",
+          "ipa": "raɪt",
+          "pron": "ráit",
+          "past": "wrote",
+          "past_ipa": "rəʊt",
+          "past_pron": "róut",
+          "pp": "written",
+          "pp_ipa": "ˈrɪt.ən",
+          "pp_pron": "RÍtan",
+          "es": "escribir"
+        }
+      ],
+      "tables": [
+        {
+          "title": "Trucos: grupos de verbos que se parecen",
+          "head": [
+            "Grupo",
+            "Verbos",
+            "Truco"
+          ],
+          "rows": [
+            [
+              "Las tres formas iguales",
+              "cost, cut, hit, hurt, let, put, set, shut",
+              "no cambian nunca: *put – put – put*"
+            ],
+            [
+              "Pasado = participio",
+              "bring, buy, catch, teach, think → *-ought / -aught*",
+              "*brought, bought, caught, taught, thought*"
+            ],
+            [
+              "Pasado = participio",
+              "keep, sleep, feel, mean, leave, meet",
+              "vocal corta + *t*: *kept, slept, felt, meant, left*"
+            ],
+            [
+              "i – a – u",
+              "begin, drink, ring, sing, swim",
+              "*sing – sang – sung*"
+            ],
+            [
+              "Participio en *-en*",
+              "break, choose, eat, fall, forget, give, speak, steal, take, wake, write",
+              "*broken, chosen, eaten…*"
+            ],
+            [
+              "Participio en *-own*",
+              "fly, grow, know, throw, draw",
+              "*flown, grown, known, thrown, drawn*"
+            ],
+            [
+              "Mismo infinitivo y participio",
+              "become, come, run",
+              "*come – came – come*"
+            ]
+          ]
+        }
+      ],
+      "exceptions": [
+        "*read*: se escribe igual en las tres formas, pero el pasado y el participio suenan /red/.",
+        "*learn, dream, smell* admiten también la forma regular: *learned, dreamed, smelled* (más común en EE. UU.).",
+        "*be* tiene dos pasados: *was* (I / he / she / it) y *were* (you / we / they)."
+      ]
+    },
+    {
+      "id": "test",
+      "title": "Test yourself",
+      "title_es": "Test: pasado y participio",
+      "summary": {
+        "head": [
+          "",
+          "Cómo funciona",
+          ""
+        ],
+        "rows": [
+          [
+            "1",
+            "Salen 10 verbos al azar con su traducción",
+            ""
+          ],
+          [
+            "2",
+            "Escribe el pasado y el participio",
+            ""
+          ],
+          [
+            "3",
+            "Pulsa «Comprobar» para ver aciertos y errores; «Nuevo test» saca otros 10",
+            ""
+          ]
+        ]
+      },
+      "quiz": {
+        "source": "list",
+        "count": 10
+      }
+    }
+  ]
+}

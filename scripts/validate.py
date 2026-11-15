@@ -18,7 +18,7 @@ VOCAB_REQUIRED = ('en', 'ipa', 'pron', 'es')
 UNIT_FIELDS = {'id', 'type', 'level', 'title', 'title_es', 'icon', 'description', 'sections'}
 LEVELS = {'A1', 'A2', 'B1', 'B2', 'C1', 'C2'}
 RESERVED = {'inicio', 'vocabulario', 'gramatica'}
-GRAMMAR_FIELDS = {'id', 'title', 'title_es', 'summary', 'use', 'forms', 'tables', 'keywords', 'examples', 'exceptions', 'tips', 'mistakes', 'practice'}
+GRAMMAR_FIELDS = {'id', 'title', 'title_es', 'summary', 'verbs', 'quiz', 'use', 'forms', 'tables', 'keywords', 'examples', 'exceptions', 'tips', 'mistakes', 'practice'}
 VOWELS = re.compile(r'[aeiouáéíóúAEIOUÁÉÍÓÚ]+')
 
 
@@ -135,8 +135,15 @@ def check_grammar(path, unit):
         for i, p in enumerate(sec.get('practice', [])):
             for k in ('q', 'a'):
                 if k not in p: err(f'{w} › practice {i + 1}', f'falta "{k}"')
-        if not any(sec.get(k) for k in ('use', 'forms', 'tables', 'examples', 'mistakes')):
-            err(w, 'la sección está vacía: añade al menos "use", "forms", "tables", "examples" o "mistakes"')
+        for i, v in enumerate(sec.get('verbs', [])):
+            for k in ('en', 'ipa', 'pron', 'past', 'past_ipa', 'past_pron', 'pp', 'pp_ipa', 'pp_pron', 'es'):
+                if k not in v: err(f'{w} › verbs {i + 1} ({v.get("en", "?")})', f'falta "{k}"')
+        qz = sec.get('quiz')
+        if qz is not None:
+            src = next((x for x in unit['sections'] if x.get('id') == qz.get('source')), None)
+            if not src or not src.get('verbs'): err(f'{w} › quiz', '"source" debe ser el id de una sección con "verbs"')
+        if not any(sec.get(k) for k in ('use', 'forms', 'tables', 'examples', 'mistakes', 'verbs', 'quiz')):
+            err(w, 'la sección está vacía: añade al menos "use", "forms", "tables", "examples", "mistakes", "verbs" o "quiz"')
 
 
 def main():

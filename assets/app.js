@@ -114,6 +114,7 @@
 
   function markNav(active) {
     menu.querySelector('[data-nav="inicio"]').classList.toggle('on', active === 'inicio');
+    const rl = menu.querySelector('[data-nav="repaso"]'); if (rl) rl.classList.toggle('on', active === 'repaso');
     menu.querySelectorAll('.m-btn').forEach((b) => b.classList.toggle('on', b.dataset.nav === active));
   }
 
@@ -121,6 +122,7 @@
   function route() {
     const id = decodeURIComponent(location.hash.slice(1)) || 'inicio';
     q.value = '';
+    if (id === 'repaso') { renderReview(); return; }
     const unit = UNITS.find((u) => u.id === id) || null;
     menu.querySelectorAll('.m-item').forEach((a) => a.toggleAttribute('aria-current', !!unit && a.dataset.id === unit.id));
     renderTree(unit, id);
@@ -152,7 +154,7 @@
     let html = u.description ? `<p class="unit-desc">${md(u.description)}</p>` : '';
     (u.sections || []).forEach((s) => {
       const k = 's:' + u.id + ':' + s.id;
-      if (!isV) { html += node(k, 3, title('h3', s.title, s.title_es), '', false, () => grammarBody(s)); return; }
+      if (!isV) { html += node(k, 3, title('h3', s.title, s.title_es), '', false, () => grammarBody(s, u)); return; }
       const total = secItems(s).length;
       if (!total) return;
       html += node(k, 3, title('h3', s.title, s.title_es), words(total), false, () => {
@@ -212,7 +214,8 @@
       ${isHome ? heroHtml : ''}
       <div class="wrap tree-wrap">
         <div class="tree-tools">
-          <label class="ctl"><input id="quiz" type="checkbox"${quizOn ? ' checked' : ''}> Modo repaso (ocultar el español)</label>
+          <label class="ctl"><input id="quiz" type="checkbox"${quizOn ? ' checked' : ''}> Ocultar el español</label>
+          <a class="tt-btn tt-review" href="#repaso">Repasar con tarjetas</a>
           <span class="tt-gap"></span>
           <button type="button" class="tt-btn" data-tree="open">Expandir todo</button>
           <button type="button" class="tt-btn" data-tree="close">Contraer todo</button>
@@ -281,7 +284,64 @@
   const table = (rowsHtml) => `<div class="tbl"><table>
       <thead><tr><th>Imagen</th><th>Inglés</th><th>Pronunciación</th><th>Español</th><th><span class="sr">Escuchar</span></th></tr></thead>
       <tbody>${rowsHtml}</tbody></table></div>`;
-  function grammarBody(s) {
+  /* ---------- irregular verbs: table and random test ---------- */
+  const formCell = (w, ipa, p) => w === '—' ? '<span class="vt-none">—</span>'
+    : `<div class="vt-w"><b>${esc(w)}</b> ${sayBtn(w, w, true)}</div><div class="ipa">/${esc(ipa)}/</div><span class="sp">${pron(p)}</span>`;
+  function verbTable(verbs) {
+    const rows = alpha(verbs).map((v) => `<tr>
+        <td class="vt-es">${md(v.es)}${v.note ? `<div class="note">${md(v.note)}</div>` : ''}</td>
+        <td>${formCell(v.en, v.ipa, v.pron)}</td>
+        <td>${formCell(v.past, v.past_ipa, v.past_pron)}</td>
+        <td>${formCell(v.pp, v.pp_ipa, v.pp_pron)}</td></tr>`).join('');
+    return `<div class="gt-scroll"><table class="gtable vtable">
+      <thead><tr><th>Español</th><th>Infinitivo</th><th>Pasado</th><th>Participio</th></tr></thead><tbody>${rows}</tbody></table></div>`;
+  }
+  const QUIZ = new Map();   // quiz id -> verb list
+  function quizRows(verbs, n) {
+    const pool = verbs.filter((v) => v.pp !== '—' && v.past !== '—');
+    for (let i = pool.length - 1; i > 0; i--) { const j = Math.floor(Math.random() * (i + 1)); [pool[i], pool[j]] = [pool[j], pool[i]]; }
+    return pool.slice(0, n).map((v, i) => `<li class="qz-row" data-en="${esc(v.en)}">
+        <span class="qz-n">${i + 1}</span>
+        <span class="qz-v"><b>${esc(v.en)}</b> <small>${esc(v.es)}</small></span>
+        <label><span class="sr">Pasado de ${esc(v.en)}</span><input type="text" class="qz-in" data-k="past" autocomplete="off" autocapitalize="off" spellcheck="false" placeholder="pasado"></label>
+        <label><span class="sr">Participio de ${esc(v.en)}</span><input type="text" class="qz-in" data-k="pp" autocomplete="off" autocapitalize="off" spellcheck="false" placeholder="participio"></label>
+        <span class="qz-fix" hidden></span></li>`).join('');
+  }
+  function quizHtml(id, verbs, n) {
+    QUIZ.set(id, { verbs, n });
+    return `<div class="quiz" data-quiz="${esc(id)}">
+      <ol class="qz-list">${quizRows(verbs, n)}</ol>
+      <div class="qz-bar"><button type="button" class="btn primary" data-qz="check">Comprobar</button>
+        <button type="button" class="btn" data-qz="new">Nuevo test</button><span class="qz-score" role="status"></span></div></div>`;
+  }
+  const answerOk = (given, correct) => {
+    const g = norm(given).replace(/\s+/g, ' ').trim();
+    if (!g) return false;
+    const options = correct.split('/').map((x) => norm(x).trim());
+    return options.includes(g) || g.split(/\s*\/\s*/).every((x) => options.includes(x));
+  };
+  function checkQuiz(box) {
+    const { verbs } = QUIZ.get(box.dataset.quiz) || { verbs: [] };
+    let ok = 0, total = 0;
+    box.querySelectorAll('.qz-row').forEach((row) => {
+      const v = verbs.find((x) => x.en === row.dataset.en);
+      if (!v) return;
+      const fixes = [];
+      row.querySelectorAll('.qz-in').forEach((inp) => {
+        const correct = v[inp.dataset.k];
+        const good = answerOk(inp.value, correct);
+        total++; if (good) ok++;
+        inp.classList.toggle('ok', good); inp.classList.toggle('bad', !good);
+        if (!good) fixes.push(correct);
+      });
+      const fix = row.querySelector('.qz-fix');
+      fix.hidden = !fixes.length;
+      fix.textContent = fixes.length ? `${v.en} – ${v.past} – ${v.pp}` : '';
+    });
+    box.querySelector('.qz-score').textContent = `${ok} de ${total} correctas`;
+  }
+
+  function grammarBody(s, u) {
     const forms = (s.forms || []).map((f) =>
       `<div class="form"><span class="lbl">${esc(f.label)}</span><code>${esc(f.pattern)}</code>${f.example ? `<span class="fx">${esc(f.example)}</span>` : ''}</div>`).join('');
     const kw = (s.keywords || []).map((k) => `<span>${esc(k)}</span>`).join('');
@@ -307,10 +367,18 @@
       `<li class="pq"><span class="pq-n">${i + 1}</span><span class="pq-q">${md(p.q).replace(/_{3,}/g, '<span class="gap">______</span>')}</span>
         <button class="pq-btn" type="button" aria-expanded="false">Ver respuesta</button>
         <span class="pq-a" hidden><b>${md(p.a)}</b>${p.why ? ` · ${md(p.why)}` : ''}</span></li>`).join('');
+    const verbs = s.verbs ? `<div><p class="g-h">Verbos</p>${verbTable(s.verbs)}</div>` : '';
+    let quiz = '';
+    if (s.quiz && u) {
+      const src = (u.sections || []).find((x) => x.id === s.quiz.source) || s;
+      quiz = `<div><p class="g-h">Test</p>${quizHtml(u.id + ':' + s.id, src.verbs || [], s.quiz.count || 10)}</div>`;
+    }
     return `
       <div class="g-card">
         ${summary}
         ${s.use ? `<p class="g-use">${md(s.use)}</p>` : ''}
+        ${verbs}
+        ${quiz}
         ${forms ? `<div><p class="g-h">Estructura</p><div class="forms">${forms}</div></div>` : ''}
         ${tables ? `<div><p class="g-h">Tablas</p><div class="gts">${tables}</div></div>` : ''}
         ${kw ? `<div><p class="g-h">Palabras clave</p><div class="kw">${kw}</div></div>` : ''}
@@ -354,6 +422,18 @@
   view.addEventListener('click', (e) => {
     const tt = e.target.closest('[data-tree]');
     if (tt) { setTree(tt.dataset.tree === 'open'); return; }
+    const qz = e.target.closest('[data-qz]');
+    if (qz) {
+      const box = qz.closest('.quiz');
+      if (qz.dataset.qz === 'check') checkQuiz(box);
+      else {
+        const { verbs, n } = QUIZ.get(box.dataset.quiz);
+        box.querySelector('.qz-list').innerHTML = quizRows(verbs, n);
+        box.querySelector('.qz-score').textContent = '';
+        const first = box.querySelector('.qz-in'); if (first) first.focus();
+      }
+      return;
+    }
     const pb = e.target.closest('.pq-btn');
     if (pb) {
       const ans = pb.nextElementSibling, open = ans.hidden;
@@ -387,14 +467,225 @@
     const u = new SpeechSynthesisUtterance(text.replace(/[…/]/g, ', '));
     u.lang = 'en-GB'; u.rate = 0.85; if (voice) u.voice = voice;
     view.querySelectorAll('.say.on').forEach((x) => x.classList.remove('on'));
-    btn.classList.add('on');
-    u.onend = () => btn.classList.remove('on');
+    if (btn) btn.classList.add('on');
+    u.onend = () => btn && btn.classList.remove('on');
     u.onerror = (ev) => {
-      btn.classList.remove('on');
+      if (btn) btn.classList.remove('on');
       if (ev.error !== 'interrupted' && ev.error !== 'canceled') toast('No se ha podido reproducir el audio (' + ev.error + '). ' + NO_VOICE);
     };
     speechSynthesis.speak(u);
   }
+
+  /* ---------- Repaso: flashcards of vocabulary and grammar, chosen from the tree ---------- */
+  const REV_KEY = 'review-settings';
+  let REV = { kind: 'vocabulary', sel: { vocabulary: [], grammar: [] }, dir: 'en-es', order: 'list', icons: true, audio: false,
+              parts: { summary: true, examples: true, practice: true, mistakes: true, verbs: true } };
+  try { REV = Object.assign(REV, JSON.parse(localStorage.getItem(REV_KEY) || '{}')); } catch (e) { /* defaults */ }
+  const saveRev = () => { try { localStorage.setItem(REV_KEY, JSON.stringify(REV)); } catch (e) { /* storage unavailable */ } };
+  let deck = [], pos = 0, shown = false;
+
+  // the leaves of the selection tree: blocks of vocabulary or grammar sections
+  function leavesOf(u) {
+    const out = [];
+    (u.sections || []).forEach((s) => {
+      if (u.type === 'vocabulary') {
+        if ((s.items || []).length) out.push({ key: `s:${u.id}:${s.id}`, u, s, items: s.items });
+        (s.groups || []).forEach((g) => { if ((g.items || []).length) out.push({ key: `g:${u.id}:${s.id}:${g.id}`, u, s, g, items: g.items }); });
+      } else out.push({ key: `s:${u.id}:${s.id}`, u, s });
+    });
+    return out;
+  }
+  const PARTS = [['summary', 'Resúmenes'], ['examples', 'Ejemplos'], ['practice', 'Ejercicios'], ['mistakes', 'Errores típicos'], ['verbs', 'Verbos irregulares']];
+  function grammarCards(u, s) {
+    const cards = [], where = `${u.title_es || u.title} › ${s.title_es || s.title}`, P = REV.parts, en2es = REV.dir === 'en-es';
+    if (P.summary && s.summary) (s.summary.rows || []).forEach((r) => {
+      if (!r[0] || !r[1]) return;
+      cards.push({ where, front: `<p class="rv-kicker">${esc(s.title)}</p><p class="rv-main">${md(r[0])}</p>`,
+                   back: `<p class="rv-ans">${md(r[1])}</p>${r[2] ? `<p class="rv-ex">${md(r[2])}</p>` : ''}` });
+    });
+    if (P.examples) (s.examples || []).forEach((e) => cards.push(en2es
+      ? { where, say: e.en, front: `<p class="rv-main rv-sent">${esc(e.en)}</p>`, back: `<p class="rv-ans">${md(e.es)}</p>${e.note ? `<p class="rv-ex">${md(e.note)}</p>` : ''}` }
+      : { where, say: e.en, sayOnBack: true, front: `<p class="rv-main rv-sent">${md(e.es)}</p>`, back: `<p class="rv-ans">${esc(e.en)}</p>${e.note ? `<p class="rv-ex">${md(e.note)}</p>` : ''}` }));
+    if (P.practice) (s.practice || []).forEach((p) => cards.push({ where,
+      front: `<p class="rv-kicker">Completa</p><p class="rv-main rv-sent">${md(p.q).replace(/_{3,}/g, '<span class="gap">______</span>')}</p>`,
+      back: `<p class="rv-ans">${md(p.a)}</p>${p.why ? `<p class="rv-ex">${md(p.why)}</p>` : ''}` }));
+    if (P.mistakes) (s.mistakes || []).forEach((m) => cards.push({ where,
+      front: `<p class="rv-kicker">¿Qué está mal?</p><p class="rv-main rv-sent rv-wrong">${esc(m.wrong)}</p>`,
+      back: `<p class="rv-ans">${esc(m.right)}</p>${m.why ? `<p class="rv-ex">${md(m.why)}</p>` : ''}`, say: m.right, sayOnBack: true }));
+    if (P.verbs) alpha(s.verbs || []).forEach((v) => {
+      const forms = `<p class="rv-ans">${esc(v.en)} – ${esc(v.past)} – ${esc(v.pp)}</p><p class="rv-ex"><span class="sp">${pron(v.pron)}</span> · <span class="sp">${pron(v.past_pron)}</span> · <span class="sp">${pron(v.pp_pron)}</span></p>`;
+      cards.push(en2es
+        ? { where, say: v.en, front: `<p class="rv-main">${esc(v.en)}</p><p class="rv-kicker">pasado y participio</p>`, back: `${forms}<p class="rv-ex">${md(v.es)}</p>`, sayBack: `${v.en}, ${v.past}, ${v.pp}` }
+        : { where, front: `<p class="rv-main">${md(v.es)}</p>`, back: forms, say: `${v.en}, ${v.past}, ${v.pp}`, sayOnBack: true });
+    });
+    return cards;
+  }
+  function vocabCard(leaf, it) {
+    const where = [leaf.u.title_es || leaf.u.title, leaf.s.title_es || leaf.s.title, leaf.g && (leaf.g.title_es || leaf.g.title)].filter(Boolean).join(' › ');
+    const pic = REV.icons && it.icon ? `<div class="rv-pic">${iconImg(it.icon, 96)}</div>` : '';
+    const prn = `<p class="rv-pron"><span class="ipa">/${esc(it.ipa)}/</span> <span class="sp">${pron(it.pron)}</span></p>`;
+    const extra = `${it.note ? `<p class="rv-ex">${md(it.note)}</p>` : ''}${it.example ? `<p class="rv-ex"><i>${md(it.example)}</i>${it.example_es ? `<br>${md(it.example_es)}` : ''}</p>` : ''}`;
+    return REV.dir === 'en-es'
+      ? { where, say: it.say || it.en, front: `${pic}<p class="rv-main">${esc(it.en)}</p>${prn}`, back: `<p class="rv-ans">${md(it.es)}</p>${extra}` }
+      : { where, say: it.say || it.en, sayOnBack: true, front: `${pic}<p class="rv-main">${md(it.es)}</p>`, back: `<p class="rv-ans">${esc(it.en)}</p>${prn}${extra}` };
+  }
+  function buildDeck() {
+    const sel = new Set(REV.sel[REV.kind] || []);
+    let cards = [];
+    UNITS.filter((u) => u.type === REV.kind).forEach((u) => leavesOf(u).forEach((leaf) => {
+      if (!sel.has(leaf.key)) return;
+      if (REV.kind === 'vocabulary') alpha(leaf.items).forEach((it) => cards.push(vocabCard(leaf, it)));
+      else cards = cards.concat(grammarCards(leaf.u, leaf.s));
+    }));
+    if (REV.order === 'random') for (let i = cards.length - 1; i > 0; i--) { const j = Math.floor(Math.random() * (i + 1)); [cards[i], cards[j]] = [cards[j], cards[i]]; }
+    return cards;
+  }
+
+  function renderReview() {
+    markNav('repaso');
+    document.title = 'Repaso · ' + (INDEX.title || 'Cuaderno de inglés B1');
+    const isV = REV.kind === 'vocabulary';
+    const sel = new Set(REV.sel[REV.kind] || []);
+    const units = UNITS.filter((u) => u.type === REV.kind);
+    const cb = (keys, label, count, extraCls) => `<label class="rv-cb${extraCls ? ' ' + extraCls : ''}"><input type="checkbox" data-keys="${esc(keys.join(' '))}"> <span>${esc(label)}</span>${count != null ? ` <small>${count}</small>` : ''}</label>`;
+    const tree = units.map((u) => {
+      const leaves = leavesOf(u);
+      const secs = (u.sections || []).map((s) => {
+        const ls = leaves.filter((l) => l.s === s);
+        if (!ls.length) return '';
+        const n = isV ? ls.reduce((a, l) => a + l.items.length, 0) : null;
+        const kids = isV && (s.groups || []).length ? `<ul>${ls.filter((l) => l.g).map((l) => `<li>${cb([l.key], l.g.title_es || l.g.title, l.items.length)}</li>`).join('')}</ul>` : '';
+        return `<li>${cb(ls.map((l) => l.key), s.title_es || s.title, n)}${kids}</li>`;
+      }).join('');
+      const n = isV ? leaves.reduce((a, l) => a + l.items.length, 0) : null;
+      return `<li class="rv-unit"><details${leaves.some((l) => sel.has(l.key)) ? ' open' : ''}><summary><span class="tw" aria-hidden="true"></span>${cb(leaves.map((l) => l.key), u.title_es || u.title, n, 'rv-cb-unit')}</summary><ul>${secs}</ul></details></li>`;
+    }).join('');
+    const radio = (name, val, label) => `<label class="rv-opt"><input type="radio" name="${name}" value="${val}"${REV[name] === val ? ' checked' : ''}> ${label}</label>`;
+    view.innerHTML = `
+      <div class="band"><div class="wrap band-in"><div>
+        <p class="crumbs"><a href="#inicio">Inicio</a> › Repaso</p>
+        <h1>Modo repaso</h1>
+        <p class="en">Elige temas del árbol, ajusta las opciones y repasa tarjeta a tarjeta. Pulsa <kbd>Espacio</kbd> o <kbd>Enter</kbd> (o toca la tarjeta) para ver la respuesta y pasar a la siguiente.</p>
+      </div></div></div>
+      <div class="wrap rv-setup" id="rv-setup">
+        <div class="rv-tabs" role="tablist">
+          <button type="button" role="tab" class="rv-tab" data-kind="vocabulary" aria-selected="${isV}">Vocabulario</button>
+          <button type="button" role="tab" class="rv-tab" data-kind="grammar" aria-selected="${!isV}">Gramática</button>
+        </div>
+        <div class="rv-grid">
+          <section class="rv-panel">
+            <div class="rv-panel-h"><h2>1. Elige qué repasar</h2>
+              <span><button type="button" class="tt-btn" data-rv="all">Todo</button> <button type="button" class="tt-btn" data-rv="none">Nada</button></span></div>
+            <ul class="rv-tree" id="rv-tree">${tree}</ul>
+          </section>
+          <section class="rv-panel">
+            <h2>2. Opciones</h2>
+            <fieldset><legend>Dirección</legend>${radio('dir', 'en-es', 'Inglés → Español')}${radio('dir', 'es-en', 'Español → Inglés')}</fieldset>
+            <fieldset><legend>Orden</legend>${radio('order', 'list', 'En orden de lista')}${radio('order', 'random', 'Aleatorio')}</fieldset>
+            ${isV ? `<fieldset><legend>Imagen</legend><label class="rv-opt"><input type="radio" name="icons" value="1"${REV.icons ? ' checked' : ''}> Con icono</label><label class="rv-opt"><input type="radio" name="icons" value="0"${REV.icons ? '' : ' checked'}> Sin icono</label></fieldset>`
+                  : `<fieldset><legend>Qué tarjetas</legend>${PARTS.map(([k, l]) => `<label class="rv-opt"><input type="checkbox" data-part="${k}"${REV.parts[k] ? ' checked' : ''}> ${l}</label>`).join('')}</fieldset>`}
+            <fieldset><legend>Audio</legend><label class="rv-opt"><input type="checkbox" id="rv-audio"${REV.audio ? ' checked' : ''}> Leer el inglés en voz alta automáticamente</label></fieldset>
+            <button type="button" class="btn primary rv-start" id="rv-start">Empezar</button>
+          </section>
+        </div>
+      </div>
+      <div class="wrap rv-play" id="rv-play" hidden></div>`;
+    syncChecks();
+    window.scrollTo(0, 0);
+  }
+  function syncChecks() {
+    const sel = new Set(REV.sel[REV.kind] || []);
+    view.querySelectorAll('#rv-tree input[data-keys]').forEach((c) => {
+      const keys = c.dataset.keys.split(' ');
+      const n = keys.filter((k) => sel.has(k)).length;
+      c.checked = n === keys.length; c.indeterminate = n > 0 && n < keys.length;
+    });
+    const total = buildDeck().length;
+    const btn = $('rv-start');
+    if (btn) { btn.disabled = !total; btn.textContent = total ? `Empezar · ${total} tarjeta${total === 1 ? '' : 's'}` : 'Elige al menos un tema'; }
+  }
+  function drawCard() {
+    const play = $('rv-play');
+    if (!deck.length) return;
+    if (pos >= deck.length) {
+      play.innerHTML = `<div class="rv-card rv-end"><p class="rv-main">¡Repaso terminado!</p><p class="rv-ans">Has repasado ${deck.length} tarjeta${deck.length === 1 ? '' : 's'}.</p>
+        <div class="rv-ctrl"><button type="button" class="btn primary" data-rv="again">Repetir</button><button type="button" class="btn" data-rv="shuffle">Repetir en otro orden</button><button type="button" class="btn" data-rv="exit">Cambiar selección</button></div></div>`;
+      return;
+    }
+    const c = deck[pos];
+    play.innerHTML = `
+      <div class="rv-top"><span class="rv-where">${esc(c.where)}</span><span class="rv-count">${pos + 1} / ${deck.length}</span></div>
+      <div class="rv-bar"><span style="width:${Math.round((pos / deck.length) * 100)}%"></span></div>
+      <div class="rv-card${shown ? ' open' : ''}" id="rv-card" tabindex="0" role="button" aria-label="${shown ? 'Siguiente tarjeta' : 'Mostrar la respuesta'}">
+        <div class="rv-front">${c.front}${c.say && !c.sayOnBack ? `<div class="rv-say">${sayBtn(c.say, c.say)}</div>` : ''}</div>
+        <div class="rv-back"${shown ? '' : ' hidden'}>${c.back}${c.say && c.sayOnBack ? `<div class="rv-say">${sayBtn(c.say, c.say)}</div>` : ''}</div>
+        <p class="rv-hint">${shown ? 'Espacio / Enter: siguiente · ←: anterior' : 'Espacio / Enter o toca la tarjeta: ver respuesta'}</p>
+      </div>
+      <div class="rv-ctrl">
+        <button type="button" class="btn" data-rv="prev"${pos ? '' : ' disabled'}>← Anterior</button>
+        <button type="button" class="btn primary" data-rv="next">${shown ? 'Siguiente →' : 'Mostrar respuesta'}</button>
+        <button type="button" class="btn" data-rv="exit">Terminar</button>
+      </div>`;
+    if (REV.audio) {
+      const txt = shown ? (c.sayOnBack ? c.say : c.sayBack) : (!c.sayOnBack ? c.say : null);
+      if (txt) speak(txt, null);
+    }
+  }
+  function startReview(reshuffle) {
+    if (reshuffle !== false) deck = buildDeck();
+    if (!deck.length) return;
+    pos = 0; shown = false;
+    $('rv-setup').hidden = true; $('rv-play').hidden = false;
+    drawCard();
+    window.scrollTo(0, 0);
+  }
+  function step(dir) {
+    if (!$('rv-play') || $('rv-play').hidden || pos >= deck.length && dir > 0) return;
+    if (dir > 0) { if (!shown) shown = true; else { pos++; shown = false; } }
+    else if (pos > 0) { pos = Math.min(pos, deck.length) - 1; shown = false; }
+    drawCard();
+  }
+  view.addEventListener('change', (e) => {
+    if (!$('rv-setup')) return;
+    const t = e.target;
+    if (t.dataset.keys) {
+      const set = new Set(REV.sel[REV.kind] || []);
+      t.dataset.keys.split(' ').forEach((k) => (t.checked ? set.add(k) : set.delete(k)));
+      REV.sel[REV.kind] = [...set];
+    } else if (t.name === 'dir' || t.name === 'order') REV[t.name] = t.value;
+    else if (t.name === 'icons') REV.icons = t.value === '1';
+    else if (t.dataset.part) REV.parts[t.dataset.part] = t.checked;
+    else if (t.id === 'rv-audio') REV.audio = t.checked;
+    saveRev(); syncChecks();
+  });
+  view.addEventListener('click', (e) => {
+    if (!$('rv-setup')) return;
+    const tab = e.target.closest('.rv-tab');
+    if (tab) { REV.kind = tab.dataset.kind; saveRev(); renderReview(); return; }
+    if (e.target.closest('#rv-start')) { startReview(); return; }
+    const a = e.target.closest('[data-rv]');
+    if (a) {
+      const act = a.dataset.rv;
+      if (act === 'all' || act === 'none') {
+        REV.sel[REV.kind] = act === 'all' ? UNITS.filter((u) => u.type === REV.kind).flatMap((u) => leavesOf(u).map((l) => l.key)) : [];
+        saveRev(); syncChecks(); return;
+      }
+      if (act === 'next') step(1); else if (act === 'prev') step(-1);
+      else if (act === 'again') { pos = 0; shown = false; drawCard(); }
+      else if (act === 'shuffle') { for (let i = deck.length - 1; i > 0; i--) { const j = Math.floor(Math.random() * (i + 1)); [deck[i], deck[j]] = [deck[j], deck[i]]; } pos = 0; shown = false; drawCard(); }
+      else if (act === 'exit') { $('rv-play').hidden = true; $('rv-setup').hidden = false; speechSynthesis && speechSynthesis.cancel && speechSynthesis.cancel(); }
+      return;
+    }
+    if (e.target.closest('#rv-card') && !e.target.closest('.say')) step(1);
+  });
+  document.addEventListener('keydown', (e) => {
+    const play = $('rv-play');
+    if (!play || play.hidden) return;
+    if (e.target.closest && e.target.closest('input, textarea, select')) return;
+    if (e.key === ' ' || e.key === 'Enter' || e.key === 'ArrowRight') { e.preventDefault(); step(1); }
+    else if (e.key === 'ArrowLeft') { e.preventDefault(); step(-1); }
+    else if (e.key === 'Escape') { play.hidden = true; $('rv-setup').hidden = false; }
+  });
 
   load();
 })();

@@ -4,7 +4,7 @@ Vocabulario y gramática de inglés para preparar el B1. Cada palabra tiene imag
 
 Todo el contenido está en archivos JSON dentro de `data/`. Para añadir un tema nuevo no hace falta tocar el código.
 
-La web muestra todo como **un único árbol desplegable**: Vocabulario y Gramática → temas → secciones → subsecciones → palabras. Además tiene un menú **Vocabulario** y otro **Gramática** con cada tema, un buscador que busca en todo el vocabulario y un modo repaso que oculta el español.
+La web muestra todo como **un único árbol desplegable**: Vocabulario y Gramática → temas → secciones → subsecciones → palabras. Además tiene un menú **Vocabulario** y otro **Gramática** con cada tema, un buscador que busca en todo el vocabulario, la opción de ocultar el español en las tablas y un **modo Repaso** (menú «Repaso»): eliges temas del árbol de vocabulario o de gramática y la web te enseña tarjetas una a una (Inglés → Español o al revés, en orden o aleatorio, con o sin icono). La respuesta aparece al pulsar Espacio, Enter o tocar la tarjeta.
 
 ## Ver la web
 
@@ -151,6 +151,8 @@ Otros apartados opcionales de una sección de gramática:
 |---|---|
 | `summary` | Tabla de **resumen** que sale la primera, recuadrada: `{ "head": ["", "Qué es / cómo se forma", "Ejemplo"], "rows": [["Uso", "…", "…"]] }`. |
 | `tables` | Tablas: `[{ "title": "…", "head": ["Col 1", "Col 2"], "rows": [["a", "b"], ["c", "d"]], "note": "…" }]`. Todas las filas deben tener tantas columnas como `head`. |
+| `verbs` | Tabla de verbos irregulares: `[{ "en": "go", "ipa": "ɡəʊ", "pron": "góu", "past": "went", "past_ipa": "went", "past_pron": "uent", "pp": "gone", "pp_ipa": "ɡɒn", "pp_pron": "gon", "es": "ir" }]`. Si hay dos formas, sepáralas con ` / ` (*learnt / learned*). |
+| `quiz` | Test al azar de pasado y participio: `{ "source": "list", "count": 10 }` (`source` = id de la sección que tiene los `verbs`). |
 | `exceptions` | Lista de excepciones (recuadro naranja): `["…", "…"]`. |
 | `tips` | Lista de trucos y recordatorios: `["…", "…"]`. |
 | `practice` | Ejercicios con la respuesta oculta: `[{ "q": "She ___ (eat) fish.", "a": "eats", "why": "opcional" }]`. Escribe el hueco con `___`. |
