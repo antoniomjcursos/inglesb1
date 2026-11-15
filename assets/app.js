@@ -478,11 +478,21 @@
 
   /* ---------- Repaso: flashcards of vocabulary and grammar, chosen from the tree ---------- */
   const REV_KEY = 'review-settings';
-  let REV = { kind: 'vocabulary', sel: { vocabulary: [], grammar: [] }, dir: 'en-es', order: 'list', icons: true, audio: false,
+  let REV = { kind: 'vocabulary', sel: { vocabulary: [], grammar: [] }, hard: { vocabulary: [], grammar: [] }, dir: 'en-es', order: 'list', icons: true, audio: false,
               parts: { summary: true, examples: true, practice: true, mistakes: true, verbs: true } };
   try { REV = Object.assign(REV, JSON.parse(localStorage.getItem(REV_KEY) || '{}')); } catch (e) { /* defaults */ }
   const saveRev = () => { try { localStorage.setItem(REV_KEY, JSON.stringify(REV)); } catch (e) { /* storage unavailable */ } };
-  let deck = [], pos = 0, shown = false;
+  if (!REV.hard || typeof REV.hard !== 'object') REV.hard = { vocabulary: [], grammar: [] };
+  REV.hard.vocabulary = REV.hard.vocabulary || []; REV.hard.grammar = REV.hard.grammar || [];
+  let deck = [], pos = 0, shown = false, hardMode = false;
+  const plain = (t) => String(t ?? '').replace(/\*+/g, '');
+  const hardSet = () => new Set(REV.hard[REV.kind]);
+  function toggleHard(id, on) {
+    const set = hardSet();
+    if (on === undefined) on = !set.has(id);
+    if (on) set.add(id); else set.delete(id);
+    REV.hard[REV.kind] = [...set]; saveRev();
+  }
 
   // the leaves of the selection tree: blocks of vocabulary or grammar sections
   function leavesOf(u) {
@@ -496,27 +506,29 @@
     return out;
   }
   const PARTS = [['summary', 'Resúmenes'], ['examples', 'Ejemplos'], ['practice', 'Ejercicios'], ['mistakes', 'Errores típicos'], ['verbs', 'Verbos irregulares']];
-  function grammarCards(u, s) {
-    const cards = [], where = `${u.title_es || u.title} › ${s.title_es || s.title}`, P = REV.parts, en2es = REV.dir === 'en-es';
-    if (P.summary && s.summary) (s.summary.rows || []).forEach((r) => {
+  function grammarCards(u, s, allParts) {
+    const cards = [], where = `${u.title_es || u.title} › ${s.title_es || s.title}`, en2es = REV.dir === 'en-es';
+    const P = allParts ? { summary: true, examples: true, practice: true, mistakes: true, verbs: true } : REV.parts;
+    const id = (t, k) => `${u.id}|${s.id}|${t}|${k}`;
+    if (P.summary && s.summary) (s.summary.rows || []).forEach((r, i) => {
       if (!r[0] || !r[1]) return;
-      cards.push({ where, front: `<p class="rv-kicker">${esc(s.title)}</p><p class="rv-main">${md(r[0])}</p>`,
+      cards.push({ id: id('sum', i), label: `${plain(s.title)}: ${plain(r[0])}`, where, front: `<p class="rv-kicker">${esc(s.title)}</p><p class="rv-main">${md(r[0])}</p>`,
                    back: `<p class="rv-ans">${md(r[1])}</p>${r[2] ? `<p class="rv-ex">${md(r[2])}</p>` : ''}` });
     });
-    if (P.examples) (s.examples || []).forEach((e) => cards.push(en2es
-      ? { where, say: e.en, front: `<p class="rv-main rv-sent">${esc(e.en)}</p>`, back: `<p class="rv-ans">${md(e.es)}</p>${e.note ? `<p class="rv-ex">${md(e.note)}</p>` : ''}` }
-      : { where, say: e.en, sayOnBack: true, front: `<p class="rv-main rv-sent">${md(e.es)}</p>`, back: `<p class="rv-ans">${esc(e.en)}</p>${e.note ? `<p class="rv-ex">${md(e.note)}</p>` : ''}` }));
-    if (P.practice) (s.practice || []).forEach((p) => cards.push({ where,
+    if (P.examples) (s.examples || []).forEach((e, i) => cards.push(en2es
+      ? { id: id('ex', i), label: e.en, where, say: e.en, front: `<p class="rv-main rv-sent">${esc(e.en)}</p>`, back: `<p class="rv-ans">${md(e.es)}</p>${e.note ? `<p class="rv-ex">${md(e.note)}</p>` : ''}` }
+      : { id: id('ex', i), label: e.en, where, say: e.en, sayOnBack: true, front: `<p class="rv-main rv-sent">${md(e.es)}</p>`, back: `<p class="rv-ans">${esc(e.en)}</p>${e.note ? `<p class="rv-ex">${md(e.note)}</p>` : ''}` }));
+    if (P.practice) (s.practice || []).forEach((p, i) => cards.push({ id: id('pq', i), label: plain(p.q), where,
       front: `<p class="rv-kicker">Completa</p><p class="rv-main rv-sent">${md(p.q).replace(/_{3,}/g, '<span class="gap">______</span>')}</p>`,
       back: `<p class="rv-ans">${md(p.a)}</p>${p.why ? `<p class="rv-ex">${md(p.why)}</p>` : ''}` }));
-    if (P.mistakes) (s.mistakes || []).forEach((m) => cards.push({ where,
+    if (P.mistakes) (s.mistakes || []).forEach((m, i) => cards.push({ id: id('mi', i), label: `✗ ${m.wrong}`, where,
       front: `<p class="rv-kicker">¿Qué está mal?</p><p class="rv-main rv-sent rv-wrong">${esc(m.wrong)}</p>`,
       back: `<p class="rv-ans">${esc(m.right)}</p>${m.why ? `<p class="rv-ex">${md(m.why)}</p>` : ''}`, say: m.right, sayOnBack: true }));
     if (P.verbs) alpha(s.verbs || []).forEach((v) => {
       const forms = `<p class="rv-ans">${esc(v.en)} – ${esc(v.past)} – ${esc(v.pp)}</p><p class="rv-ex"><span class="sp">${pron(v.pron)}</span> · <span class="sp">${pron(v.past_pron)}</span> · <span class="sp">${pron(v.pp_pron)}</span></p>`;
       cards.push(en2es
-        ? { where, say: v.en, front: `<p class="rv-main">${esc(v.en)}</p><p class="rv-kicker">pasado y participio</p>`, back: `${forms}<p class="rv-ex">${md(v.es)}</p>`, sayBack: `${v.en}, ${v.past}, ${v.pp}` }
-        : { where, front: `<p class="rv-main">${md(v.es)}</p>`, back: forms, say: `${v.en}, ${v.past}, ${v.pp}`, sayOnBack: true });
+        ? { id: id('vb', v.en), label: `${v.en} – ${v.past} – ${v.pp}`, where, say: v.en, front: `<p class="rv-main">${esc(v.en)}</p><p class="rv-kicker">pasado y participio</p>`, back: `${forms}<p class="rv-ex">${md(v.es)}</p>`, sayBack: `${v.en}, ${v.past}, ${v.pp}` }
+        : { id: id('vb', v.en), label: `${v.en} – ${v.past} – ${v.pp}`, where, front: `<p class="rv-main">${md(v.es)}</p>`, back: forms, say: `${v.en}, ${v.past}, ${v.pp}`, sayOnBack: true });
     });
     return cards;
   }
@@ -525,19 +537,24 @@
     const pic = REV.icons && it.icon ? `<div class="rv-pic">${iconImg(it.icon, 96)}</div>` : '';
     const prn = `<p class="rv-pron"><span class="ipa">/${esc(it.ipa)}/</span> <span class="sp">${pron(it.pron)}</span></p>`;
     const extra = `${it.note ? `<p class="rv-ex">${md(it.note)}</p>` : ''}${it.example ? `<p class="rv-ex"><i>${md(it.example)}</i>${it.example_es ? `<br>${md(it.example_es)}` : ''}</p>` : ''}`;
+    const idl = { id: `${leaf.u.id}|${it.en}`, label: `${it.en} – ${plain(it.es)}` };
     return REV.dir === 'en-es'
-      ? { where, say: it.say || it.en, front: `${pic}<p class="rv-main">${esc(it.en)}</p>${prn}`, back: `<p class="rv-ans">${md(it.es)}</p>${extra}` }
-      : { where, say: it.say || it.en, sayOnBack: true, front: `${pic}<p class="rv-main">${md(it.es)}</p>`, back: `<p class="rv-ans">${esc(it.en)}</p>${prn}${extra}` };
+      ? { ...idl, where, say: it.say || it.en, front: `${pic}<p class="rv-main">${esc(it.en)}</p>${prn}`, back: `<p class="rv-ans">${md(it.es)}</p>${extra}` }
+      : { ...idl, where, say: it.say || it.en, sayOnBack: true, front: `${pic}<p class="rv-main">${md(it.es)}</p>`, back: `<p class="rv-ans">${esc(it.en)}</p>${prn}${extra}` };
   }
-  function buildDeck() {
-    const sel = new Set(REV.sel[REV.kind] || []);
+  function buildDeck(fromList, keepOrder) {
+    const sel = new Set(REV.sel[REV.kind] || []), hard = hardSet();
     let cards = [];
     UNITS.filter((u) => u.type === REV.kind).forEach((u) => leavesOf(u).forEach((leaf) => {
-      if (!sel.has(leaf.key)) return;
+      if (!fromList && !sel.has(leaf.key)) return;
       if (REV.kind === 'vocabulary') alpha(leaf.items).forEach((it) => cards.push(vocabCard(leaf, it)));
-      else cards = cards.concat(grammarCards(leaf.u, leaf.s));
+      else cards = cards.concat(grammarCards(leaf.u, leaf.s, fromList));
     }));
-    if (REV.order === 'random') for (let i = cards.length - 1; i > 0; i--) { const j = Math.floor(Math.random() * (i + 1)); [cards[i], cards[j]] = [cards[j], cards[i]]; }
+    if (fromList) {
+      const seen = new Set();
+      cards = cards.filter((c) => hard.has(c.id) && !seen.has(c.id) && seen.add(c.id));
+    }
+    if (REV.order === 'random' && !keepOrder) for (let i = cards.length - 1; i > 0; i--) { const j = Math.floor(Math.random() * (i + 1)); [cards[i], cards[j]] = [cards[j], cards[i]]; }
     return cards;
   }
 
@@ -587,11 +604,22 @@
             <fieldset><legend>Audio</legend><label class="rv-opt"><input type="checkbox" id="rv-audio"${REV.audio ? ' checked' : ''}> Leer el inglés en voz alta automáticamente</label></fieldset>
             <button type="button" class="btn primary rv-start" id="rv-start">Empezar</button>
           </section>
+          <section class="rv-panel rv-hard" id="rv-hard"></section>
         </div>
       </div>
       <div class="wrap rv-play" id="rv-play" hidden></div>`;
     syncChecks();
     window.scrollTo(0, 0);
+  }
+  function drawHardPanel() {
+    const box = $('rv-hard');
+    if (!box) return;
+    const cards = buildDeck(true, true);
+    box.innerHTML = `<div class="rv-panel-h"><h2>3. Mi lista «No me la sé»</h2><span class="rv-hard-n">${cards.length}</span></div>
+      ${cards.length ? `<p class="rv-help">Las tarjetas que marques durante el repaso se guardan aquí. Repásalas solas hasta que te las sepas.</p>
+        <ul class="rv-hard-list">${cards.map((c) => `<li><span>${esc(c.label)}</span><button type="button" class="rv-x" data-hard-del="${esc(c.id)}" aria-label="Quitar ${esc(c.label)} de mi lista">×</button></li>`).join('')}</ul>
+        <div class="rv-ctrl rv-ctrl-left"><button type="button" class="btn primary" data-rv="hard">Repasar mi lista · ${cards.length}</button><button type="button" class="btn" data-rv="clear">Vaciar la lista</button></div>`
+      : `<p class="rv-help">Todavía está vacía. Durante el repaso, pulsa <b>«No me la sé»</b> (o la tecla <kbd>N</kbd>) en las tarjetas que te cuesten y aparecerán aquí para repasarlas aparte.</p>`}`;
   }
   function syncChecks() {
     const sel = new Set(REV.sel[REV.kind] || []);
@@ -603,17 +631,22 @@
     const total = buildDeck().length;
     const btn = $('rv-start');
     if (btn) { btn.disabled = !total; btn.textContent = total ? `Empezar · ${total} tarjeta${total === 1 ? '' : 's'}` : 'Elige al menos un tema'; }
+    drawHardPanel();
   }
   function drawCard() {
     const play = $('rv-play');
     if (!deck.length) return;
     if (pos >= deck.length) {
+      const nHard = buildDeck(true, true).length;
       play.innerHTML = `<div class="rv-card rv-end"><p class="rv-main">¡Repaso terminado!</p><p class="rv-ans">Has repasado ${deck.length} tarjeta${deck.length === 1 ? '' : 's'}.</p>
-        <div class="rv-ctrl"><button type="button" class="btn primary" data-rv="again">Repetir</button><button type="button" class="btn" data-rv="shuffle">Repetir en otro orden</button><button type="button" class="btn" data-rv="exit">Cambiar selección</button></div></div>`;
+        <p class="rv-ex">${nHard ? `Tienes ${nHard} en tu lista «No me la sé».` : 'Tu lista «No me la sé» está vacía.'}</p>
+        <div class="rv-ctrl">${nHard ? `<button type="button" class="btn primary" data-rv="hard">Repasar mi lista · ${nHard}</button>` : ''}<button type="button" class="btn${nHard ? '' : ' primary'}" data-rv="again">Repetir</button><button type="button" class="btn" data-rv="shuffle">Repetir en otro orden</button><button type="button" class="btn" data-rv="exit">Cambiar selección</button></div></div>`;
       return;
     }
     const c = deck[pos];
+    const inList = hardSet().has(c.id);
     play.innerHTML = `
+      ${hardMode ? '<p class="rv-mode">Repasando tu lista «No me la sé»</p>' : ''}
       <div class="rv-top"><span class="rv-where">${esc(c.where)}</span><span class="rv-count">${pos + 1} / ${deck.length}</span></div>
       <div class="rv-bar"><span style="width:${Math.round((pos / deck.length) * 100)}%"></span></div>
       <div class="rv-card${shown ? ' open' : ''}" id="rv-card" tabindex="0" role="button" aria-label="${shown ? 'Siguiente tarjeta' : 'Mostrar la respuesta'}">
@@ -625,14 +658,18 @@
         <button type="button" class="btn" data-rv="prev"${pos ? '' : ' disabled'}>← Anterior</button>
         <button type="button" class="btn primary" data-rv="next">${shown ? 'Siguiente →' : 'Mostrar respuesta'}</button>
         <button type="button" class="btn" data-rv="exit">Terminar</button>
-      </div>`;
+      </div>
+      <div class="rv-ctrl"><button type="button" class="btn rv-mark${inList ? ' on' : ''}" data-rv="mark" aria-pressed="${inList}">${inList
+        ? (hardMode ? '✓ Ya me la sé: quitar de mi lista' : '✓ En mi lista · quitar')
+        : '✗ No me la sé · añadir a mi lista'} <kbd>N</kbd></button></div>`;
     if (REV.audio) {
       const txt = shown ? (c.sayOnBack ? c.say : c.sayBack) : (!c.sayOnBack ? c.say : null);
       if (txt) speak(txt, null);
     }
   }
-  function startReview(reshuffle) {
-    if (reshuffle !== false) deck = buildDeck();
+  function startReview(fromList) {
+    hardMode = !!fromList;
+    deck = buildDeck(hardMode);
     if (!deck.length) return;
     pos = 0; shown = false;
     $('rv-setup').hidden = true; $('rv-play').hidden = false;
@@ -660,6 +697,8 @@
   });
   view.addEventListener('click', (e) => {
     if (!$('rv-setup')) return;
+    const del = e.target.closest('[data-hard-del]');
+    if (del) { toggleHard(del.dataset.hardDel, false); drawHardPanel(); return; }
     const tab = e.target.closest('.rv-tab');
     if (tab) { REV.kind = tab.dataset.kind; saveRev(); renderReview(); return; }
     if (e.target.closest('#rv-start')) { startReview(); return; }
@@ -670,10 +709,13 @@
         REV.sel[REV.kind] = act === 'all' ? UNITS.filter((u) => u.type === REV.kind).flatMap((u) => leavesOf(u).map((l) => l.key)) : [];
         saveRev(); syncChecks(); return;
       }
+      if (act === 'hard') { startReview(true); return; }
+      if (act === 'clear') { REV.hard[REV.kind] = []; saveRev(); drawHardPanel(); return; }
+      if (act === 'mark') { const c = deck[pos]; if (c) { toggleHard(c.id); drawCard(); } return; }
       if (act === 'next') step(1); else if (act === 'prev') step(-1);
       else if (act === 'again') { pos = 0; shown = false; drawCard(); }
       else if (act === 'shuffle') { for (let i = deck.length - 1; i > 0; i--) { const j = Math.floor(Math.random() * (i + 1)); [deck[i], deck[j]] = [deck[j], deck[i]]; } pos = 0; shown = false; drawCard(); }
-      else if (act === 'exit') { $('rv-play').hidden = true; $('rv-setup').hidden = false; speechSynthesis && speechSynthesis.cancel && speechSynthesis.cancel(); }
+      else if (act === 'exit') { $('rv-play').hidden = true; $('rv-setup').hidden = false; drawHardPanel(); if (window.speechSynthesis) speechSynthesis.cancel(); }
       return;
     }
     if (e.target.closest('#rv-card') && !e.target.closest('.say')) step(1);
@@ -684,7 +726,8 @@
     if (e.target.closest && e.target.closest('input, textarea, select')) return;
     if (e.key === ' ' || e.key === 'Enter' || e.key === 'ArrowRight') { e.preventDefault(); step(1); }
     else if (e.key === 'ArrowLeft') { e.preventDefault(); step(-1); }
-    else if (e.key === 'Escape') { play.hidden = true; $('rv-setup').hidden = false; }
+    else if ((e.key === 'n' || e.key === 'N') && deck[pos]) { e.preventDefault(); toggleHard(deck[pos].id); drawCard(); }
+    else if (e.key === 'Escape') { play.hidden = true; $('rv-setup').hidden = false; drawHardPanel(); }
   });
 
   load();
