@@ -1,0 +1,1681 @@
+{
+  "id": "connectors",
+  "type": "vocabulary",
+  "level": "B1",
+  "title": "Connectors and linking words",
+  "title_es": "Conectores",
+  "icon": "link",
+  "description": "Conectores y expresiones típicas de B1 para conversar y para escribir correos, blogs y redacciones: cambiar de tema, añadir, contrastar, explicar causas, ordenar ideas y resumir.",
+  "sections": [
+    {
+      "id": "conversation",
+      "title": "Conversation markers",
+      "title_es": "Para conversar",
+      "groups": [
+        {
+          "id": "topic",
+          "title": "Changing and going back to a topic",
+          "title_es": "Cambiar de tema y volver al tema",
+          "items": [
+            {
+              "en": "By the way, …",
+              "ipa": "baɪ ðə ˈweɪ",
+              "pron": "bai da UÉI",
+              "es": "Por cierto, … / A propósito, …",
+              "icon": "right-arrow-curving-left",
+              "note": "Para sacar un tema nuevo de pasada, a mitad de conversación. Muy frecuente.",
+              "example": "By the way, have you seen Laura lately?",
+              "example_es": "Por cierto, ¿has visto a Laura últimamente?"
+            },
+            {
+              "en": "Incidentally, …",
+              "ipa": "ˌɪn.sɪˈden.təl.i",
+              "pron": "insiDÉNtali",
+              "es": "Por cierto, … / A propósito, …",
+              "icon": "pushpin",
+              "note": "Igual que *by the way*, pero más formal.",
+              "example": "Incidentally, the meeting has been moved to Friday.",
+              "example_es": "Por cierto, la reunión se ha cambiado al viernes."
+            },
+            {
+              "en": "Speaking of which, …",
+              "ipa": "ˈspiː.kɪŋ əv ˌwɪtʃ",
+              "pron": "SPÍIking ov uich",
+              "es": "Hablando de eso, … / Ya que lo mencionas, …",
+              "icon": "speech-balloon",
+              "example": "Speaking of which, did you book the restaurant?",
+              "example_es": "Hablando de eso, ¿reservaste el restaurante?"
+            },
+            {
+              "en": "Talking of …, …",
+              "ipa": "ˈtɔː.kɪŋ əv",
+              "pron": "TÓOking ov",
+              "es": "Hablando de …, …",
+              "icon": "left-speech-bubble",
+              "note": "Recoge una palabra que acaba de salir en la conversación.",
+              "example": "Talking of holidays, where are you going this summer?",
+              "example_es": "Hablando de vacaciones, ¿adónde vas este verano?"
+            },
+            {
+              "en": "That reminds me, …",
+              "ipa": "ðæt rɪˈmaɪndz miː",
+              "pron": "dat riMÁINDZZ mi",
+              "es": "Eso me recuerda que…, / Ah, por cierto, …",
+              "icon": "light-bulb",
+              "note": "Se suele decir *Oh, that reminds me, …*",
+              "example": "Oh, that reminds me, what's your view on social media?",
+              "example_es": "Ah, eso me recuerda: ¿qué opinas de las redes sociales?"
+            },
+            {
+              "en": "Apart from that, …",
+              "ipa": "əˈpɑːt frəm ðæt",
+              "pron": "aPÁAT from dat",
+              "es": "Aparte de eso, … / Por lo demás, …",
+              "icon": "plus",
+              "example": "Apart from that, what do you think about the new timetable?",
+              "example_es": "Aparte de eso, ¿qué te parece el nuevo horario?"
+            },
+            {
+              "en": "Moving on, …",
+              "ipa": "ˈmuː.vɪŋ ˈɒn",
+              "pron": "MÚUving ON",
+              "es": "Pasando a otra cosa, … / En otro orden de cosas, …",
+              "icon": "fast-forward-button",
+              "note": "Para pasar al siguiente punto. Parecido a *Let's move on* (en «Opiniones y conversación»).",
+              "example": "Moving on, how do you feel about working from home?",
+              "example_es": "Pasando a otra cosa, ¿qué te parece trabajar desde casa?"
+            },
+            {
+              "en": "On another note, …",
+              "ipa": "ɒn əˌnʌð.ə ˈnəʊt",
+              "pron": "on aNÁda NÓUT",
+              "es": "En otro orden de cosas, … / Cambiando de tema, …",
+              "icon": "shuffle-tracks-button",
+              "example": "On another note, congratulations on your new job!",
+              "example_es": "Cambiando de tema, ¡enhorabuena por tu nuevo trabajo!"
+            },
+            {
+              "en": "Changing the subject, …",
+              "ipa": "ˈtʃeɪn.dʒɪŋ ðə ˈsʌb.dʒɪkt",
+              "pron": "CHÉINying da SÁByikt",
+              "es": "Cambiando de tema, …",
+              "icon": "left-right-arrow",
+              "note": "*subject* = tema de conversación (y también asignatura).",
+              "example": "Changing the subject, are you coming to the party on Saturday?",
+              "example_es": "Cambiando de tema, ¿vienes a la fiesta del sábado?"
+            },
+            {
+              "en": "Anyway, …",
+              "ipa": "ˈen.i.weɪ",
+              "pron": "ÉNiuei",
+              "es": "En fin, … / Bueno, … / De todas formas, …",
+              "icon": "repeat-button",
+              "note": "Para cerrar un tema, volver al principal o terminar la conversación. *Anyways* es coloquial americano.",
+              "example": "Anyway, let's get back to work.",
+              "example_es": "En fin, volvamos al trabajo."
+            },
+            {
+              "en": "As I was saying, …",
+              "ipa": "əz aɪ wəz ˈseɪ.ɪŋ",
+              "pron": "az ai uoz SÉIing",
+              "es": "Como iba diciendo, …",
+              "icon": "back-arrow",
+              "note": "Para retomar lo que decías después de una interrupción.",
+              "example": "As I was saying, the trip was amazing.",
+              "example_es": "Como iba diciendo, el viaje fue increíble."
+            },
+            {
+              "en": "Going back to …, …",
+              "ipa": "ˈɡəʊ.ɪŋ ˈbæk tə",
+              "pron": "GÓUing BAK tu",
+              "es": "Volviendo a …, …",
+              "icon": "left-arrow-curving-right",
+              "example": "Going back to what you said earlier, I think you're right.",
+              "example_es": "Volviendo a lo que dijiste antes, creo que tienes razón."
+            },
+            {
+              "en": "Where was I?",
+              "ipa": "ˌweə wəz ˈaɪ",
+              "pron": "uéa uoz ÁI",
+              "es": "¿Por dónde iba?",
+              "icon": "round-pushpin",
+              "note": "Muy útil en el examen oral si pierdes el hilo."
+            }
+          ]
+        },
+        {
+          "id": "clarify",
+          "title": "Clarifying",
+          "title_es": "Aclarar y reformular",
+          "items": [
+            {
+              "en": "I mean, …",
+              "ipa": "aɪ ˈmiːn",
+              "pron": "ai MÍIN",
+              "es": "O sea, … / Quiero decir, …",
+              "icon": "index-pointing-up",
+              "note": "Para corregirte o explicar mejor lo que acabas de decir.",
+              "example": "It was cheap… I mean, not really cheap, but good value.",
+              "example_es": "Fue barato… o sea, no muy barato, pero salía a cuenta."
+            },
+            {
+              "en": "In other words, …",
+              "ipa": "ɪn ˈʌð.ə ˌwɜːdz",
+              "pron": "in Áda uerdzz",
+              "es": "Es decir, … / En otras palabras, …",
+              "icon": "heavy-equals-sign",
+              "example": "He's very careful with money. In other words, he's mean!",
+              "example_es": "Es muy cuidadoso con el dinero. ¡O sea, que es tacaño!"
+            },
+            {
+              "en": "That is (to say), …",
+              "ipa": "ˈðæt ɪz tə ˈseɪ",
+              "pron": "DAT iz tu SÉI",
+              "es": "Es decir, …",
+              "icon": "heavy-equals-sign",
+              "note": "Más formal. Por escrito se abrevia *i.e.*",
+              "example": "The course is free, that is to say, you don't pay anything.",
+              "example_es": "El curso es gratis, es decir, no pagas nada."
+            },
+            {
+              "en": "What I mean is (that) …",
+              "ipa": "ˌwɒt aɪ ˈmiːn ɪz",
+              "pron": "uot ai MÍIN iz",
+              "es": "Lo que quiero decir es que …",
+              "icon": "speaking-head",
+              "example": "What I mean is that we need more time.",
+              "example_es": "Lo que quiero decir es que necesitamos más tiempo."
+            },
+            {
+              "en": "Let me put it another way.",
+              "ipa": "let miː ˌpʊt ɪt əˌnʌð.ə ˈweɪ",
+              "pron": "let mi put it anada UÉI",
+              "es": "Déjame decirlo de otra forma.",
+              "icon": "counterclockwise-arrows-button"
+            },
+            {
+              "en": "To put it simply, …",
+              "ipa": "tə ˌpʊt ɪt ˈsɪm.pli",
+              "pron": "tu put it SÍMpli",
+              "es": "Dicho de forma sencilla, … / Para que nos entendamos, …",
+              "icon": "puzzle-piece"
+            },
+            {
+              "en": "Actually, …",
+              "ipa": "ˈæk.tʃu.ə.li",
+              "pron": "ÁKchuali",
+              "es": "En realidad, … / Pues la verdad es que …",
+              "icon": "eyes",
+              "note": "¡Falso amigo! *actually* ≠ actualmente. «Actualmente» = *currently* o *nowadays*.",
+              "example": "Actually, I've never been to Paris.",
+              "example_es": "En realidad, nunca he estado en París."
+            },
+            {
+              "en": "In fact, …",
+              "ipa": "ɪn ˈfækt",
+              "pron": "in FAKT",
+              "es": "De hecho, …",
+              "icon": "check-mark-button",
+              "note": "Refuerza o amplía lo anterior.",
+              "example": "I like Italian food. In fact, I cook pasta every week.",
+              "example_es": "Me gusta la comida italiana. De hecho, hago pasta todas las semanas."
+            },
+            {
+              "en": "As a matter of fact, …",
+              "ipa": "əz ə ˌmæt.ər əv ˈfækt",
+              "pron": "az a MÁtar ov FAKT",
+              "es": "De hecho, … / La verdad es que …",
+              "icon": "check-mark-button",
+              "note": "Igual que *in fact*; a veces corrige al otro: *As a matter of fact, I don't.*"
+            }
+          ]
+        },
+        {
+          "id": "fillers",
+          "title": "Gaining time",
+          "title_es": "Ganar tiempo y suavizar",
+          "items": [
+            {
+              "en": "Well, …",
+              "ipa": "wel",
+              "pron": "uel",
+              "es": "Bueno, … / Pues…",
+              "icon": "thinking-face",
+              "note": "La forma más natural de empezar una respuesta y ganar un segundo."
+            },
+            {
+              "en": "Let me see…",
+              "ipa": "let miː ˈsiː",
+              "pron": "let mi SÍI",
+              "es": "A ver… / Déjame ver…",
+              "icon": "magnifying-glass-tilted-left",
+              "note": "Parecido a *Let me think* (en «Opiniones y conversación»)."
+            },
+            {
+              "en": "You know, …",
+              "ipa": "juː ˈnəʊ",
+              "pron": "yu NÓU",
+              "es": "Ya sabes, … / ¿Sabes?",
+              "icon": "person-tipping-hand",
+              "note": "Muletilla muy común. Úsala, pero sin abusar en el examen."
+            },
+            {
+              "en": "How can I put it?",
+              "ipa": "ˌhaʊ kən aɪ ˈpʊt ɪt",
+              "pron": "jau kan ai PUT it",
+              "es": "¿Cómo te lo diría?",
+              "icon": "thought-balloon"
+            },
+            {
+              "en": "To be honest, …",
+              "ipa": "tə bi ˈɒn.ɪst",
+              "pron": "tu bi Ónist",
+              "es": "La verdad, … / Para serte sincero, …",
+              "icon": "smiling-face-with-halo",
+              "note": "La *h* de *honest* no se pronuncia.",
+              "example": "To be honest, I didn't like the film.",
+              "example_es": "La verdad, no me gustó la película."
+            },
+            {
+              "en": "kind of / sort of",
+              "ipa": "ˈkaɪnd əv",
+              "pron": "KÁIND ov",
+              "es": "más o menos, un poco, como",
+              "icon": "person-shrugging",
+              "note": "Coloquial. *It's kind of difficult* = es un poco difícil.",
+              "example": "I'm kind of tired today.",
+              "example_es": "Hoy estoy como cansado."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "adding",
+      "title": "Adding ideas",
+      "title_es": "Añadir ideas",
+      "items": [
+        {
+          "en": "also",
+          "ipa": "ˈɔːl.səʊ",
+          "pron": "ÓOLsou",
+          "es": "también",
+          "icon": "plus",
+          "note": "Va **antes** del verbo principal y **después** de *be*: *I also play tennis* / *She is also a teacher*.",
+          "example": "I speak English and I also speak a bit of French.",
+          "example_es": "Hablo inglés y también un poco de francés."
+        },
+        {
+          "en": "too",
+          "ipa": "tuː",
+          "pron": "tuu",
+          "es": "también (al final de la frase)",
+          "icon": "plus",
+          "note": "Siempre al final: *I like it too.* «Yo también» = *Me too* / *So do I*.",
+          "example": "My sister is a teacher too.",
+          "example_es": "Mi hermana también es profesora."
+        },
+        {
+          "en": "as well",
+          "ipa": "əz ˈwel",
+          "pron": "az UÉL",
+          "es": "también (al final de la frase)",
+          "icon": "plus",
+          "note": "Igual que *too*, muy británico.",
+          "example": "Can I have a coffee as well, please?",
+          "example_es": "¿Me pones también un café, por favor?"
+        },
+        {
+          "en": "in addition (to)",
+          "ipa": "ɪn əˈdɪʃ.ən",
+          "pron": "in aDÍshan",
+          "es": "además (de)",
+          "icon": "plus",
+          "note": "Más formal. Al principio de frase, con coma. *in addition to* + nombre o -ing.",
+          "example": "In addition, the hotel has a free gym.",
+          "example_es": "Además, el hotel tiene un gimnasio gratis."
+        },
+        {
+          "en": "besides",
+          "ipa": "bɪˈsaɪdz",
+          "pron": "biSÁIDZZ",
+          "es": "además; aparte de",
+          "icon": "plus",
+          "note": "*Besides, it's too late* (además). *Besides English, I speak French* (aparte de). ¡No confundir con *beside* = al lado de!",
+          "example": "I don't want to go out. Besides, it's raining.",
+          "example_es": "No quiero salir. Además, está lloviendo."
+        },
+        {
+          "en": "What's more, …",
+          "ipa": "ˌwɒts ˈmɔː",
+          "pron": "uots MÓO",
+          "es": "Es más, … / Encima, …",
+          "icon": "plus",
+          "note": "Muy útil al hablar para añadir un argumento más fuerte.",
+          "example": "The flat is cheap. What's more, it's near the beach.",
+          "example_es": "El piso es barato. Es más, está cerca de la playa."
+        },
+        {
+          "en": "moreover",
+          "ipa": "mɔːˈrəʊ.vər",
+          "pron": "moRÓUva",
+          "es": "además, asimismo",
+          "icon": "plus",
+          "note": "Formal; mejor en textos escritos que en una conversación."
+        },
+        {
+          "en": "not only … but also …",
+          "ipa": "ˌnɒt ˈəʊn.li … bət ˈɔːl.səʊ",
+          "pron": "not ÓUNli … bat ÓOLsou",
+          "es": "no solo … sino también …",
+          "icon": "plus",
+          "example": "She's not only clever but also very kind.",
+          "example_es": "No solo es lista, sino también muy amable."
+        },
+        {
+          "en": "both … and …",
+          "ipa": "ˈbəʊθ … ənd",
+          "pron": "BÓUZ … and",
+          "es": "tanto … como …",
+          "icon": "people-hugging",
+          "example": "Both my brother and my sister live abroad.",
+          "example_es": "Tanto mi hermano como mi hermana viven en el extranjero."
+        },
+        {
+          "en": "either … or …",
+          "ipa": "ˈaɪ.ðər … ɔː",
+          "pron": "ÁIda … oo",
+          "es": "o … o …",
+          "icon": "left-right-arrow",
+          "note": "También se pronuncia /ˈiː.ðər/ (*Íida*).",
+          "example": "We can either take the bus or walk.",
+          "example_es": "Podemos o coger el autobús o ir andando."
+        },
+        {
+          "en": "neither … nor …",
+          "ipa": "ˈnaɪ.ðər … nɔː",
+          "pron": "NÁIda … noo",
+          "es": "ni … ni …",
+          "icon": "no-entry",
+          "note": "El verbo va en afirmativa: *I neither smoke nor drink.*",
+          "example": "Neither Tom nor Ana came to the party.",
+          "example_es": "Ni Tom ni Ana vinieron a la fiesta."
+        }
+      ]
+    },
+    {
+      "id": "contrast",
+      "title": "Contrast",
+      "title_es": "Contraste",
+      "items": [
+        {
+          "en": "but",
+          "ipa": "bʌt",
+          "pron": "bat",
+          "es": "pero",
+          "icon": "left-right-arrow",
+          "note": "En textos formales no empieces la frase con *But*: usa *However, …*",
+          "example": "It's small but very comfortable.",
+          "example_es": "Es pequeño pero muy cómodo."
+        },
+        {
+          "en": "however",
+          "ipa": "haʊˈev.ər",
+          "pron": "jauÉva",
+          "es": "sin embargo",
+          "icon": "left-right-arrow",
+          "note": "Al principio de frase y seguido de coma: *However, …*",
+          "example": "It was expensive. However, it was worth it.",
+          "example_es": "Era caro. Sin embargo, mereció la pena."
+        },
+        {
+          "en": "although",
+          "ipa": "ɔːlˈðəʊ",
+          "pron": "oolDÓU",
+          "es": "aunque",
+          "icon": "balance-scale",
+          "note": "+ frase completa (sujeto + verbo).",
+          "example": "Although it was raining, we went for a walk.",
+          "example_es": "Aunque llovía, salimos a dar un paseo."
+        },
+        {
+          "en": "even though",
+          "ipa": "ˌiː.vən ˈðəʊ",
+          "pron": "iivan DÓU",
+          "es": "aunque, a pesar de que",
+          "icon": "balance-scale",
+          "note": "Más enfático que *although*.",
+          "example": "She went to work even though she was ill.",
+          "example_es": "Fue a trabajar a pesar de que estaba enferma."
+        },
+        {
+          "en": "though",
+          "ipa": "ðəʊ",
+          "pron": "dou",
+          "es": "aunque; (al final) de todas formas",
+          "icon": "balance-scale",
+          "note": "Al final de la frase es muy coloquial: *It was cold. I enjoyed it, though.*"
+        },
+        {
+          "en": "despite",
+          "ipa": "dɪˈspaɪt",
+          "pron": "diSPÁIT",
+          "es": "a pesar de",
+          "icon": "flexed-biceps",
+          "note": "+ nombre o -ing, ¡**sin** *of*!: *despite the rain*, *despite being tired*.",
+          "example": "Despite the rain, we enjoyed the trip.",
+          "example_es": "A pesar de la lluvia, disfrutamos del viaje."
+        },
+        {
+          "en": "in spite of",
+          "ipa": "ɪn ˈspaɪt əv",
+          "pron": "in SPÁIT ov",
+          "es": "a pesar de",
+          "icon": "flexed-biceps",
+          "note": "Igual que *despite*, pero **con** *of*: *in spite of the rain*.",
+          "example": "In spite of being tired, he finished the race.",
+          "example_es": "A pesar de estar cansado, terminó la carrera."
+        },
+        {
+          "en": "on the one hand … on the other hand …",
+          "ipa": "ɒn ðə ˈwʌn ˌhænd … ɒn ði ˈʌð.ə ˌhænd",
+          "pron": "on da UAN jand … on di Áda jand",
+          "es": "por un lado … por otro (lado) …",
+          "icon": "balance-scale",
+          "note": "Perfecto para ventajas e inconvenientes. ¡Ojo! *on the contrary* no es «por otro lado», sino «al contrario».",
+          "example": "On the one hand, the city is exciting. On the other hand, it's very expensive.",
+          "example_es": "Por un lado, la ciudad es emocionante. Por otro, es muy cara."
+        },
+        {
+          "en": "whereas",
+          "ipa": "weərˈæz",
+          "pron": "ueAZZ",
+          "es": "mientras que",
+          "icon": "left-right-arrow",
+          "note": "Para comparar dos cosas opuestas.",
+          "example": "I love the city, whereas my wife prefers the countryside.",
+          "example_es": "A mí me encanta la ciudad, mientras que mi mujer prefiere el campo."
+        },
+        {
+          "en": "while",
+          "ipa": "waɪl",
+          "pron": "uail",
+          "es": "mientras (que)",
+          "icon": "hourglass-not-done",
+          "note": "Dos usos: tiempo (*while I was cooking*) y contraste (*While some people love it, others hate it*)."
+        },
+        {
+          "en": "nevertheless",
+          "ipa": "ˌnev.ə.ðəˈles",
+          "pron": "nevadaLÉS",
+          "es": "no obstante, aun así",
+          "icon": "left-right-arrow",
+          "note": "Formal."
+        },
+        {
+          "en": "even so",
+          "ipa": "ˈiː.vən ˌsəʊ",
+          "pron": "ÍIvan sou",
+          "es": "aun así",
+          "icon": "left-right-arrow",
+          "example": "The hotel was a bit old. Even so, we had a great time.",
+          "example_es": "El hotel era un poco viejo. Aun así, lo pasamos genial."
+        },
+        {
+          "en": "Having said that, …",
+          "ipa": "ˈhæv.ɪŋ ˌsed ˈðæt",
+          "pron": "JÁving sed DAT",
+          "es": "Dicho esto, … / Aun así, …",
+          "icon": "left-right-arrow",
+          "note": "Matiza lo anterior. También sirve para cerrar un debate: *Having said that, we are going to…*",
+          "example": "It's a bit expensive. Having said that, it's really good quality.",
+          "example_es": "Es un poco caro. Dicho esto, la calidad es muy buena."
+        },
+        {
+          "en": "instead (of)",
+          "ipa": "ɪnˈsted",
+          "pron": "inSTÉD",
+          "es": "en vez (de)",
+          "icon": "shuffle-tracks-button",
+          "note": "*instead of* + nombre o -ing.",
+          "example": "Let's walk instead of taking the bus.",
+          "example_es": "Vamos andando en vez de coger el autobús."
+        },
+        {
+          "en": "on the contrary",
+          "ipa": "ɒn ðə ˈkɒn.trə.ri",
+          "pron": "on da KÓNtrari",
+          "es": "al contrario",
+          "icon": "person-gesturing-no",
+          "example": "It wasn't boring. On the contrary, it was fascinating.",
+          "example_es": "No fue aburrido. Al contrario, fue fascinante."
+        },
+        {
+          "en": "unlike",
+          "ipa": "ʌnˈlaɪk",
+          "pron": "anLÁIK",
+          "es": "a diferencia de",
+          "icon": "person-gesturing-no",
+          "example": "Unlike my brother, I love cooking.",
+          "example_es": "A diferencia de mi hermano, a mí me encanta cocinar."
+        }
+      ]
+    },
+    {
+      "id": "cause-result",
+      "title": "Cause and result",
+      "title_es": "Causa y consecuencia",
+      "groups": [
+        {
+          "id": "cause",
+          "title": "Cause",
+          "title_es": "Causa",
+          "items": [
+            {
+              "en": "because",
+              "ipa": "bɪˈkɒz",
+              "pron": "biKÓZZ",
+              "es": "porque",
+              "icon": "red-question-mark",
+              "note": "+ frase. «¿Por qué?» es *Why?*",
+              "example": "I stayed at home because I was ill.",
+              "example_es": "Me quedé en casa porque estaba enfermo."
+            },
+            {
+              "en": "because of",
+              "ipa": "bɪˈkɒz əv",
+              "pron": "biKÓZZ ov",
+              "es": "por, a causa de",
+              "icon": "red-question-mark",
+              "note": "+ nombre: *because of the traffic*.",
+              "example": "We were late because of the traffic.",
+              "example_es": "Llegamos tarde por el tráfico."
+            },
+            {
+              "en": "as",
+              "ipa": "æz",
+              "pron": "azz",
+              "es": "como, ya que",
+              "icon": "red-question-mark",
+              "note": "Al principio de la frase: *As it was late, we took a taxi.*"
+            },
+            {
+              "en": "since",
+              "ipa": "sɪns",
+              "pron": "sins",
+              "es": "ya que, puesto que",
+              "icon": "red-question-mark",
+              "note": "También significa «desde» con el present perfect: *since 2020*.",
+              "example": "Since you're here, can you help me?",
+              "example_es": "Ya que estás aquí, ¿me ayudas?"
+            },
+            {
+              "en": "due to",
+              "ipa": "ˈdjuː tə",
+              "pron": "DÍU tu",
+              "es": "debido a",
+              "icon": "red-question-mark",
+              "note": "+ nombre. Formal.",
+              "example": "The flight was cancelled due to bad weather.",
+              "example_es": "El vuelo se canceló debido al mal tiempo."
+            },
+            {
+              "en": "thanks to",
+              "ipa": "ˈθæŋks tə",
+              "pron": "ZÁNKS tu",
+              "es": "gracias a",
+              "icon": "folded-hands",
+              "example": "Thanks to my teacher, I passed the exam.",
+              "example_es": "Gracias a mi profesor, aprobé el examen."
+            }
+          ]
+        },
+        {
+          "id": "result",
+          "title": "Result",
+          "title_es": "Consecuencia",
+          "items": [
+            {
+              "en": "so",
+              "ipa": "səʊ",
+              "pron": "sou",
+              "es": "así que, por eso",
+              "icon": "right-arrow",
+              "example": "It was late, so we took a taxi.",
+              "example_es": "Era tarde, así que cogimos un taxi."
+            },
+            {
+              "en": "therefore",
+              "ipa": "ˈðeə.fɔː",
+              "pron": "DÉAfoo",
+              "es": "por lo tanto",
+              "icon": "right-arrow",
+              "note": "Formal; mejor por escrito."
+            },
+            {
+              "en": "as a result",
+              "ipa": "əz ə rɪˈzʌlt",
+              "pron": "az a riZZÁLT",
+              "es": "como resultado, en consecuencia",
+              "icon": "right-arrow",
+              "example": "He didn't study. As a result, he failed the exam.",
+              "example_es": "No estudió. Como resultado, suspendió."
+            },
+            {
+              "en": "consequently",
+              "ipa": "ˈkɒn.sɪ.kwənt.li",
+              "pron": "KÓNsikuantli",
+              "es": "por consiguiente",
+              "icon": "right-arrow",
+              "note": "Formal."
+            },
+            {
+              "en": "That's why …",
+              "ipa": "ˈðæts ˌwaɪ",
+              "pron": "DATS uai",
+              "es": "Por eso …",
+              "icon": "right-arrow",
+              "note": "Muy natural al hablar.",
+              "example": "I missed the bus. That's why I'm late.",
+              "example_es": "Perdí el autobús. Por eso llego tarde."
+            },
+            {
+              "en": "so … that / such … that",
+              "ipa": "ˈsəʊ … ðət",
+              "pron": "SOU … dat",
+              "es": "tan … que / tal … que",
+              "icon": "right-arrow",
+              "note": "*so* + adjetivo; *such (a)* + (adjetivo +) nombre.",
+              "example": "It was such a hot day that we stayed inside.",
+              "example_es": "Hacía tanto calor que nos quedamos dentro."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "purpose",
+      "title": "Purpose",
+      "title_es": "Finalidad",
+      "items": [
+        {
+          "en": "to + infinitive",
+          "ipa": "tuː",
+          "pron": "tu",
+          "es": "para + infinitivo",
+          "icon": "bullseye",
+          "note": "¡Nunca *for* + infinitivo! *I came here to learn* (no *for learn*).",
+          "example": "I went to the shop to buy some bread.",
+          "example_es": "Fui a la tienda a comprar pan."
+        },
+        {
+          "en": "in order to",
+          "ipa": "ɪn ˈɔː.dər tə",
+          "pron": "in Óoda tu",
+          "es": "para, con el fin de",
+          "icon": "bullseye",
+          "note": "Más formal. Negativa: *in order not to*.",
+          "example": "I got up early in order to catch the train.",
+          "example_es": "Me levanté temprano para coger el tren."
+        },
+        {
+          "en": "so that",
+          "ipa": "ˈsəʊ ðət",
+          "pron": "SOU dat",
+          "es": "para que",
+          "icon": "bullseye",
+          "note": "+ sujeto + *can / could / will / would*.",
+          "example": "I'll write it down so that I don't forget.",
+          "example_es": "Lo apuntaré para no olvidarlo."
+        },
+        {
+          "en": "for + noun / -ing",
+          "ipa": "fɔː",
+          "pron": "foo",
+          "es": "para + nombre",
+          "icon": "bullseye",
+          "note": "*for* + nombre (*for dinner*) o para explicar para qué sirve algo (*a knife for cutting bread*)."
+        }
+      ]
+    },
+    {
+      "id": "sequence",
+      "title": "Order and time",
+      "title_es": "Ordenar y situar en el tiempo",
+      "groups": [
+        {
+          "id": "order",
+          "title": "Ordering ideas",
+          "title_es": "Ordenar ideas o pasos",
+          "items": [
+            {
+              "en": "first of all",
+              "ipa": "ˌfɜːst əv ˈɔːl",
+              "pron": "ferst ov ÓOL",
+              "es": "en primer lugar, antes de nada",
+              "icon": "keycap-1"
+            },
+            {
+              "en": "firstly / secondly",
+              "ipa": "ˈfɜːst.li / ˈsek.ənd.li",
+              "pron": "FÉRSTli / SÉKandli",
+              "es": "en primer lugar / en segundo lugar",
+              "icon": "keycap-2"
+            },
+            {
+              "en": "to begin with",
+              "ipa": "tə bɪˈɡɪn wɪð",
+              "pron": "tu biGUÍN uid",
+              "es": "para empezar",
+              "icon": "keycap-1"
+            },
+            {
+              "en": "then",
+              "ipa": "ðen",
+              "pron": "den",
+              "es": "luego, entonces",
+              "icon": "right-arrow"
+            },
+            {
+              "en": "next",
+              "ipa": "nekst",
+              "pron": "nekst",
+              "es": "después, a continuación",
+              "icon": "next-track-button"
+            },
+            {
+              "en": "after that",
+              "ipa": "ˌɑːf.tə ˈðæt",
+              "pron": "aafta DAT",
+              "es": "después de eso",
+              "icon": "right-arrow"
+            },
+            {
+              "en": "afterwards",
+              "ipa": "ˈɑːf.tə.wədz",
+              "pron": "ÁAFtauadzz",
+              "es": "después, más tarde",
+              "icon": "right-arrow",
+              "note": "Va solo, al final o al principio. *after* necesita algo detrás: *after lunch*.",
+              "example": "We had dinner and afterwards we went for a walk.",
+              "example_es": "Cenamos y después fuimos a dar un paseo."
+            },
+            {
+              "en": "finally",
+              "ipa": "ˈfaɪ.nəl.i",
+              "pron": "FÁInali",
+              "es": "por último, finalmente",
+              "icon": "chequered-flag"
+            },
+            {
+              "en": "eventually",
+              "ipa": "ɪˈven.tʃu.ə.li",
+              "pron": "iVÉNchuali",
+              "es": "al final, por fin (tras mucho tiempo)",
+              "icon": "chequered-flag",
+              "note": "¡Falso amigo! No significa «eventualmente».",
+              "example": "After two hours, the bus eventually arrived.",
+              "example_es": "Después de dos horas, por fin llegó el autobús."
+            },
+            {
+              "en": "in the end",
+              "ipa": "ɪn ði ˈend",
+              "pron": "in di ÉND",
+              "es": "al final (después de todo)",
+              "icon": "chequered-flag",
+              "note": "*at the end of* + lugar o momento: *at the end of the film*.",
+              "example": "We wanted to go to Italy, but in the end we stayed at home.",
+              "example_es": "Queríamos ir a Italia, pero al final nos quedamos en casa."
+            }
+          ]
+        },
+        {
+          "id": "time",
+          "title": "Time",
+          "title_es": "Tiempo",
+          "items": [
+            {
+              "en": "when",
+              "ipa": "wen",
+              "pron": "uen",
+              "es": "cuando",
+              "icon": "alarm-clock",
+              "note": "Con futuro, después de *when* va presente: *When I get home, I'll call you.*"
+            },
+            {
+              "en": "as soon as",
+              "ipa": "əz ˈsuːn əz",
+              "pron": "az SÚUN az",
+              "es": "en cuanto, tan pronto como",
+              "icon": "high-voltage",
+              "example": "I'll call you as soon as I arrive.",
+              "example_es": "Te llamo en cuanto llegue."
+            },
+            {
+              "en": "before / after + -ing",
+              "ipa": "bɪˈfɔː / ˈɑːf.tər",
+              "pron": "biFÓO / ÁAFta",
+              "es": "antes de / después de + infinitivo",
+              "icon": "hourglass-done",
+              "note": "En inglés el verbo va en *-ing*: *before leaving*, *after eating*.",
+              "example": "Wash your hands before eating.",
+              "example_es": "Lávate las manos antes de comer."
+            },
+            {
+              "en": "until / till",
+              "ipa": "ənˈtɪl / tɪl",
+              "pron": "anTÍL / til",
+              "es": "hasta (que)",
+              "icon": "stopwatch",
+              "example": "Wait here until I come back.",
+              "example_es": "Espera aquí hasta que vuelva."
+            },
+            {
+              "en": "meanwhile",
+              "ipa": "ˈmiːn.waɪl",
+              "pron": "MÍINuail",
+              "es": "mientras tanto",
+              "icon": "hourglass-not-done"
+            },
+            {
+              "en": "at the same time",
+              "ipa": "ət ðə ˌseɪm ˈtaɪm",
+              "pron": "at da seim TÁIM",
+              "es": "al mismo tiempo, a la vez",
+              "icon": "alarm-clock"
+            },
+            {
+              "en": "by the time",
+              "ipa": "baɪ ðə ˈtaɪm",
+              "pron": "bai da TÁIM",
+              "es": "para cuando",
+              "icon": "alarm-clock",
+              "example": "By the time we arrived, the film had started.",
+              "example_es": "Para cuando llegamos, la película había empezado."
+            },
+            {
+              "en": "later on",
+              "ipa": "ˌleɪ.tər ˈɒn",
+              "pron": "leita ÓN",
+              "es": "más adelante, luego",
+              "icon": "spiral-calendar"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "examples",
+      "title": "Giving examples",
+      "title_es": "Poner ejemplos",
+      "items": [
+        {
+          "en": "for example",
+          "ipa": "fər ɪɡˈzɑːm.pəl",
+          "pron": "for igZZÁAMpal",
+          "es": "por ejemplo",
+          "icon": "index-pointing-up",
+          "note": "Por escrito se abrevia *e.g.*"
+        },
+        {
+          "en": "for instance",
+          "ipa": "fər ˈɪn.stəns",
+          "pron": "for ÍNstans",
+          "es": "por ejemplo",
+          "icon": "index-pointing-up"
+        },
+        {
+          "en": "such as",
+          "ipa": "ˈsʌtʃ əz",
+          "pron": "SACH az",
+          "es": "como (por ejemplo)",
+          "icon": "index-pointing-up",
+          "note": "+ lista de cosas.",
+          "example": "I love fruit such as apples and pears.",
+          "example_es": "Me encanta la fruta, como las manzanas y las peras."
+        },
+        {
+          "en": "like",
+          "ipa": "laɪk",
+          "pron": "laik",
+          "es": "como",
+          "icon": "index-pointing-up",
+          "note": "Más coloquial que *such as*.",
+          "example": "I enjoy sports like tennis and swimming.",
+          "example_es": "Me gustan deportes como el tenis y la natación."
+        },
+        {
+          "en": "especially",
+          "ipa": "ɪˈspeʃ.əl.i",
+          "pron": "iSPÉshali",
+          "es": "sobre todo, especialmente",
+          "icon": "sparkles"
+        },
+        {
+          "en": "in particular",
+          "ipa": "ɪn pəˈtɪk.jə.lər",
+          "pron": "in paTÍKiula",
+          "es": "en particular, en concreto",
+          "icon": "sparkles"
+        }
+      ]
+    },
+    {
+      "id": "attitude",
+      "title": "Showing your attitude",
+      "title_es": "Mostrar tu actitud",
+      "items": [
+        {
+          "en": "personally",
+          "ipa": "ˈpɜː.sən.əl.i",
+          "pron": "PÉRsanali",
+          "es": "personalmente",
+          "icon": "speaking-head",
+          "example": "Personally, I prefer the mountains.",
+          "example_es": "Personalmente, prefiero la montaña."
+        },
+        {
+          "en": "honestly",
+          "ipa": "ˈɒn.ɪst.li",
+          "pron": "Ónistli",
+          "es": "sinceramente",
+          "icon": "smiling-face-with-halo"
+        },
+        {
+          "en": "obviously",
+          "ipa": "ˈɒb.vi.əs.li",
+          "pron": "ÓBviasli",
+          "es": "obviamente, evidentemente",
+          "icon": "eyes"
+        },
+        {
+          "en": "of course",
+          "ipa": "əv ˈkɔːs",
+          "pron": "ov KÓOS",
+          "es": "por supuesto, claro",
+          "icon": "thumbs-up"
+        },
+        {
+          "en": "apparently",
+          "ipa": "əˈpær.ənt.li",
+          "pron": "aPÁrantli",
+          "es": "por lo visto, al parecer",
+          "icon": "ear",
+          "note": "Para contar algo que has oído.",
+          "example": "Apparently, they're getting married.",
+          "example_es": "Por lo visto, se van a casar."
+        },
+        {
+          "en": "luckily / fortunately",
+          "ipa": "ˈlʌk.əl.i / ˈfɔː.tʃən.ət.li",
+          "pron": "LÁkili / FÓOchanatli",
+          "es": "por suerte, afortunadamente",
+          "icon": "hand-with-index-finger-and-thumb-crossed"
+        },
+        {
+          "en": "unfortunately",
+          "ipa": "ʌnˈfɔː.tʃən.ət.li",
+          "pron": "anFÓOchanatli",
+          "es": "por desgracia, desafortunadamente",
+          "icon": "worried-face"
+        },
+        {
+          "en": "surprisingly",
+          "ipa": "səˈpraɪ.zɪŋ.li",
+          "pron": "saPRÁIzzingli",
+          "es": "sorprendentemente",
+          "icon": "astonished-face"
+        },
+        {
+          "en": "basically",
+          "ipa": "ˈbeɪ.sɪ.kli",
+          "pron": "BÉIsikli",
+          "es": "básicamente, en resumen",
+          "icon": "puzzle-piece"
+        }
+      ]
+    },
+    {
+      "id": "condition",
+      "title": "Conditions",
+      "title_es": "Condiciones",
+      "items": [
+        {
+          "en": "if",
+          "ipa": "ɪf",
+          "pron": "if",
+          "es": "si",
+          "icon": "red-question-mark"
+        },
+        {
+          "en": "unless",
+          "ipa": "ənˈles",
+          "pron": "anLÉS",
+          "es": "a menos que, si no",
+          "icon": "no-entry",
+          "note": "= *if … not*, pero el verbo va en afirmativa: *I'll go unless it rains.*"
+        },
+        {
+          "en": "as long as",
+          "ipa": "əz ˈlɒŋ əz",
+          "pron": "az LONG az",
+          "es": "siempre que, con tal de que",
+          "icon": "handshake",
+          "example": "You can borrow my car as long as you're careful.",
+          "example_es": "Puedes coger mi coche siempre que tengas cuidado."
+        },
+        {
+          "en": "in case",
+          "ipa": "ɪn ˈkeɪs",
+          "pron": "in KÉIS",
+          "es": "por si (acaso)",
+          "icon": "umbrella",
+          "note": "No es «en caso de que» (*if*): *Take an umbrella in case it rains* = por si llueve.",
+          "example": "Take an umbrella in case it rains.",
+          "example_es": "Llévate un paraguas por si llueve."
+        },
+        {
+          "en": "otherwise",
+          "ipa": "ˈʌð.ə.waɪz",
+          "pron": "Ádauaizz",
+          "es": "si no, de lo contrario",
+          "icon": "warning",
+          "example": "Hurry up, otherwise we'll be late.",
+          "example_es": "Date prisa, si no llegaremos tarde."
+        },
+        {
+          "en": "even if",
+          "ipa": "ˌiː.vən ˈɪf",
+          "pron": "iivan IF",
+          "es": "aunque, incluso si",
+          "icon": "balance-scale",
+          "example": "I'll go even if it rains.",
+          "example_es": "Iré aunque llueva."
+        }
+      ]
+    },
+    {
+      "id": "summing-up",
+      "title": "Summing up",
+      "title_es": "Resumir y concluir",
+      "items": [
+        {
+          "en": "in conclusion",
+          "ipa": "ɪn kənˈkluː.ʒən",
+          "pron": "in kanKLÚUzhan",
+          "es": "en conclusión",
+          "icon": "chequered-flag",
+          "note": "Para cerrar un texto o una exposición."
+        },
+        {
+          "en": "to sum up",
+          "ipa": "tə ˌsʌm ˈʌp",
+          "pron": "tu sam AP",
+          "es": "en resumen, resumiendo",
+          "icon": "memo"
+        },
+        {
+          "en": "all in all",
+          "ipa": "ˌɔːl ɪn ˈɔːl",
+          "pron": "ool in ÓOL",
+          "es": "en general, en definitiva",
+          "icon": "memo",
+          "example": "All in all, it was a great holiday.",
+          "example_es": "En definitiva, fueron unas vacaciones estupendas."
+        },
+        {
+          "en": "overall",
+          "ipa": "ˌəʊ.vərˈɔːl",
+          "pron": "ouvaRÓOL",
+          "es": "en general, en conjunto",
+          "icon": "memo"
+        },
+        {
+          "en": "on the whole",
+          "ipa": "ɒn ðə ˈhəʊl",
+          "pron": "on da JÓUL",
+          "es": "en general, en conjunto",
+          "icon": "memo"
+        },
+        {
+          "en": "in short",
+          "ipa": "ɪn ˈʃɔːt",
+          "pron": "in SHÓOT",
+          "es": "en resumen, en pocas palabras",
+          "icon": "memo"
+        },
+        {
+          "en": "to cut a long story short",
+          "ipa": "tə ˌkʌt ə ˌlɒŋ ˌstɔː.ri ˈʃɔːt",
+          "pron": "tu kat a long stóori SHÓOT",
+          "es": "en resumidas cuentas, para no enrollarme",
+          "icon": "scissors",
+          "note": "Muy natural al contar una historia.",
+          "example": "To cut a long story short, we missed the plane.",
+          "example_es": "En resumidas cuentas, perdimos el avión."
+        }
+      ]
+    },
+    {
+      "id": "writing",
+      "title": "Writing: emails, blogs and essays",
+      "title_es": "Para escribir: correos, blogs y redacciones",
+      "groups": [
+        {
+          "id": "informal-email",
+          "title": "Informal emails",
+          "title_es": "Correos informales (amigos, familia)",
+          "items": [
+            {
+              "en": "Hi / Hello + name,",
+              "ipa": "haɪ / həˈləʊ",
+              "pron": "jai / jaLÓU",
+              "es": "Hola + nombre:",
+              "icon": "waving-hand",
+              "note": "Detrás del nombre va **coma**, no dos puntos como en español: *Hi Ana,*"
+            },
+            {
+              "en": "Thanks a lot for your email.",
+              "ipa": "ˌθæŋks ə ˈlɒt fə jər ˈiː.meɪl",
+              "pron": "zanks a LOT for yor ÍImeil",
+              "es": "Muchas gracias por tu correo.",
+              "icon": "incoming-envelope"
+            },
+            {
+              "en": "It's great to hear from you.",
+              "ipa": "ɪts ˈɡreɪt tə ˈhɪə frəm juː",
+              "pron": "its GRÉIT tu JÍA from yu",
+              "es": "¡Qué alegría saber de ti!",
+              "icon": "smiling-face-with-smiling-eyes"
+            },
+            {
+              "en": "Sorry I haven't written for so long.",
+              "ipa": "ˈsɒr.i aɪ ˌhæv.ənt ˈrɪt.ən fə ˌsəʊ ˈlɒŋ",
+              "pron": "SÓri ai JÁvant RÍtan for sou LONG",
+              "es": "Perdona que no te haya escrito en tanto tiempo.",
+              "icon": "hourglass-done"
+            },
+            {
+              "en": "Hope you're doing well.",
+              "ipa": "ˈhəʊp jə ˌduː.ɪŋ ˈwel",
+              "pron": "JOUP yor DÚing UÉL",
+              "es": "Espero que estés bien.",
+              "icon": "slightly-smiling-face",
+              "note": "Más formal: *I hope this email finds you well.*"
+            },
+            {
+              "en": "I'm glad to hear that…",
+              "ipa": "aɪm ˈɡlæd tə ˈhɪə ðət",
+              "pron": "aim GLAD tu JÍA dat",
+              "es": "Me alegra saber que…",
+              "icon": "beaming-face-with-smiling-eyes",
+              "example": "I'm glad to hear that you passed your exams.",
+              "example_es": "Me alegra saber que aprobaste los exámenes."
+            },
+            {
+              "en": "I'm sorry to hear that…",
+              "ipa": "aɪm ˈsɒr.i tə ˈhɪə ðət",
+              "pron": "aim SÓri tu JÍA dat",
+              "es": "Siento saber que… / Siento mucho que…",
+              "icon": "worried-face",
+              "example": "I'm sorry to hear that you've been ill.",
+              "example_es": "Siento mucho que hayas estado enfermo."
+            },
+            {
+              "en": "Guess what?",
+              "ipa": "ˌɡes ˈwɒt",
+              "pron": "gues UÓT",
+              "es": "¿A que no sabes qué?",
+              "icon": "star-struck",
+              "note": "Para presentar una noticia de forma animada."
+            },
+            {
+              "en": "I'm writing to tell you about…",
+              "ipa": "aɪm ˈraɪ.tɪŋ tə ˈtel juː əˌbaʊt",
+              "pron": "aim RÁIting tu TEL yu abaut",
+              "es": "Te escribo para contarte…",
+              "icon": "writing-hand"
+            },
+            {
+              "en": "As for…, …",
+              "ipa": "ˈæz fɔː",
+              "pron": "AZZ foo",
+              "es": "En cuanto a…, … / Y sobre…, …",
+              "icon": "backhand-index-pointing-right",
+              "note": "Muy útil para empezar el segundo párrafo y responder a otra pregunta del correo.",
+              "example": "As for your question about the hotel, I'd recommend the one near the beach.",
+              "example_es": "En cuanto a tu pregunta sobre el hotel, te recomiendo el que está cerca de la playa."
+            },
+            {
+              "en": "If I were you, I'd…",
+              "ipa": "ɪf aɪ ˈwɜː juː aɪd",
+              "pron": "if ai UÉR yu aid",
+              "es": "Yo que tú, … / Si yo fuera tú, …",
+              "icon": "light-bulb",
+              "note": "Para dar consejos. *were* para todas las personas.",
+              "example": "If I were you, I'd book the tickets now.",
+              "example_es": "Yo que tú, reservaría ya las entradas."
+            },
+            {
+              "en": "Anyway, I have to go now.",
+              "ipa": "ˈen.i.weɪ aɪ ˈhæv tə ˌɡəʊ ˈnaʊ",
+              "pron": "ÉNiuei ai JAF tu gou NÁU",
+              "es": "Bueno, te dejo, que tengo que irme.",
+              "icon": "door",
+              "note": "Fórmula típica para empezar a despedirse."
+            },
+            {
+              "en": "Write back soon!",
+              "ipa": "ˌraɪt ˈbæk ˈsuːn",
+              "pron": "rait BAK SÚUN",
+              "es": "¡Escríbeme pronto!",
+              "icon": "envelope-with-arrow",
+              "note": "También *I hope you write back soon.*"
+            },
+            {
+              "en": "Give my love to… / Say hi to…",
+              "ipa": "ˌɡɪv maɪ ˈlʌv tə / ˌseɪ ˈhaɪ tə",
+              "pron": "guiv mai LAV tu / sei JÁI tu",
+              "es": "Dale un abrazo a… / Saluda a… de mi parte",
+              "icon": "red-heart"
+            },
+            {
+              "en": "Best wishes,",
+              "ipa": "ˌbest ˈwɪʃ.ɪz",
+              "pron": "best UÍshizz",
+              "es": "Un saludo, / Un abrazo,",
+              "icon": "glowing-star",
+              "note": "Vale para casi todo: amigos, profesores, compañeros."
+            },
+            {
+              "en": "Love, / Lots of love,",
+              "ipa": "lʌv / ˌlɒts əv ˈlʌv",
+              "pron": "lav / lots ov LAV",
+              "es": "Besos, / Un abrazo muy fuerte,",
+              "icon": "kiss-mark",
+              "note": "Solo para familia y amigos."
+            }
+          ]
+        },
+        {
+          "id": "formal-email",
+          "title": "Formal emails",
+          "title_es": "Correos formales",
+          "items": [
+            {
+              "en": "Dear Sir or Madam,",
+              "ipa": "ˌdɪə ˌsɜːr ɔː ˈmæd.əm",
+              "pron": "día sar oo MÁdam",
+              "es": "Estimado/a señor/a:",
+              "icon": "necktie",
+              "note": "Si **no sabes** el nombre. Se termina con *Yours faithfully,*"
+            },
+            {
+              "en": "Dear Mr / Ms Smith,",
+              "ipa": "ˌdɪə ˈmɪs.tə / ˈmɪz",
+              "pron": "día MÍSta / MIZZ",
+              "es": "Estimado Sr. / Estimada Sra. Smith:",
+              "icon": "necktie",
+              "note": "*Ms* /mɪz/ vale para cualquier mujer. Si **sabes** el nombre, termina con *Yours sincerely,*"
+            },
+            {
+              "en": "I am writing to + infinitive",
+              "ipa": "aɪ əm ˈraɪ.tɪŋ tə",
+              "pron": "ai am RÁIting tu",
+              "es": "Me dirijo a usted para…",
+              "icon": "writing-hand",
+              "note": "En formal, **sin contracciones** (*I am*, no *I'm*). Verbos típicos: *enquire about* (informarme), *complain about* (quejarme), *apply for* (solicitar).",
+              "example": "I am writing to apply for the job of waiter.",
+              "example_es": "Me dirijo a usted para solicitar el puesto de camarero."
+            },
+            {
+              "en": "I am writing with regard to…",
+              "ipa": "aɪ əm ˈraɪ.tɪŋ wɪð rɪˈɡɑːd tə",
+              "pron": "ai am RÁIting uid riGÁAD tu",
+              "es": "Le escribo en relación con…",
+              "icon": "page-facing-up",
+              "example": "I am writing with regard to your advertisement in the newspaper.",
+              "example_es": "Le escribo en relación con su anuncio en el periódico."
+            },
+            {
+              "en": "In response to…",
+              "ipa": "ɪn rɪˈspɒns tə",
+              "pron": "in riSPÓNS tu",
+              "es": "En respuesta a…",
+              "icon": "inbox-tray",
+              "example": "In response to your email of 3 May, …",
+              "example_es": "En respuesta a su correo del 3 de mayo, …"
+            },
+            {
+              "en": "Regarding…, …",
+              "ipa": "rɪˈɡɑː.dɪŋ",
+              "pron": "riGÁAding",
+              "es": "En cuanto a…, … / Con respecto a…, …",
+              "icon": "backhand-index-pointing-right",
+              "note": "Versión formal de *As for…*"
+            },
+            {
+              "en": "I would be grateful if you could…",
+              "ipa": "aɪ wʊd bi ˈɡreɪt.fəl ɪf juː kʊd",
+              "pron": "ai uud bi GRÉITful if yu kud",
+              "es": "Le agradecería que…",
+              "icon": "folded-hands",
+              "note": "Forma muy educada de pedir algo.",
+              "example": "I would be grateful if you could send me more information.",
+              "example_es": "Le agradecería que me enviara más información."
+            },
+            {
+              "en": "Could you please let me know…?",
+              "ipa": "kʊd juː ˌpliːz let miː ˈnəʊ",
+              "pron": "kud yu pliizz let mi NÓU",
+              "es": "¿Podría indicarme…?",
+              "icon": "red-question-mark",
+              "example": "Could you please let me know the price of the course?",
+              "example_es": "¿Podría indicarme el precio del curso?"
+            },
+            {
+              "en": "I would like to know…",
+              "ipa": "aɪ wʊd ˌlaɪk tə ˈnəʊ",
+              "pron": "ai uud laik tu NÓU",
+              "es": "Me gustaría saber…",
+              "icon": "magnifying-glass-tilted-left",
+              "note": "Pregunta indirecta: el verbo va **después** del sujeto: *I would like to know when the course **starts*** (no *when does the course start*)."
+            },
+            {
+              "en": "Please find attached…",
+              "ipa": "ˌpliːz faɪnd əˈtætʃt",
+              "pron": "pliizz faind aTÁCHT",
+              "es": "Le adjunto…",
+              "icon": "paperclip",
+              "example": "Please find attached my CV.",
+              "example_es": "Le adjunto mi currículum."
+            },
+            {
+              "en": "I apologise for…",
+              "ipa": "aɪ əˈpɒl.ə.dʒaɪz fɔː",
+              "pron": "ai aPÓlayaizz foo",
+              "es": "Le pido disculpas por…",
+              "icon": "person-bowing",
+              "note": "+ nombre o -ing. Británico con *-ise*; americano *apologize*.",
+              "example": "I apologise for the delay in replying.",
+              "example_es": "Le pido disculpas por el retraso en responder."
+            },
+            {
+              "en": "Thank you in advance.",
+              "ipa": "ˈθæŋk juː ɪn ədˈvɑːns",
+              "pron": "ZANK yu in adVÁANS",
+              "es": "Gracias de antemano.",
+              "icon": "folded-hands"
+            },
+            {
+              "en": "Please do not hesitate to contact me.",
+              "ipa": "ˌpliːz duː nɒt ˈhez.ɪ.teɪt tə ˈkɒn.tækt miː",
+              "pron": "pliizz du not JÉziteit tu KÓNtakt mi",
+              "es": "No dude en ponerse en contacto conmigo.",
+              "icon": "telephone-receiver",
+              "note": "Suele ir con *If you have any questions, …*"
+            },
+            {
+              "en": "I look forward to hearing from you.",
+              "ipa": "aɪ ˌlʊk ˈfɔː.wəd tə ˈhɪə.rɪŋ frəm juː",
+              "pron": "ai luk FÓOuad tu JÍAring from yu",
+              "es": "Quedo a la espera de su respuesta.",
+              "icon": "hourglass-not-done",
+              "note": "¡Ojo! Detrás de *look forward to* va **-ing**. En informal: *I'm looking forward to seeing you!*"
+            },
+            {
+              "en": "Yours faithfully,",
+              "ipa": "ˌjɔːz ˈfeɪθ.fəl.i",
+              "pron": "yoozz FÉIZfuli",
+              "es": "Atentamente, (sin nombre)",
+              "icon": "fountain-pen",
+              "note": "Solo si empezaste con *Dear Sir or Madam*."
+            },
+            {
+              "en": "Yours sincerely,",
+              "ipa": "ˌjɔːz sɪnˈsɪə.li",
+              "pron": "yoozz sinSÍAli",
+              "es": "Atentamente, (con nombre)",
+              "icon": "fountain-pen",
+              "note": "Si empezaste con *Dear Mr / Ms + apellido*."
+            },
+            {
+              "en": "Kind regards, / Best regards,",
+              "ipa": "ˌkaɪnd rɪˈɡɑːdz",
+              "pron": "kaind riGÁADZZ",
+              "es": "Saludos cordiales, / Un cordial saludo,",
+              "icon": "e-mail",
+              "note": "Semiformal: la despedida más común en correos de trabajo."
+            }
+          ]
+        },
+        {
+          "id": "blog",
+          "title": "Blogs and articles",
+          "title_es": "Blogs y artículos",
+          "items": [
+            {
+              "en": "Have you ever wondered…?",
+              "ipa": "həv juː ˌev.ə ˈwʌn.dəd",
+              "pron": "jav yu eva UÁNdad",
+              "es": "¿Alguna vez te has preguntado…?",
+              "icon": "thinking-face",
+              "note": "Para enganchar al lector en la primera frase.",
+              "example": "Have you ever wondered why the British drink so much tea?",
+              "example_es": "¿Alguna vez te has preguntado por qué los británicos beben tanto té?"
+            },
+            {
+              "en": "Imagine…",
+              "ipa": "ɪˈmædʒ.ɪn",
+              "pron": "iMÁyin",
+              "es": "Imagina… / Imagínate…",
+              "icon": "crystal-ball",
+              "example": "Imagine waking up every morning with a view of the sea.",
+              "example_es": "Imagina despertarte cada mañana con vistas al mar."
+            },
+            {
+              "en": "Let me tell you about…",
+              "ipa": "ˌlet miː ˈtel juː əˌbaʊt",
+              "pron": "let mi TEL yu abaut",
+              "es": "Os voy a contar… / Déjame contarte…",
+              "icon": "speaking-head"
+            },
+            {
+              "en": "In this post, I'm going to…",
+              "ipa": "ɪn ˌðɪs ˈpəʊst aɪm ˈɡəʊ.ɪŋ tə",
+              "pron": "in dis PÓUST aim GÓUing tu",
+              "es": "En esta entrada voy a…",
+              "icon": "laptop",
+              "note": "*post* = entrada de un blog o publicación en redes."
+            },
+            {
+              "en": "Here are my top tips for…",
+              "ipa": "ˌhɪər ə maɪ ˌtɒp ˈtɪps fɔː",
+              "pron": "jía ar mai top TIPS foo",
+              "es": "Aquí van mis mejores consejos para…",
+              "icon": "spiral-notepad",
+              "example": "Here are my top tips for learning English at home.",
+              "example_es": "Aquí van mis mejores consejos para aprender inglés en casa."
+            },
+            {
+              "en": "The best / worst thing about… is (that)…",
+              "ipa": "ðə ˈbest / ˈwɜːst ˌθɪŋ əˌbaʊt … ɪz",
+              "pron": "da BEST / UÉRST zing abaut … iz",
+              "es": "Lo mejor / lo peor de… es (que)…",
+              "icon": "trophy",
+              "example": "The best thing about living here is the weather.",
+              "example_es": "Lo mejor de vivir aquí es el clima."
+            },
+            {
+              "en": "Believe it or not, …",
+              "ipa": "bɪˈliːv ɪt ɔː ˈnɒt",
+              "pron": "biLÍIV it oo NOT",
+              "es": "Aunque no te lo creas, …",
+              "icon": "astonished-face"
+            },
+            {
+              "en": "Not to mention…",
+              "ipa": "ˌnɒt tə ˈmen.ʃən",
+              "pron": "not tu MÉNshan",
+              "es": "Por no hablar de… / Y eso sin contar…",
+              "icon": "plus",
+              "example": "The food was amazing, not to mention the views!",
+              "example_es": "La comida era increíble, ¡y eso sin hablar de las vistas!"
+            },
+            {
+              "en": "If you ask me, …",
+              "ipa": "ɪf juː ˈɑːsk miː",
+              "pron": "if yu ÁASK mi",
+              "es": "Si me preguntas, … / Para mí, …",
+              "icon": "person-raising-hand",
+              "note": "Opinión en tono cercano, ideal para blogs."
+            },
+            {
+              "en": "I'd definitely recommend…",
+              "ipa": "aɪd ˈdef.ɪ.nət.li ˌrek.əˈmend",
+              "pron": "aid DÉfinatli rekaMÉND",
+              "es": "Sin duda te recomiendo…",
+              "icon": "thumbs-up",
+              "note": "+ nombre o -ing: *I'd definitely recommend visiting the old town.*"
+            },
+            {
+              "en": "What about you? Let me know in the comments!",
+              "ipa": "ˌwɒt əˌbaʊt ˈjuː ˌlet miː ˈnəʊ ɪn ðə ˈkɒm.ents",
+              "pron": "uot abaut YU let mi NÓU in da KÓments",
+              "es": "¿Y tú? ¡Cuéntamelo en los comentarios!",
+              "icon": "speech-balloon",
+              "note": "Cierre típico de blog: invita al lector a participar."
+            },
+            {
+              "en": "Thanks for reading!",
+              "ipa": "ˌθæŋks fə ˈriː.dɪŋ",
+              "pron": "zanks for RÍIding",
+              "es": "¡Gracias por leer!",
+              "icon": "books"
+            }
+          ]
+        },
+        {
+          "id": "essay",
+          "title": "Opinion essays",
+          "title_es": "Redacciones de opinión",
+          "items": [
+            {
+              "en": "Nowadays, … / These days, …",
+              "ipa": "ˈnaʊ.ə.deɪz / ˈðiːz ˌdeɪz",
+              "pron": "NÁUadeizz / DÍIZZ deizz",
+              "es": "Hoy en día, … / Actualmente, …",
+              "icon": "spiral-calendar",
+              "note": "Para empezar una redacción. «Actualmente» **no** es *actually*.",
+              "example": "Nowadays, most people have a smartphone.",
+              "example_es": "Hoy en día, casi todo el mundo tiene un móvil."
+            },
+            {
+              "en": "Many people believe that…",
+              "ipa": "ˌmen.i ˈpiː.pəl bɪˈliːv ðət",
+              "pron": "meni PÍIpal biLÍIV dat",
+              "es": "Mucha gente cree que…",
+              "icon": "busts-in-silhouette"
+            },
+            {
+              "en": "It is often said that…",
+              "ipa": "ɪt ɪz ˈɒf.ən ˈsed ðət",
+              "pron": "it iz Ófan SED dat",
+              "es": "A menudo se dice que…",
+              "icon": "megaphone"
+            },
+            {
+              "en": "There are advantages and disadvantages to…",
+              "ipa": "ðeər ər ədˈvɑːn.tɪdʒɪz ənd ˌdɪs.ədˈvɑːn.tɪdʒɪz tə",
+              "pron": "déar ar adVÁANtiyizz and disadVÁANtiyizz tu",
+              "es": "… tiene ventajas e inconvenientes.",
+              "icon": "balance-scale",
+              "example": "There are advantages and disadvantages to living in a big city.",
+              "example_es": "Vivir en una gran ciudad tiene ventajas e inconvenientes."
+            },
+            {
+              "en": "One advantage of… is that…",
+              "ipa": "ˌwʌn ədˈvɑːn.tɪdʒ əv … ɪz ðət",
+              "pron": "uan adVÁANtiy ov … iz dat",
+              "es": "Una ventaja de… es que…",
+              "icon": "thumbs-up"
+            },
+            {
+              "en": "The main disadvantage is that…",
+              "ipa": "ðə ˌmeɪn ˌdɪs.ədˈvɑːn.tɪdʒ ɪz ðət",
+              "pron": "da mein disadVÁANtiy iz dat",
+              "es": "El principal inconveniente es que…",
+              "icon": "thumbs-down"
+            },
+            {
+              "en": "From my point of view, …",
+              "ipa": "frəm maɪ ˌpɔɪnt əv ˈvjuː",
+              "pron": "from mai point ov VIÚ",
+              "es": "Desde mi punto de vista, …",
+              "icon": "eye"
+            },
+            {
+              "en": "I strongly believe that…",
+              "ipa": "aɪ ˌstrɒŋ.li bɪˈliːv ðət",
+              "pron": "ai STRÓNGli biLÍIV dat",
+              "es": "Creo firmemente que…",
+              "icon": "flexed-biceps"
+            },
+            {
+              "en": "It seems to me that…",
+              "ipa": "ɪt ˈsiːmz tə miː ðət",
+              "pron": "it SÍIMZZ tu mi dat",
+              "es": "Me parece que…",
+              "icon": "thinking-face"
+            },
+            {
+              "en": "Another point is that…",
+              "ipa": "əˌnʌð.ə ˈpɔɪnt ɪz ðət",
+              "pron": "anada POINT iz dat",
+              "es": "Otro aspecto es que…",
+              "icon": "plus"
+            },
+            {
+              "en": "Furthermore, …",
+              "ipa": "ˌfɜː.ðəˈmɔː",
+              "pron": "ferdaMÓO",
+              "es": "Además, … / Asimismo, …",
+              "icon": "plus",
+              "note": "Formal, como *moreover*. Al principio de la frase, con coma."
+            },
+            {
+              "en": "Lastly, …",
+              "ipa": "ˈlɑːst.li",
+              "pron": "LÁASTli",
+              "es": "Por último, …",
+              "icon": "chequered-flag",
+              "note": "Para el último argumento de una lista (*Firstly…, Secondly…, Lastly…*)."
+            },
+            {
+              "en": "For these reasons, …",
+              "ipa": "fə ˌðiːz ˈriː.zənz",
+              "pron": "for diizz RÍIzzanzz",
+              "es": "Por estas razones, …",
+              "icon": "right-arrow"
+            },
+            {
+              "en": "To conclude, …",
+              "ipa": "tə kənˈkluːd",
+              "pron": "tu kanKLÚUD",
+              "es": "Para concluir, …",
+              "icon": "chequered-flag"
+            },
+            {
+              "en": "On balance, …",
+              "ipa": "ɒn ˈbæl.əns",
+              "pron": "on BÁlans",
+              "es": "Sopesándolo todo, … / En conjunto, …",
+              "icon": "balance-scale",
+              "note": "Para dar tu conclusión después de ver ventajas e inconvenientes."
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

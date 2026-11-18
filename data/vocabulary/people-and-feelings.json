@@ -619,6 +619,137 @@
           "es": "impactado, horrorizado",
           "icon": "face-screaming-in-fear"
         }
+      ],
+      "groups": [
+        {
+          "id": "happy",
+          "title": "Happy and excited",
+          "title_es": "Contento e ilusionado",
+          "items": [
+            {
+              "en": "I'm really cheerful about…",
+              "ipa": "aɪm ˌrɪə.li ˈtʃɪə.fəl əˌbaʊt",
+              "pron": "aim ríali CHÍAful abaut",
+              "es": "Estoy muy contento con / por…",
+              "icon": "beaming-face-with-smiling-eyes"
+            },
+            {
+              "en": "I'm over the moon (about…)",
+              "ipa": "aɪm ˌəʊ.və ðə ˈmuːn",
+              "pron": "aim ouva da MÚUN",
+              "es": "Estoy encantado / en una nube (con…)",
+              "icon": "crescent-moon",
+              "example": "I'm over the moon about the news.",
+              "example_es": "Estoy encantado con la noticia."
+            },
+            {
+              "en": "I'm absolutely excited about…",
+              "ipa": "aɪm ˌæb.səˈluːt.li ɪkˈsaɪ.tɪd əˌbaʊt",
+              "pron": "aim absaLÚUTli ikSÁItid abaut",
+              "es": "Estoy muy ilusionado con…",
+              "icon": "star-struck",
+              "note": "*excited* = ilusionado, emocionado (nunca «excitado»)."
+            }
+          ]
+        },
+        {
+          "id": "surprise",
+          "title": "Surprise",
+          "title_es": "Sorpresa",
+          "items": [
+            {
+              "en": "You must be joking!",
+              "ipa": "juː ˌmʌst bi ˈdʒəʊ.kɪŋ",
+              "pron": "yu mast bi YÓUking",
+              "es": "¡Estás de broma! / ¡No lo dirás en serio!",
+              "icon": "face-with-open-mouth"
+            },
+            {
+              "en": "No way!",
+              "ipa": "ˌnəʊ ˈweɪ",
+              "pron": "nou UÉI",
+              "es": "¡No me digas! / ¡Ni hablar!",
+              "icon": "astonished-face",
+              "note": "Dos usos: sorpresa (*¡No me digas!*) y negarse a algo (*¡Ni hablar!*)."
+            },
+            {
+              "en": "Are you kidding?",
+              "ipa": "ɑː juː ˈkɪd.ɪŋ",
+              "pron": "aa yu KÍding",
+              "es": "¿Me tomas el pelo? / ¿En serio?",
+              "icon": "face-with-raised-eyebrow"
+            },
+            {
+              "en": "Holy cow!",
+              "ipa": "ˌhəʊ.li ˈkaʊ",
+              "pron": "jouli KÁU",
+              "es": "¡Madre mía! / ¡Hala!",
+              "icon": "cow-face",
+              "note": "Coloquial y un poco americano."
+            }
+          ]
+        },
+        {
+          "id": "worried",
+          "title": "Worried, tired or ill",
+          "title_es": "Preocupado, cansado o pachucho",
+          "items": [
+            {
+              "en": "I'm worried sick about…",
+              "ipa": "aɪm ˌwʌr.id ˈsɪk əˌbaʊt",
+              "pron": "aim uarid SIK abaut",
+              "es": "Estoy preocupadísimo por…",
+              "icon": "anxious-face-with-sweat"
+            },
+            {
+              "en": "I'm a bit tired today.",
+              "ipa": "aɪm ə ˌbɪt ˈtaɪəd təˈdeɪ",
+              "pron": "aim a bit TÁIad taDÉI",
+              "es": "Hoy estoy un poco cansado.",
+              "icon": "tired-face",
+              "note": "*really tired* = muy cansado."
+            },
+            {
+              "en": "I'm feeling under the weather.",
+              "ipa": "aɪm ˌfiː.lɪŋ ˌʌn.də ðə ˈweð.ə",
+              "pron": "aim fiiling anda da UÉda",
+              "es": "Estoy un poco pachucho.",
+              "icon": "face-with-thermometer",
+              "note": "No tiene nada que ver con el tiempo: significa encontrarse un poco mal."
+            }
+          ]
+        },
+        {
+          "id": "angry",
+          "title": "Angry",
+          "title_es": "Enfadado",
+          "items": [
+            {
+              "en": "I'm really angry today!",
+              "ipa": "aɪm ˌrɪə.li ˈæŋ.ɡri təˈdeɪ",
+              "pron": "aim ríali ÁNgri taDÉI",
+              "es": "¡Hoy estoy muy enfadado!",
+              "icon": "angry-face"
+            },
+            {
+              "en": "I'm so mad right now!",
+              "ipa": "aɪm ˌsəʊ ˈmæd raɪt ˈnaʊ",
+              "pron": "aim sou MAD rait NÁU",
+              "es": "¡Estoy furioso ahora mismo!",
+              "icon": "face-with-steam-from-nose",
+              "note": "*mad* = enfadado (sobre todo en EE. UU.); en Reino Unido también significa «loco»."
+            },
+            {
+              "en": "It drives me crazy when…",
+              "ipa": "ɪt ˌdraɪvz miː ˈkreɪ.zi wen",
+              "pron": "it draivzz mi KRÉIzzi uen",
+              "es": "Me saca de quicio cuando…",
+              "icon": "face-with-symbols-on-mouth",
+              "example": "It drives me crazy when people talk in the cinema.",
+              "example_es": "Me saca de quicio que la gente hable en el cine."
+            }
+          ]
+        }
       ]
     },
     {

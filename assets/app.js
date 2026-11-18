@@ -18,8 +18,9 @@
   const stress = (h) => h.replace(/[A-ZÁÉÍÓÚÜÑ]+/g, (m) => '<b>' + m.toLowerCase() + '</b>');
   const pron = (s) => stress(esc(s));
   // *cursiva*, **negrita**, and «pronunciaciones» with capitals get the same stress marking
+  // (only when a capital follows another letter, e.g. «CHÓK-lat», so titles like «Futuro» stay as they are)
   const md = (s) => esc(s).replace(/\*\*(.+?)\*\*/g, '<b>$1</b>').replace(/\*(.+?)\*/g, '<i>$1</i>')
-    .replace(/«([^»<]*[A-ZÁÉÍÓÚ][^»<]*)»/g, (m, x) => '«' + stress(x) + '»');
+    .replace(/«([^»<]*[A-ZÁÉÍÓÚ][^»<]*)»/g, (m, x) => (/[a-záéíóúüñA-ZÁÉÍÓÚÜÑ][A-ZÁÉÍÓÚÜÑ]/.test(x) ? '«' + stress(x) + '»' : m));
   const norm = (s) => String(s ?? '').toLowerCase().normalize('NFD').replace(/[̀-ͯ]/g, '');
   const words = (n) => n + (n === 1 ? ' palabra' : ' palabras');
   const apartados = (n) => n + (n === 1 ? ' apartado' : ' apartados');

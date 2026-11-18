@@ -5,12 +5,12 @@
   "title": "Tenses review",
   "title_es": "Repaso de tiempos verbales",
   "icon": "hourglass-not-done",
-  "description": "Present perfect simple y continuous y past simple. El futuro tiene su propio tema: «Futuro».",
+  "description": "Present perfect simple y continuous, past simple, cuándo usar cada uno y la pronunciación de -ed. El futuro tiene su propio tema: «Futuro».",
   "sections": [
     {
       "id": "present-perfect-simple",
       "title": "Present perfect simple",
-      "title_es": "Pretérito perfecto: experiencias",
+      "title_es": "Pretérito perfecto: experiencias y situaciones que siguen",
       "summary": {
         "head": [
           "",
@@ -22,6 +22,11 @@
             "Uso",
             "experiencias sin decir cuándo; resultado ahora",
             "I'**ve been** to London twice."
+          ],
+          [
+            "Uso 2",
+            "empezó en el pasado y sigue (con *for / since*)",
+            "She'**s lived** in Granada for six years."
           ],
           [
             "Afirmativa",
@@ -50,7 +55,7 @@
           ]
         ]
       },
-      "use": "Para hablar de **experiencias** en tu vida sin decir cuándo ocurrieron. En preguntas se usa mucho *ever* (alguna vez) y en respuestas *never* (nunca).",
+      "use": "Dos usos principales: **1)** **experiencias** en tu vida sin decir cuándo ocurrieron (en preguntas se usa mucho *ever* y en respuestas *never*); **2)** **situaciones que empezaron en el pasado y siguen ahora**, sobre todo con *live, work, study, do* y con verbos de estado: *I have worked at the EOI for 15 years.*",
       "forms": [
         {
           "label": "Afirmativa",
@@ -73,7 +78,11 @@
         "never",
         "already",
         "yet",
-        "just"
+        "just",
+        "recently",
+        "so far",
+        "for / since",
+        "How long…?"
       ],
       "examples": [
         {
@@ -91,6 +100,15 @@
         {
           "en": "Have you ever tried Indian food? — Yes, I have. I love it!",
           "es": "¿Has probado alguna vez la comida india? — Sí, ¡me encanta!"
+        },
+        {
+          "en": "I have worked at the EOI for 15 years.",
+          "es": "Llevo 15 años trabajando en la EOI.",
+          "note": "Sigue trabajando allí. ¡No *I work at the EOI for 15 years*!"
+        },
+        {
+          "en": "Has she ever lived in Granada?",
+          "es": "¿Ha vivido alguna vez en Granada?"
         }
       ],
       "mistakes": [
@@ -351,31 +369,6 @@
               "crecer, cultivar"
             ]
           ]
-        },
-        {
-          "title": "Present perfect o past simple",
-          "head": [
-            "",
-            "Present perfect",
-            "Past simple"
-          ],
-          "rows": [
-            [
-              "¿Cuándo?",
-              "no se dice o no importa",
-              "momento concreto y terminado"
-            ],
-            [
-              "Marcadores",
-              "ever, never, already, yet, just, so far",
-              "yesterday, last week, in 2019, … ago, When…?"
-            ],
-            [
-              "Ejemplo",
-              "I'**ve been** to Italy three times.",
-              "I **went** to Italy last summer."
-            ]
-          ]
         }
       ],
       "exceptions": [
@@ -401,6 +394,9 @@
           "a": "had",
           "why": "*yesterday* → past simple"
         }
+      ],
+      "tips": [
+        "La comparación completa con el past simple está en «¿Past simple o present perfect?», y con el continuo en «¿Present perfect simple o continuous?»."
       ]
     },
     {
@@ -541,6 +537,254 @@
       ]
     },
     {
+      "id": "perfect-simple-or-continuous",
+      "title": "Present perfect simple or continuous?",
+      "title_es": "¿Present perfect simple o continuous?",
+      "summary": {
+        "head": [
+          "",
+          "Present perfect simple",
+          "Present perfect continuous"
+        ],
+        "rows": [
+          [
+            "Fórmula",
+            "**have / has** + participio",
+            "**have / has been** + V-ing"
+          ],
+          [
+            "Empezó y sigue",
+            "I'**ve lived** here for four years.",
+            "I'**ve been living** here for four years."
+          ],
+          [
+            "Lo importante",
+            "el **resultado**: cuántos, cuánto, hasta dónde",
+            "la **duración**: cuánto tiempo"
+          ],
+          [
+            "Pregunta típica",
+            "*How many…? How much…? How far…?*",
+            "*How long…?*"
+          ],
+          [
+            "Otro uso",
+            "experiencias sin fecha: *I've visited London five times.*",
+            "hay **pruebas** de una actividad reciente: *I've been working in the garden.*"
+          ],
+          [
+            "Ojo",
+            "verbos de estado: *know, have, want, belong…*",
+            "¡nunca con verbos de estado!"
+          ]
+        ]
+      },
+      "use": "Los dos sirven para algo que **empezó en el pasado y sigue ahora**, sobre todo con *live, work, study* y *do*: ahí casi no hay diferencia. La diferencia está en lo que quieres destacar: el **resultado** (simple) o la **duración** de la actividad (continuous).",
+      "forms": [
+        {
+          "label": "Simple +",
+          "pattern": "sujeto + have / has + participio",
+          "example": "I have studied French for four years."
+        },
+        {
+          "label": "Simple −",
+          "pattern": "sujeto + haven't / hasn't + participio",
+          "example": "I haven't studied French for four years."
+        },
+        {
+          "label": "Simple ?",
+          "pattern": "Have / Has + sujeto + participio?",
+          "example": "Have you studied French for four years? — Yes, I have. / No, I haven't."
+        },
+        {
+          "label": "Continuous +",
+          "pattern": "sujeto + have / has been + V-ing",
+          "example": "I have been studying French for four years."
+        },
+        {
+          "label": "Continuous −",
+          "pattern": "sujeto + haven't / hasn't been + V-ing",
+          "example": "I haven't been studying French for four years."
+        },
+        {
+          "label": "Continuous ?",
+          "pattern": "Have / Has + sujeto + been + V-ing?",
+          "example": "Have you been studying French for four years? — Yes, I have. / No, I haven't."
+        }
+      ],
+      "tables": [
+        {
+          "title": "Usos lado a lado",
+          "head": [
+            "Present perfect simple",
+            "Present perfect continuous"
+          ],
+          "rows": [
+            [
+              "Empezó en el pasado y sigue: *I have lived in Granada for four years.*",
+              "Empezó en el pasado y sigue: *I have been living in Granada for four years.*"
+            ],
+            [
+              "Pasado sin especificar (experiencias): *I have visited London five times. Have you ever eaten sushi?*",
+              "Pruebas de una actividad reciente: *Look at your clothes! They're all dirty! — I've been working in the garden!*"
+            ],
+            [
+              "Resultado: *I have written ten emails this morning.*",
+              "Duración: *I have been writing emails all morning.*"
+            ],
+            [
+              "Responde a *How many / How much / How far?*",
+              "Responde a *How long?*"
+            ]
+          ]
+        },
+        {
+          "title": "Verbos de estado: solo present perfect simple",
+          "head": [
+            "✓ Correcto",
+            "✗ Incorrecto",
+            "Español"
+          ],
+          "rows": [
+            [
+              "I have **known** Maria since I was 10.",
+              "I have been knowing Maria…",
+              "Conozco a María desde los 10 años."
+            ],
+            [
+              "I have **had** my car for ten years.",
+              "I have been having my car…",
+              "Tengo el coche desde hace diez años."
+            ],
+            [
+              "I have always **wanted** to have a pet.",
+              "I have always been wanting…",
+              "Siempre he querido tener una mascota."
+            ],
+            [
+              "This house has **belonged** to me since 2010.",
+              "This house has been belonging…",
+              "Esta casa es mía desde 2010."
+            ],
+            [
+              "I've **loved** this song for years.",
+              "I've been loving this song…",
+              "Me encanta esta canción desde hace años."
+            ],
+            [
+              "How long have you **been** married?",
+              "How long have you been being married?",
+              "¿Cuánto tiempo llevas casado?"
+            ]
+          ],
+          "note": "Más verbos de estado: *like, hate, prefer, need, understand, believe, remember, own, seem*. Ver «Verbos de acción y de estado»."
+        }
+      ],
+      "keywords": [
+        "How long…?",
+        "How many…?",
+        "How much…?",
+        "for",
+        "since",
+        "all morning / all day"
+      ],
+      "examples": [
+        {
+          "en": "I've read three books this month.",
+          "es": "Este mes me he leído tres libros.",
+          "note": "Resultado: cuántos."
+        },
+        {
+          "en": "I've been reading this book for two weeks.",
+          "es": "Llevo dos semanas leyendo este libro.",
+          "note": "Duración: todavía no lo he terminado."
+        },
+        {
+          "en": "We've walked ten kilometres today.",
+          "es": "Hoy hemos andado diez kilómetros.",
+          "note": "*How far?* → simple."
+        },
+        {
+          "en": "Your eyes are red. Have you been crying?",
+          "es": "Tienes los ojos rojos. ¿Has estado llorando?",
+          "note": "Prueba de una actividad reciente."
+        },
+        {
+          "en": "Sorry I'm so hot. I've been running.",
+          "es": "Perdona que esté tan acalorado. He estado corriendo."
+        },
+        {
+          "en": "I've painted the kitchen.",
+          "es": "He pintado la cocina.",
+          "note": "Ya está terminada."
+        },
+        {
+          "en": "I've been painting the kitchen.",
+          "es": "He estado pintando la cocina.",
+          "note": "Quizá no la he terminado; por eso tengo pintura en la ropa."
+        }
+      ],
+      "exceptions": [
+        "Con *live, work, study* los dos significan casi lo mismo: *I've lived / I've been living here for years.*",
+        "Si dices **cuántas veces o cuántas cosas**, siempre simple: *I've been to Paris three times* (no *I've been going three times*).",
+        "El continuo puede indicar algo **temporal** y el simple algo **permanente**: *I've been living with my parents since May* (por ahora) / *I've lived in this town all my life*."
+      ],
+      "tips": [
+        "Pregúntate: ¿cuento **cuánto** he hecho (simple) o **cuánto tiempo** llevo haciéndolo (continuous)?",
+        "Si ves pruebas (manchas, cansancio, ojos rojos…), piensa en el continuous."
+      ],
+      "mistakes": [
+        {
+          "wrong": "I have been knowing Maria since I was 10.",
+          "right": "I have known Maria since I was 10.",
+          "why": "*know* es un verbo de estado: no va en continuo."
+        },
+        {
+          "wrong": "I've been writing ten emails this morning.",
+          "right": "I've written ten emails this morning.",
+          "why": "Hablas de un resultado (cuántos) → simple."
+        },
+        {
+          "wrong": "How long have you written emails?",
+          "right": "How long have you been writing emails?",
+          "why": "Con *How long* y verbos de acción, mejor continuous."
+        }
+      ],
+      "practice": [
+        {
+          "q": "I ___ (write) five emails so far.",
+          "a": "have written",
+          "why": "Cuántos → resultado."
+        },
+        {
+          "q": "She ___ (wait) for the bus for half an hour.",
+          "a": "has been waiting"
+        },
+        {
+          "q": "How long ___ you ___ (have) your car?",
+          "a": "have … had",
+          "why": "*have* = poseer, verbo de estado."
+        },
+        {
+          "q": "Your hands are dirty! What ___ you ___ (do)?",
+          "a": "have … been doing",
+          "why": "Pruebas de una actividad reciente."
+        },
+        {
+          "q": "We ___ (know) each other since we were kids.",
+          "a": "have known"
+        },
+        {
+          "q": "He ___ (drink) three coffees today.",
+          "a": "has drunk"
+        },
+        {
+          "q": "I'm exhausted. I ___ (study) all day.",
+          "a": "have been studying"
+        }
+      ]
+    },
+    {
       "id": "past-simple",
       "title": "Past simple",
       "title_es": "Pasado simple",
@@ -639,36 +883,10 @@
           "why": "*ago* va detrás del periodo de tiempo."
         }
       ],
-      "tables": [
-        {
-          "title": "Pronunciación de -ed en verbos regulares",
-          "head": [
-            "Sonido",
-            "Cuándo",
-            "Ejemplos"
-          ],
-          "rows": [
-            [
-              "/t/",
-              "después de /p, k, f, s, ʃ, tʃ/",
-              "cooked, washed, watched, baked"
-            ],
-            [
-              "/d/",
-              "después de vocal y otros sonidos sonoros",
-              "played, boiled, grilled, steamed"
-            ],
-            [
-              "/ɪd/",
-              "después de /t/ o /d/ (se añade una sílaba)",
-              "wanted, needed, roasted, waited"
-            ]
-          ]
-        }
-      ],
       "exceptions": [
         "Con *was / were* no se usa *did*: *Where **were** you?* (no *Where did you be?*).",
-        "Ortografía: *stop → stopped*, *study → studied*, *play → played*, *fry → fried*."
+        "Ortografía: *stop → stopped*, *study → studied*, *play → played*, *fry → fried*.",
+        "También se usa con *for*, *ever* y *never* si el periodo **ya terminó**: *She **lived** in Mallorca for ten years* (ya no vive allí)."
       ],
       "practice": [
         {
@@ -682,6 +900,505 @@
         {
           "q": "They ___ (be) at home yesterday.",
           "a": "were"
+        }
+      ],
+      "tips": [
+        "Cómo se pronuncia la terminación *-ed* (/t/, /d/ o /ɪd/): mira «Pronunciación de -ed»."
+      ]
+    },
+    {
+      "id": "ed-pronunciation",
+      "title": "Pronunciation of -ed",
+      "title_es": "Pronunciación de -ed",
+      "summary": {
+        "head": [
+          "Sonido",
+          "Cuándo",
+          "Ejemplos"
+        ],
+        "rows": [
+          [
+            "/t/",
+            "el verbo acaba en un **sonido sordo**: /p, f, k, s, ʃ, tʃ/ (letras *p, f, k, s, sh, ch, gh, c, x*)",
+            "helped, laughed, looked, kissed, washed, watched"
+          ],
+          [
+            "/d/",
+            "el verbo acaba en un **sonido sonoro** (*b, g, l, m, n, r, v, z*) **o en vocal**",
+            "rubbed, begged, called, cleaned, loved, played"
+          ],
+          [
+            "/ɪd/",
+            "el verbo acaba en **sonido /t/ o /d/** → se añade una sílaba",
+            "wanted, needed, ended, educated"
+          ]
+        ]
+      },
+      "use": "La terminación *-ed* de los verbos regulares (pasado y participio) se pronuncia de tres formas, según el **último sonido** del verbo. Solo con /ɪd/ se añade una sílaba: *cooked* tiene una sílaba (/kʊkt/), *wanted* tiene dos (/ˈwɒn.tɪd/).",
+      "tables": [
+        {
+          "title": "Ejemplos de cada grupo",
+          "head": [
+            "/t/",
+            "/d/",
+            "/ɪd/"
+          ],
+          "rows": [
+            [
+              "helped /helpt/",
+              "rubbed /rʌbd/",
+              "wanted /ˈwɒn.tɪd/"
+            ],
+            [
+              "kissed /kɪst/",
+              "begged /beɡd/",
+              "needed /ˈniː.dɪd/"
+            ],
+            [
+              "laughed /lɑːft/",
+              "called /kɔːld/",
+              "ended /ˈen.dɪd/"
+            ],
+            [
+              "washed /wɒʃt/",
+              "claimed /kleɪmd/",
+              "educated /ˈedʒ.u.keɪ.tɪd/"
+            ],
+            [
+              "finished /ˈfɪn.ɪʃt/",
+              "cleaned /kliːnd/",
+              "started /ˈstɑː.tɪd/"
+            ],
+            [
+              "danced /dɑːnst/",
+              "offered /ˈɒf.əd/",
+              "painted /ˈpeɪn.tɪd/"
+            ],
+            [
+              "looked /lʊkt/",
+              "loved /lʌvd/",
+              "decided /dɪˈsaɪ.dɪd/"
+            ],
+            [
+              "watched /wɒtʃt/",
+              "realized /ˈrɪə.laɪzd/",
+              "visited /ˈvɪz.ɪ.tɪd/"
+            ]
+          ]
+        },
+        {
+          "title": "Ejercicio de la hoja: soluciones",
+          "head": [
+            "/t/",
+            "/d/",
+            "/ɪd/"
+          ],
+          "rows": [
+            [
+              "talked",
+              "believed",
+              "reminded"
+            ],
+            [
+              "dressed",
+              "ordered",
+              "started"
+            ],
+            [
+              "matched",
+              "screamed",
+              "recorded"
+            ],
+            [
+              "asked",
+              "improved",
+              "painted"
+            ],
+            [
+              "passed",
+              "phoned",
+              "corrected"
+            ]
+          ],
+          "note": "/t/ = 5, /d/ = 5, /ɪd/ = 5."
+        }
+      ],
+      "examples": [
+        {
+          "en": "I helped my mum and then I watched TV.",
+          "es": "Ayudé a mi madre y luego vi la tele.",
+          "note": "/helpt/, /wɒtʃt/"
+        },
+        {
+          "en": "She called me and we talked for hours.",
+          "es": "Me llamó y hablamos durante horas.",
+          "note": "/kɔːld/, /tɔːkt/"
+        },
+        {
+          "en": "We wanted to go, but we needed more money.",
+          "es": "Queríamos ir, pero necesitábamos más dinero.",
+          "note": "/ˈwɒn.tɪd/, /ˈniː.dɪd/"
+        },
+        {
+          "en": "He cleaned the kitchen and cooked dinner.",
+          "es": "Limpió la cocina y preparó la cena.",
+          "note": "/kliːnd/, /kʊkt/"
+        },
+        {
+          "en": "The film started late and ended at midnight.",
+          "es": "La película empezó tarde y terminó a medianoche.",
+          "note": "/ˈstɑː.tɪd/, /ˈen.dɪd/"
+        }
+      ],
+      "exceptions": [
+        "Lo que cuenta es el **sonido**, no la letra: *laughed* (gh = /f/) → /t/; *danced* (c = /s/) → /t/; *fixed* (x = /ks/) → /t/.",
+        "Si el verbo acaba en *-e* muda, la *e* no suena: *loved* /lʌvd/, *danced* /dɑːnst/, *phoned* /fəʊnd/.",
+        "Algunos **adjetivos** en *-ed* se pronuncian /ɪd/ aunque no acaben en t o d: *naked* /ˈneɪ.kɪd/ (desnudo), *wicked* (malvado), *beloved* (querido), *learned* /ˈlɜː.nɪd/ (erudito)."
+      ],
+      "tips": [
+        "Truco: pon la mano en la garganta. Si al decir el último sonido vibra, es sonoro → /d/. Si no vibra, es sordo → /t/.",
+        "El error típico del hispanohablante es pronunciar todas las *-ed* como sílaba: *looked* NO es «LÚ-ked», es «lukt».",
+        "Con /t/ y /d/ no se añade sílaba: *helped* tiene una sílaba igual que *help*."
+      ],
+      "mistakes": [
+        {
+          "wrong": "looked = /ˈlʊk.ɪd/",
+          "right": "looked = /lʊkt/",
+          "why": "Solo se añade sílaba cuando el verbo acaba en sonido /t/ o /d/."
+        },
+        {
+          "wrong": "wanted = /wɒntd/",
+          "right": "wanted = /ˈwɒn.tɪd/",
+          "why": "Acaba en /t/ → /ɪd/, con una sílaba más."
+        }
+      ],
+      "practice": [
+        {
+          "q": "reminded → /___/",
+          "a": "/ɪd/",
+          "why": "Acaba en /d/."
+        },
+        {
+          "q": "believed → /___/",
+          "a": "/d/",
+          "why": "/v/ es sonora."
+        },
+        {
+          "q": "talked → /___/",
+          "a": "/t/",
+          "why": "/k/ es sorda."
+        },
+        {
+          "q": "ordered → /___/",
+          "a": "/d/",
+          "why": "En inglés británico acaba en el sonido vocálico /ə/ (/ˈɔː.dəd/)."
+        },
+        {
+          "q": "dressed → /___/",
+          "a": "/t/",
+          "why": "/s/ es sorda."
+        },
+        {
+          "q": "matched → /___/",
+          "a": "/t/",
+          "why": "/tʃ/ es sorda."
+        },
+        {
+          "q": "started → /___/",
+          "a": "/ɪd/",
+          "why": "Acaba en /t/."
+        },
+        {
+          "q": "recorded → /___/",
+          "a": "/ɪd/",
+          "why": "Acaba en /d/."
+        },
+        {
+          "q": "screamed → /___/",
+          "a": "/d/",
+          "why": "/m/ es sonora."
+        },
+        {
+          "q": "asked → /___/",
+          "a": "/t/",
+          "why": "/k/ es sorda."
+        },
+        {
+          "q": "improved → /___/",
+          "a": "/d/",
+          "why": "/v/ es sonora."
+        },
+        {
+          "q": "phoned → /___/",
+          "a": "/d/",
+          "why": "/n/ es sonora."
+        },
+        {
+          "q": "painted → /___/",
+          "a": "/ɪd/",
+          "why": "Acaba en /t/."
+        },
+        {
+          "q": "corrected → /___/",
+          "a": "/ɪd/",
+          "why": "Acaba en /t/."
+        },
+        {
+          "q": "passed → /___/",
+          "a": "/t/",
+          "why": "/s/ es sorda."
+        },
+        {
+          "q": "laughed → /___/",
+          "a": "/t/",
+          "why": "*gh* suena /f/, que es sorda."
+        }
+      ]
+    },
+    {
+      "id": "past-or-present-perfect",
+      "title": "Past simple or present perfect?",
+      "title_es": "¿Past simple o present perfect?",
+      "summary": {
+        "head": [
+          "",
+          "Past simple",
+          "Present perfect simple"
+        ],
+        "rows": [
+          [
+            "Fórmula",
+            "V-**ed** o irregular (2.ª columna)",
+            "**have / has** + participio (3.ª columna)"
+          ],
+          [
+            "Uso 1",
+            "acción **terminada** en un momento concreto",
+            "**experiencias** sin decir cuándo"
+          ],
+          [
+            "Uso 2",
+            "—",
+            "empezó en el pasado y **sigue** ahora"
+          ],
+          [
+            "Expresiones",
+            "in 2001, on Friday, 3 weeks ago, last month, yesterday",
+            "for, since, just, yet, already, ever, never, recently, today"
+          ],
+          [
+            "Pregunta",
+            "*When…?*",
+            "*How long…?*"
+          ],
+          [
+            "Ejemplo",
+            "I **went** to New York in 2010.",
+            "I'**ve been** to New York three times."
+          ]
+        ]
+      },
+      "use": "La pregunta clave: ¿la acción está **terminada y situada en un momento del pasado** (past simple) o está **conectada con el presente**, porque es una experiencia sin fecha o porque todavía sigue (present perfect)?",
+      "tables": [
+        {
+          "title": "Forma: el mismo verbo en los dos tiempos",
+          "head": [
+            "",
+            "Past simple",
+            "Present perfect simple"
+          ],
+          "rows": [
+            [
+              "+",
+              "She **lived** in Mallorca for ten years.",
+              "She **has lived** in Granada for six years."
+            ],
+            [
+              "−",
+              "She **didn't live** in Mallorca for ten years.",
+              "She **hasn't lived** in Granada."
+            ],
+            [
+              "?",
+              "**Did** she **live** in Mallorca last year?",
+              "**Has** she ever **lived** in Granada?"
+            ]
+          ],
+          "note": "Con *for*: *lived in Mallorca for ten years* = ya no vive allí; *has lived in Granada for six years* = sigue viviendo allí."
+        },
+        {
+          "title": "Expresiones de tiempo",
+          "head": [
+            "Past simple",
+            "Present perfect simple"
+          ],
+          "rows": [
+            [
+              "in 2001 / in March / on Friday",
+              "for + periodo / since + fecha o momento"
+            ],
+            [
+              "3 weeks ago / last month / last night",
+              "just / yet / already / ever / never / recently"
+            ],
+            [
+              "yesterday",
+              "this morning / today / all my life / all day / all year"
+            ],
+            [
+              "for / ever / never (periodo terminado)",
+              "so far / up to now"
+            ],
+            [
+              "When…?",
+              "How long…?"
+            ]
+          ]
+        },
+        {
+          "title": "Inglés británico y americano",
+          "head": [
+            "Británico (BE): present perfect",
+            "Americano (AE): past simple"
+          ],
+          "rows": [
+            [
+              "I **have already finished** the homework.",
+              "I **already finished** the homework."
+            ],
+            [
+              "I'**ve just seen** him.",
+              "I **just saw** him."
+            ],
+            [
+              "I **have done** the shopping this morning.",
+              "I **did** the shopping this morning."
+            ],
+            [
+              "**Have** you **eaten** yet?",
+              "**Did** you **eat** yet?"
+            ]
+          ],
+          "note": "Con *already*, *just* y con periodos que aún no han terminado (*this morning, today*), el británico usa present perfect y el americano past simple. Es la misma diferencia que hay entre el español de España (*esta mañana he ido*) y el de Latinoamérica (*esta mañana fui*). En el examen, usa el británico."
+        }
+      ],
+      "keywords": [
+        "When…?",
+        "How long…?",
+        "ago",
+        "last…",
+        "for",
+        "since",
+        "already",
+        "just",
+        "yet",
+        "ever",
+        "never",
+        "recently"
+      ],
+      "examples": [
+        {
+          "en": "I went to New York in the summer of 2010.",
+          "es": "Fui a Nueva York en el verano de 2010.",
+          "note": "Momento concreto → past simple."
+        },
+        {
+          "en": "I have been to New York three times.",
+          "es": "He estado en Nueva York tres veces.",
+          "note": "Experiencia sin fecha → present perfect."
+        },
+        {
+          "en": "I have worked at the EOI for 15 years.",
+          "es": "Llevo 15 años trabajando en la EOI.",
+          "note": "Sigue trabajando allí."
+        },
+        {
+          "en": "I worked in a bank for 15 years, but now I'm a teacher.",
+          "es": "Trabajé en un banco 15 años, pero ahora soy profesor.",
+          "note": "Ya terminó → past simple, aunque lleve *for*."
+        },
+        {
+          "en": "Have you ever been to Scotland? — Yes, I went there last year.",
+          "es": "¿Has estado alguna vez en Escocia? — Sí, fui el año pasado.",
+          "note": "La pregunta general va en present perfect; los detalles (cuándo, con quién) en past simple."
+        },
+        {
+          "en": "I've had three coffees today.",
+          "es": "Hoy me he tomado tres cafés.",
+          "note": "*today* aún no ha terminado."
+        },
+        {
+          "en": "I had three coffees yesterday.",
+          "es": "Ayer me tomé tres cafés."
+        }
+      ],
+      "exceptions": [
+        "Si la persona ya **no vive** o el periodo **terminó**, usa past simple aunque lleve *ever / never*: *My grandfather **never learnt** to drive* (ya falleció).",
+        "*this morning* por la tarde ya ha terminado: a las 6 de la tarde se dice *I **went** to the gym this morning*.",
+        "Una conversación suele **empezar** en present perfect (*Have you ever…?*) y **seguir** en past simple cuando se dan los detalles (*When did you go? Who did you go with?*)."
+      ],
+      "tips": [
+        "Si puedes responder a «¿cuándo?» con una fecha o un momento terminado → past simple.",
+        "Si en español dirías «llevo… años» → present perfect (simple o continuous), nunca presente simple."
+      ],
+      "mistakes": [
+        {
+          "wrong": "I have been to New York in 2010.",
+          "right": "I went to New York in 2010.",
+          "why": "Con un momento concreto (*in 2010*) → past simple."
+        },
+        {
+          "wrong": "I work at the EOI for 15 years.",
+          "right": "I have worked at the EOI for 15 years.",
+          "why": "«Llevo 15 años» → present perfect, no presente."
+        },
+        {
+          "wrong": "When have you arrived?",
+          "right": "When did you arrive?",
+          "why": "*When…?* pide un momento concreto → past simple."
+        },
+        {
+          "wrong": "I've seen him two days ago.",
+          "right": "I saw him two days ago.",
+          "why": "*ago* siempre va con past simple."
+        }
+      ],
+      "practice": [
+        {
+          "q": "I ___ (visit) London five times.",
+          "a": "have visited"
+        },
+        {
+          "q": "I ___ (visit) London in 2019.",
+          "a": "visited"
+        },
+        {
+          "q": "She ___ (live) here since 2015.",
+          "a": "has lived"
+        },
+        {
+          "q": "She ___ (live) in Mallorca for ten years, but now she lives in Madrid.",
+          "a": "lived"
+        },
+        {
+          "q": "When ___ you ___ (start) learning English?",
+          "a": "did … start"
+        },
+        {
+          "q": "How long ___ you ___ (know) your best friend?",
+          "a": "have … known"
+        },
+        {
+          "q": "___ you ever ___ (eat) octopus? — Yes, I ___ (try) it in Galicia last summer.",
+          "a": "Have … eaten … tried"
+        },
+        {
+          "q": "We ___ (not / see) Tom yet.",
+          "a": "haven't seen"
+        },
+        {
+          "q": "They ___ (get) married three years ago.",
+          "a": "got"
         }
       ]
     }

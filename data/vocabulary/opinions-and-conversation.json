@@ -5,8 +5,101 @@
   "title": "Opinions and conversation",
   "title_es": "Opiniones y conversación",
   "icon": "speaking-head",
-  "description": "Pedir y dar opiniones, estar de acuerdo o no, y salir de momentos incómodos al hablar.",
+  "description": "Saludar, pedir y dar opiniones, estar o no de acuerdo, aclarar, sugerir, llegar a un acuerdo y despedirse.",
   "sections": [
+    {
+      "id": "greetings",
+      "title": "Greetings",
+      "title_es": "Saludar y responder",
+      "items": [
+        {
+          "en": "How's it going?",
+          "ipa": "ˌhaʊz ɪt ˈɡəʊ.ɪŋ",
+          "pron": "jauzz it GÓUing",
+          "es": "¿Qué tal (te va)?",
+          "icon": "waving-hand",
+          "note": "Respuesta típica: *Not bad, thanks! How about you?*",
+          "example": "How's it going? — Not bad, thanks! How about you?",
+          "example_es": "¿Qué tal? — No me va mal, gracias. ¿Y tú?"
+        },
+        {
+          "en": "What have you been up to?",
+          "ipa": "ˌwɒt əv juː bɪn ˈʌp tuː",
+          "pron": "uot av yu bin AP tu",
+          "es": "¿Qué has estado haciendo? / ¿Qué es de tu vida?",
+          "icon": "person-walking",
+          "note": "Va en present perfect continuous.",
+          "example": "What have you been up to? — Oh, not much, just the usual. How about yourself?",
+          "example_es": "¿Qué es de tu vida? — Pues nada, lo de siempre. ¿Y tú?"
+        },
+        {
+          "en": "What's new?",
+          "ipa": "ˌwɒts ˈnjuː",
+          "pron": "uots NÍU",
+          "es": "¿Qué hay de nuevo? / ¿Qué me cuentas?",
+          "icon": "newspaper",
+          "example": "What's new? — Not a lot, same old, same old. Anything exciting on your end?",
+          "example_es": "¿Qué me cuentas? — No mucho, lo de siempre. ¿Alguna novedad por tu parte?"
+        },
+        {
+          "en": "How's life?",
+          "ipa": "ˌhaʊz ˈlaɪf",
+          "pron": "jauzz LÁIF",
+          "es": "¿Qué tal la vida? / ¿Cómo te va?",
+          "icon": "seedling",
+          "example": "How's life? — Life's good, thanks! How's everything with you?",
+          "example_es": "¿Cómo te va? — Bien, gracias. ¿Y a ti cómo te va todo?"
+        },
+        {
+          "en": "Long time no see!",
+          "ipa": "ˌlɒŋ taɪm nəʊ ˈsiː",
+          "pron": "long taim nou SÍI",
+          "es": "¡Cuánto tiempo (sin verte)!",
+          "icon": "hourglass-done",
+          "note": "También *Such a long time!* o *It's been ages!*",
+          "example": "Long time no see! — I know, right? It's been too long. What have you been up to?",
+          "example_es": "¡Cuánto tiempo! — ¡Ya ves! Hacía demasiado. ¿Qué es de tu vida?"
+        },
+        {
+          "en": "How about you? / How about yourself?",
+          "ipa": "ˈhaʊ əˌbaʊt juː",
+          "pron": "JAU abaut yu",
+          "es": "¿Y tú?",
+          "icon": "backhand-index-pointing-right",
+          "note": "Para devolver la pregunta. También *And you?* o *What about you?*"
+        },
+        {
+          "en": "Not much, just the usual.",
+          "ipa": "ˌnɒt ˈmʌtʃ ˌdʒʌst ðə ˈjuː.ʒu.əl",
+          "pron": "not MACH yast da YÚUzhual",
+          "es": "Nada especial, lo de siempre.",
+          "icon": "person-shrugging"
+        },
+        {
+          "en": "Same old, same old.",
+          "ipa": "ˌseɪm ˈəʊld ˌseɪm ˈəʊld",
+          "pron": "seim ÓULD seim ÓULD",
+          "es": "Lo de siempre. / Aquí, como siempre.",
+          "icon": "repeat-button",
+          "note": "Coloquial."
+        },
+        {
+          "en": "I know, right?",
+          "ipa": "aɪ ˈnəʊ ˌraɪt",
+          "pron": "ai NÓU rait",
+          "es": "¡Ya ves! / ¡A que sí!",
+          "icon": "grinning-face-with-big-eyes",
+          "note": "Para dar la razón con entusiasmo. Coloquial."
+        },
+        {
+          "en": "It's been too long.",
+          "ipa": "ɪts bɪn ˌtuː ˈlɒŋ",
+          "pron": "its bin tuu LONG",
+          "es": "Hacía demasiado tiempo.",
+          "icon": "hourglass-done"
+        }
+      ]
+    },
     {
       "id": "asking",
       "title": "Asking for opinions",
@@ -48,6 +141,25 @@
           "es": "¿Estás de acuerdo (conmigo)?",
           "icon": "handshake",
           "note": "Respuestas cortas: *Yes, I do.* / *No, I don't.*"
+        },
+        {
+          "en": "What's your view on…?",
+          "ipa": "ˌwɒts jə ˈvjuː ɒn",
+          "pron": "uots yor VIÚ on",
+          "es": "¿Qué opinas de…? / ¿Cómo ves…?",
+          "icon": "eye",
+          "example": "What's your view on social media?",
+          "example_es": "¿Qué opinas de las redes sociales?"
+        },
+        {
+          "en": "How do you feel about…?",
+          "ipa": "ˌhaʊ də juː ˈfiːl əˌbaʊt",
+          "pron": "jau da yu FÍIL abaut",
+          "es": "¿Qué te parece…? / ¿Cómo lo ves…?",
+          "icon": "thinking-face",
+          "note": "+ nombre o -ing. Sirve para pedir opinión y para proponer algo.",
+          "example": "How do you feel about working from home?",
+          "example_es": "¿Qué te parece trabajar desde casa?"
         }
       ]
     },
@@ -137,6 +249,61 @@
           "pron": "ai disaGRÍI uid yu",
           "es": "No estoy de acuerdo contigo.",
           "icon": "thumbs-down"
+        },
+        {
+          "en": "I couldn't agree more.",
+          "ipa": "aɪ ˌkʊd.ənt əˌɡriː ˈmɔː",
+          "pron": "ai KÚdant agrii MÓO",
+          "es": "Estoy totalmente de acuerdo.",
+          "icon": "raising-hands",
+          "note": "¡Ojo! Aunque lleva *not*, significa estar **muy** de acuerdo. Se dice mucho *Absolutely, I couldn't agree more.*"
+        },
+        {
+          "en": "That makes perfect sense.",
+          "ipa": "ˌðæt meɪks ˌpɜː.fɪkt ˈsens",
+          "pron": "dat meiks perfikt SÉNS",
+          "es": "Tiene todo el sentido.",
+          "icon": "light-bulb",
+          "note": "Se dice mucho *Totally, that makes perfect sense.*"
+        },
+        {
+          "en": "I was just going to say that!",
+          "ipa": "aɪ wəz ˌdʒʌst ˌɡəʊ.ɪŋ tə ˈseɪ ðæt",
+          "pron": "ai uoz yast gouing tu SÉI dat",
+          "es": "¡Justo iba a decir eso!",
+          "icon": "grinning-face-with-big-eyes"
+        },
+        {
+          "en": "We see eye to eye.",
+          "ipa": "wiː ˌsiː ˌaɪ tʊ ˈaɪ",
+          "pron": "ui sii ai tu ÁI",
+          "es": "Estamos totalmente de acuerdo.",
+          "icon": "eyes",
+          "note": "En negativa: *We don't see eye to eye (on this)* = no estamos de acuerdo (en esto)."
+        },
+        {
+          "en": "I think otherwise.",
+          "ipa": "aɪ ˌθɪŋk ˈʌð.ə.waɪz",
+          "pron": "ai zink Ádauaizz",
+          "es": "Yo pienso lo contrario. / Yo no lo veo así.",
+          "icon": "person-gesturing-no"
+        },
+        {
+          "en": "I'm afraid I don't agree with that.",
+          "ipa": "aɪm əˌfreɪd aɪ ˌdəʊnt əˈɡriː wɪð ðæt",
+          "pron": "aim aFRÉID ai dount aGRÍI uid dat",
+          "es": "Me temo que no estoy de acuerdo con eso.",
+          "icon": "face-with-diagonal-mouth",
+          "note": "*I'm afraid* suaviza el desacuerdo: suena educado."
+        },
+        {
+          "en": "That's not how I see it.",
+          "ipa": "ˌðæts ˌnɒt haʊ aɪ ˈsiː ɪt",
+          "pron": "dats not jau ai SÍI it",
+          "es": "Yo no lo veo así.",
+          "icon": "face-with-raised-eyebrow",
+          "example": "That's not how I see it. I think differently.",
+          "example_es": "Yo no lo veo así. Pienso de otra manera."
         }
       ]
     },
@@ -202,6 +369,171 @@
           "pron": "lets muuv ON",
           "es": "Sigamos; cambiemos de tema.",
           "icon": "next-track-button"
+        }
+      ]
+    },
+    {
+      "id": "rephrasing",
+      "title": "Rephrasing and checking",
+      "title_es": "Comprobar que has entendido",
+      "items": [
+        {
+          "en": "What you mean is that…",
+          "ipa": "ˌwɒt juː ˈmiːn ɪz ðət",
+          "pron": "uot yu MÍIN iz dat",
+          "es": "Lo que quieres decir es que…",
+          "icon": "speech-balloon"
+        },
+        {
+          "en": "Are you saying that…?",
+          "ipa": "ɑː juː ˈseɪ.ɪŋ ðət",
+          "pron": "aa yu SÉIing dat",
+          "es": "¿Estás diciendo que…?",
+          "icon": "red-question-mark"
+        },
+        {
+          "en": "In other words, do you mean that…?",
+          "ipa": "ɪn ˌʌð.ə ˈwɜːdz duː juː ˈmiːn ðət",
+          "pron": "in ada UÉRDZZ du yu MÍIN dat",
+          "es": "O sea, ¿quieres decir que…?",
+          "icon": "heavy-equals-sign"
+        },
+        {
+          "en": "If I understand you correctly, …",
+          "ipa": "ɪf aɪ ˌʌn.dəˈstænd juː kəˈrekt.li",
+          "pron": "if ai andaSTÁND yu kaRÉKTli",
+          "es": "Si te he entendido bien, …",
+          "icon": "ear"
+        },
+        {
+          "en": "Sorry, could you say that again?",
+          "ipa": "ˈsɒr.i kʊd juː ˌseɪ ðæt əˈɡen",
+          "pron": "SÓri kud yu sei dat aGUÉN",
+          "es": "Perdona, ¿puedes repetirlo?",
+          "icon": "ear"
+        }
+      ]
+    },
+    {
+      "id": "suggesting",
+      "title": "Making suggestions",
+      "title_es": "Hacer sugerencias",
+      "items": [
+        {
+          "en": "How about + -ing?",
+          "ipa": "ˈhaʊ əˌbaʊt",
+          "pron": "JAU abaut",
+          "es": "¿Qué tal si…?",
+          "icon": "light-bulb",
+          "note": "También *What about…?* + -ing o nombre.",
+          "example": "How about going to the cinema tonight?",
+          "example_es": "¿Qué tal si vamos al cine esta noche?"
+        },
+        {
+          "en": "Why don't we + infinitive?",
+          "ipa": "ˌwaɪ ˈdəʊnt wiː",
+          "pron": "uai DÓUNT ui",
+          "es": "¿Por qué no…?",
+          "icon": "light-bulb",
+          "note": "Infinitivo sin *to*.",
+          "example": "Why don't we ask Tom for help?",
+          "example_es": "¿Por qué no le pedimos ayuda a Tom?"
+        },
+        {
+          "en": "Maybe we could + infinitive",
+          "ipa": "ˈmeɪ.bi wiː kəd",
+          "pron": "MÉIbi ui kud",
+          "es": "Quizá podríamos…",
+          "icon": "light-bulb",
+          "example": "Maybe we could meet on Saturday instead.",
+          "example_es": "Quizá podríamos quedar el sábado mejor."
+        },
+        {
+          "en": "Let's + infinitive",
+          "ipa": "lets",
+          "pron": "lets",
+          "es": "Vamos a… / ¡…!",
+          "icon": "raising-hands",
+          "note": "Negativa: *Let's not…*",
+          "example": "Let's take a break.",
+          "example_es": "Hagamos una pausa."
+        },
+        {
+          "en": "Shall we…?",
+          "ipa": "ˈʃæl wiː",
+          "pron": "SHAL ui",
+          "es": "¿…? / ¿Vamos…?",
+          "icon": "handshake",
+          "note": "Muy británico.",
+          "example": "Shall we go?",
+          "example_es": "¿Nos vamos?"
+        },
+        {
+          "en": "Have you considered other options?",
+          "ipa": "həv juː kənˈsɪd.əd ˌʌð.ər ˈɒp.ʃənz",
+          "pron": "jav yu kanSÍdad ada ÓPshanzz",
+          "es": "¿Has pensado en otras opciones?",
+          "icon": "thinking-face"
+        }
+      ]
+    },
+    {
+      "id": "goodbye",
+      "title": "Reaching a decision and saying goodbye",
+      "title_es": "Llegar a un acuerdo y despedirse",
+      "items": [
+        {
+          "en": "So, after discussing all the options, we're going to…",
+          "ipa": "ˈsəʊ ˌɑːf.tə dɪˈskʌs.ɪŋ ˌɔːl ði ˈɒp.ʃənz wɪə ˈɡəʊ.ɪŋ tə",
+          "pron": "sou aafta diSKÁsing ool di ÓPshanzz uía GÓUing tu",
+          "es": "Bueno, después de hablar de todas las opciones, vamos a…",
+          "icon": "chequered-flag",
+          "note": "Perfecto para cerrar la tarea de decidir algo en el examen oral."
+        },
+        {
+          "en": "It's great that we have a solution.",
+          "ipa": "ɪts ˈɡreɪt ðət wiː həv ə səˈluː.ʃən",
+          "pron": "its GRÉIT dat ui jav a saLÚUshan",
+          "es": "Genial, ya tenemos una solución.",
+          "icon": "check-mark-button",
+          "note": "Se suele añadir *…and we are on the same page.*"
+        },
+        {
+          "en": "Catch you later!",
+          "ipa": "ˌkætʃ juː ˈleɪ.tə",
+          "pron": "kach yu LÉIta",
+          "es": "¡Hasta luego!",
+          "icon": "waving-hand",
+          "note": "Coloquial."
+        },
+        {
+          "en": "Talk to you soon!",
+          "ipa": "ˌtɔːk tə juː ˈsuːn",
+          "pron": "took tu yu SÚUN",
+          "es": "¡Hablamos pronto!",
+          "icon": "telephone-receiver"
+        },
+        {
+          "en": "Don't be a stranger!",
+          "ipa": "ˌdəʊnt bi ə ˈstreɪn.dʒə",
+          "pron": "dount bi a STRÉINya",
+          "es": "¡No desaparezcas! / ¡A ver si nos vemos más!",
+          "icon": "hugging-face"
+        },
+        {
+          "en": "See you soon, raccoon!",
+          "ipa": "ˌsiː juː ˈsuːn ræˈkuːn",
+          "pron": "sii yu SÚUN raKÚUN",
+          "es": "¡Hasta pronto! (en broma)",
+          "icon": "raccoon",
+          "note": "Despedida en broma que rima, como *See you later, alligator!* Solo entre amigos."
+        },
+        {
+          "en": "Take care!",
+          "ipa": "ˌteɪk ˈkeə",
+          "pron": "teik KÉA",
+          "es": "¡Cuídate!",
+          "icon": "red-heart"
         }
       ]
     }
